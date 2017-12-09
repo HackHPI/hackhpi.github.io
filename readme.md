@@ -4,3 +4,5 @@ This project stems from a Google Chrome "Save page as..." and thus still contain
 - "archive" this 2017 page like it was done with 2016.hackhpi.org
 - setup page for 2018
 - take care of absolute links to the hackhpi.org domain
+- adapt imprint to contain current organizers
+- make hackhpi.org domain point to this GitHub pages project

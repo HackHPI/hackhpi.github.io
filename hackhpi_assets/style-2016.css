@@ -1,0 +1,55 @@
+/*
+HPI Yellow: #f6a803;
+HPI Orange: #61a236;
+HPI Red: #b00137;
+*/
+
+.text-colored {
+    color: #dd630d;
+}
+
+a {
+    color: #dd630d;
+}
+
+header {
+    background: #dd630d;
+}
+
+header.triangle:after {
+    border-color: #d37200 transparent transparent transparent;
+}
+
+header .banner.hpi {
+    background: url(banner-hpi-2016.png) no-repeat center top;
+    background-size: contain;
+}
+
+header .bg-overlay-gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dd630d+0,f6a803+100 */
+    background: #dd630d; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #dd630d 0%, #f6a803 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #dd630d 0%,#f6a803 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #dd630d 0%,#f6a803 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd630d', endColorstr='#f6a803',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:10;
+    top:0px;
+    left:0px;
+    opacity:0.9;
+}
+
+header .logo {
+    background: url(logo-2016.png) no-repeat center center;
+    background-size: contain;
+}
+
+footer {
+    background: #b00137;
+}
+
+nav#main-nav.fixed {
+    background: #dd630d;
+}

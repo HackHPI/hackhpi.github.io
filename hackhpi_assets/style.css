@@ -20,7 +20,7 @@ body {
 	background:#eaeaea;
 }
 
-.text-orange {
+.text-colored {
 	color:#318737;
 }
 
@@ -249,11 +249,6 @@ header .logo {
 	display:block;
 }
 
-header .logo#hhpi2017 {
-	background:url(logo2017.png) no-repeat center center;
-	background-size: contain;
-}
-
 header #countdown {
 	float:left;
 	font-size:80px;
@@ -286,7 +281,7 @@ header .container {
 }
 
 header .bg-overlay-gradient {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#61a236+0,f6a803+100 */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a8148+0,82b823+100 */
 	background: #0a8148; /* Old browsers */
 	background: -moz-linear-gradient(45deg, #0a8148 0%, #82b823 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(45deg, #0a8148 0%,#82b823 100%); /* Chrome10-25,Safari5.1-6 */

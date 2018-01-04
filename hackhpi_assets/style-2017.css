@@ -1,4 +1,44 @@
+.text-colored {
+    color: #318737;
+}
+
+a {
+    color: #61a236;
+}
+
+header {
+    background: #61a236;
+}
+
+header.triangle:after {
+    border-color: #318737 transparent transparent transparent;
+}
+
+header .bg-overlay-gradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a8148+0,82b823+100 */
+    background: #0a8148; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #0a8148 0%, #82b823 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #0a8148 0%,#82b823 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #0a8148 0%,#82b823 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a8148', endColorstr='#82b823',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width:100%;
+    height:100%;
+    position:absolute;
+    z-index:10;
+    top:0px;
+    left:0px;
+    opacity:0.9;
+}
+
 header .logo {
     background:url(logo-2017.png) no-repeat center center;
     background-size: contain;
+}
+
+footer {
+    background: #0a8153;
+}
+
+nav#main-nav.fixed {
+    background: #318737;
 }

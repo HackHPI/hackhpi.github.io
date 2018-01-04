@@ -249,6 +249,11 @@ header .logo {
 	display:block;
 }
 
+header .logo#hhpi2017 {
+	background:url(logo2017.png) no-repeat center center;
+	background-size: contain;
+}
+
 header #countdown {
 	float:left;
 	font-size:80px;

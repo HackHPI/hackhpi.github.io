@@ -21,7 +21,7 @@ body {
 }
 
 .text-colored {
-	color:rgb(117, 173, 225);
+	color:#0081cb;
 }
 
 h1 {
@@ -67,7 +67,7 @@ h5 {
 }
 
 a {
-	color:rgb(117, 173, 225);
+	color:#00b0ff;
 	text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ a:hover {
 }
 
 header.triangle:after {
-	border-color: rgb(75, 134, 199) transparent transparent transparent;
+	border-color: #0081cb transparent transparent transparent;
 }
 
 
@@ -130,7 +130,7 @@ nav#main-nav {
 }
 
 nav#main-nav.fixed {
-	background:rgb(24, 103, 189);
+	background:#0081cb;
 	position:fixed;
 	top:0px;
 }
@@ -206,7 +206,7 @@ nav#main-nav .container ul li a.live:before {
 
 header {
 	color:#fff;
-	background:rgb(117, 173, 225);
+	background:#0081cb;
 	position: relative;
 }
 
@@ -282,10 +282,10 @@ header .container {
 
 header .bg-overlay-gradient {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a8148+0,82b823+100 */
-	background: rgb(24, 103, 189); /* Old browsers */
-	background: -moz-linear-gradient(45deg, rgb(24, 103, 189) 0%, rgb(117, 173, 225) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, rgb(24, 103, 189) 0%, rgb(117, 173, 225) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(45deg, rgb(24, 103, 189) 0%, rgb(117, 173, 225) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #0081cb; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #0081cb 0%, #00b0ff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #0081cb 0%, #00b0ff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #0081cb 0%, #00b0ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a8148', endColorstr='#82b823',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	width:100%;
 	height:100%;
@@ -485,7 +485,7 @@ section .row > div > * + *,
 
 .btn {
 	padding:0px 25px 0px 25px;
-	background:rgb(117, 173, 225);
+	background:#0081cb;
 	color:#fff;
 	font-size:18px;
 	border-radius:4px;
@@ -535,7 +535,7 @@ section .row > div > * + *,
 }
 
 footer {
-	background: rgb(24, 103, 189);
+	background: #0081cb;
 	color:#fff;
 	padding:50px 0px;
 	font-size:18px;
@@ -553,10 +553,6 @@ footer ul {
 	float:left;
 	list-style-type: none;
 	padding:0px;
-}
-
-footer ul li {
-	
 }
 
 footer ul li a:hover {

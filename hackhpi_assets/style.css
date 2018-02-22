@@ -484,7 +484,14 @@ section .row > div > * + *,
 	width:100%;
 }
 
+.tba {
+	margin-top: 0px !important;
+	margin-bottom: 60px;
+}
 
+.tba span {
+	font-weight: bold;
+}
 
 .btn {
 	padding:0px 25px 0px 25px;

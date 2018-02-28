@@ -433,17 +433,16 @@ section .row > div > * + *,
 }
 
 #sponsors img {
-	height:250px;
-	width:auto;
+	width: auto;
 	margin-top:0px !important;
 }
 
 #sponsors .sponsors-mega img {
-	height:150px;
+	height: 150px !important;
 }
 
 #sponsors .sponsors-kilo img {
-	height:70px;
+	height: 70px !important;
 }
 
 #sponsors .sponsor {

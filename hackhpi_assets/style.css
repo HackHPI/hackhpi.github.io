@@ -613,4 +613,10 @@ footer .logo {
 
 }
 
-
+#applyNowButton {
+	width: fit-content;
+	margin-top: 40px;
+	float: none;
+	background: #eaeaea;
+	color: #0081cb;
+}

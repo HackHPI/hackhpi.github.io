@@ -427,9 +427,13 @@ section .row > div > * + *,
 	display:inline-block;
 }
 
-#sponsors .sponsors-giga > div a, #sponsors .sponsors-mega > div a, #sponsors .sponsors-kilo > div a {
-	display:inline-block;
-	margin:0px 30px;
+#sponsors .sponsors-giga > div a, #sponsors .sponsors-mega > div a {
+	display: inline-block;
+	margin: 0 30px;
+}
+
+#sponsors .sponsors-kilo > div a {
+	display: inline-block;
 }
 
 #sponsors img {

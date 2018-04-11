@@ -316,7 +316,7 @@ section > .container {
 	position: relative;
 }
 
-section#location > .container {
+section#intro > .container, section#location > .container {
 	display: table;
 }
 

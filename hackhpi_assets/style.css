@@ -316,7 +316,7 @@ section > .container {
 	position: relative;
 }
 
-section#location > .container {
+section#intro > .container, section#location > .container {
 	display: table;
 }
 
@@ -621,6 +621,5 @@ footer .logo {
 	width: fit-content;
 	margin-top: 40px;
 	float: none;
-	background: #eaeaea;
-	color: #0081cb;
+	background: #ff8a00;
 }

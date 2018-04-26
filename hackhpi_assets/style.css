@@ -367,6 +367,10 @@ section table thead {
 	padding-top:40px;
 }
 
+.sponsor-information > div > img {
+	max-height: 200px;
+}
+
 section .row + .row,
 section .row > div > * + *,
 .location-card p + p {
@@ -444,6 +448,10 @@ section .row > div > * + *,
 #sponsors img {
 	width: auto;
 	margin-top:0px !important;
+}
+
+#sponsors .sponsors-giga img {
+	height: 150px !important;
 }
 
 #sponsors .sponsors-mega img {

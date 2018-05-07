@@ -628,3 +628,7 @@ footer .logo {
 	float: none;
 	background: #ff8a00;
 }
+
+.accent-color {
+	color: #ff8a00;
+}

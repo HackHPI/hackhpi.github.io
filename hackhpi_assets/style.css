@@ -451,7 +451,7 @@ section .row > div > * + *,
 }
 
 #sponsors .sponsors-giga img {
-	height: 150px !important;
+	max-height: 150px !important;
 }
 
 #sponsors .sponsors-mega img {

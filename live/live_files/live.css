@@ -1,6 +1,6 @@
 body {
 	color: #fff;
-	background: #0a8153;
+	background: #0081cb;
 }
 
 .bg-live {
@@ -16,11 +16,11 @@ body {
 }
 
 .time-machine {
-	background: #0a8148; /* Old browsers */
-	background: -moz-linear-gradient(45deg, #0a8148 0%, #82b823 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #0a8148 0%,#82b823 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(45deg, #0a8148 0%,#82b823 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a8148', endColorstr='#82b823',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background: #0081cb; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #0081cb 0%, #00b0ff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #0081cb 0%,#00b0ff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #0081cb 0%,#00b0ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0081cb', endColorstr='#00b0ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	box-shadow: inset 0px -3px 3px rgba(0,0,0,0.2);
 }
 
@@ -62,11 +62,11 @@ h1 .live:before {
 }
 
 h2 {
-	color: #0a8153;
+	color: #00b0ff;
 }
 
 h3 {
-	color: #318737;
+	color: #00b0ff;
 }
 
 h3 + * {
@@ -83,7 +83,7 @@ table td {
 }
 
 table tr.active td {
-	background: #0a8153;
+	background: #0081cb;
 }
 
 table tr td.ft-table-col-first {

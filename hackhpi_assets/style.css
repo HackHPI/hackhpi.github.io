@@ -408,6 +408,7 @@ section .row > div > * + *,
 	position: absolute;
 	top:0px;
 	left:0px;
+	overflow: hidden;
 }
 
 .location-map iframe {

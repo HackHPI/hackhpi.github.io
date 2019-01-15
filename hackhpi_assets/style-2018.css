@@ -21,7 +21,7 @@ body {
 }
 
 .text-colored {
-	color:#318737;
+	color:#0081CB;
 }
 
 h1 {
@@ -67,7 +67,7 @@ h5 {
 }
 
 a {
-	color:#82B823;
+	color:#00B0FF;
 	text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ a:hover {
 }
 
 header.triangle:after {
-	border-color: #318737 transparent transparent transparent;
+	border-color: #0081CB transparent transparent transparent;
 }
 
 
@@ -130,7 +130,7 @@ nav#main-nav {
 }
 
 nav#main-nav.fixed {
-	background:#318737;
+	background:#0081CB;
 	position:fixed;
 	top:0px;
 }
@@ -206,7 +206,7 @@ nav#main-nav .container ul li a.live:before {
 
 header {
 	color:#fff;
-	background:#318737;
+	background:#0081CB;
 	position: relative;
 }
 
@@ -244,7 +244,7 @@ header .logo {
 	margin-bottom:10px;
 	margin-top:80px;
 	margin-bottom:100px;
-	background:url(logo-2017.png) no-repeat center center;
+	background:url(logo-2018.png) no-repeat center center;
 	background-size: contain;
 	display:block;
 }
@@ -282,10 +282,10 @@ header .container {
 
 header .bg-overlay-gradient {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0a8148+0,82b823+100 */
-	background: #318737; /* Old browsers */
-	background: -moz-linear-gradient(45deg, #318737 0%, #82B823 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(45deg, #318737 0%, #82B823 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(45deg, #318737 0%, #82B823 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	background: #0081CB; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #0081CB 0%, #00B0FF 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #0081CB 0%, #00B0FF 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #0081CB 0%, #00B0FF 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a8148', endColorstr='#82b823',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	width:100%;
 	height:100%;
@@ -505,7 +505,7 @@ section .row > div > * + *,
 
 .btn {
 	padding:0px 25px 0px 25px;
-	background:#318737;
+	background:#0081CB;
 	color:#fff;
 	font-size:18px;
 	border-radius:4px;
@@ -555,7 +555,7 @@ section .row > div > * + *,
 }
 
 footer {
-	background: #318737;
+	background: #0081CB;
 	color:#fff;
 	padding:50px 0px;
 	font-size:18px;

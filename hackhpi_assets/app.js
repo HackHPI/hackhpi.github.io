@@ -27,7 +27,7 @@ $(document).ready(function(){
         $target = $(target);
 
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top+2
+            'scrollTop': $target.offset().top
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
@@ -56,7 +56,7 @@ $(document).ready(function(){
 		    	$mainNav.stop().animate({
 					'top':(-1) * mainNavHeight
 				}, 150, 'swing', function() {
-					$mainNav.removeClass('fixed').css('top', 50);
+					$mainNav.removeClass('fixed').css('top', 0);
 					running = 0;
 				});
 			}
@@ -66,8 +66,8 @@ $(document).ready(function(){
 	    $mainNavLinks.each(function () {
 	        var currLink = $(this);
 	        var refElement = $('#' + currLink.data("target"));
-
-	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+			
+	        if (refElement.position().top <= scrollPos + 1 && refElement.position().top + refElement.height() > scrollPos + 1) {
 	            $mainNavLinks.removeClass("active");
 	            currLink.addClass("active");
 	        } else {

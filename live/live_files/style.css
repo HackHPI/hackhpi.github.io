@@ -124,7 +124,7 @@ section.bg-grey.triangle:after {
 nav#main-nav {
 	width:100%;
 	position:absolute;
-	top:50px;
+	top:0px;
 	left:0px;
 	z-index:200;
 }
@@ -136,7 +136,7 @@ nav#main-nav.fixed {
 }
 
 nav#main-nav .container {
-	padding:25px 140px;
+	padding:0px 140px;
 }
 
 nav#main-nav .container ul {

@@ -1,0 +1,50 @@
+---
+import FacebookIcon from './socials/facebook.astro';
+import MailIcon from './socials/mail.astro';
+import TwitterIcon from './socials/twitter.astro';
+
+const socials = [
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/HackHPI',
+    icon: FacebookIcon,
+  },
+  {
+    name: 'Twitter',
+    href: 'https://twitter.com/HackHPI',
+    icon: TwitterIcon,
+  },
+  {
+    name: 'Mail',
+    href: 'mailto:team@hackhpi.org',
+    icon: MailIcon,
+  },
+];
+---
+
+<footer class="mt-auto bg-gray-800">
+  <div
+    class="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+  >
+    <div class="flex justify-center space-x-6 md:order-2">
+      {
+        socials.map((it) => (
+          <a
+            href={it.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-gray-400 hover:text-gray-300"
+          >
+            <span class="sr-only">{it.name}</span>
+            <it.icon />
+          </a>
+        ))
+      }
+    </div>
+    <div class="mt-8 md:order-1 md:mt-0">
+      <p class="text-center text-base text-gray-400">
+        &copy; 2022 HackHPI. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

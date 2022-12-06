@@ -1,23 +1,21 @@
 ---
-import FacebookIcon from '../assets/svg/FacebookIcon.astro';
-import MailIcon from '../assets/svg/MailIcon.astro';
-import TwitterIcon from '../assets/svg/TwitterIcon.astro';
+import { Icon } from 'astro-icon';
 
 const socials = [
   {
     name: 'Facebook',
     href: 'https://www.facebook.com/HackHPI',
-    icon: FacebookIcon,
+    icon: 'ic:baseline-facebook',
   },
   {
     name: 'Twitter',
     href: 'https://twitter.com/HackHPI',
-    icon: TwitterIcon,
+    icon: 'mdi:twitter',
   },
   {
     name: 'Mail',
     href: 'mailto:team@hackhpi.org',
-    icon: MailIcon,
+    icon: 'mdi:email',
   },
 ];
 ---
@@ -36,7 +34,7 @@ const socials = [
             class="text-gray-400 hover:text-gray-300"
           >
             <span class="sr-only">{it.name}</span>
-            <it.icon />
+            <Icon name={it.icon} class="h-6 w-6" />
           </a>
         ))
       }

@@ -7,6 +7,9 @@ module.exports = {
         hero: "url('/hero.jpg')",
       },
       colors: {
+        hackhpi: {
+          purple: '#5454ab',
+        },
         hpi: {
           blue: '#007a9e',
           gray: '#5a6065',

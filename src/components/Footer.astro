@@ -20,29 +20,109 @@ const socials = [
 ];
 ---
 
-<footer class="mt-auto bg-gray-800">
-  <div
-    class="mx-auto max-w-7xl py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
-  >
-    <div class="flex justify-center space-x-6 md:order-2">
-      {
-        socials.map((it) => (
-          <a
-            href={it.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-gray-400 hover:text-gray-300"
-          >
-            <span class="sr-only">{it.name}</span>
-            <Icon name={it.icon} class="h-6 w-6" />
-          </a>
-        ))
-      }
+<footer class="bg-gray-800">
+  <div class="mx-auto max-w-7xl px-6 py-12 lg:px-8">
+    <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+      <img class="h-32" src="/HackHPI_white.svg" alt="" />
+      <div class="mt-8 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold leading-6 text-white">HPI</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a
+                  href="https://hpi.de"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-sm leading-6 text-gray-300 hover:text-white"
+                  >Website</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://hpi.de/en/media/overview.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-sm leading-6 text-gray-300 hover:text-white"
+                  >Public Relations</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-sm font-semibold leading-6 text-white">HackHPI</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a
+                  href="https://hackhpi.org"
+                  class="text-sm leading-6 text-gray-300 hover:text-white"
+                >
+                  Website
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+          <div>
+            <h3 class="text-sm font-semibold leading-6 text-white">Legal</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm leading-6 text-gray-300 hover:text-white"
+                  >Imprint</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-sm leading-6 text-gray-300 hover:text-white"
+                  >Data Privacy</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="mt-10 md:mt-0">
+            <h3 class="text-sm font-semibold leading-6 text-white">More</h3>
+            <ul role="list" class="mt-6 space-y-4">
+              <li>
+                <a
+                  href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-sm leading-6 text-gray-300 hover:text-white"
+                  >Code of Conduct</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="mt-8 md:order-1 md:mt-0">
-      <p class="text-center text-base text-gray-400">
-        &copy; 2022 HackHPI. All rights reserved.
-      </p>
+    <div
+      class="mt-8 border-t border-white/10 pt-8 md:flex md:items-center md:justify-between"
+    >
+      <div class="flex justify-center space-x-6 md:order-2">
+        {
+          socials.map((it) => (
+            <a
+              href={it.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-gray-400 hover:text-gray-300"
+            >
+              <span class="sr-only">{it.name}</span>
+              <Icon name={it.icon} class="h-6 w-6" />
+            </a>
+          ))
+        }
+      </div>
+      <div class="mt-8 md:order-1 md:mt-0">
+        <p class="text-center text-base text-gray-400">
+          &copy; 2022 HackHPI. All rights reserved.
+        </p>
+      </div>
     </div>
   </div>
 </footer>

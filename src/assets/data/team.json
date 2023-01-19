@@ -1,37 +1,38 @@
 [
   {
-    "name": "Firstname Lastname",
-    "role": "Role",
-    "image": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+    "name": "An Nguyen",
+    "image": "/img/an_nguyen.jpg"
   },
   {
-    "name": "Firstname Lastname",
-    "role": "Role",
-    "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+    "name": "Benedikt Helfrich",
+    "image": "/img/benedikt_helfrich.jpg"
   },
   {
-    "name": "Firstname Lastname",
-    "role": "Role",
-    "image": "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+    "name": "Benjamin Frost",
+    "image": "/img/benjamin_frost.jpg"
   },
   {
-    "name": "Firstname Lastname",
-    "role": "Role",
-    "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+    "name": "Hendrik Wölert",
+    "image": "/img/hendrik_wölert.jpg"
   },
   {
-    "name": "Firstname Lastname",
-    "role": "Role",
-    "image": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+    "name": "Leon Hermann",
+    "image": "/img/leon_hermann.jpg"
   },
   {
-    "name": "Firstname Lastname",
-    "role": "Role",
-    "image": "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+    "name": "Mathilda Heise",
+    "image": "/img/mathilda_heise.jpg"
   },
   {
-    "name": "Firstname Lastname",
-    "role": "Role",
-    "image": "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80"
+    "name": "Nikolas Rieger",
+    "image": "/img/nikolas_rieger.jpg"
+  },
+  {
+    "name": "Theo Klinke",
+    "image": "/img/theo_klinke.jpg"
+  },
+  {
+    "name": "Tom Schneider",
+    "image": "/img/tom_schneider.jpg"
   }
 ]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "An Nguyen",
+    "image": "/img/an_nguyen.jpg"
+  },
+  {
+    "name": "Benedikt Helfrich",
+    "image": "/img/benedikt_helfrich.jpg"
+  },
+  {
+    "name": "Benjamin Frost",
+    "image": "/img/benjamin_frost.jpg"
+  },
+  {
+    "name": "Hendrik Wölert",
+    "image": "/img/hendrik_wölert.jpg"
+  },
+  {
+    "name": "Leon Hermann",
+    "image": "/img/leon_hermann.jpg"
+  },
+  {
+    "name": "Mathilda Heise",
+    "image": "/img/mathilda_heise.jpg"
+  },
+  {
+    "name": "Nikolas Rieger",
+    "image": "/img/nikolas_rieger.jpg"
+  },
+  {
+    "name": "Theo Klinke",
+    "image": "/img/theo_klinke.jpg"
+  },
+  {
+    "name": "Tom Schneider",
+    "image": "/img/tom_schneider.jpg"
+  }
+]

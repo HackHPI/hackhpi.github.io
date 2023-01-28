@@ -1,5 +1,9 @@
 [
   {
+    "name": "Alexander Probst",
+    "image": "/img/alexander_probst.jpg"
+  },
+  {
     "name": "An Nguyen",
     "image": "/img/an_nguyen.jpg"
   },
@@ -22,6 +26,10 @@
   {
     "name": "Mathilda Heise",
     "image": "/img/mathilda_heise.jpg"
+  },
+  {
+    "name": "Matti Schmidt",
+    "image": "/img/matti_schmidt.jpg"
   },
   {
     "name": "Nikolas Rieger",

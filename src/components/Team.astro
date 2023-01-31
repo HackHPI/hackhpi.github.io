@@ -19,16 +19,21 @@ import team from '../assets/data/team.json';
           team.map((it) => (
             <li>
               <div class="space-y-4">
-                <img
-                  class="mx-auto h-20 w-20 rounded-full lg:h-24 lg:w-24"
-                  src={it.image}
-                  alt=""
-                />
-                <div class="space-y-2">
-                  <div class="text-xs font-medium lg:text-sm">
-                    <h3>{it.name}</h3>
-                    <p class="text-hackhpi-purple">{it.role}</p>
-                  </div>
+                {it.image ? (
+                  <img
+                    class="mx-auto h-20 w-20 rounded-full lg:h-24 lg:w-24"
+                    src={it.image}
+                    alt=""
+                  />
+                ) : (
+                  <img
+                    class="mx-auto h-20 w-20 rounded-full lg:h-24 lg:w-24"
+                    src="/img/placeholder.jpg"
+                    alt=""
+                  />
+                )}
+                <div class="text-xs font-medium lg:text-sm">
+                  <h3>{it.name}</h3>
                 </div>
               </div>
             </li>

@@ -16,6 +16,10 @@
     "image": "/img/benjamin_frost.jpg"
   },
   {
+    "name": "Helena Lendowski",
+    "image": "/img/helena_lendowski.jpg"
+  },
+  {
     "name": "Hendrik Wölert",
     "image": "/img/hendrik_wölert.jpg"
   },
@@ -36,7 +40,8 @@
     "image": "/img/nikolas_rieger.jpg"
   },
   {
-    "name": "Sebastian Wagner"
+    "name": "Sebastian Wagner",
+    "image": "/img/sebastian_wagner.jpg"
   },
   {
     "name": "Theo Klinke",

@@ -20,7 +20,7 @@ const images = (await Astro.glob('../assets/images/event/*.jpg').then((files) =>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mx-auto">
       {
         images.map((image) => (
-          <Image src={image} width="640" height="360" alt="HackHPI 2023" />
+          <Image src={image} width="1280" height="720" alt="HackHPI 2023" />
         ))
       }
     </div>

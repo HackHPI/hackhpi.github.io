@@ -1,0 +1,28 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+
+const images = (await Astro.glob('../assets/images/event/*.jpg').then((files) =>
+  files.map((file) => file.default)
+)) as ImageMetadata[];
+---
+
+<Layout>
+  <div class="container mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+    <div class="space-y-2 text-center mb-8">
+      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+        HackHPI 2023
+      </h2>
+      <p class="text-xl text-gray-500">
+        about://building-trust-in-digital-state
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mx-auto">
+      {
+        images.map((image) => (
+          <Image src={image} width="640" height="360" alt="HackHPI 2023" />
+        ))
+      }
+    </div>
+  </div>
+</Layout>

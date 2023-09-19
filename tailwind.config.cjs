@@ -9,7 +9,7 @@ module.exports = {
       },
       colors: {
         hackhpi: {
-          purple: '#5454ab',
+          primary: '#2332A6',
         },
         hpi: {
           blue: '#007a9e',

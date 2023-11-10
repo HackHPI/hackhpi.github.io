@@ -1,9 +1,5 @@
 [
   {
-    "name": "Alexander Probst",
-    "image": "/img/team/alexander_probst.jpg"
-  },
-  {
     "name": "An Nguyen",
     "image": "/img/team/an_nguyen.jpg"
   },
@@ -16,12 +12,8 @@
     "image": "/img/team/benjamin_frost.jpg"
   },
   {
-    "name": "Helena Lendowski",
-    "image": "/img/team/helena_lendowski.jpg"
-  },
-  {
-    "name": "Hendrik Wölert",
-    "image": "/img/team/hendrik_wölert.jpg"
+    "name": "Cedric Rische",
+    "image": "/img/team/cedric_rische.jpg"
   },
   {
     "name": "Leon Hermann",
@@ -40,15 +32,11 @@
     "image": "/img/team/nikolas_rieger.jpg"
   },
   {
-    "name": "Sebastian Wagner",
-    "image": "/img/team/sebastian_wagner.jpg"
+    "name": "Tanja Lehmann",
+    "image": "/img/team/tanja_lehmann.jpg"
   },
   {
     "name": "Theo Klinke",
     "image": "/img/team/theo_klinke.jpg"
-  },
-  {
-    "name": "Tom Schneider",
-    "image": "/img/team/tom_schneider.jpg"
   }
 ]

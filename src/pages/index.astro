@@ -5,9 +5,11 @@ import Hero from "../components/Hero.astro";
 import Newsletter from "../components/Newsletter.astro";
 import Team from "../components/Team.astro";
 import Layout from "../layouts/Layout.astro";
+import LandingImage from "../components/LandingImage/LandingImage";
 ---
 
 <Layout>
+  <LandingImage client:load/>
   <Hero />
   <About />
   <hr class="mx-auto max-w-5xl" />

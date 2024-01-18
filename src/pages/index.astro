@@ -6,10 +6,15 @@ import Newsletter from "../components/Newsletter.astro";
 import Team from "../components/Team.astro";
 import Layout from "../layouts/Layout.astro";
 import LandingImage from "../components/LandingImage/LandingImage";
+import WhatToExpect from "../components/WhatToExpect/WhatToExpect";
+import HackHPIWrapper from "../components/Theme/HackHPIWrapper";
+import {ThemeProvider} from "@mui/material";
+import lightTheme from "../components/Theme/lightTheme";
+import ReactMain from "../components/ReactMain/ReactMain";
 ---
 
 <Layout>
-  <LandingImage client:load/>
+  <ReactMain client:load/>
   <Hero />
   <About />
   <hr class="mx-auto max-w-5xl" />

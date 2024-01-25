@@ -58,7 +58,8 @@ function Speakers() {
                                         backgroundSize: "cover",
                                         backgroundColor: "#e0e0e0",
                                         aspectRatio: "1 / 1 !important",
-                                        height: "17rem",
+                                        height: "auto",
+                                        maxWidth: "100%"
                                     }}
                                     />
                                 </Grid>

@@ -139,11 +139,9 @@ function Team() {
                                 <Typography>{teamMember.name}</Typography>
                                 <Typography color={"text.disabled"}>{teamMember.position}</Typography>
                                 <Stack direction={"row"} spacing={1} pt={2}>
-                                    {teamMember.mail ? <Link href={"mailto:" + teamMember.mail}><Mail
-                                        color={"secondary"}/></Link> : null}
+                                    {teamMember.mail ? <Link href={"mailto:" + teamMember.mail} color={"inherit"}><Mail/></Link> : null}
                                     {teamMember.linkedIn ?
-                                        <Link href={"https://linkedin.com/in/" + teamMember.linkedIn} target={"_blank"}><LinkedIn
-                                            color={"secondary"}/></Link> : null}
+                                        <Link href={"https://linkedin.com/in/" + teamMember.linkedIn} target={"_blank"} color={"inherit"}><LinkedIn/></Link> : null}
                                 </Stack>
                             </Card>
                         </Grid>

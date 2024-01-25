@@ -1,11 +1,11 @@
 import {CssBaseline, ThemeProvider} from "@mui/material";
-import lightTheme from "./lightTheme.js";
+import hackHpiTheme from "./HackHpiTheme.js";
 
 
 function HackHPIWrapper(props) {
 
     return (
-        <ThemeProvider theme={lightTheme}>
+        <ThemeProvider theme={hackHpiTheme}>
             <CssBaseline/>
             {props.children}
         </ThemeProvider>

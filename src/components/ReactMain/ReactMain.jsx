@@ -13,9 +13,8 @@ function ReactMain() {
             <LandingImage/>
             <WhatToExpect/>
             <Newsletter/>
-            <Faq/>
             <TimeTable/>
-            <Speakers/>
+            <Faq/>
             <Team/>
         </HackHPIWrapper>
     )

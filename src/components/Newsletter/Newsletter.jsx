@@ -4,7 +4,7 @@ function Newsletter() {
 
     return (
         <Box sx={{paddingTop: 15, paddingBottom: 15}}>
-            <Container>
+            <Container maxWidth={"xl"}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6} sx={{display: "flex", alignItems: "center"}}>
                         <iframe

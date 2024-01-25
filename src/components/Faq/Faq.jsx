@@ -45,11 +45,11 @@ export function Faq() {
         setSelectedIndex(index);
     };
     return (
-        <Container sx={{pt: 5, pb: 5}}>
+        <Container sx={{pt: 5, pb: 5}} maxWidth={"xl"}>
             <Typography variant={"h1"} gutterBottom>FAQ</Typography>
-            <Grid container>
+            <Grid container spacing={7}>
                 <Grid item xs={4}>
-                    <Card sx={{width: '100%', maxWidth: 360, bgcolor: 'background.paper'}}>
+                    <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
                         <List component="nav" aria-label="main mailbox folders">
                             {
                                 faqs.map((faq, idx) => (
@@ -64,7 +64,7 @@ export function Faq() {
                                                 fontSize={"large"}
                                                 color={selectedIndex === idx ? "secondary" : undefined}/>
                                         </ListItemIcon>
-                                        <Typography sx={{fontSize: "1.5rem"}}>{faq.name}</Typography>
+                                        <Typography sx={{fontSize: "1.5rem"}} noWrap>{faq.name}</Typography>
                                     </ListItemButton>
                                 ))
                             }
@@ -80,6 +80,7 @@ export function Faq() {
                                         aria-controls={faq.title+"-content"}
                                         id={faq.title+"-header"}
                                         sx={{fontSize: "1.5rem"}}
+                                        noWrap
                                     >
                                         {faq.title}
                                     </AccordionSummary>

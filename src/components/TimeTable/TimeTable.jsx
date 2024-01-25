@@ -61,17 +61,18 @@ export function TimeTable() {
     )
 
     return (
-        <Container>
-        <Grid container spacing={5}>
-            <Grid item md={6} xs={12}>
-                {timetable}
-            </Grid>
-            <Grid item md={6} xs={12}>
-                {timetable}
+        <Container maxWidth={"xl"}>
+            <Typography variant={"h1"} gutterBottom>Time Table</Typography>
+            <Grid container spacing={5}>
+                <Grid item md={6} xs={12}>
+                    {timetable}
+                </Grid>
+                <Grid item md={6} xs={12}>
+                    {timetable}
+
+                </Grid>
 
             </Grid>
-
-        </Grid>
         </Container>
     )
 }

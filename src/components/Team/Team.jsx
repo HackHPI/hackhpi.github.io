@@ -8,7 +8,7 @@ import BenjaminFrostProfile from "../../assets/images/team/benjamin_frost.jpg"
 import NikolasRiegerProfile from "../../assets/images/team/nikolas_rieger.jpg"
 import TanjaLehmannProfile from "../../assets/images/team/tanja_lehmann.jpg"
 import TheoKlinkeProfile from "../../assets/images/team/theo_klinke.jpg"
-import {Avatar, Card, Container, Grid, Link, Stack, Typography} from "@mui/material";
+import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useTheme} from "@mui/material";
 import {LinkedIn, Mail} from "@mui/icons-material";
 
 
@@ -23,64 +23,56 @@ const teamMembers = [
     {
         name: "Benedikt Helfrich",
         position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
+        linkedIn: "benedikt-helfrich",
         profilePicture: BenediktHelfrichProfile
     },
     {
         name: "Benjamin Frost",
         position: "Team Member",
         mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
+        linkedIn: "benjaminfrost99",
         profilePicture: BenjaminFrostProfile
     },
     {
         name: "Cedric Rische",
         position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
+        mail: "cedric.rische@student.hpi.de",
+        linkedIn: "cedric-rische",
         profilePicture: CedricRischeProfile
     },
     {
         name: "Leon Hermann",
         position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
+        linkedIn: "leon-hermann-976733228",
         profilePicture: LeonHermannProfile
     },
     {
         name: "Mathilda Heise",
         position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
+        linkedIn: "mathilda-heise-9203a3258",
         profilePicture: MathildaHeiseProfile
     },
     {
         name: "Matti Schmidt",
         position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
+        linkedIn: "matti-schmidt-ac",
         profilePicture: MattiSchmidtProfile
     },
     {
         name: "Nikolas Rieger",
         position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
         profilePicture: NikolasRiegerProfile
     },
     {
         name: "Tanja Lehmann",
         position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
+        linkedIn: "tanja-lehmann-36713a265",
         profilePicture: TanjaLehmannProfile
     },
     {
         name: "Theo Klinke",
         position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
+        linkedIn: "theo-klinke",
         profilePicture: TheoKlinkeProfile
     },
 
@@ -117,9 +109,12 @@ function stringAvatar(name) {
     };
 }
 
+const imageSize="9rem"
+
 function Team() {
+    const theme = useTheme()
     return (
-        <Container sx={{paddingBottom: 10}}>
+        <Container sx={{paddingBottom: 10}} maxWidth={"xl"}>
             <Typography variant={"h1"} gutterBottom>Meet the team</Typography>
             <Grid container spacing={3}>
                 {teamMembers.map(teamMember => {
@@ -127,21 +122,40 @@ function Team() {
                     const avatarPrep = stringAvatar(teamMember.name);
                     return (
                         <Grid item xs={12} md={3} key={teamMember.name}>
-                            <Card elevation={5} sx={{padding: 3}}>
-                                <Avatar src={teamMember.profilePicture.src} sx={{
-                                    height: "5rem",
-                                    width: "5rem",
-                                    mb: 2,
-                                    ...avatarPrep.sx
-                                }}>
-                                    {avatarPrep.children}
-                                </Avatar>
-                                <Typography>{teamMember.name}</Typography>
+                            <Card elevation={5} sx={{padding: 2, mt: "calc("+imageSize+" / 2)", overflow: "inherit"}}>
+                                <Box sx={{position: "relative"}}>
+                                    <Box sx={{
+                                        position: "absolute",
+                                        transform: "translate(0%,calc(-"+imageSize+" / 2 - " + theme.spacing(2) + "))",
+                                        width: "100%",
+                                        height: "auto",
+                                        pr: 1,
+                                        display: "flex",
+                                        justifyContent: "center",
+                                    }}
+                                    >
+                                        <Avatar src={teamMember.profilePicture.src} sx={{
+                                            height: imageSize,
+                                            width: imageSize,
+                                            boxShadow: 7,
+                                            mb: 2,
+                                            ...avatarPrep.sx
+                                        }}
+                                        >
+                                            {avatarPrep.children}
+                                        </Avatar>
+                                    </Box>
+
+                                </Box>
+
+                                <Typography pt={"calc( "+imageSize+" / 2)"}>{teamMember.name}</Typography>
                                 <Typography color={"text.disabled"}>{teamMember.position}</Typography>
                                 <Stack direction={"row"} spacing={1} pt={2}>
-                                    {teamMember.mail ? <Link href={"mailto:" + teamMember.mail} color={"inherit"}><Mail/></Link> : null}
+                                    {teamMember.mail ? <Link href={"mailto:" + teamMember.mail}
+                                                             color={"inherit"}><Mail/></Link> : null}
                                     {teamMember.linkedIn ?
-                                        <Link href={"https://linkedin.com/in/" + teamMember.linkedIn} target={"_blank"} color={"inherit"}><LinkedIn/></Link> : null}
+                                        <Link href={"https://linkedin.com/in/" + teamMember.linkedIn} target={"_blank"}
+                                              color={"inherit"}><LinkedIn/></Link> : null}
                                 </Stack>
                             </Card>
                         </Grid>

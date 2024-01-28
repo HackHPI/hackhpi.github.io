@@ -1,4 +1,4 @@
-import {Box, Card, CardContent, Stack} from "@mui/material";
+import {Box, Card, Stack} from "@mui/material";
 
 export function WindowCard(props) {
 
@@ -33,7 +33,9 @@ export function WindowCard(props) {
                     }}></Box>
                 </Stack>
             </Box>
+            <Box p={3}>
                 {props.children}
+            </Box>
         </Card>
     )
 

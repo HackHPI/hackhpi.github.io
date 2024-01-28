@@ -6,6 +6,7 @@ import Team from "../Team/Team.jsx";
 import Speakers from "../Speakers/Speakers.jsx";
 import {Faq} from "../Faq/Faq.jsx";
 import {TimeTable} from "../TimeTable/TimeTable.jsx";
+import {Gallery} from "../Gallery/Gallery.jsx";
 
 function ReactMain() {
     return(
@@ -14,6 +15,7 @@ function ReactMain() {
             <WhatToExpect/>
             <Newsletter/>
             <TimeTable/>
+            <Gallery/>
             <Faq/>
             <Team/>
         </HackHPIWrapper>

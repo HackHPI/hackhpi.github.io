@@ -6,13 +6,13 @@ import Countdown from "./Countdown.jsx";
 
 function LandingImage() {
     return (
-        <Paper sx={{
-            height: "75vh",
+        <Box sx={{
+            height: "100vh",
             width: "100%",
             position: "relative",
-            borderRadius: "0 0 30px 30px",
+            //borderRadius: "0 0 30px 30px",
         }}
-               elevation={20}
+               //elevation={20}
         >
             <video autoPlay muted loop style={{
                 width: "100%",
@@ -20,7 +20,7 @@ function LandingImage() {
                 position: "absolute",
                 objectFit: "cover",
                 zIndex: 0,
-                borderRadius: "0 0 30px 30px"
+                //borderRadius: "0 0 30px 30px"
             }}>
                 <source src={Video}
                         type="video/mp4"/>
@@ -31,7 +31,7 @@ function LandingImage() {
                 padding: "10px",
                 background: "rgba(0,0,0,.7)",
                 height: "100%",
-                borderRadius: "0 0 30px 30px"
+                //borderRadius: "0 0 30px 30px"
             }}>
                 <Container sx={{height: "100%", width: "100%"}} maxWidth={false}>
                     <Box sx={{
@@ -80,7 +80,7 @@ function LandingImage() {
                     </Box>
                 </Container>
             </div>
-        </Paper>
+        </Box>
     )
 }
 

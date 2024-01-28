@@ -27,7 +27,6 @@ function WhatToExpect() {
                 <Grid item xs={12} md={4} sx={{display: "flex", justifyContent: "center"}}>
                     <Box sx={{width: "100%"}}>
                         <WindowCard>
-                            <Box sx={{p: 3}}>
                                 <iframe
                                     src="https://player.vimeo.com/video/867922224?h=30cf0b8b55&title=0&byline=0&portrait=0"
                                     style={{aspectRatio: "16 / 9", borderRadius: "5px", width: "100%"}}
@@ -35,7 +34,6 @@ function WhatToExpect() {
                                     allowFullScreen
                                     title={"Image Movie"}
                                 />
-                            </Box>
                         </WindowCard>
 
                     </Box>

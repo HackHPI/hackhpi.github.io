@@ -121,7 +121,7 @@ function Team() {
 
                     const avatarPrep = stringAvatar(teamMember.name);
                     return (
-                        <Grid item xs={12} md={3} key={teamMember.name}>
+                        <Grid item xs={6} md={3} key={teamMember.name}>
                             <Card elevation={5} sx={{padding: 2, mt: "calc("+imageSize+" / 2)", overflow: "inherit"}}>
                                 <Box sx={{position: "relative"}}>
                                     <Box sx={{

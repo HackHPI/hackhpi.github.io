@@ -6,6 +6,7 @@ const textColor = [245, 245, 245]
 
 const hackHpiTheme = createTheme(theme, {
     palette: {
+        mode: "dark",
         primary: theme.palette.augmentColor({
             color: {
                 main: "#3A0CA3",
@@ -27,7 +28,7 @@ const hackHpiTheme = createTheme(theme, {
         divider: `rgba(${textColor[0]},${textColor[1]},${textColor[2]}, .12)`,
         background: {
             default: "#13101B",
-            paper: "#191721",
+            paper: "#13101B",
         },
         action: {
             active: "#fff",

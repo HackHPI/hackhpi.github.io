@@ -1,17 +1,7 @@
-import {
-    Accordion,
-    AccordionDetails,
-    AccordionSummary,
-    Card,
-    Container,
-    Grid,
-    List,
-    ListItemButton,
-    ListItemIcon,
-    ListItemText, Typography
-} from "@mui/material";
+import {Card, Container, Grid, List, ListItemButton, ListItemIcon, Typography} from "@mui/material";
 import React from "react";
-import {ExpandMore, KeyboardArrowRight} from "@mui/icons-material";
+import {KeyboardArrowRight} from "@mui/icons-material";
+import {WindowCard} from "../WindowCard/WindowCard.jsx";
 
 let faqs = [
     {
@@ -20,7 +10,22 @@ let faqs = [
             {
                 title: "Lorem 1",
                 text: "Some Text"
-            }
+            }, {
+                title: "Lorem 1",
+                text: "Some Text"
+            }, {
+                title: "Lorem 1",
+                text: "Some Text"
+            }, {
+                title: "Lorem 1",
+                text: "Some Text"
+            }, {
+                title: "Lorem 1",
+                text: "Some Text"
+            }, {
+                title: "Lorem 1",
+                text: "Some Text"
+            },
         ]
     },
     {
@@ -36,7 +41,7 @@ let faqs = [
 
 
 export function Faq() {
-    const [selectedIndex, setSelectedIndex] = React.useState(1);
+    const [selectedIndex, setSelectedIndex] = React.useState(0);
 
     const handleListItemClick = (
         event,
@@ -48,7 +53,7 @@ export function Faq() {
         <Container sx={{pt: 5, pb: 5}} maxWidth={"xl"}>
             <Typography variant={"h1"} gutterBottom>FAQ</Typography>
             <Grid container spacing={7}>
-                <Grid item xs={4}>
+                <Grid item xs={12} md={4}>
                     <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
                         <List component="nav" aria-label="main mailbox folders">
                             {
@@ -71,10 +76,22 @@ export function Faq() {
                         </List>
                     </Card>
                 </Grid>
-                <Grid item xs={8}>
-                    {
-                        faqs[selectedIndex].items.map(faq => (
-                                <Accordion key={faq.title} >
+                <Grid item xs={12} md={8}>
+                    <Grid container spacing={3}>
+
+                        {
+                            faqs[selectedIndex].items.map(faq => (
+                                    <Grid item xs={12} md={6}>
+                                        <WindowCard>
+                                            <Typography gutterBottom variant={"h6"}>{faq.title}</Typography>
+                                            <Typography>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                                                malesuada lacus ex, sit amet blandit leo lobortis eget.
+                                            </Typography>
+                                        </WindowCard>
+
+                                        {/*
+                            <Accordion key={faq.title} >
                                     <AccordionSummary
                                         expandIcon={<ExpandMore fontSize={"large"}/>}
                                         aria-controls={faq.title+"-content"}
@@ -89,10 +106,14 @@ export function Faq() {
                                         malesuada lacus ex, sit amet blandit leo lobortis eget.
                                     </AccordionDetails>
                                 </Accordion>
+                                */}
+                                    </Grid>
+                                )
                             )
-                        )
 
-                    }
+                        }
+                    </Grid>
+
                 </Grid>
             </Grid>
         </Container>

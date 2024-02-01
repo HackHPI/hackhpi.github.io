@@ -7,7 +7,7 @@ import Countdown from "./Countdown.jsx";
 function LandingImage() {
     return (
         <Box sx={{
-            height: "100vh",
+            height: "75vh",
             width: "100%",
             position: "relative",
             //borderRadius: "0 0 30px 30px",

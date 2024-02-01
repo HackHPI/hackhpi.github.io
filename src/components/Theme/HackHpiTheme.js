@@ -15,7 +15,7 @@ const hackHpiTheme = createTheme(theme, {
         }),
         secondary: theme.palette.augmentColor({
             color: {
-                main: "#4CC9F0",
+                main: "#B1063A",
             },
             name: "primary"
         }),
@@ -54,7 +54,7 @@ const hackHpiTheme = createTheme(theme, {
         }
     },
     typography: {
-        fontFamily: 'Urbanist, Arial',
+        fontFamily: 'Roboto Mono, Urbanist, Arial !important',
         h1: {
             lineHeight: "5.5rem",
             fontSize: "7rem"

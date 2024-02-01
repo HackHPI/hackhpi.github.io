@@ -12,59 +12,59 @@ import {
 } from "@mui/material";
 import React from "react";
 import {ExpandMore, KeyboardArrowRight} from "@mui/icons-material";
-import DSC02572 from '../../assets/images/event/DSC02572.webp'
-import DSC02594 from '../../assets/images/event/DSC02594.webp'
-import DSC02601 from '../../assets/images/event/DSC02601.webp'
-import DSC02604 from '../../assets/images/event/DSC02604.webp'
-import DSC02609 from '../../assets/images/event/DSC02609.webp'
-import DSC02617 from '../../assets/images/event/DSC02617.webp'
-import DSC02619 from '../../assets/images/event/DSC02619.webp'
-import DSC02630 from '../../assets/images/event/DSC02630.webp'
-import DSC02632 from '../../assets/images/event/DSC02632.webp'
-import DSC02635 from '../../assets/images/event/DSC02635.webp'
-import DSC02638 from '../../assets/images/event/DSC02638.webp'
-import DSC02639 from '../../assets/images/event/DSC02639.webp'
-import DSC02643 from '../../assets/images/event/DSC02643.webp'
-import DSC02645 from '../../assets/images/event/DSC02645.webp'
-import DSC02646 from '../../assets/images/event/DSC02646.webp'
-import DSC02659 from '../../assets/images/event/DSC02659.webp'
-import DSC02677 from '../../assets/images/event/DSC02677.webp'
-import DSC02680 from '../../assets/images/event/DSC02680.webp'
-import DSC02762 from '../../assets/images/event/DSC02762.webp'
-import DSC02810 from '../../assets/images/event/DSC02810.webp'
-import DSC02820 from '../../assets/images/event/DSC02820.webp'
-import DSC02823 from '../../assets/images/event/DSC02823.webp'
-import DSC02824 from '../../assets/images/event/DSC02824.webp'
-import DSC02830 from '../../assets/images/event/DSC02830.webp'
-import DSC02868 from '../../assets/images/event/DSC02868.webp'
-import DSC02870 from '../../assets/images/event/DSC02870.webp'
-import DSC02872 from '../../assets/images/event/DSC02872.webp'
-import DSC02876 from '../../assets/images/event/DSC02876.webp'
-import DSC02879 from '../../assets/images/event/DSC02879.webp'
-import DSC02886 from '../../assets/images/event/DSC02886.webp'
-import DSC02889 from '../../assets/images/event/DSC02889.webp'
-import DSC02903 from '../../assets/images/event/DSC02903.webp'
-import DSC02908 from '../../assets/images/event/DSC02908.webp'
-import DSC02914 from '../../assets/images/event/DSC02914.webp'
-import DSC02919 from '../../assets/images/event/DSC02919.webp'
-import DSC02920 from '../../assets/images/event/DSC02920.webp'
-import DSC02923 from '../../assets/images/event/DSC02923.webp'
-import DSC02926 from '../../assets/images/event/DSC02926.webp'
-import DSC02928 from '../../assets/images/event/DSC02928.webp'
-import DSC02931 from '../../assets/images/event/DSC02931.webp'
-import DSC02941 from '../../assets/images/event/DSC02941.webp'
-import DSC02946 from '../../assets/images/event/DSC02946.webp'
-import DSC02949 from '../../assets/images/event/DSC02949.webp'
-import DSC02957 from '../../assets/images/event/DSC02957.webp'
-import DSC02962 from '../../assets/images/event/DSC02962.webp'
-import DSC02969 from '../../assets/images/event/DSC02969.webp'
-import DSC02974 from '../../assets/images/event/DSC02974.webp'
-import DSC02983 from '../../assets/images/event/DSC02983.webp'
-import DSC02992 from '../../assets/images/event/DSC02992.webp'
-import DSC02998 from '../../assets/images/event/DSC02998.webp'
-import DSC03006 from '../../assets/images/event/DSC03006.webp'
-import DSC03022 from '../../assets/images/event/DSC03022.webp'
-import DSC03032 from '../../assets/images/event/DSC03032.webp'
+import DSC02572 from '../../assets/images/event/DSC02572_1920.webp'
+import DSC02594 from '../../assets/images/event/DSC02594_1920.webp'
+import DSC02601 from '../../assets/images/event/DSC02601_1920.webp'
+import DSC02604 from '../../assets/images/event/DSC02604_1920.webp'
+import DSC02609 from '../../assets/images/event/DSC02609_1920.webp'
+import DSC02617 from '../../assets/images/event/DSC02617_1920.webp'
+import DSC02619 from '../../assets/images/event/DSC02619_1920.webp'
+import DSC02630 from '../../assets/images/event/DSC02630_1920.webp'
+import DSC02632 from '../../assets/images/event/DSC02632_1920.webp'
+import DSC02635 from '../../assets/images/event/DSC02635_1920.webp'
+import DSC02638 from '../../assets/images/event/DSC02638_1920.webp'
+import DSC02639 from '../../assets/images/event/DSC02639_1920.webp'
+import DSC02643 from '../../assets/images/event/DSC02643_1920.webp'
+import DSC02645 from '../../assets/images/event/DSC02645_1920.webp'
+import DSC02646 from '../../assets/images/event/DSC02646_1920.webp'
+import DSC02659 from '../../assets/images/event/DSC02659_1920.webp'
+import DSC02677 from '../../assets/images/event/DSC02677_1920.webp'
+import DSC02680 from '../../assets/images/event/DSC02680_1920.webp'
+import DSC02762 from '../../assets/images/event/DSC02762_1920.webp'
+import DSC02810 from '../../assets/images/event/DSC02810_1920.webp'
+import DSC02820 from '../../assets/images/event/DSC02820_1920.webp'
+import DSC02823 from '../../assets/images/event/DSC02823_1920.webp'
+import DSC02824 from '../../assets/images/event/DSC02824_1920.webp'
+import DSC02830 from '../../assets/images/event/DSC02830_1920.webp'
+import DSC02868 from '../../assets/images/event/DSC02868_1920.webp'
+import DSC02870 from '../../assets/images/event/DSC02870_1920.webp'
+import DSC02872 from '../../assets/images/event/DSC02872_1920.webp'
+import DSC02876 from '../../assets/images/event/DSC02876_1920.webp'
+import DSC02879 from '../../assets/images/event/DSC02879_1920.webp'
+import DSC02886 from '../../assets/images/event/DSC02886_1920.webp'
+import DSC02889 from '../../assets/images/event/DSC02889_1920.webp'
+import DSC02903 from '../../assets/images/event/DSC02903_1920.webp'
+import DSC02908 from '../../assets/images/event/DSC02908_1920.webp'
+import DSC02914 from '../../assets/images/event/DSC02914_1920.webp'
+import DSC02919 from '../../assets/images/event/DSC02919_1920.webp'
+import DSC02920 from '../../assets/images/event/DSC02920_1920.webp'
+import DSC02923 from '../../assets/images/event/DSC02923_1920.webp'
+import DSC02926 from '../../assets/images/event/DSC02926_1920.webp'
+import DSC02928 from '../../assets/images/event/DSC02928_1920.webp'
+import DSC02931 from '../../assets/images/event/DSC02931_1920.webp'
+import DSC02941 from '../../assets/images/event/DSC02941_1920.webp'
+import DSC02946 from '../../assets/images/event/DSC02946_1920.webp'
+import DSC02949 from '../../assets/images/event/DSC02949_1920.webp'
+import DSC02957 from '../../assets/images/event/DSC02957_1920.webp'
+import DSC02962 from '../../assets/images/event/DSC02962_1920.webp'
+import DSC02969 from '../../assets/images/event/DSC02969_1920.webp'
+import DSC02974 from '../../assets/images/event/DSC02974_1920.webp'
+import DSC02983 from '../../assets/images/event/DSC02983_1920.webp'
+import DSC02992 from '../../assets/images/event/DSC02992_1920.webp'
+import DSC02998 from '../../assets/images/event/DSC02998_1920.webp'
+import DSC03006 from '../../assets/images/event/DSC03006_1920.webp'
+import DSC03022 from '../../assets/images/event/DSC03022_1920.webp'
+import DSC03032 from '../../assets/images/event/DSC03032_1920.webp'
 
 
 /*
@@ -180,7 +180,7 @@ export function Gallery() {
         <Container sx={{pt: 5, pb: 5}} maxWidth={"xl"}>
             <Typography variant={"h1"} gutterBottom>Gallery</Typography>
             <Grid container spacing={7} alignItems="center">
-                <Grid item xs={12} md={4}>
+                {/*<Grid item xs={12} md={4}>
                     <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
                         <List component="nav" aria-label="main mailbox folders">
                             {
@@ -202,8 +202,8 @@ export function Gallery() {
                             }
                         </List>
                     </Card>
-                </Grid>
-                <Grid item xs={12} md={8}>
+                </Grid> */}
+                <Grid item xs={12} md={12}>
                     <Box sx={{maxHeight: "30rem", overflowY: "scroll"}}>
                     <ImageList variant="masonry" cols={3} gap={8}>
                         {faqs[selectedIndex].items.map((item) => (

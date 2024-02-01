@@ -14,37 +14,11 @@ import {LinkedIn, Mail} from "@mui/icons-material";
 
 const teamMembers = [
     {
-        name: "An Nguyen",
-        position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "?",
-        profilePicture: AnNguyedProfile
-    },
-    {
-        name: "Benedikt Helfrich",
-        position: "Team Member",
-        linkedIn: "benedikt-helfrich",
-        profilePicture: BenediktHelfrichProfile
-    },
-    {
-        name: "Benjamin Frost",
-        position: "Team Member",
-        mail: "an.nguyen@student.hpi.de",
-        linkedIn: "benjaminfrost99",
-        profilePicture: BenjaminFrostProfile
-    },
-    {
         name: "Cedric Rische",
         position: "Team Member",
         mail: "cedric.rische@student.hpi.de",
         linkedIn: "cedric-rische",
         profilePicture: CedricRischeProfile
-    },
-    {
-        name: "Leon Hermann",
-        position: "Team Member",
-        linkedIn: "leon-hermann-976733228",
-        profilePicture: LeonHermannProfile
     },
     {
         name: "Mathilda Heise",
@@ -54,14 +28,15 @@ const teamMembers = [
     },
     {
         name: "Matti Schmidt",
-        position: "Team Member",
+        position: "Professioneller Gitarrenspieler",
         linkedIn: "matti-schmidt-ac",
         profilePicture: MattiSchmidtProfile
     },
     {
         name: "Nikolas Rieger",
         position: "Team Member",
-        profilePicture: NikolasRiegerProfile
+        profilePicture: NikolasRiegerProfile,
+        linkedIn: "nikolas-rieger"
     },
     {
         name: "Tanja Lehmann",

@@ -8,7 +8,7 @@ function WhatToExpect() {
             <Grid container spacing={6} alignItems={"center"}>
                 <Grid item xs={12} md={8}>
                     <Typography variant={"h1"} gutterBottom>
-                        What To expect
+                        What to expect
                     </Typography>
                     <Typography gutterBottom>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam rhoncus, scelerisque

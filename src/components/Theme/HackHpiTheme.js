@@ -54,10 +54,28 @@ const hackHpiTheme = createTheme(theme, {
         }
     },
     typography: {
-        fontFamily: 'Roboto Mono, Urbanist, Arial !important',
+
+        fontFamily: 'Roboto Mono, Urbanist, Arial',
         h1: {
+            fontFamily: 'Roboto Mono, Urbanist, Arial',
+
             lineHeight: "5.5rem",
             fontSize: "7rem"
+        },
+        h2:{
+            fontFamily: 'Roboto Mono, Urbanist, Arial',
+        },
+        h3:{
+            fontFamily: 'Roboto Mono, Urbanist, Arial',
+        },
+        h4:{
+            fontFamily: 'Roboto Mono, Urbanist, Arial',
+        },
+        h5:{
+            fontFamily: 'Roboto Mono, Urbanist, Arial',
+        },
+        body1:{
+            fontFamily: 'Roboto Mono, Urbanist, Arial',
         }
     }
 });

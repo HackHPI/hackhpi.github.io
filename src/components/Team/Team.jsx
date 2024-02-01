@@ -5,6 +5,7 @@ import NikolasRiegerProfile from "../../assets/images/team_new/nikolas_rieger.we
 import TanjaLehmannProfile from "../../assets/images/team_new/tanja_lehmann.webp"
 import TheoKlinkeProfile from "../../assets/images/team_new/theo_klinke.webp"
 import ViktorKalvodaProfile from "../../assets/images/team_new/viktor_kalvoda.webp"
+import GeromeQuantmeyerProfile from "../../assets/images/team_new/gerome_quantmeyer.webp"
 import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useTheme} from "@mui/material";
 import {LinkedIn, Mail} from "@mui/icons-material";
 
@@ -46,11 +47,16 @@ const teamMembers = [
         position: "Team Member",
         linkedIn: "theo-klinke",
         profilePicture: TheoKlinkeProfile
-    },,
+    },
     {
         name: "Viktor Kalvoda",
         position: "Team Member",
         profilePicture: ViktorKalvodaProfile
+    },
+    {
+        name: "Gerome Quantmeyer",
+        position: "Team Member",
+        profilePicture: GeromeQuantmeyerProfile
     },
 
 

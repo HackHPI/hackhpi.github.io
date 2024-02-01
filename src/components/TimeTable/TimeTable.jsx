@@ -6,7 +6,7 @@ export function TimeTable() {
         <Card>
             <Box sx={{
                 height: "5rem",
-                backgroundColor: "primary.main",
+                background: "linear-gradient(150deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
                 display: "flex",
                 alignItems: "center",
                 pl: 3

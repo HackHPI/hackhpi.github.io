@@ -1,13 +1,10 @@
-import AnNguyedProfile from "../../assets/images/team/an_nguyen.jpg"
-import BenediktHelfrichProfile from "../../assets/images/team/benedikt_helfrich.jpg"
-import CedricRischeProfile from "../../assets/images/team/cedric_rische.jpg"
-import LeonHermannProfile from "../../assets/images/team/leon_hermann.jpg"
-import MathildaHeiseProfile from "../../assets/images/team/mathilda_heise.jpg"
-import MattiSchmidtProfile from "../../assets/images/team/matti_schmidt.jpg"
-import BenjaminFrostProfile from "../../assets/images/team/benjamin_frost.jpg"
-import NikolasRiegerProfile from "../../assets/images/team/nikolas_rieger.jpg"
-import TanjaLehmannProfile from "../../assets/images/team/tanja_lehmann.jpg"
-import TheoKlinkeProfile from "../../assets/images/team/theo_klinke.jpg"
+import CedricRischeProfile from "../../assets/images/team_new/cedric_rische.webp"
+import MathildaHeiseProfile from "../../assets/images/team_new/mathilda_heise.webp"
+import MattiSchmidtProfile from "../../assets/images/team_new/matti_schmidt.webp"
+import NikolasRiegerProfile from "../../assets/images/team_new/nikolas_rieger.webp"
+import TanjaLehmannProfile from "../../assets/images/team_new/tanja_lehmann.webp"
+import TheoKlinkeProfile from "../../assets/images/team_new/theo_klinke.webp"
+import ViktorKalvodaProfile from "../../assets/images/team_new/viktor_kalvoda.webp"
 import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useTheme} from "@mui/material";
 import {LinkedIn, Mail} from "@mui/icons-material";
 
@@ -49,6 +46,11 @@ const teamMembers = [
         position: "Team Member",
         linkedIn: "theo-klinke",
         profilePicture: TheoKlinkeProfile
+    },,
+    {
+        name: "Viktor Kalvoda",
+        position: "Team Member",
+        profilePicture: ViktorKalvodaProfile
     },
 
 
@@ -84,7 +86,7 @@ function stringAvatar(name) {
     };
 }
 
-const imageSize="9rem"
+const imageSize = "9rem"
 
 function Team() {
     const theme = useTheme()
@@ -97,11 +99,12 @@ function Team() {
                     const avatarPrep = stringAvatar(teamMember.name);
                     return (
                         <Grid item xs={6} md={3} key={teamMember.name}>
-                            <Card elevation={5} sx={{padding: 2, mt: "calc("+imageSize+" / 2)", overflow: "inherit"}}>
+                            <Card elevation={5}
+                                  sx={{padding: 2, mt: "calc(" + imageSize + " / 2)", overflow: "inherit"}}>
                                 <Box sx={{position: "relative"}}>
                                     <Box sx={{
                                         position: "absolute",
-                                        transform: "translate(0%,calc(-"+imageSize+" / 2 - " + theme.spacing(2) + "))",
+                                        transform: "translate(0%,calc(-" + imageSize + " / 2 - " + theme.spacing(2) + "))",
                                         width: "100%",
                                         height: "auto",
                                         pr: 1,
@@ -123,7 +126,7 @@ function Team() {
 
                                 </Box>
 
-                                <Typography pt={"calc( "+imageSize+" / 2)"}>{teamMember.name}</Typography>
+                                <Typography pt={"calc( " + imageSize + " / 2)"}>{teamMember.name}</Typography>
                                 <Typography color={"text.disabled"}>{teamMember.position}</Typography>
                                 <Stack direction={"row"} spacing={1} pt={2}>
                                     {teamMember.mail ? <Link href={"mailto:" + teamMember.mail}

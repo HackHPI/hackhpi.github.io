@@ -1,17 +1,5 @@
-import {
-    Accordion,
-    AccordionDetails,
-    AccordionSummary, Box,
-    Card,
-    Container,
-    Grid, ImageList, ImageListItem,
-    List,
-    ListItemButton,
-    ListItemIcon,
-    ListItemText, Typography
-} from "@mui/material";
+import {Box, Container, Grid, ImageList, ImageListItem, Typography} from "@mui/material";
 import React from "react";
-import {ExpandMore, KeyboardArrowRight} from "@mui/icons-material";
 import DSC02572 from '../../assets/images/event/DSC02572_1920.webp'
 import DSC02594 from '../../assets/images/event/DSC02594_1920.webp'
 import DSC02601 from '../../assets/images/event/DSC02601_1920.webp'
@@ -205,18 +193,18 @@ export function Gallery() {
                 </Grid> */}
                 <Grid item xs={12} md={12}>
                     <Box sx={{maxHeight: "30rem", overflowY: "scroll"}}>
-                    <ImageList variant="masonry" cols={3} gap={8}>
-                        {faqs[selectedIndex].items.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                    srcSet={`${item.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                    src={`${item.src}?w=248&fit=crop&auto=format`}
-                                    alt={item.title}
-                                    loading="lazy"
-                                />
-                            </ImageListItem>
-                        ))}
-                    </ImageList>
+                        <ImageList variant="masonry" cols={3} gap={8}>
+                            {faqs[selectedIndex].items.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                        srcSet={`${item.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                        src={`${item.src}?w=248&fit=crop&auto=format`}
+                                        alt={item.title}
+                                        loading="lazy"
+                                    />
+                                </ImageListItem>
+                            ))}
+                        </ImageList>
                     </Box>
                 </Grid>
             </Grid>

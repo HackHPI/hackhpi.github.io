@@ -18,8 +18,9 @@ function Newsletter() {
                         ></iframe>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <Typography variant={"h1"}
-                                    gutterBottom
+                        <Typography
+                            variant={"h2"}
+                            gutterBottom
                         >
                             Want to stay in the loop?
                         </Typography>

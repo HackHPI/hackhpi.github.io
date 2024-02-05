@@ -7,6 +7,7 @@ import {Faq} from "../Faq/Faq.jsx";
 import {TimeTable} from "../TimeTable/TimeTable.jsx";
 import {Gallery} from "../Gallery/Gallery.jsx";
 import Sponsors from "../Sponsors/Sponsors.jsx";
+import Registration from "../Registration/Registration.jsx";
 
 
 function ReactMain() {
@@ -14,6 +15,7 @@ function ReactMain() {
         <HackHPIWrapper>
             <LandingImage2/>
             <WhatToExpect/>
+            <Registration/>
             <Sponsors/>
             <Newsletter/>
             <TimeTable/>

@@ -1,6 +1,18 @@
-import {Card, Container, Grid, IconButton, Link, Stack, Typography} from "@mui/material";
+import {
+    Card,
+    Container,
+    Divider,
+    Grid,
+    IconButton,
+    Link,
+    Stack,
+    Typography,
+    useMediaQuery,
+    useTheme
+} from "@mui/material";
 import {Facebook, GitHub, Instagram, LinkedIn, Mail, Twitter} from "@mui/icons-material";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
+import HackHpiLogo from "../../assets/svg/HackHPI_white.svg"
 
 const socials = [
     {
@@ -32,22 +44,73 @@ const socials = [
 
 function Footer() {
 
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up('sm'));
+
+
     return (
         <HackHPIWrapper>
             <Card sx={{
-                height: "5rem",
+                height: "17rem",
                 display: "flex",
-                alignItems: "center",
+                alignItems: "end",
                 borderBottomRightRadius: 0,
-                borderBottomLeftRadius: 0
+                borderBottomLeftRadius: 0,
+                pb: 3,
+                pt: 3
             }} elevation={10}>
                 <Container maxWidth={"xl"}>
+                    <Grid container spacing={2}>
+                        <Grid item xs={3} sx={{display: matches ? undefined: "none"}}>
+                            <img src={HackHpiLogo.src} style={{height: "5rem", width: "auto"}} alt={"Logo of HPI"}/>
+                        </Grid>
+                        <Grid item xs>
+                            <Typography variant={"h5"} gutterBottom>HPI</Typography>
+                            <Typography>
+                                <Link sx={{textDecoration: "none", color: "inherit"}} href={"https://hpi.de/"}>
+                                    Website
+                                </Link>
+                            </Typography>
+                            <Typography>
+                                <Link sx={{textDecoration: "none", color: "inherit"}}
+                                      href={"https://hpi.de/en/media/overview.html"}>
+                                    Public Relations
+                                </Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item xs>
+                            <Typography variant={"h5"} gutterBottom>Legal</Typography>
+                            <Typography>
+                                <Link sx={{textDecoration: "none", color: "inherit"}}
+                                      href={"https://hackhpi.org/imprint"}>
+                                    Imprint
+                                </Link>
+                            </Typography>
+                            <Typography>
+                                <Link sx={{textDecoration: "none", color: "inherit"}}
+                                      href={"https://hackhpi.org/privacy"}>
+                                    Data Privacy
+                                </Link>
+                            </Typography>
+                        </Grid>
+                        <Grid item xs>
+                            <Typography variant={"h5"} gutterBottom>More</Typography>
+
+                            <Typography>
+                                <Link sx={{textDecoration: "none", color: "inherit"}}
+                                      href={"https://static.mlh.io/docs/mlh-code-of-conduct.pdf"}>
+                                    Code of Conduct
+                                </Link>
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Divider sx={{mb: 3, mt: 3}}/>
                     <Grid container>
-                        <Grid item xs={6} display={"flex"} alignItems={"center"}>
+                        <Grid item xs={12} md={6} display={"flex"} alignItems={"center"}>
                             <Typography color={"text.disabled"}>© {new Date().getFullYear()} HackHPI. All rights
                                 reserved.</Typography>
                         </Grid>
-                        <Grid item xs={6} display={"flex"} justifyContent={"end"}>
+                        <Grid item xs={12} md={6} display={"flex"} justifyContent={"end"}>
                             <Stack direction={"row"}>
                                 {socials.map((social) => (
                                     <IconButton

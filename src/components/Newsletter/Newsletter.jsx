@@ -33,7 +33,7 @@ function Newsletter() {
                             this form, you acknowledge that the information you provided will be
                             transferred to Brevo for processing in accordance with their <Link
                             target="_blank"
-                            href="https://www.brevo.com/legal/termsofuse" color={"primary"}>terms of use</Link
+                            href="https://www.brevo.com/legal/termsofuse" color={"inherit"}>terms of use</Link
                         >.
                         </Typography>
                     </Grid>

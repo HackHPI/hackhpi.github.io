@@ -6,6 +6,7 @@ import TanjaLehmannProfile from "../../assets/images/team_new/tanja_lehmann.webp
 import TheoKlinkeProfile from "../../assets/images/team_new/theo_klinke.webp"
 import ViktorKalvodaProfile from "../../assets/images/team_new/viktor_kalvoda.webp"
 import GeromeQuantmeyerProfile from "../../assets/images/team_new/gerome_quantmeyer.webp"
+import UliPrantzProfile from "../../assets/images/team_new/uli_prantz.webp"
 import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useTheme} from "@mui/material";
 import {LinkedIn, Mail} from "@mui/icons-material";
 
@@ -22,6 +23,7 @@ const teamMembers = [
         name: "Mathilda Heise",
         position: "Team Member",
         linkedIn: "mathilda-heise-9203a3258",
+        mail: "mathilda.heise@student.hpi.de",
         profilePicture: MathildaHeiseProfile
     },
     {
@@ -51,12 +53,21 @@ const teamMembers = [
     {
         name: "Viktor Kalvoda",
         position: "Team Member",
-        profilePicture: ViktorKalvodaProfile
+        profilePicture: ViktorKalvodaProfile,
+        linkedIn: "viktor-kalvoda-3ab0b62a2",
+        mail: "viktor.kalvoda@student.hpi.de"
     },
     {
         name: "Gerome Quantmeyer",
         position: "Team Member",
-        profilePicture: GeromeQuantmeyerProfile
+        profilePicture: GeromeQuantmeyerProfile,
+        linkedIn: "gerome-quantmeyer-44a90322b"
+    },
+    {
+        name: "Uli Prantz",
+        position: "Team Member",
+        profilePicture: UliPrantzProfile,
+        linkedIn: "uli-prantz-100234227"
     },
 
 
@@ -97,10 +108,22 @@ const imageSize = "9rem"
 function Team() {
     const theme = useTheme()
     return (
-        <Container sx={{paddingBottom: 10}} maxWidth={"xl"}>
+        <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
             <Typography variant={"h1"} gutterBottom>Meet the team</Typography>
             <Grid container spacing={3}>
-                {teamMembers.map(teamMember => {
+                {teamMembers.sort((a, b) => {
+                    const nameA = a.name.toUpperCase(); // ignore upper and lowercase
+                    const nameB = b.name.toUpperCase(); // ignore upper and lowercase
+                    if (nameA < nameB) {
+                        return -1;
+                    }
+                    if (nameA > nameB) {
+                        return 1;
+                    }
+
+                    // names must be equal
+                    return 0;
+                }).map(teamMember => {
 
                     const avatarPrep = stringAvatar(teamMember.name);
                     return (

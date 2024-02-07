@@ -1,4 +1,4 @@
-import {Card, Container, Grid, List, ListItemButton, ListItemIcon, Typography} from "@mui/material";
+import {Card, Container, Grid, Link, List, ListItemButton, ListItemIcon, Typography} from "@mui/material";
 import React from "react";
 import {KeyboardArrowRight} from "@mui/icons-material";
 import {WindowCard} from "../WindowCard/WindowCard.jsx";
@@ -101,8 +101,11 @@ export function Faq() {
         setSelectedIndex(index);
     };
     return (
-        <Container sx={{pt: 5, pb: 5}} maxWidth={"xl"}>
-            <Typography variant={"h1"} gutterBottom>FAQ</Typography>
+        <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
+            <Typography variant={"h1"}>Frequently asked questions</Typography>
+            <Typography variant={"body1"} sx={{marginBottom: "4rem"}}>Can't find the answer you're looking for? You can
+                always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your
+                inquiry</Typography>
             <Grid container spacing={7}>
                 <Grid item xs={12} md={4}>
                     <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
@@ -133,7 +136,8 @@ export function Faq() {
                             faqs[selectedIndex].items.map(faq => (
                                     <>
                                         <WindowCard>
-                                            <Typography gutterBottom variant={"h6"}>{faq.title}</Typography>
+                                            <Typography gutterBottom variant={"h6"}
+                                                        fontWeight={"bold"}>{faq.title}</Typography>
                                             <Typography>
                                                 {faq.text}
                                             </Typography>

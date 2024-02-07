@@ -61,7 +61,7 @@ export function TimeTable() {
     )
 
     return (
-        <Container maxWidth={"xl"}>
+        <Container maxWidth={"xl"} sx={{paddingTop: 10, paddingBottom: 10}}>
             <Typography variant={"h1"} gutterBottom>Time Table</Typography>
             <Grid container spacing={5}>
                 <Grid item md={6} xs={12}>

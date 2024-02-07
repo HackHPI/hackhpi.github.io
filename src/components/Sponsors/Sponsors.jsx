@@ -9,7 +9,7 @@ function Sponsors() {
 
     return (
 
-        <Box ref={containerRef}>
+        <Box ref={containerRef} sx={{paddingTop: 10, paddingBottom: 10}}>
             <FadeInContainer containerRef={containerRef}>
                 <Container maxWidth={"xl"}>
                     <Grid container sx={{paddingTop: "5rem"}} justifyContent={"center"} spacing={10}>

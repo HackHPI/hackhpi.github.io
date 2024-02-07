@@ -165,7 +165,7 @@ export function Gallery() {
         setSelectedIndex(index);
     };
     return (
-        <Container sx={{pt: 5, pb: 5}} maxWidth={"xl"}>
+        <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
             <Typography variant={"h1"} gutterBottom>Gallery</Typography>
             <Grid container spacing={7} alignItems="center">
                 {/*<Grid item xs={12} md={4}>

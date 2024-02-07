@@ -3,7 +3,7 @@ import {Box, Container, Grid, Link, Typography} from "@mui/material";
 function Newsletter() {
 
     return (
-        <Box sx={{paddingTop: 15, paddingBottom: 15}}>
+        <Box sx={{paddingTop: 10, paddingBottom: 10}}>
             <Container maxWidth={"xl"}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6} sx={{display: "flex", alignItems: "center"}}>

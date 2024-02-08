@@ -6,7 +6,7 @@ const textfield = {
 
 function Registration() {
     return (
-        <Container sx={{ pt: 5, pb: 5 }} maxWidth={"xl"}>
+        <Container sx={{ pt: 10, pb: 10 }} maxWidth={"xl"}>
             <Typography variant={"h1"} sx={{ mb: "2rem" }}>Registration</Typography>
             <Grid container spacing={2}>
                 <Typography variant={"h3"}>Personal Data</Typography>

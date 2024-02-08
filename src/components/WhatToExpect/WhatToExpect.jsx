@@ -32,7 +32,6 @@ function WhatToExpect() {
                                 title={"Image Movie"}
                             />
                         </WindowCard>
-
                     </Box>
                 </Grid>
             </Grid>

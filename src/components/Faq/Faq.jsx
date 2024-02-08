@@ -105,7 +105,7 @@ export function Faq() {
             <Typography variant={"h1"}>Frequently asked questions</Typography>
             <Typography variant={"body1"} sx={{marginBottom: "4rem"}}>Can't find the answer you're looking for? You can
                 always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your
-                inquiry</Typography>
+                inquiry!</Typography>
             <Grid container spacing={7}>
                 <Grid item xs={12} md={4}>
                     <Card sx={{width: '100%', bgcolor: 'background.paper'}}>

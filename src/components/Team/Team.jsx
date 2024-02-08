@@ -156,7 +156,7 @@ function Team() {
                                 </Box>
 
                                 <Typography pt={"calc( " + imageSize + " / 2)"}>{teamMember.name}</Typography>
-                                <Typography color={"text.disabled"}>{teamMember.position}</Typography>
+                                {/*<Typography color={"text.disabled"}>{teamMember.position}</Typography>*/}
                                 <Stack direction={"row"} spacing={1} pt={2}>
                                     {teamMember.mail ? <Link href={"mailto:" + teamMember.mail}
                                                              color={"inherit"}><Mail/></Link> : null}

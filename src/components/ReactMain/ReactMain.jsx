@@ -15,8 +15,8 @@ function ReactMain() {
         <HackHPIWrapper>
             <LandingImage2/>
             <WhatToExpect/>
-            <Registration/>
             <Sponsors/>
+            <Registration/>
             <Newsletter/>
             <TimeTable/>
             <Gallery/>

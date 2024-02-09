@@ -1,0 +1,15 @@
+---
+import {RegistrationRest} from "../../rest/RegistrationRest"
+import Layout from "../../layouts/Layout.astro";
+import {defineConfig} from "astro/config";
+
+const {token} = Astro.props;
+
+const registrationRest = new RegistrationRest();
+
+registrationRest.verifyToken(token).then(() => Astro.redirect("/?isVerified=true"))
+---
+
+<Layout>
+
+</Layout>

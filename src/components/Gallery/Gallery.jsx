@@ -53,6 +53,7 @@ import DSC02998 from '../../assets/images/event/DSC02998_1920.webp'
 import DSC03006 from '../../assets/images/event/DSC03006_1920.webp'
 import DSC03022 from '../../assets/images/event/DSC03022_1920.webp'
 import DSC03032 from '../../assets/images/event/DSC03032_1920.webp'
+import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 
 /*
@@ -165,10 +166,11 @@ export function Gallery() {
         setSelectedIndex(index);
     };
     return (
-        <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
-            <Typography variant={"h1"} gutterBottom>Gallery</Typography>
-            <Grid container spacing={7} alignItems="center">
-                {/*<Grid item xs={12} md={4}>
+        <HackHPIWrapper>
+            <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
+                <Typography variant={"h1"} gutterBottom>Gallery</Typography>
+                <Grid container spacing={7} alignItems="center">
+                    {/*<Grid item xs={12} md={4}>
                     <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
                         <List component="nav" aria-label="main mailbox folders">
                             {
@@ -191,24 +193,25 @@ export function Gallery() {
                         </List>
                     </Card>
                 </Grid> */}
-                <Grid item xs={12} md={12}>
-                    <Box sx={{maxHeight: "30rem", overflowY: "scroll"}}>
-                        <ImageList variant="masonry" cols={3} gap={8}>
-                            {faqs[selectedIndex].items.map((item) => (
-                                <ImageListItem key={item.img}>
-                                    <img
-                                        srcSet={`${item.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                        src={`${item.src}?w=248&fit=crop&auto=format`}
-                                        alt={item.title}
-                                        loading="lazy"
-                                    />
-                                </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Box>
+                    <Grid item xs={12} md={12}>
+                        <Box sx={{maxHeight: "30rem", overflowY: "scroll"}}>
+                            <ImageList variant="masonry" cols={3} gap={8}>
+                                {faqs[selectedIndex].items.map((item) => (
+                                    <ImageListItem key={item.img}>
+                                        <img
+                                            srcSet={`${item.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                            src={`${item.src}?w=248&fit=crop&auto=format`}
+                                            alt={item.title}
+                                            loading="lazy"
+                                        />
+                                    </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Box>
+                    </Grid>
                 </Grid>
-            </Grid>
-        </Container>
+            </Container>
+        </HackHPIWrapper>
     )
 
 }

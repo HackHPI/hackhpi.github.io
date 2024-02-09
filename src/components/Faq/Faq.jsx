@@ -3,6 +3,7 @@ import React from "react";
 import {KeyboardArrowRight} from "@mui/icons-material";
 import {WindowCard} from "../WindowCard/WindowCard.jsx";
 import {Masonry} from "@mui/lab";
+import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 let faqs = [
     {
@@ -101,49 +102,51 @@ export function Faq() {
         setSelectedIndex(index);
     };
     return (
-        <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
-            <Typography variant={"h1"}>Frequently asked questions</Typography>
-            <Typography variant={"body1"} sx={{marginBottom: "4rem"}}>Can't find the answer you're looking for? You can
-                always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your
-                inquiry!</Typography>
-            <Grid container spacing={7}>
-                <Grid item xs={12} md={4}>
-                    <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
-                        <List component="nav" aria-label="main mailbox folders">
+        <HackHPIWrapper>
+            <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
+                <Typography variant={"h1"}>Frequently asked questions</Typography>
+                <Typography variant={"body1"} sx={{marginBottom: "4rem"}}>Can't find the answer you're looking for? You
+                    can
+                    always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your
+                    inquiry!</Typography>
+                <Grid container spacing={7}>
+                    <Grid item xs={12} md={4}>
+                        <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
+                            <List component="nav" aria-label="main mailbox folders">
+                                {
+                                    faqs.map((faq, idx) => (
+                                        <ListItemButton
+                                            key={faq.name}
+                                            selected={selectedIndex === idx}
+                                            onClick={(event) => handleListItemClick(event, idx)}
+                                            sx={{padding: 2}}
+                                        >
+                                            <ListItemIcon>
+                                                <KeyboardArrowRight
+                                                    fontSize={"large"}
+                                                />
+                                            </ListItemIcon>
+                                            <Typography sx={{fontSize: "1.5rem"}} noWrap>{faq.name}</Typography>
+                                        </ListItemButton>
+                                    ))
+                                }
+                            </List>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={12} md={8}>
+                        <Masonry spacing={3} columns={2}>
                             {
-                                faqs.map((faq, idx) => (
-                                    <ListItemButton
-                                        key={faq.name}
-                                        selected={selectedIndex === idx}
-                                        onClick={(event) => handleListItemClick(event, idx)}
-                                        sx={{padding: 2}}
-                                    >
-                                        <ListItemIcon>
-                                            <KeyboardArrowRight
-                                                fontSize={"large"}
-                                            />
-                                        </ListItemIcon>
-                                        <Typography sx={{fontSize: "1.5rem"}} noWrap>{faq.name}</Typography>
-                                    </ListItemButton>
-                                ))
-                            }
-                        </List>
-                    </Card>
-                </Grid>
-                <Grid item xs={12} md={8}>
-                    <Masonry spacing={3} columns={2}>
-                        {
-                            faqs[selectedIndex].items.map(faq => (
-                                    <>
-                                        <WindowCard>
-                                            <Typography gutterBottom variant={"h6"}
-                                                        fontWeight={"bold"}>{faq.title}</Typography>
-                                            <Typography>
-                                                {faq.text}
-                                            </Typography>
-                                        </WindowCard>
+                                faqs[selectedIndex].items.map(faq => (
+                                        <>
+                                            <WindowCard>
+                                                <Typography gutterBottom variant={"h6"}
+                                                            fontWeight={"bold"}>{faq.title}</Typography>
+                                                <Typography>
+                                                    {faq.text}
+                                                </Typography>
+                                            </WindowCard>
 
-                                        {/*
+                                            {/*
                             <Accordion key={faq.title} >
                                     <AccordionSummary
                                         expandIcon={<ExpandMore fontSize={"large"}/>}
@@ -160,16 +163,17 @@ export function Faq() {
                                     </AccordionDetails>
                                 </Accordion>
                                 */}
-                                    </>
+                                        </>
+                                    )
                                 )
-                            )
 
-                        }
-                    </Masonry>
+                            }
+                        </Masonry>
 
+                    </Grid>
                 </Grid>
-            </Grid>
-        </Container>
+            </Container>
+        </HackHPIWrapper>
     )
 
 }

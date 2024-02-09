@@ -1,4 +1,5 @@
 import {Avatar, Box, Card, Container, Divider, Grid, Stack, Typography} from "@mui/material";
+import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 export function TimeTable() {
 
@@ -61,18 +62,20 @@ export function TimeTable() {
     )
 
     return (
-        <Container maxWidth={"xl"} sx={{paddingTop: 10, paddingBottom: 10}}>
-            <Typography variant={"h1"} gutterBottom>Time Table</Typography>
-            <Grid container spacing={5}>
-                <Grid item md={6} xs={12}>
-                    {timetable}
-                </Grid>
-                <Grid item md={6} xs={12}>
-                    {timetable}
+        <HackHPIWrapper>
+            <Container maxWidth={"xl"} sx={{paddingTop: 10, paddingBottom: 10}}>
+                <Typography variant={"h1"} gutterBottom>Time Table</Typography>
+                <Grid container spacing={5}>
+                    <Grid item md={6} xs={12}>
+                        {timetable}
+                    </Grid>
+                    <Grid item md={6} xs={12}>
+                        {timetable}
+
+                    </Grid>
 
                 </Grid>
-
-            </Grid>
-        </Container>
+            </Container>
+        </HackHPIWrapper>
     )
 }

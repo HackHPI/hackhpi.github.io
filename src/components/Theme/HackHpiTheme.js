@@ -19,6 +19,12 @@ const hackHpiTheme = createTheme(theme, {
             },
             name: "primary"
         }),
+        success: theme.palette.augmentColor({
+            color: {
+                main: "#66bb6a",
+            },
+            name: "success"
+        }),
         text: {
             primary: `rgba(${textColor[0]},${textColor[1]},${textColor[2]}, 1)`,
             secondary: `rgba(${textColor[0]},${textColor[1]},${textColor[2]}, .7)`,

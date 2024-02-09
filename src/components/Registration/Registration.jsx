@@ -7,7 +7,8 @@ const textfield = {
     minWidth: "100%"
 }
 
-// types: 1 = text, 2 = date, 3 = select
+// types: 0 = empty, 1 = text, 2 = date, 3 = select, 4 = radio
+
 const personalData = [
     {
         formLabel: 'First Name',
@@ -49,6 +50,117 @@ const personalData = [
         input: ['e. g. gluten, ...'],
         helperText: 'Please let us know if you have severe allergies that we must know about.',
     },
+    {
+        formLabel: 'University/School/Institute',
+        type: 1,
+        input: ['e. g. University of Potsdam'],    
+    },
+    {
+        formLabel: 'Course of Study',
+        type: 1,
+        input: ['e. g. Computer Science'],    
+    },
+    {
+        formLabel: 'Intended Degree',
+        type: 3,
+        input: ['High School Diploma', 'Bachelor', 'Master', 'PhD'],
+    },
+    {
+        formLabel: '',
+        type: 0,
+    },
+]
+
+const motivation = [
+    {
+        formLabel: 'How did you hear from us?',
+        type: 4,
+        input: ['university/school/institute', 'friends/other students', 'LinkedIn', 'Instagram'],
+    },
+    {
+        formLabel: '',
+        type: 0,
+    },
+    {
+        formLabel: 'Your motivation',
+        type: 1,
+        input: ['If you can\'t think of anything, take the following questions as guidance: Can you share a project, creation, or task that holds a special place as one of your favorites? What motivated you to undertake it, and what aspects make you proud of the outcome?'],
+        helperText: 'Please write a short text (max. 150 words) or 3 key phrases describing your motivation to be part of HackHPI.',
+        rows: 5, // TODO: mehrzeiliges Textfeld
+    },
+    {
+        formLabel: '',
+        type: 0,
+    },
+]
+// TODO: maximal capacity for motivation text: 150 words
+
+const skills = [
+    {
+        formLabel: 'Tech stack???',
+        type: 0,
+    },
+    {
+        formLabel: 'Programming languages',
+        type: 1,
+        input: ['e. g. Python, ...'],
+    },
+    {
+        formLabel: 'GitHub???',
+        type: 0,
+    },
+    {
+        formLabel: '',
+        type: 0,
+    },
+    {
+        formLabel: 'Basic Outline???',
+        type: 0,
+    },
+    {
+        formLabel: 'CV???',
+        type: 0,
+    },
+    {
+        formLabel: 'LinkedIn???',
+        type: 0,
+    },
+    {
+        formLabel: '',
+        type: 0,
+    },
+]
+
+const teamMembers = [
+    {
+        formLabel: 'Team Member 1',
+        type: 1,
+        input: ['Name 1'],
+    },
+    {
+        formLabel: 'Team Member 2',
+        type: 1,
+        input: ['Name 2'],
+    },
+    {
+        formLabel: 'Team Member 3',
+        type: 1,
+        input: ['Name 3'],
+    },
+    {
+        formLabel: 'Team Member 4',
+        type: 1,
+        input: ['Name 4'],
+    },
+    {
+        formLabel: 'Team Member 5',
+        type: 1,
+        input: ['Name 5'],
+    },
+    {
+        formLabel: '',
+        type: 0,
+    },
 ]
 
 const steps = [
@@ -57,19 +169,26 @@ const steps = [
         content: personalData,
     },
     {
-        label: 'Create an ad group',
-        content: personalData,
+        label: 'Motivation',
+        content: motivation,
     },
     {
-        label: 'Create an ad',
-        content: personalData,
+        label: 'Skills',
+        content: skills,
+    },
+    {
+        label: 'Team members', // max. 5 others
+        content: teamMembers,
     },
 ];
 
 function ContentForm(props) {
     const type = props.type;
     const input = props.input;
-    if (type === 1) {
+    // const rows = props.rows;
+    if (type === 0) {
+        return null
+    } else if (type === 1) {
         return <TextField type="text" placeholder={input} />
     } else if (type === 2) {
         return <TextField type="date" />
@@ -80,6 +199,12 @@ function ContentForm(props) {
                 <MenuItem value={item}>{item}</MenuItem>
             ))}
         </Select>
+    } else if (type === 4) {
+        return <RadioGroup>
+            {input.map((item,) => (
+                <FormControlLabel value={item} control={<Radio />} label={item} />
+            ))}
+        </RadioGroup>
     }
 }
 
@@ -104,14 +229,20 @@ function Registration() {
             <Stepper activeStep={activeStep} orientation="vertical">
                 {steps.map((step, index) => (
                     <Step key={index}>
-                        <StepLabel>{step.label}</StepLabel>
+                        <StepLabel
+                            optional={
+                                index === 3 ? (
+                                  <Typography variant="caption">optional</Typography>
+                                ) : null
+                            }
+                        >{step.label}</StepLabel>
                         <StepContent>
                             <Grid container spacing={3} xs={8}>
                                 {step.content.map((item, i) => (
                                     <Grid item xs={6}>
                                         <FormControl style={textfield}>
                                             <FormLabel>{item.formLabel}</FormLabel>
-                                            <ContentForm type={item.type} input={item.input} />
+                                            <ContentForm type={item.type} input={item.input} rows={item.rows} />
                                             <FormHelperText>{item.helperText}</FormHelperText>
                                         </FormControl>
                                     </Grid>
@@ -131,151 +262,6 @@ function Registration() {
                     </Step>
                 ))}
             </Stepper>
-
-            <Grid container spacing={10}>
-            {/* <Grid item xs={6}>
-                    <Grid container spacing={3}>
-                        <Grid item xs={12}>
-                            <Typography variant={"h3"}>Personal Data</Typography>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>First Name</FormLabel>
-                                <TextField type="text" placeholder="First Name" />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>Last Name</FormLabel>
-                                <TextField type="text" placeholder="Last Name" />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>Date of birth</FormLabel>
-                                <TextField type="date" />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>Gender</FormLabel>
-                                <Select value="" displayEmpty>
-                                    <MenuItem value=""><em>None</em></MenuItem>
-                                    <MenuItem value={1}>male</MenuItem>
-                                    <MenuItem value={2}>female</MenuItem>
-                                    <MenuItem value={3}>others</MenuItem>
-                                    <MenuItem value={4}>prefer not to state</MenuItem>
-                                </Select>
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>E-mail</FormLabel>
-                                <TextField type="text" placeholder="example@example.com" />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>T-shirt size</FormLabel>
-                                <Select value="" displayEmpty>
-                                    <MenuItem value=""><em>None</em></MenuItem>
-                                    <MenuItem value={1}>XS</MenuItem>
-                                    <MenuItem value={2}>S</MenuItem>
-                                    <MenuItem value={3}>M</MenuItem>
-                                    <MenuItem value={4}>L</MenuItem>
-                                    <MenuItem value={5}>XL</MenuItem>
-                                    <MenuItem value={6}>XXL</MenuItem>
-                                </Select>
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>Diet preferences</FormLabel>
-                                <Select value="" displayEmpty>
-                                    <MenuItem value=""><em>None</em></MenuItem>
-                                    <MenuItem value={1}>omnivore</MenuItem>
-                                    <MenuItem value={2}>vegetarian</MenuItem>
-                                    <MenuItem value={3}>vegan</MenuItem>
-                                </Select>
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>Allergies</FormLabel>
-                                <TextField type="text" placeholder="e. g. gluten, ..." />
-                            </FormControl>
-                            <FormHelperText>Please let us know if you have severe allergies that we must know about.</FormHelperText>
-                        </Grid>
-                    </Grid>
-                </Grid> */}
-                <Grid item xs={6}>
-                    <Grid container spacing={3}>
-                        <Grid item xs={12}>
-                            <Typography variant={"h3"}>University</Typography>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>University/School/Institute</FormLabel>
-                                <TextField type="text" placeholder="e. g. University of Potsdam" />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>Course of study</FormLabel>
-                                <TextField type="text" placeholder="e. g. Computer Science" />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>Intended degree</FormLabel>
-                                <Select value="" displayEmpty>
-                                    <MenuItem value=""><em>None</em></MenuItem>
-                                    <MenuItem value={1}>High School Diploma</MenuItem>
-                                    <MenuItem value={2}>Bachelor</MenuItem>
-                                    <MenuItem value={3}>Master</MenuItem>
-                                    <MenuItem value={3}>PhD</MenuItem>
-                                </Select>
-                            </FormControl>
-                        </Grid>
-                    </Grid>
-                </Grid>
-                <Grid item xs={6}>
-                    <Grid container spacing={3}>
-                        <Grid item xs={12}>
-                            <Typography variant={"h3"}>Additional</Typography>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>How did you hear from us?</FormLabel>
-                                <RadioGroup>
-                                    <FormControlLabel value="linkedin" control={<Radio />} label="university/school/institution" />
-                                    <FormControlLabel value="linkedin" control={<Radio />} label="LinkedIn" />
-                                    <FormControlLabel value="instagram" control={<Radio />} label="Instagram" />
-                                    <FormControlLabel value="linkedin" control={<Radio />} label="friends/other students" />
-                                </RadioGroup>
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>Course of study</FormLabel>
-                                <TextField type="text" placeholder="e. g. Computer Science" />
-                            </FormControl>
-                        </Grid>
-                        <Grid item xs={6}>
-                            <FormControl style={textfield}>
-                                <FormLabel>Intended degree</FormLabel>
-                                <Select value="" displayEmpty>
-                                    <MenuItem value=""><em>None</em></MenuItem>
-                                    <MenuItem value={1}>High School Diploma</MenuItem>
-                                    <MenuItem value={2}>Bachelor</MenuItem>
-                                    <MenuItem value={3}>Master</MenuItem>
-                                    <MenuItem value={3}>PhD</MenuItem>
-                                </Select>
-                            </FormControl>
-                        </Grid>
-                    </Grid>
-                </Grid>
-            </Grid>
         </Container >
     )
 }

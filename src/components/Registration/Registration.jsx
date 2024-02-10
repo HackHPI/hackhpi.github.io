@@ -1,7 +1,8 @@
-import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Button, Container, Grid, Typography } from "@mui/material";
 import { Stepper, Step, StepLabel, StepContent } from "@mui/material";
 import { FormControl, FormControlLabel, FormHelperText, FormLabel, MenuItem, Radio, RadioGroup, Select, TextField } from "@mui/material";
 import * as React from 'react';
+import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 const textfield = {
     minWidth: "100%"
@@ -27,7 +28,7 @@ const personalData = [
     {
         formLabel: 'Gender',
         type: 3,
-        input: ['male', 'female', 'others', 'prefer not to state'],
+        input: ['male', 'female', 'diverse'],
     },
     {
         formLabel: 'E-mail',
@@ -53,12 +54,12 @@ const personalData = [
     {
         formLabel: 'University/School/Institute',
         type: 1,
-        input: ['e. g. University of Potsdam'],    
+        input: ['e. g. University of Potsdam'],
     },
     {
         formLabel: 'Course of Study',
         type: 1,
-        input: ['e. g. Computer Science'],    
+        input: ['e. g. Computer Science'],
     },
     {
         formLabel: 'Intended Degree',
@@ -84,8 +85,8 @@ const motivation = [
     {
         formLabel: 'Your motivation',
         type: 1,
-        input: ['If you can\'t think of anything, take the following questions as guidance: Can you share a project, creation, or task that holds a special place as one of your favorites? What motivated you to undertake it, and what aspects make you proud of the outcome?'],
-        helperText: 'Please write a short text (max. 150 words) or 3 key phrases describing your motivation to be part of HackHPI.',
+        input: ['My motivation is ...'],
+        helperText: 'Please write a short text (max. 150 words) or 3 key phrases describing your motivation to be part of HackHPI. If you can\'t think of anything, take the following questions as guidance: Can you share a project, creation, or task that holds a special place as one of your favorites? What motivated you to undertake it, and what aspects make you proud of the outcome?',
         rows: 5, // TODO: mehrzeiliges Textfeld
     },
     {
@@ -189,20 +190,20 @@ function ContentForm(props) {
     if (type === 0) {
         return null
     } else if (type === 1) {
-        return <TextField type="text" placeholder={input} />
+        return <TextField color="success" type="text" placeholder={input} />
     } else if (type === 2) {
         return <TextField type="date" />
     } else if (type === 3) {
         return <Select value="" displayEmpty>
             <MenuItem value=""><em>None</em></MenuItem>
-            {input.map((item,) => (
-                <MenuItem value={item}>{item}</MenuItem>
+            {input.map((item, i) => (
+                <MenuItem value={i}>{item}</MenuItem>
             ))}
         </Select>
     } else if (type === 4) {
         return <RadioGroup>
-            {input.map((item,) => (
-                <FormControlLabel value={item} control={<Radio />} label={item} />
+            {input.map((item, i) => (
+                <FormControlLabel value={i} control={<Radio />} label={item} />
             ))}
         </RadioGroup>
     }
@@ -224,45 +225,47 @@ function Registration() {
     };
 
     return (
-        <Container sx={{ pt: 10, pb: 10 }} maxWidth={"xl"}>
-            <Typography variant={"h1"} sx={{ mb: "2rem" }}>Registration</Typography>
-            <Stepper activeStep={activeStep} orientation="vertical">
-                {steps.map((step, index) => (
-                    <Step key={index}>
-                        <StepLabel
-                            optional={
-                                index === 3 ? (
-                                  <Typography variant="caption">optional</Typography>
-                                ) : null
-                            }
-                        >{step.label}</StepLabel>
-                        <StepContent>
-                            <Grid container spacing={3} xs={8}>
-                                {step.content.map((item, i) => (
-                                    <Grid item xs={6}>
-                                        <FormControl style={textfield}>
-                                            <FormLabel>{item.formLabel}</FormLabel>
-                                            <ContentForm type={item.type} input={item.input} rows={item.rows} />
-                                            <FormHelperText>{item.helperText}</FormHelperText>
-                                        </FormControl>
+        <HackHPIWrapper>
+            <Container sx={{ pt: 10, pb: 10 }} maxWidth={"xl"}>
+                <Typography variant={"h1"} sx={{ mb: "2rem" }}>Registration</Typography>
+                <Stepper activeStep={activeStep} orientation="vertical">
+                    {steps.map((step, index) => (
+                        <Step key={index}>
+                            <StepLabel
+                                optional={
+                                    index === 3 ? (
+                                        <Typography variant="caption">optional</Typography>
+                                    ) : null
+                                }
+                            >{step.label}</StepLabel>
+                            <StepContent>
+                                <Grid container spacing={3} xs={8}>
+                                    {step.content.map((item, i) => (
+                                        <Grid item xs={6}>
+                                            <FormControl style={textfield}>
+                                                <FormLabel>{item.formLabel}</FormLabel>
+                                                <ContentForm type={item.type} input={item.input} rows={item.rows} />
+                                                <FormHelperText>{item.helperText}</FormHelperText>
+                                            </FormControl>
+                                        </Grid>
+                                    ))}
+                                    <Grid item xs={2}>
+                                        <Button variant="contained" onClick={handleNext}>
+                                            {index === steps.length - 1 ? 'Finish' : 'Continue'}
+                                        </Button>
                                     </Grid>
-                                ))}
-                                <Grid item xs={2}>
-                                    <Button variant="contained" onClick={handleNext}>
-                                        {index === steps.length - 1 ? 'Finish' : 'Continue'}
-                                    </Button>
+                                    <Grid item xs={2}>
+                                        <Button disabled={index === 0} onClick={handleBack}>
+                                            Back
+                                        </Button>
+                                    </Grid>
                                 </Grid>
-                                <Grid item xs={2}>
-                                    <Button disabled={index === 0} onClick={handleBack}>
-                                        Back
-                                    </Button>
-                                </Grid>
-                            </Grid>
-                        </StepContent>
-                    </Step>
-                ))}
-            </Stepper>
-        </Container >
+                            </StepContent>
+                        </Step>
+                    ))}
+                </Stepper>
+            </Container >
+        </HackHPIWrapper>
     )
 }
 export default Registration

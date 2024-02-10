@@ -104,7 +104,7 @@ export function Faq() {
     return (
         <HackHPIWrapper>
             <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
-                <Typography variant={"h1"}>Frequently asked questions</Typography>
+                <Typography variant={"h1"} sx={{marginBottom: "1rem"}}>Frequently asked questions</Typography>
                 <Typography variant={"body1"} sx={{marginBottom: "4rem"}}>Can't find the answer you're looking for? You
                     can
                     always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your

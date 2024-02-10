@@ -1,8 +1,28 @@
-import { Button, Container, Grid, Typography } from "@mui/material";
-import { Stepper, Step, StepLabel, StepContent } from "@mui/material";
-import { FormControl, FormControlLabel, FormHelperText, FormLabel, MenuItem, Radio, RadioGroup, Select, TextField } from "@mui/material";
+import {
+    Button,
+    Container,
+    FormControl,
+    FormControlLabel,
+    FormHelperText,
+    FormLabel,
+    Grid,
+    MenuItem,
+    Radio,
+    RadioGroup,
+    Select,
+    Step,
+    StepContent,
+    StepLabel,
+    Stepper,
+    TextField,
+    Typography
+} from "@mui/material";
 import * as React from 'react';
+import {useMemo, useState} from 'react';
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
+import {LoadingButton} from "@mui/lab";
+import {RegistrationRest} from "../../rest/RegistrationRest.js";
+import {Send} from "@mui/icons-material";
 
 const textfield = {
     minWidth: "100%"
@@ -15,56 +35,67 @@ const personalData = [
         formLabel: 'First Name',
         type: 1,
         input: ['First Name'],
+        name: "forename"
     },
     {
         formLabel: 'Last Name',
         type: 1,
         input: ['Last Name'],
+        name: "surname"
     },
     {
         formLabel: 'Date of birth',
         type: 2,
+        name: "age"
     },
     {
         formLabel: 'Gender',
         type: 3,
         input: ['male', 'female', 'diverse'],
+        name: "gender"
     },
     {
         formLabel: 'E-mail',
         type: 1,
         input: ['example@example.com'],
+        name: "email"
     },
     {
         formLabel: 'T-shirt size',
         type: 3,
         input: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
+        name: "shirtSize"
     },
     {
         formLabel: 'Diet preferences',
         type: 3,
         input: ['omnivore', 'vegetarian', 'vegan'],
+        name: "dietPreference"
     },
     {
         formLabel: 'Allergies',
         type: 1,
         input: ['e. g. gluten, ...'],
         helperText: 'Please let us know if you have severe allergies that we must know about.',
+        name: "allergies"
     },
     {
         formLabel: 'University/School/Institute',
         type: 1,
         input: ['e. g. University of Potsdam'],
+        name: "university"
     },
     {
         formLabel: 'Course of Study',
         type: 1,
         input: ['e. g. Computer Science'],
+        name: "fieldOfStudy"
     },
     {
         formLabel: 'Intended Degree',
         type: 3,
         input: ['High School Diploma', 'Bachelor', 'Master', 'PhD'],
+        name: "intendedDegree"
     },
     {
         formLabel: '',
@@ -77,6 +108,7 @@ const motivation = [
         formLabel: 'How did you hear from us?',
         type: 4,
         input: ['university/school/institute', 'friends/other students', 'LinkedIn', 'Instagram'],
+        name: "howDidYouHear"
     },
     {
         formLabel: '',
@@ -88,6 +120,7 @@ const motivation = [
         input: ['My motivation is ...'],
         helperText: 'Please write a short text (max. 150 words) or 3 key phrases describing your motivation to be part of HackHPI. If you can\'t think of anything, take the following questions as guidance: Can you share a project, creation, or task that holds a special place as one of your favorites? What motivated you to undertake it, and what aspects make you proud of the outcome?',
         rows: 5, // TODO: mehrzeiliges Textfeld
+        name: "motivation"
     },
     {
         formLabel: '',
@@ -183,34 +216,66 @@ const steps = [
     },
 ];
 
-function ContentForm(props) {
-    const type = props.type;
-    const input = props.input;
-    // const rows = props.rows;
-    if (type === 0) {
-        return null
-    } else if (type === 1) {
-        return <TextField color="success" type="text" placeholder={input} />
-    } else if (type === 2) {
-        return <TextField type="date" />
-    } else if (type === 3) {
-        return <Select value="" displayEmpty>
-            <MenuItem value=""><em>None</em></MenuItem>
-            {input.map((item, i) => (
-                <MenuItem value={i}>{item}</MenuItem>
-            ))}
-        </Select>
-    } else if (type === 4) {
-        return <RadioGroup>
-            {input.map((item, i) => (
-                <FormControlLabel value={i} control={<Radio />} label={item} />
-            ))}
-        </RadioGroup>
-    }
-}
 
 function Registration() {
     const [activeStep, setActiveStep] = React.useState(0);
+    const [values, setValues] = useState({});
+    const [isSending, setIsSending] = useState(false);
+    const registrationRest = useMemo(() => new RegistrationRest(), [])
+
+    function handleChange(name, inputValue) {
+        console.log("incoming", name, values)
+        const newValue = {...values}
+        newValue[name] = inputValue;
+        console.log(newValue)
+        setValues(newValue);
+    }
+
+    function contentForm(props) {
+        const type = props.type;
+        const input = props.input;
+        const name = props.name
+        // const rows = props.rows;
+        if (type === 0) {
+            return null
+        } else if (type === 1) {
+            return <TextField
+                color="success"
+                type="text"
+                placeholder={input}
+                name={name}
+                value={values[name] ?? ""}
+                onChange={(event) => handleChange(event.target.name, event.target.value)}
+            />
+        } else if (type === 2) {
+            return <TextField
+                type="date"
+                name={name}
+                value={values[name] ?? ""}
+                onChange={(event) => handleChange(event.target.name, event.target.value)}
+            />
+        } else if (type === 3) {
+            return <Select
+                value={values[name] ?? ""}
+                displayEmpty
+                name={name}
+                onChange={(event) => handleChange(event.target.name, event.target.value)}>
+                <MenuItem value=""><em>None</em></MenuItem>
+                {input.map((item, i) => (
+                    <MenuItem value={i}>{item}</MenuItem>
+                ))}
+            </Select>
+        } else if (type === 4) {
+            return <RadioGroup
+                value={values[name] ?? ""}
+                name={name}
+                onChange={(event, value) => handleChange(event.target.name, value)}>
+                {input.map((item, i) => (
+                    <FormControlLabel value={i} control={<Radio/>} label={item}/>
+                ))}
+            </RadioGroup>
+        }
+    }
 
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -220,14 +285,26 @@ function Registration() {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
 
+    const submitForm = () => {
+        setIsSending(true);
+        registrationRest.addRegistration(values).then(() => {
+            setIsSending(false);
+            handleNext()
+        }).catch(() => {
+            alert("Could not save Registration. Did you already submit? Please check your spam folder for verification mail")
+            setIsSending(false)
+        })
+
+    }
+
     const handleReset = () => {
         setActiveStep(0);
     };
 
     return (
         <HackHPIWrapper>
-            <Container sx={{ pt: 10, pb: 10 }} maxWidth={"xl"}>
-                <Typography variant={"h1"} sx={{ mb: "2rem" }}>Registration</Typography>
+            <Container sx={{pt: 10, pb: 10}} maxWidth={"xl"}>
+                <Typography variant={"h1"} sx={{mb: "2rem"}}>Registration</Typography>
                 <Stepper activeStep={activeStep} orientation="vertical">
                     {steps.map((step, index) => (
                         <Step key={index}>
@@ -244,15 +321,27 @@ function Registration() {
                                         <Grid item xs={6}>
                                             <FormControl style={textfield}>
                                                 <FormLabel>{item.formLabel}</FormLabel>
-                                                <ContentForm type={item.type} input={item.input} rows={item.rows} />
+                                                {contentForm({
+                                                    type: item.type,
+                                                    input: item.input,
+                                                    rows: item.rows,
+                                                    name: item.name
+                                                })}
                                                 <FormHelperText>{item.helperText}</FormHelperText>
                                             </FormControl>
                                         </Grid>
                                     ))}
                                     <Grid item xs={2}>
-                                        <Button variant="contained" onClick={handleNext}>
-                                            {index === steps.length - 1 ? 'Finish' : 'Continue'}
-                                        </Button>
+                                        {index === steps.length - 1 ?
+                                            <LoadingButton variant={"contained"} startIcon={<Send/>} loading={isSending} onClick={submitForm}>
+                                                Send
+                                            </LoadingButton>
+                                            :
+                                            <Button variant="contained" onClick={handleNext}>
+                                                Continue
+                                            </Button>
+                                        }
+
                                     </Grid>
                                     <Grid item xs={2}>
                                         <Button disabled={index === 0} onClick={handleBack}>
@@ -264,8 +353,9 @@ function Registration() {
                         </Step>
                     ))}
                 </Stepper>
-            </Container >
+            </Container>
         </HackHPIWrapper>
     )
 }
+
 export default Registration

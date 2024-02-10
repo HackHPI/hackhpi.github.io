@@ -1,4 +1,4 @@
-import {Card, Container, Grid, Link, List, ListItemButton, ListItemIcon, Typography} from "@mui/material";
+import {Box, Card, Container, Grid, Link, List, ListItemButton, ListItemIcon, Typography} from "@mui/material";
 import React from "react";
 import {KeyboardArrowRight} from "@mui/icons-material";
 import {WindowCard} from "../WindowCard/WindowCard.jsx";
@@ -136,9 +136,9 @@ export function Faq() {
                     <Grid item xs={12} md={8}>
                         <Masonry spacing={3} columns={2}>
                             {
-                                faqs[selectedIndex].items.map(faq => (
-                                        <>
-                                            <WindowCard>
+                                faqs[selectedIndex].items.map((faq, idx) => (
+                                        <Box key={idx}>
+                                            <WindowCard >
                                                 <Typography gutterBottom variant={"h6"}
                                                             fontWeight={"bold"}>{faq.title}</Typography>
                                                 <Typography>
@@ -163,7 +163,7 @@ export function Faq() {
                                     </AccordionDetails>
                                 </Accordion>
                                 */}
-                                        </>
+                                        </Box>
                                     )
                                 )
 

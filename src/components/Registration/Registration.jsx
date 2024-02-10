@@ -12,12 +12,12 @@ const textfield = {
 
 const personalData = [
     {
-        formLabel: 'First Name',
+        formLabel: 'First name',
         type: 1,
         input: ['First Name'],
     },
     {
-        formLabel: 'Last Name',
+        formLabel: 'Last name',
         type: 1,
         input: ['Last Name'],
     },
@@ -33,7 +33,7 @@ const personalData = [
     {
         formLabel: 'E-mail',
         type: 1,
-        input: ['example@example.com'],
+        input: ['abc@xyz.com'],
     },
     {
         formLabel: 'T-shirt size',
@@ -57,12 +57,12 @@ const personalData = [
         input: ['e. g. University of Potsdam'],
     },
     {
-        formLabel: 'Course of Study',
+        formLabel: 'Course of study',
         type: 1,
         input: ['e. g. Computer Science'],
     },
     {
-        formLabel: 'Intended Degree',
+        formLabel: 'Intended degree',
         type: 3,
         input: ['High School Diploma', 'Bachelor', 'Master', 'PhD'],
     },
@@ -98,63 +98,54 @@ const motivation = [
 
 const skills = [
     {
-        formLabel: 'Tech stack???',
-        type: 0,
-    },
-    {
-        formLabel: 'Programming languages',
+        formLabel: 'Tech stack',
         type: 1,
         input: ['e. g. Python, ...'],
+        helperText: 'Please note programming languages, frameworks, etc. have you worked with.', //etc. auf Englisch? note richtiges Wort?
+        rows: 5,
     },
     {
-        formLabel: 'GitHub???',
-        type: 0,
+        formLabel: 'Basic steps of your CV',
+        type: 1,
+        input: ['e. g. working student at HPI'],
+        helperText: 'Outline the most important steps of your CV like work experiences and studies.',
+        rows: 5, // wie bei Tech stack
     },
     {
-        formLabel: '',
-        type: 0,
+        formLabel: 'GitHub account',
+        type: 1,
+        input: ['e. g. maxm90'],
     },
     {
-        formLabel: 'Basic Outline???',
-        type: 0,
-    },
-    {
-        formLabel: 'CV???',
-        type: 0,
-    },
-    {
-        formLabel: 'LinkedIn???',
-        type: 0,
-    },
-    {
-        formLabel: '',
-        type: 0,
+        formLabel: 'LinkedIn account',
+        type: 1,
+        input: ['e. g. Max Mustermann'],
     },
 ]
 
 const teamMembers = [
     {
-        formLabel: 'Team Member 1',
+        formLabel: 'Team member 1',
         type: 1,
         input: ['Name 1'],
     },
     {
-        formLabel: 'Team Member 2',
+        formLabel: 'Team member 2',
         type: 1,
         input: ['Name 2'],
     },
     {
-        formLabel: 'Team Member 3',
+        formLabel: 'Team member 3',
         type: 1,
         input: ['Name 3'],
     },
     {
-        formLabel: 'Team Member 4',
+        formLabel: 'Team member 4',
         type: 1,
         input: ['Name 4'],
     },
     {
-        formLabel: 'Team Member 5',
+        formLabel: 'Team member 5',
         type: 1,
         input: ['Name 5'],
     },
@@ -166,7 +157,7 @@ const teamMembers = [
 
 const steps = [
     {
-        label: 'Personal Data',
+        label: 'Personal data',
         content: personalData,
     },
     {

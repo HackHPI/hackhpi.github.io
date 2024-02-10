@@ -1,10 +1,10 @@
-import {createTheme} from "@mui/material";
+import {createTheme, responsiveFontSizes} from "@mui/material";
 
 const theme = createTheme({})
 
 const textColor = [245, 245, 245]
 
-const hackHpiTheme = createTheme(theme, {
+const hackHpiTheme = responsiveFontSizes(createTheme(theme, {
     palette: {
         mode: "dark",
         primary: theme.palette.augmentColor({
@@ -85,6 +85,6 @@ const hackHpiTheme = createTheme(theme, {
             fontFamily: 'Neo Sans, Urbanist, Arial',
         }
     }
-});
+}));
 
 export default hackHpiTheme;

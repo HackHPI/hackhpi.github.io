@@ -73,7 +73,7 @@ let faqs = [
             },
             {
                 title: "How big are the teams?",
-                text: "Each team will consist of about 5 people. Teams of less than 5 people will be filled up with great people, and teams of more than 5 people will be split into smaller teams, as we have found that teams that are too small or too large are not ideal for our 2-day event."
+                text: "Each team will consist of about 5 people. Teams of less than 4 people will be filled up with great people, and teams of more than 6 people will be split into smaller teams, as we have found that teams that are too small or too large are not ideal for our 2-day event."
             },
             {
                 title: "What if I don’t have a team?",

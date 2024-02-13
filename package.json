@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/node": "^6.1.0",
     "@astrojs/react": "^3.0.9",
     "@astrojs/tailwind": "^5.0.0",
     "@emotion/react": "^11.11.3",

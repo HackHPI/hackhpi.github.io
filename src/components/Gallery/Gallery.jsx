@@ -1,3 +1,4 @@
+'use client'
 import {Box, Container, Grid, ImageList, ImageListItem, Typography} from "@mui/material";
 import React from "react";
 import DSC02572 from '../../assets/images/event/DSC02572_1920.webp'

@@ -1,3 +1,4 @@
+'use client'
 import {Box, Card, Container, Grid, Link, List, ListItemButton, ListItemIcon, Typography} from "@mui/material";
 import React from "react";
 import {KeyboardArrowRight} from "@mui/icons-material";

@@ -1,3 +1,4 @@
+'use client'
 import CedricRischeProfile from "../../assets/images/team_new/cedric_rische.webp"
 import MathildaHeiseProfile from "../../assets/images/team_new/mathilda_heise.webp"
 import MattiSchmidtProfile from "../../assets/images/team_new/matti_schmidt.webp"
@@ -9,7 +10,6 @@ import GeromeQuantmeyerProfile from "../../assets/images/team_new/gerome_quantme
 import UliPrantzProfile from "../../assets/images/team_new/uli_prantz.webp"
 import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useTheme} from "@mui/material";
 import {LinkedIn, Mail} from "@mui/icons-material";
-import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 
 const teamMembers = [
@@ -109,72 +109,71 @@ const imageSize = "9rem"
 function Team() {
     const theme = useTheme()
     return (
-        <HackHPIWrapper>
-            <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
-                <Typography variant={"h1"} gutterBottom>Meet the team</Typography>
-                <Grid container spacing={3}>
-                    {teamMembers.sort((a, b) => {
-                        const nameA = a.name.toUpperCase(); // ignore upper and lowercase
-                        const nameB = b.name.toUpperCase(); // ignore upper and lowercase
-                        if (nameA < nameB) {
-                            return -1;
-                        }
-                        if (nameA > nameB) {
-                            return 1;
-                        }
+        <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
+            <Typography variant={"h1"} gutterBottom>Meet the team</Typography>
+            <Grid container spacing={3}>
+                {teamMembers.sort((a, b) => {
+                    const nameA = a.name.toUpperCase(); // ignore upper and lowercase
+                    const nameB = b.name.toUpperCase(); // ignore upper and lowercase
+                    if (nameA < nameB) {
+                        return -1;
+                    }
+                    if (nameA > nameB) {
+                        return 1;
+                    }
 
-                        // names must be equal
-                        return 0;
-                    }).map(teamMember => {
+                    // names must be equal
+                    return 0;
+                }).map(teamMember => {
 
-                        const avatarPrep = stringAvatar(teamMember.name);
-                        return (
-                            <Grid item xs={6} md={3} key={teamMember.name}>
-                                <Card elevation={5}
-                                      sx={{padding: 2, mt: "calc(" + imageSize + " / 2)", overflow: "inherit"}}>
-                                    <Box sx={{position: "relative"}}>
-                                        <Box sx={{
-                                            position: "absolute",
-                                            transform: "translate(0%,calc(-" + imageSize + " / 2 - " + theme.spacing(2) + "))",
-                                            width: "100%",
-                                            height: "auto",
-                                            pr: 1,
-                                            display: "flex",
-                                            justifyContent: "center",
+                    const avatarPrep = stringAvatar(teamMember.name);
+                    return (
+                        <Grid item xs={6} md={3} key={teamMember.name}>
+                            <Card elevation={5}
+                                  sx={{padding: 2, mt: "calc(" + imageSize + " / 2)", overflow: "inherit"}}>
+                                <Box sx={{position: "relative"}}>
+                                    <Box sx={{
+                                        position: "absolute",
+                                        transform: "translate(0%,calc(-" + imageSize + " / 2 - " + theme.spacing(2) + "))",
+                                        width: "100%",
+                                        height: "auto",
+                                        pr: 1,
+                                        display: "flex",
+                                        justifyContent: "center",
+                                    }}
+                                    >
+                                        <Avatar src={teamMember.profilePicture.src} sx={{
+                                            height: imageSize,
+                                            width: imageSize,
+                                            boxShadow: 7,
+                                            mb: 2,
+                                            ...avatarPrep.sx
                                         }}
+                                                alt={"Image of "+ teamMember.name}
                                         >
-                                            <Avatar src={teamMember.profilePicture.src} sx={{
-                                                height: imageSize,
-                                                width: imageSize,
-                                                boxShadow: 7,
-                                                mb: 2,
-                                                ...avatarPrep.sx
-                                            }}
-                                            >
-                                                {avatarPrep.children}
-                                            </Avatar>
-                                        </Box>
-
+                                            {avatarPrep.children}
+                                        </Avatar>
                                     </Box>
 
-                                    <Typography pt={"calc( " + imageSize + " / 2)"}>{teamMember.name}</Typography>
-                                    {/*<Typography color={"text.disabled"}>{teamMember.position}</Typography>*/}
-                                    <Stack direction={"row"} spacing={1} pt={2}>
-                                        {teamMember.mail ? <Link href={"mailto:" + teamMember.mail}
-                                                                 color={"inherit"}><Mail/></Link> : null}
-                                        {teamMember.linkedIn ?
-                                            <Link href={"https://linkedin.com/in/" + teamMember.linkedIn}
-                                                  target={"_blank"}
-                                                  color={"inherit"}><LinkedIn/></Link> : null}
-                                    </Stack>
-                                </Card>
-                            </Grid>
-                        )
-                    })}
+                                </Box>
 
-                </Grid>
-            </Container>
-        </HackHPIWrapper>
+                                <Typography pt={"calc( " + imageSize + " / 2)"}>{teamMember.name}</Typography>
+                                {/*<Typography color={"text.disabled"}>{teamMember.position}</Typography>*/}
+                                <Stack direction={"row"} spacing={1} pt={2}>
+                                    {teamMember.mail ? <Link href={"mailto:" + teamMember.mail}
+                                                             color={"inherit"}><Mail/></Link> : null}
+                                    {teamMember.linkedIn ?
+                                        <Link href={"https://linkedin.com/in/" + teamMember.linkedIn}
+                                              target={"_blank"}
+                                              color={"inherit"}><LinkedIn/></Link> : null}
+                                </Stack>
+                            </Card>
+                        </Grid>
+                    )
+                })}
+
+            </Grid>
+        </Container>
     )
 
 }

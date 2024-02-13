@@ -1,3 +1,4 @@
+'use client'
 import {Box, Button, Container, Stack} from "@mui/material";
 import '@fontsource/urbanist'
 import {TypeAnimation} from "react-type-animation";
@@ -8,7 +9,6 @@ function LandingImage2() {
 
 
     return (
-        <HackHPIWrapper>
             <Box sx={{
                 height: "80vh",
                 width: "100%",
@@ -26,11 +26,10 @@ function LandingImage2() {
                         flexDirection: "column"
                     }}>
 
-                        <img src={"/HackHPI24_white.png"} width={"200rem"}/>
+                        <img src={"/HackHPI24_white.png"} width={"200rem"} alt={"HackHPI Logo"}/>
                         <div>
                             <Countdown/>
                             <TypeAnimation
-                                client:load
                                 preRenderFirstString={true}
                                 sequence={[
                                     500,
@@ -64,7 +63,6 @@ function LandingImage2() {
                     </Box>
                 </Container>
             </Box>
-        </HackHPIWrapper>
     )
 }
 

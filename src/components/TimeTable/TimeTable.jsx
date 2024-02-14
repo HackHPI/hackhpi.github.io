@@ -63,7 +63,7 @@ export function TimeTable() {
 
     return (
         <HackHPIWrapper>
-            <Container maxWidth={"xl"} sx={{paddingTop: 10, paddingBottom: 10}}>
+            <Container maxWidth={"xl"} sx={{paddingTop: 10, paddingBottom: 10, blur: "3px"}}>
                 <Typography variant={"h1"} gutterBottom>Time Table</Typography>
                 <Grid container spacing={5}>
                     <Grid item md={6} xs={12}>

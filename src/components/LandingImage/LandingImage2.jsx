@@ -46,7 +46,7 @@ function LandingImage2() {
                             repeat={Infinity}
                         />
                     </div>
-                    <Stack direction={"row"} spacing={5}>
+                    <Stack direction={"row"} spacing={5} useFlexGap flexWrap="wrap">
                         <Button
                             variant={"contained"}
                             sx={{
@@ -60,7 +60,7 @@ function LandingImage2() {
                         >
                             SignUp
                         </Button>
-                        <Card elevation={5} sx={{height: "3.5rem"}}>
+                        <Card sx={{height: "3.5rem"}}>
                             <Stack direction={"row"} alignItems={"center"} display={"flex"}
                                    sx={{height: "100%", paddingRight: "1.5rem", paddingLeft: "1.5rem",}} spacing={3}>
                                 <CalendarMonthOutlined sx={{fontSize: "2rem", color: "text.disabled"}}/>

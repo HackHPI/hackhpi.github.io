@@ -18,7 +18,7 @@ export default function Page() {
 
     }, []);
     return <Box sx={{padding: 10, display: "flex", justifyContent: "center"}}>
-        <Box align={"center"}>
+        <Box >
             <CircularProgress color={"inherit"}/>
             <Typography>Verifying your Token</Typography>
         </Box>

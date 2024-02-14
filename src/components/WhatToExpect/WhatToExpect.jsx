@@ -5,7 +5,8 @@ import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 function WhatToExpect() {
 
     return (
-        <HackHPIWrapper>
+        <HackHPIWrapper >
+
             <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
                 <Grid container spacing={6} alignItems={"center"}>
                     <Grid item xs={12} md={8}>

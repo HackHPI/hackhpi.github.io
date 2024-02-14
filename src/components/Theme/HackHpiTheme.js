@@ -82,14 +82,14 @@ const hackHpiTheme = responsiveFontSizes(createTheme(theme, {
             fontFamily: 'Neo Sans, Urbanist, Arial',
             fontWeight: "bold",
         },
-        h3: {
-            fontFamily: 'Sans, Urbanist, Arial',
+        h3:{
+            fontFamily: 'Neo Sans, Urbanist, Arial',
         },
-        h4: {
-            fontFamily: 'Sans, Urbanist, Arial',
+        h4:{
+            fontFamily: 'Neo Sans, Urbanist, Arial',
         },
-        h5: {
-            fontFamily: 'Sans, Urbanist, Arial',
+        h5:{
+            fontFamily: 'Neo Sans, Urbanist, Arial',
         },
         body1: {
             fontFamily: '"Open Sans Variable", Urbanist, Arial',

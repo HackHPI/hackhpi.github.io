@@ -12,7 +12,7 @@ import Team from "../src/components/Team/Team";
 export default function Page() {
     return (
         <>
-            <LandingImage2 />
+            <LandingImage2/>
             <VerifiedChecker />
             <WhatToExpect />
             <Sponsors />

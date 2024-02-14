@@ -69,11 +69,12 @@ const hackHpiTheme = responsiveFontSizes(createTheme(theme, {
 
     },
     typography: {
-
+        fontSize: 10,
         fontFamily: 'Neo Sans, Urbanist, Arial',
         h1: {
             fontFamily: 'Neo Sans, Urbanist, Arial',
             fontWeight: "bold",
+            //fontSize: "5rem"
             //lineHeight: "5.5rem",
             //fontSize: "7rem"
         },

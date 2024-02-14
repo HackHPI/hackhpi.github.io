@@ -8,8 +8,9 @@ import TheoKlinkeProfile from "../../assets/images/team_new/theo_klinke.webp"
 import ViktorKalvodaProfile from "../../assets/images/team_new/viktor_kalvoda.webp"
 import GeromeQuantmeyerProfile from "../../assets/images/team_new/gerome_quantmeyer.webp"
 import UliPrantzProfile from "../../assets/images/team_new/uli_prantz.webp"
-import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useTheme} from "@mui/material";
+import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useMediaQuery, useTheme} from "@mui/material";
 import {LinkedIn, Mail} from "@mui/icons-material";
+import {useEffect, useState} from "react";
 
 
 const teamMembers = [
@@ -101,13 +102,18 @@ function stringAvatar(name) {
     };
 }
 
-const imageSize = "9rem"
-
 function Team() {
     const theme = useTheme()
+    const matches = useMediaQuery(theme.breakpoints.up("sm"));
+    const [imageSize, setImageSize] = useState("9rem")
+
+    useEffect(() => {
+        setImageSize(matches ? "9rem" : "7rem")
+    }, [matches]);
+
     return (
-        <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
-            <Typography variant={"h1"} gutterBottom>Meet the team</Typography>
+        <Container sx={{paddingTop: 10, paddingBottom: 10}}>
+            <Typography variant={"h2"} component={"h1"} gutterBottom>Meet the team</Typography>
             <Grid container spacing={3}>
                 {teamMembers.sort((a, b) => {
                     const nameA = a.name.toUpperCase(); // ignore upper and lowercase
@@ -134,7 +140,6 @@ function Team() {
                                         transform: "translate(0%,calc(-" + imageSize + " / 2 - " + theme.spacing(2) + "))",
                                         width: "100%",
                                         height: "auto",
-                                        pr: 1,
                                         display: "flex",
                                         justifyContent: "center",
                                     }}
@@ -146,7 +151,7 @@ function Team() {
                                             mb: 2,
                                             ...avatarPrep.sx
                                         }}
-                                                alt={"Image of "+ teamMember.name}
+                                                alt={"Image of " + teamMember.name}
                                         >
                                             {avatarPrep.children}
                                         </Avatar>

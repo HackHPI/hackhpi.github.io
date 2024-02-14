@@ -58,7 +58,15 @@ const hackHpiTheme = responsiveFontSizes(createTheme(theme, {
                     borderRadius: "10px"
                 }
             }
-        }
+        },
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    borderRadius: "10px"
+                }
+            }
+        },
+
     },
     typography: {
 
@@ -69,7 +77,7 @@ const hackHpiTheme = responsiveFontSizes(createTheme(theme, {
             //lineHeight: "5.5rem",
             //fontSize: "7rem"
         },
-        h2:{
+        h2: {
             fontFamily: 'Neo Sans, Urbanist, Arial',
             fontWeight: "bold",
         },
@@ -82,8 +90,8 @@ const hackHpiTheme = responsiveFontSizes(createTheme(theme, {
         h5:{
             fontFamily: 'Neo Sans, Urbanist, Arial',
         },
-        body1:{
-            fontFamily: 'Neo Sans, Urbanist, Arial',
+        body1: {
+            fontFamily: '"Open Sans Variable", Urbanist, Arial',
         }
     }
 }));

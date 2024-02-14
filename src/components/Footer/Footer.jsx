@@ -29,14 +29,6 @@ const socials = [
         link: "https://www.instagram.com/hack.hpi",
     },
     {
-        icon: <Facebook/>,
-        link: "https://www.facebook.com/HackHPI",
-    },
-    {
-        icon: <Twitter/>,
-        link: "https://twitter.com/HackHPI",
-    },
-    {
         icon: <Mail/>,
         link: "mailto:team@hackhpi.org",
     },

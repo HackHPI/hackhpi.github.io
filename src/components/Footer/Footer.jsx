@@ -62,8 +62,10 @@ function Footer() {
             }} elevation={10}>
                 <Container maxWidth={"xl"}>
                     <Grid container spacing={2}>
-                        <Grid item xs={3} sx={{display: matches ? undefined: "none"}}>
-                            <img src={HackHpiLogo.src} style={{height: "5rem", width: "auto"}} alt={"Logo of HPI"}/>
+                        <Grid item xs={3} sx={{display: matches ? undefined : "none"}}>
+                            <Link href={"/"}>
+                                <img src={HackHpiLogo.src} style={{height: "5rem", width: "auto"}} alt={"Logo of HPI"}/>
+                            </Link>
                         </Grid>
                         <Grid item xs>
                             <Typography variant={"h5"} gutterBottom>HPI</Typography>

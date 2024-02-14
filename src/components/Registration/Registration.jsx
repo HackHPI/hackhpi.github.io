@@ -25,7 +25,7 @@ import {useMemo, useState} from 'react';
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 import {LoadingButton} from "@mui/lab";
 import {RegistrationRest} from "../../rest/RegistrationRest.js";
-import {Send} from "@mui/icons-material";
+import {Mail, Send} from "@mui/icons-material";
 
 // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
@@ -243,6 +243,25 @@ const steps = [
         label: 'Team members',
         content: teamMembers,
     },
+    {
+        label: 'E-Mail Verification',
+        children: (
+            <Box sx={{
+                width: "100%",
+                height: "20vh",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                paddingTop: "3rem"
+            }}>
+                <Stack spacing={3} justifyContent={"center"}>
+                    <Mail color={"inherit"} sx={{fontSize: "2rem"}}/>
+                    <Typography>To complete the Registration, please click on the link in the Mail we sent
+                        you!</Typography>
+                </Stack>
+            </Box>
+        ),
+    },
 ];
 
 
@@ -253,39 +272,29 @@ function Registration() {
     const registrationRest = useMemo(() => new RegistrationRest(), [])
 
     function handleChange(name, inputValue) {
-        console.log("incoming", name, values)
         const newValue = {...values}
         newValue[name] = inputValue;
-        console.log(newValue)
         setValues(newValue);
     }
 
     function enableNext(inputList, name) {
-        console.log("#######", name, "#########")
         if (!inputList) {
             return;
         }
         const result = inputList.content.reduce((previous, current) => {
-            console.log("--------", current.name, "----------", values[current.name])
-            if (!current.required && (values[current.name] === undefined || values[current.name] === "")){
-                console.log("Skipping evaluation - not required and empty")
+            if (!current.required && (values[current.name] === undefined || values[current.name] === "")) {
                 return true
             }
-            if (current.required && ((!values[current.name] && values[current.name] !== 0 ) || values[current.name] === "")){
-                console.log("Declining - required not filled")
+            if (current.required && ((!values[current.name] && values[current.name] !== 0) || values[current.name] === "")) {
                 return false
             }
             const meetsMax = current.max ? values[current.name]?.length <= current.max : true;
-            console.log("max", meetsMax)
             const meetsMin = current.min ? values[current.name]?.length >= current.min : true;
-            console.log("min", meetsMin)
 
             const meetsAll = meetsMax && meetsMin
-            console.log(current.name, meetsAll, previous)
-            return previous && meetsMax && meetsMin
+            return previous && meetsAll
 
         }, true)
-        console.log("results for ", name, result)
         return result
     }
 
@@ -370,6 +379,32 @@ function Registration() {
 
     }
 
+    function renderNextButton(index, step) {
+        if (index === steps.length - 1) {
+            return
+        }
+        if (index === steps.length - 2) {
+            return (
+                <LoadingButton variant={"contained"} startIcon={<Send/>}
+                               loading={isSending}
+                               onClick={submitForm}>
+                    Send
+                </LoadingButton>
+            )
+        }
+
+        return (
+            <Button
+                variant="contained"
+                onClick={handleNext}
+                disabled={!enableNext(steps[index], step.label)}
+            >
+                Next
+            </Button>
+        )
+
+    }
+
     return (
 
         <HackHPIWrapper>
@@ -386,8 +421,7 @@ function Registration() {
                                     ) : null
                                 }
                             >
-                                <Box direction="row" spacing={1}
-                                >
+                                <Box direction="row" spacing={1}>
                                     <Typography>
                                         {step.label}
                                     </Typography>
@@ -396,7 +430,7 @@ function Registration() {
                             </StepLabel>
                             <StepContent>
                                 <Grid container spacing={3} md={8} xs={12}>
-                                    {step.content.map((item, i) => (
+                                    {step.children ? step.children : step.content.map((item, i) => (
                                         <Grid item md={gridItemSize({name: item.name})} xs={12}>
                                             <FormControl fullWidth>
                                                 <FormLabel>
@@ -414,27 +448,13 @@ function Registration() {
                                     ))}
                                     <Grid item xs={12}>
                                         <Stack direction={"row"} spacing={2}>
-                                            {index === steps.length - 1 ?
-                                                <LoadingButton variant={"contained"} startIcon={<Send/>}
-                                                               loading={isSending}
-                                                               onClick={submitForm}>
-                                                    Send
-                                                </LoadingButton>
-                                                :
-                                                <Button
-                                                    variant="contained"
-                                                        onClick={handleNext}
-                                                        disabled={!enableNext(steps[index], step.label)}
-                                                >
-                                                    Next
-                                                </Button>
-                                            }
-                                            <Grid item xs={2}>
+                                            {renderNextButton(index, step)}
+                                            {index === steps.length - 1 ? undefined : <Grid item xs={2}>
                                                 <Button disabled={index === 0} onClick={handleBack} color={"inherit"}>
                                                     Back
                                                 </Button>
                                             </Grid>
-
+                                            }
                                         </Stack>
 
 

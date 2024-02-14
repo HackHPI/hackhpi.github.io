@@ -2,7 +2,7 @@ import {Container, Typography} from "@mui/material";
 
 function Registration() {
     return (
-        <Container sx={{paddingTop: 10, paddingBottom: 10}}>
+        <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
             <Typography variant={"h2"} component={"h1"}>Registration</Typography>
         </Container>
     )

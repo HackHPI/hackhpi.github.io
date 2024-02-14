@@ -12,7 +12,6 @@ import {
     Radio,
     RadioGroup,
     Select,
-    Stack,
     Step,
     StepContent,
     StepLabel,
@@ -21,11 +20,11 @@ import {
     Typography
 } from "@mui/material";
 import * as React from 'react';
-import { useMemo, useState } from 'react';
+import {useMemo, useState} from 'react';
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
-import { LoadingButton } from "@mui/lab";
-import { RegistrationRest } from "../../rest/RegistrationRest.js";
-import { Send } from "@mui/icons-material";
+import {LoadingButton} from "@mui/lab";
+import {RegistrationRest} from "../../rest/RegistrationRest.js";
+import {Send} from "@mui/icons-material";
 import Help from '@mui/icons-material/Help';
 
 // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
@@ -259,7 +258,7 @@ function Registration() {
 
     function handleChange(name, inputValue) {
         console.log("incoming", name, values)
-        const newValue = { ...values }
+        const newValue = {...values}
         newValue[name] = inputValue;
         console.log(newValue)
         setValues(newValue);
@@ -272,11 +271,11 @@ function Registration() {
         }
         return !inputList.content.reduce((previous, current) => {
             console.log(current)
-                const meetsMax =  current.max ?  values[current.name]?.length <= current.max: true;
-                const meetsMin = current.min ? values[current.name]?.length >= current.min : true ;
-                console.log(previous, meetsMax, meetsMin)
-                return previous && meetsMax && meetsMin
-            
+            const meetsMax = current.max ? values[current.name]?.length <= current.max : true;
+            const meetsMin = current.min ? values[current.name]?.length >= current.min : true;
+            console.log(previous, meetsMax, meetsMin)
+            return previous && meetsMax && meetsMin
+
         }, true)
     }
 
@@ -332,7 +331,7 @@ function Registration() {
 
                     })}
                     {input.map((item, i) => (
-                        <FormControlLabel value={i} control={<Radio />} label={item} />
+                        <FormControlLabel value={i} control={<Radio/>} label={item}/>
                     ))}
                 </RadioGroup>
             default:
@@ -374,8 +373,8 @@ function Registration() {
 
     return (
         <HackHPIWrapper>
-            <Container sx={{ pt: 10, pb: 10 }} maxWidth={"xl"}>
-                <Typography variant={"h1"} sx={{ mb: "2rem" }}>Registration</Typography>
+            <Container sx={{pt: 10, pb: 10}} maxWidth={"xl"}>
+                <Typography variant={"h1"} sx={{mb: "2rem"}}>Registration</Typography>
                 <Stepper activeStep={activeStep} orientation="vertical">
                     {steps.map((step, index) => (
                         <Step key={index}>
@@ -386,18 +385,19 @@ function Registration() {
                                     ) : null
                                 }
                             >
-                                <Box direction="row" spacing={1} sx={{ display: "flex", justifyContent: "space-between" }}>
+                                <Box direction="row" spacing={1}
+                                     sx={{display: "flex", justifyContent: "space-between"}}>
                                     <Typography>
                                         {step.label}
                                     </Typography>
-                                    <Help />
+                                    <Help/>
                                 </Box>
 
                             </StepLabel>
                             <StepContent>
                                 <Grid container spacing={3} xs={8}>
                                     {step.content.map((item, i) => (
-                                        <Grid item xs={gridItemSize({ name: item.name })}>
+                                        <Grid item xs={gridItemSize({name: item.name})}>
                                             <FormControl fullWidth>
                                                 <FormLabel>
                                                     {item.formLabel}{item.required ? "*" : ""}
@@ -414,11 +414,13 @@ function Registration() {
                                     ))}
                                     <Grid item xs={2}>
                                         {index === steps.length - 1 ?
-                                            <LoadingButton variant={"contained"} startIcon={<Send />} loading={isSending} onClick={submitForm}>
+                                            <LoadingButton variant={"contained"} startIcon={<Send/>} loading={isSending}
+                                                           onClick={submitForm}>
                                                 Send
                                             </LoadingButton>
                                             :
-                                            <Button variant="contained" onClick={handleNext} disabled={enableNext(steps[index], step.label)}>
+                                            <Button variant="contained" onClick={handleNext}
+                                                    disabled={enableNext(steps[index], step.label)}>
                                                 Next
                                             </Button>
                                         }

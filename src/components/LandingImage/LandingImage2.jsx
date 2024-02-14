@@ -4,15 +4,15 @@ import {TypeAnimation} from "react-type-animation";
 import Countdown from "./Countdown.jsx";
 import {CalendarMonthOutlined} from "@mui/icons-material";
 
-function LandingImage2(props) {
-
+function LandingImage2() {
 
     return (
         <Box sx={{
             width: "100%",
             backgroundImage: `url(/mazeBackground.svg), linear-gradient(180deg, rgba(19,16,27,1) 0%, rgba(19,16,27,1) 100%)`,
             backgroundPosition: "center",
-            backgroundSize: "cover"
+            backgroundSize: "cover",
+            padding: 2
         }}
         >
             <Container sx={{height: "100%", width: "100%", display: "flex", alignItems: "center"}}>
@@ -22,8 +22,7 @@ function LandingImage2(props) {
                     display: "flex",
                     justifyContent: "space-around",
                     flexDirection: "column",
-                    minHeight: "80vh",
-
+                    minHeight: "60vh",
                 }}>
 
                     <img src={"/HackHPI24_white.png"} width={"150rem"} alt={"HackHPI Logo"}/>

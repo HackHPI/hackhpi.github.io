@@ -1,9 +1,7 @@
 'use client'
 import {Box, Button, Container, Stack} from "@mui/material";
-import '@fontsource/urbanist'
 import {TypeAnimation} from "react-type-animation";
 import Countdown from "./Countdown.jsx";
-import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 function LandingImage2() {
 

@@ -74,13 +74,13 @@ const hackHpiTheme = responsiveFontSizes(createTheme(theme, {
             fontWeight: "bold",
         },
         h3:{
-            fontFamily: '"Open Sans Variable", Urbanist, Arial',
+            fontFamily: 'Sans, Urbanist, Arial',
         },
         h4:{
-            fontFamily: '"Open Sans Variable", Urbanist, Arial',
+            fontFamily: 'Sans, Urbanist, Arial',
         },
         h5:{
-            fontFamily: '"Open Sans Variable", Urbanist, Arial',
+            fontFamily: 'Sans, Urbanist, Arial',
         },
         body1:{
             fontFamily: '"Open Sans Variable", Urbanist, Arial',

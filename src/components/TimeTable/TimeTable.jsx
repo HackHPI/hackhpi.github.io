@@ -21,17 +21,17 @@ export function TimeTable() {
                 <Container>
                     <Grid container alignItems={"center"} spacing={3}>
                         <Grid item xs={2} sx={{display: "flex", justifyContent: "center"}}>
-                            <Avatar sx={{width: "70%", height: "auto", aspectRatio: "1/1"}}>SO</Avatar>
+                            <Avatar sx={{width: "70%", height: "auto", aspectRatio: "1/1", backgroundColor: "background.default"}}>SO</Avatar>
                         </Grid>
                         <Grid item xs={8}>
                             <Typography color={"text.disabled"}>
                                 08:00-09:00
                             </Typography>
                             <Typography sx={{fontWeight: 600}}>
-                                Keynote
+                                Hey There!
                             </Typography>
                             <Typography color={"text.disabled"}>
-                                by someone
+                                a Person
                             </Typography>
                         </Grid>
                     </Grid>
@@ -42,17 +42,17 @@ export function TimeTable() {
                 <Container>
                     <Grid container alignItems={"center"} spacing={3}>
                         <Grid item xs={2} sx={{display: "flex", justifyContent: "center"}}>
-                            <Avatar sx={{width: "70%", height: "auto", aspectRatio: "1/1"}}>SO</Avatar>
+                            <Avatar sx={{width: "70%", height: "auto", aspectRatio: "1/1", backgroundColor: "background.default"}}>SO</Avatar>
                         </Grid>
                         <Grid item xs={8}>
                             <Typography color={"text.disabled"}>
                                 08:00-09:00
                             </Typography>
                             <Typography sx={{fontWeight: 600}}>
-                                Keynote
+                                Nothing to see here yet
                             </Typography>
                             <Typography color={"text.disabled"}>
-                                by someone
+                                But soon, something will be here
                             </Typography>
                         </Grid>
                     </Grid>
@@ -63,18 +63,31 @@ export function TimeTable() {
 
     return (
         <HackHPIWrapper>
-            <Container maxWidth={"xl"} sx={{paddingTop: 10, paddingBottom: 10, blur: "3px"}}>
-                <Typography variant={"h1"} gutterBottom>Time Table</Typography>
-                <Grid container spacing={5}>
-                    <Grid item md={6} xs={12}>
-                        {timetable}
-                    </Grid>
-                    <Grid item md={6} xs={12}>
-                        {timetable}
-
-                    </Grid>
-
-                </Grid>
+            <Container sx={{paddingBottom: 10}}>
+                <Typography variant={"h2"} component={"h1"} gutterBottom>Time Table</Typography>
+                <Box sx={{position: "relative"}}>
+                    <Box sx={{
+                        position: "absolute",
+                        transform: "translate(-50%,-50%)",
+                        left: "50%",
+                        top: "50%",
+                        zIndex: 1000,
+                    }}>
+                        <Typography variant={"h5"} fontWeight={"bold"} >
+                            Will be announced soon
+                        </Typography>
+                    </Box>
+                    <Box sx={{filter: "blur(10px)"}}>
+                        <Grid container spacing={5}>
+                            <Grid item md={6} xs={12}>
+                                {timetable}
+                            </Grid>
+                            <Grid item md={6} xs={12}>
+                                {timetable}
+                            </Grid>
+                        </Grid>
+                    </Box>
+                </Box>
             </Container>
         </HackHPIWrapper>
     )

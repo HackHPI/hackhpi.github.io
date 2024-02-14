@@ -6,7 +6,7 @@ function Newsletter() {
     return (
         <HackHPIWrapper>
             <Box sx={{paddingTop: 10, paddingBottom: 10}}>
-                <Container maxWidth={"xl"}>
+                <Container>
                     <Grid container spacing={3}>
                         <Grid item xs={12} md={6} sx={{display: "flex", alignItems: "center"}}>
                             <iframe
@@ -19,6 +19,7 @@ function Newsletter() {
                         <Grid item xs={12} md={6}>
                             <Typography
                                 variant={"h2"}
+                                component={"h1"}
                                 gutterBottom
                             >
                                 Want to stay in the loop?

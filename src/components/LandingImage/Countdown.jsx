@@ -14,7 +14,7 @@ function Countdown() {
     }, []);  //dependency, if end changes remount
 
     return (
-        <Typography sx={{color: "white"}} variant={"h1"}>
+        <Typography sx={{color: "white"}} variant={"h2"} component={"h1"} gutterBottom>
             {`${Math.round(timeLeft / (24 * 60 * 60 * 1000))} Days`}
         </Typography>
     )

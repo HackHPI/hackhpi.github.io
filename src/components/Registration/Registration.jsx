@@ -373,9 +373,10 @@ function Registration() {
     };
 
     return (
-        <HackHPIWrapper>
-            <Container sx={{ pt: 10, pb: 10 }} maxWidth={"xl"}>
-                <Typography variant={"h1"} sx={{ mb: "2rem" }}>Registration</Typography>
+
+        <HackHPIWrapper>        
+      <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
+            <Typography variant={"h2"} component={"h1"}>Registration</Typography>
                 <Stepper activeStep={activeStep} orientation="vertical">
                     {steps.map((step, index) => (
                         <Step key={index}>

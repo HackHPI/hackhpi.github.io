@@ -5,18 +5,18 @@ import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 function WhatToExpect() {
 
     return (
-        <HackHPIWrapper >
+        <HackHPIWrapper>
 
-            <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
+            <Container sx={{paddingTop: 10, paddingBottom: 10}}>
                 <Grid container spacing={6} alignItems={"center"}>
                     <Grid item xs={12} md={8}>
-                        <Typography variant={"h1"} gutterBottom>
+                        <Typography variant={"h2"} component={"h1"} gutterBottom>
                             What to expect
                         </Typography>
-                        <Typography fontSize={"2rem"} lineHeight={"2.75rem"} display={"block"} fontWeight={"light"}>
+                        <Typography fontWeight={"light"} gutterBottom>
                             Explore the future of urban living at HPI in Potsdam.
                         </Typography>
-                        <Typography gutterBottom fontSize={"2rem"} lineHeight={"2.75rem"} display={"block"}
+                        <Typography gutterBottom display={"block"}
                                     fontWeight={"light"}>
                             Join motivated students for two days of
                             innovation, workshops, and collaboration with top-notch sponsors offering support and

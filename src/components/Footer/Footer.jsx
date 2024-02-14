@@ -11,7 +11,7 @@ import {
     useMediaQuery,
     useTheme
 } from "@mui/material";
-import {Facebook, GitHub, Instagram, LinkedIn, Mail, Twitter} from "@mui/icons-material";
+import {GitHub, Instagram, LinkedIn, Mail} from "@mui/icons-material";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 import HackHpiLogo from "../../assets/svg/HackHPI_white.svg"
 

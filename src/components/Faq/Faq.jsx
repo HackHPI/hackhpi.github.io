@@ -65,7 +65,7 @@ let faqs = [
             },
             {
                 title: "When will applications close??",
-                text: "Applications will open 10th February - 10th March."
+                text: "Applications will open 15th February - 15th March."
             },
             {
                 title: "When will I hear back?",

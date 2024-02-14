@@ -1,13 +1,17 @@
 'use client'
 import {
     Box,
+    Button,
     Card,
+    CardActions,
+    CardContent,
     Container,
     Grid,
     Link,
     List,
     ListItemButton,
     ListItemIcon,
+    Stack,
     Typography,
     useMediaQuery,
     useTheme
@@ -118,33 +122,48 @@ export function Faq() {
     return (
         <HackHPIWrapper>
             <Container sx={{paddingTop: 10, paddingBottom: 10}}>
-                <Typography variant={"h2"} component={"h1"} sx={{marginBottom: "1rem"}}>Frequently asked questions</Typography>
+                <Typography variant={"h2"} component={"h1"} sx={{marginBottom: "1rem"}}>Frequently asked
+                    questions</Typography>
                 <Typography variant={"body1"} sx={{marginBottom: "4rem"}}>Can't find the answer you're looking for? You
                     can
                     always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your
                     inquiry!</Typography>
                 <Grid container spacing={7}>
                     <Grid item xs={12} md={4}>
-                        <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
-                            <List component="nav" aria-label="main mailbox folders">
-                                {
-                                    faqs.map((faq, idx) => (
-                                        <ListItemButton
-                                            key={faq.name}
-                                            selected={selectedIndex === idx}
-                                            onClick={(event) => handleListItemClick(event, idx)}
-                                            sx={{padding: 1}}
-                                        >
-                                            <ListItemIcon sx={{justifyContent: "center"}}>
-                                                <KeyboardArrowRight
-                                                />
-                                            </ListItemIcon>
-                                            <Typography sx={{fontSize: "1rem"}} noWrap>{faq.name}</Typography>
-                                        </ListItemButton>
-                                    ))
-                                }
-                            </List>
-                        </Card>
+                        <Stack spacing={3}>
+                            <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
+                                <List component="nav" aria-label="main mailbox folders">
+                                    {
+                                        faqs.map((faq, idx) => (
+                                            <ListItemButton
+                                                key={faq.name}
+                                                selected={selectedIndex === idx}
+                                                onClick={(event) => handleListItemClick(event, idx)}
+                                                sx={{padding: 1}}
+                                            >
+                                                <ListItemIcon sx={{justifyContent: "center"}}>
+                                                    <KeyboardArrowRight
+                                                    />
+                                                </ListItemIcon>
+                                                <Typography sx={{fontSize: "1rem"}} noWrap>{faq.name}</Typography>
+                                            </ListItemButton>
+                                        ))
+                                    }
+                                </List>
+                            </Card>
+                            <Card>
+                                <CardContent>
+
+                                    <Typography gutterBottom variant={"h6"}
+                                                fontWeight={"bold"}>Still have Questions?</Typography>
+                                    <Typography>If you didn't find what you are looking for, feel free to
+                                        ask!</Typography>
+                                </CardContent>
+                                <CardActions>
+                                    <Button size="small" color={"inherit"}>Contact us</Button>
+                                </CardActions>
+                            </Card>
+                        </Stack>
                     </Grid>
                     <Grid item xs={12} md={8}>
                         <Masonry spacing={3} columns={matches ? 2 : 1}>

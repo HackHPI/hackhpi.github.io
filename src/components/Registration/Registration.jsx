@@ -12,6 +12,7 @@ import {
     Radio,
     RadioGroup,
     Select,
+    Stack,
     Step,
     StepContent,
     StepLabel,
@@ -25,7 +26,6 @@ import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 import {LoadingButton} from "@mui/lab";
 import {RegistrationRest} from "../../rest/RegistrationRest.js";
 import {Send} from "@mui/icons-material";
-import Help from '@mui/icons-material/Help';
 
 // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
@@ -116,11 +116,7 @@ const personalData = [
         input: ['High School Diploma', 'Bachelor', 'Master', 'PhD'],
         name: "intendedDegree",
         required: true,
-    },
-    {
-        formLabel: '',
-        type: 0,
-    },
+    }
 ]
 
 const motivation = [
@@ -161,7 +157,7 @@ const skills = [
         required: false,
     },
     {
-        formLabel: 'Basic steps of work experiences/studies/projects/...',
+        formLabel: 'Previous experiences / studies / projects...',
         type: 1,
         input: ['e. g. working student at HPI, ...'],
         helperText: 'Outline the most important steps of your CV like work experiences, studies and projects.',
@@ -265,24 +261,34 @@ function Registration() {
     }
 
     function enableNext(inputList, name) {
-        console.log("NEXT", name)
+        console.log("#######", name, "#########")
         if (!inputList) {
             return;
         }
-        return !inputList.content.reduce((previous, current) => {
-            console.log(current)
+        const result = inputList.content.reduce((previous, current) => {
+            console.log("--------", current.name, "----------", values[current.name])
+            if (!current.required && (values[current.name] === undefined || values[current.name] === "")){
+                console.log("Skipping evaluation - not required and empty")
+                return true
+            }
+            if (current.required && ((!values[current.name] && values[current.name] !== 0 ) || values[current.name] === "")){
+                console.log("Declining - required not filled")
+                return false
+            }
             const meetsMax = current.max ? values[current.name]?.length <= current.max : true;
+            console.log("max", meetsMax)
             const meetsMin = current.min ? values[current.name]?.length >= current.min : true;
-            console.log(previous, meetsMax, meetsMin)
+            console.log("min", meetsMin)
+
+            const meetsAll = meetsMax && meetsMin
+            console.log(current.name, meetsAll, previous)
             return previous && meetsMax && meetsMin
 
         }, true)
+        console.log("results for ", name, result)
+        return result
     }
 
-    function errorCheck(props) {
-        const values = props.values;
-
-    }
 
     function contentForm(props) {
         const type = props.type;
@@ -306,6 +312,7 @@ function Registration() {
                     type="date"
                     name={name}
                     value={values[name] ?? ""}
+                    style={{color: "inherit"}}
                     onChange={(event) => handleChange(event.target.name, event.target.value)}
                 />
             case 3:
@@ -326,10 +333,6 @@ function Registration() {
                     onChange={(event, value) => handleChange(event.target.name, value)}
                     errorCheck
                 >
-                    {errorCheck({
-                        values: values[name],
-
-                    })}
                     {input.map((item, i) => (
                         <FormControlLabel value={i} control={<Radio/>} label={item}/>
                     ))}
@@ -367,16 +370,13 @@ function Registration() {
 
     }
 
-    const handleReset = () => {
-        setActiveStep(0);
-    };
-
     return (
 
         <HackHPIWrapper>
-      <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
-            <Typography variant={"h2"} component={"h1"}>Registration</Typography>
-                <Stepper activeStep={activeStep} orientation="vertical">
+            <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
+                <Typography variant={"h2"} component={"h1"}>Registration</Typography>
+                <Typography variant={"subtitle1"} gutterBottom>Apply now before March 15th!</Typography>
+                <Stepper activeStep={activeStep} orientation="vertical" sx={{mt: 5}}>
                     {steps.map((step, index) => (
                         <Step key={index}>
                             <StepLabel
@@ -387,18 +387,17 @@ function Registration() {
                                 }
                             >
                                 <Box direction="row" spacing={1}
-                                     sx={{display: "flex", justifyContent: "space-between"}}>
+                                >
                                     <Typography>
                                         {step.label}
                                     </Typography>
-                                    <Help/>
                                 </Box>
 
                             </StepLabel>
                             <StepContent>
-                                <Grid container spacing={3} xs={8}>
+                                <Grid container spacing={3} md={8} xs={12}>
                                     {step.content.map((item, i) => (
-                                        <Grid item xs={gridItemSize({name: item.name})}>
+                                        <Grid item md={gridItemSize({name: item.name})} xs={12}>
                                             <FormControl fullWidth>
                                                 <FormLabel>
                                                     {item.formLabel}{item.required ? "*" : ""}
@@ -413,25 +412,34 @@ function Registration() {
                                             </FormControl>
                                         </Grid>
                                     ))}
-                                    <Grid item xs={2}>
-                                        {index === steps.length - 1 ?
-                                            <LoadingButton variant={"contained"} startIcon={<Send/>} loading={isSending}
-                                                           onClick={submitForm}>
-                                                Send
-                                            </LoadingButton>
-                                            :
-                                            <Button variant="contained" onClick={handleNext}
-                                                    disabled={enableNext(steps[index], step.label)}>
-                                                Next
-                                            </Button>
-                                        }
+                                    <Grid item xs={12}>
+                                        <Stack direction={"row"} spacing={2}>
+                                            {index === steps.length - 1 ?
+                                                <LoadingButton variant={"contained"} startIcon={<Send/>}
+                                                               loading={isSending}
+                                                               onClick={submitForm}>
+                                                    Send
+                                                </LoadingButton>
+                                                :
+                                                <Button
+                                                    variant="contained"
+                                                        onClick={handleNext}
+                                                        disabled={!enableNext(steps[index], step.label)}
+                                                >
+                                                    Next
+                                                </Button>
+                                            }
+                                            <Grid item xs={2}>
+                                                <Button disabled={index === 0} onClick={handleBack} color={"inherit"}>
+                                                    Back
+                                                </Button>
+                                            </Grid>
+
+                                        </Stack>
+
 
                                     </Grid>
-                                    <Grid item xs={2}>
-                                        <Button disabled={index === 0} onClick={handleBack}>
-                                            Back
-                                        </Button>
-                                    </Grid>
+
                                 </Grid>
                             </StepContent>
                         </Step>

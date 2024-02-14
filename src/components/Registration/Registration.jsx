@@ -14,6 +14,7 @@ import {
     StepContent,
     StepLabel,
     Stepper,
+    TextareaAutosize,
     TextField,
     Typography
 } from "@mui/material";
@@ -24,50 +25,49 @@ import {LoadingButton} from "@mui/lab";
 import {RegistrationRest} from "../../rest/RegistrationRest.js";
 import {Send} from "@mui/icons-material";
 
-const textfield = {
-    minWidth: "100%"
-}
-
-// types: 0 = empty, 1 = text, 2 = date, 3 = select, 4 = radio
+// types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
 const personalData = [
     {
-        formLabel: 'First name',
+        formLabel: 'First name*',
         type: 1,
         input: ['First Name'],
-        name: "forename"
+        name: "forename",
+        max: 50
     },
     {
-        formLabel: 'Last name',
+        formLabel: 'Last name*',
         type: 1,
         input: ['Last Name'],
-        name: "surname"
+        name: "surname",
+        max: 50
     },
     {
-        formLabel: 'Date of birth',
+        formLabel: 'Date of birth*',
         type: 2,
         name: "age"
     },
     {
-        formLabel: 'Gender',
+        formLabel: 'Gender*',
         type: 3,
         input: ['male', 'female', 'diverse'],
         name: "gender"
     },
     {
-        formLabel: 'E-mail',
+        formLabel: 'E-mail*',
         type: 1,
         input: ['example@example.com'],
-        name: "email"
+        name: "email",
+        max: 100 // Regex?
     },
     {
-        formLabel: 'T-shirt size',
+        formLabel: 'T-shirt size*',
         type: 3,
         input: ['XS', 'S', 'M', 'L', 'XL', 'XXL'],
         name: "shirtSize"
     },
     {
-        formLabel: 'Diet preferences',
+        formLabel: 'Diet preferences*',
         type: 3,
         input: ['omnivore', 'vegetarian', 'vegan'],
         name: "dietPreference"
@@ -77,10 +77,11 @@ const personalData = [
         type: 1,
         input: ['e. g. gluten, ...'],
         helperText: 'Please let us know if you have severe allergies that we must know about.',
-        name: "allergies"
+        name: "allergies",
+        max: 50
     },
     {
-        formLabel: 'University/School/Institute',
+        formLabel: 'University/School/Institute*',
         type: 1,
         input: ['e. g. University of Potsdam'],
         name: "university"
@@ -115,16 +116,12 @@ const motivation = [
         type: 0,
     },
     {
-        formLabel: 'Your motivation',
+        formLabel: 'Your motivation*',
         type: 1,
         input: ['My motivation is ...'],
         helperText: 'Please write a short text (max. 150 words) or 3 key phrases describing your motivation to be part of HackHPI. If you can\'t think of anything, take the following questions as guidance: Can you share a project, creation, or task that holds a special place as one of your favorites? What motivated you to undertake it, and what aspects make you proud of the outcome?',
-        rows: 5, // TODO: mehrzeiliges Textfeld
+        rows: 5,
         name: "motivation"
-    },
-    {
-        formLabel: '',
-        type: 0,
     },
 ]
 // TODO: maximal capacity for motivation text: 150 words
@@ -134,25 +131,29 @@ const skills = [
         formLabel: 'Tech stack',
         type: 1,
         input: ['e. g. Python, ...'],
-        helperText: 'Please note programming languages, frameworks, etc. have you worked with.', //etc. auf Englisch? note richtiges Wort?
-        rows: 5,
+        helperText: 'Please note programming languages, frameworks, etc. have you worked with.',
+        rows: 3,
+        name: "techStack"
     },
     {
         formLabel: 'Basic steps of your CV',
         type: 1,
-        input: ['e. g. working student at HPI'],
+        input: ['e. g. working student at HPI,\nstudy of computer science at University of Potsdam'],
         helperText: 'Outline the most important steps of your CV like work experiences and studies.',
-        rows: 5, // wie bei Tech stack
+        rows: 3,
+        name: "basicOutline"
     },
     {
         formLabel: 'GitHub account',
         type: 1,
         input: ['e. g. maxm90'],
+        name: "github"
     },
     {
         formLabel: 'LinkedIn account',
         type: 1,
         input: ['e. g. Max Mustermann'],
+        name: "linkedin"
     },
 ]
 
@@ -222,18 +223,33 @@ function Registration() {
         setValues(newValue);
     }
 
+    function enableNext(inputList) {
+        if (!inputList) {
+            return;
+        }
+        inputList.content.reduce((previous, current) => {
+            return previous && values[current.name]?.length <= current.max
+        }, true)
+    }
+
+    function errorCheck(props) {
+        const values = props.values;
+        
+    }
+
     function contentForm(props) {
         const type = props.type;
         const input = props.input;
-        const name = props.name
-        // const rows = props.rows;
+        const name = props.name;
+        const rows = props.rows;
         if (type === 0) {
             return null
         } else if (type === 1) {
             return <TextField
-                color="success"
                 type="text"
                 placeholder={input}
+                multiline
+                minRows={rows}
                 name={name}
                 value={values[name] ?? ""}
                 onChange={(event) => handleChange(event.target.name, event.target.value)}
@@ -260,11 +276,25 @@ function Registration() {
             return <RadioGroup
                 value={values[name] ?? ""}
                 name={name}
-                onChange={(event, value) => handleChange(event.target.name, value)}>
+                onChange={(event, value) => handleChange(event.target.name, value)}
+                errorCheck
+                >
+                {errorCheck({
+                    values: values[name],
+
+                })}
                 {input.map((item, i) => (
                     <FormControlLabel value={i} control={<Radio/>} label={item}/>
                 ))}
             </RadioGroup>
+        }
+    }
+
+    function gridItemSize(props) {
+        if (props.name === "motivation") {
+            return 12
+        } else {
+            return 6
         }
     }
 
@@ -309,8 +339,8 @@ function Registration() {
                             <StepContent>
                                 <Grid container spacing={3} xs={8}>
                                     {step.content.map((item, i) => (
-                                        <Grid item xs={6}>
-                                            <FormControl style={textfield}>
+                                        <Grid item xs={gridItemSize({name: item.name})}>
+                                            <FormControl fullWidth>
                                                 <FormLabel>{item.formLabel}</FormLabel>
                                                 {contentForm({
                                                     type: item.type,
@@ -328,8 +358,8 @@ function Registration() {
                                                 Send
                                             </LoadingButton>
                                             :
-                                            <Button variant="contained" onClick={handleNext}>
-                                                Continue
+                                            <Button variant="contained" onClick={handleNext} disabled={enableNext(steps[index])}>
+                                                Next
                                             </Button>
                                         }
 

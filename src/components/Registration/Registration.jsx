@@ -1,3 +1,4 @@
+'use client'
 import {
     Button,
     Container,
@@ -14,16 +15,15 @@ import {
     StepContent,
     StepLabel,
     Stepper,
-    TextareaAutosize,
     TextField,
     Typography
 } from "@mui/material";
 import * as React from 'react';
-import {useMemo, useState} from 'react';
+import { useMemo, useState } from 'react';
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
-import {LoadingButton} from "@mui/lab";
-import {RegistrationRest} from "../../rest/RegistrationRest.js";
-import {Send} from "@mui/icons-material";
+import { LoadingButton } from "@mui/lab";
+import { RegistrationRest } from "../../rest/RegistrationRest.js";
+import { Send } from "@mui/icons-material";
 
 // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
@@ -217,7 +217,7 @@ function Registration() {
 
     function handleChange(name, inputValue) {
         console.log("incoming", name, values)
-        const newValue = {...values}
+        const newValue = { ...values }
         newValue[name] = inputValue;
         console.log(newValue)
         setValues(newValue);
@@ -234,7 +234,7 @@ function Registration() {
 
     function errorCheck(props) {
         const values = props.values;
-        
+
     }
 
     function contentForm(props) {
@@ -278,13 +278,13 @@ function Registration() {
                 name={name}
                 onChange={(event, value) => handleChange(event.target.name, value)}
                 errorCheck
-                >
+            >
                 {errorCheck({
                     values: values[name],
 
                 })}
                 {input.map((item, i) => (
-                    <FormControlLabel value={i} control={<Radio/>} label={item}/>
+                    <FormControlLabel value={i} control={<Radio />} label={item} />
                 ))}
             </RadioGroup>
         }
@@ -324,8 +324,8 @@ function Registration() {
 
     return (
         <HackHPIWrapper>
-            <Container sx={{pt: 10, pb: 10}} maxWidth={"xl"}>
-                <Typography variant={"h1"} sx={{mb: "2rem"}}>Registration</Typography>
+            <Container sx={{ pt: 10, pb: 10 }} maxWidth={"xl"}>
+                <Typography variant={"h1"} sx={{ mb: "2rem" }}>Registration</Typography>
                 <Stepper activeStep={activeStep} orientation="vertical">
                     {steps.map((step, index) => (
                         <Step key={index}>
@@ -335,11 +335,15 @@ function Registration() {
                                         <Typography variant="caption">optional</Typography>
                                     ) : null
                                 }
-                            >{step.label}</StepLabel>
+                            >
+                                <Typography>
+                                    {step.label}
+                                </Typography>
+                            </StepLabel>
                             <StepContent>
                                 <Grid container spacing={3} xs={8}>
                                     {step.content.map((item, i) => (
-                                        <Grid item xs={gridItemSize({name: item.name})}>
+                                        <Grid item xs={gridItemSize({ name: item.name })}>
                                             <FormControl fullWidth>
                                                 <FormLabel>{item.formLabel}</FormLabel>
                                                 {contentForm({
@@ -354,7 +358,7 @@ function Registration() {
                                     ))}
                                     <Grid item xs={2}>
                                         {index === steps.length - 1 ?
-                                            <LoadingButton variant={"contained"} startIcon={<Send/>} loading={isSending} onClick={submitForm}>
+                                            <LoadingButton variant={"contained"} startIcon={<Send />} loading={isSending} onClick={submitForm}>
                                                 Send
                                             </LoadingButton>
                                             :
@@ -380,3 +384,7 @@ function Registration() {
 }
 
 export default Registration
+
+//TODO:
+// Ja zur Datenschutzerklärung
+// Please check your mailbox to confirm your registration

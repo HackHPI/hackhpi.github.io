@@ -60,24 +60,13 @@ function LandingImage2() {
                         >
                             SignUp
                         </Button>
-                        <Card elevation={5}>
-                            <Stack direction={"row"} alignItems={"center"} display={"flex"} sx={{height: "100%"}} spacing={3}>
-                                <CalendarMonthOutlined sx={{fontSize: "2rem"}}/>
-                                <Typography sx={{fontSize:"1rem"}}>5th - 6th April</Typography>
+                        <Card elevation={5} sx={{height: "3.5rem"}}>
+                            <Stack direction={"row"} alignItems={"center"} display={"flex"}
+                                   sx={{height: "100%", paddingRight: "1.5rem", paddingLeft: "1.5rem",}} spacing={3}>
+                                <CalendarMonthOutlined sx={{fontSize: "2rem", color: "text.disabled"}}/>
+                                <Typography sx={{fontSize: "1.5rem"}} color={"text.disabled"}>5th - 6th April</Typography>
                             </Stack>
                         </Card>
-                        <Button
-                            variant={"contained"}
-                            disabled
-                            sx={{
-                                borderWidth: "1rem",
-                                width: "15rem",
-                                height: "3.5rem",
-                                fontSize: "1.25rem",
-                            }}
-                        >
-                            SignUp
-                        </Button>
                     </Stack>
                 </Box>
             </Container>

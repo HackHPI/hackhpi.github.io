@@ -8,7 +8,8 @@ import {
     List,
     ListItemButton,
     ListItemIcon,
-    Typography, useMediaQuery,
+    Typography,
+    useMediaQuery,
     useTheme
 } from "@mui/material";
 import React from "react";
@@ -116,8 +117,8 @@ export function Faq() {
     };
     return (
         <HackHPIWrapper>
-            <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
-                <Typography variant={"h1"} sx={{marginBottom: "1rem"}}>Frequently asked questions</Typography>
+            <Container sx={{paddingTop: 10, paddingBottom: 10}}>
+                <Typography variant={"h2"} component={"h1"} sx={{marginBottom: "1rem"}}>Frequently asked questions</Typography>
                 <Typography variant={"body1"} sx={{marginBottom: "4rem"}}>Can't find the answer you're looking for? You
                     can
                     always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your
@@ -132,14 +133,13 @@ export function Faq() {
                                             key={faq.name}
                                             selected={selectedIndex === idx}
                                             onClick={(event) => handleListItemClick(event, idx)}
-                                            sx={{padding: 2}}
+                                            sx={{padding: 1}}
                                         >
-                                            <ListItemIcon>
+                                            <ListItemIcon sx={{justifyContent: "center"}}>
                                                 <KeyboardArrowRight
-                                                    fontSize={"large"}
                                                 />
                                             </ListItemIcon>
-                                            <Typography sx={{fontSize: "1.5rem"}} noWrap>{faq.name}</Typography>
+                                            <Typography sx={{fontSize: "1rem"}} noWrap>{faq.name}</Typography>
                                         </ListItemButton>
                                     ))
                                 }
@@ -147,11 +147,11 @@ export function Faq() {
                         </Card>
                     </Grid>
                     <Grid item xs={12} md={8}>
-                        <Masonry spacing={3} columns={matches ? 2: 1}>
+                        <Masonry spacing={3} columns={matches ? 2 : 1}>
                             {
                                 faqs[selectedIndex].items.map((faq, idx) => (
                                         <Box key={idx}>
-                                            <WindowCard >
+                                            <WindowCard>
                                                 <Typography gutterBottom variant={"h6"}
                                                             fontWeight={"bold"}>{faq.title}</Typography>
                                                 <Typography>

@@ -168,8 +168,8 @@ export function Gallery() {
     };
     return (
         <HackHPIWrapper>
-            <Container sx={{paddingTop: 10, paddingBottom: 10}} maxWidth={"xl"}>
-                <Typography variant={"h1"} gutterBottom>Gallery</Typography>
+            <Container sx={{paddingTop: 10, paddingBottom: 10}}>
+                <Typography variant={"h2"} component={"h1"} gutterBottom>Gallery</Typography>
                 <Grid container spacing={7} alignItems="center">
                     {/*<Grid item xs={12} md={4}>
                     <Card sx={{width: '100%', bgcolor: 'background.paper'}}>

@@ -1,3 +1,4 @@
+'use client'
 import {Box, Container, Grid, Link, Typography} from "@mui/material";
 import {createClient} from "@supabase/supabase-js";
 import {useEffect} from "react";

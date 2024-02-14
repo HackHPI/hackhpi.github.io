@@ -4,7 +4,7 @@ import {TypeAnimation} from "react-type-animation";
 import Countdown from "./Countdown.jsx";
 import {CalendarMonthOutlined} from "@mui/icons-material";
 
-function LandingImage2() {
+function LandingImage2(props) {
 
 
     return (
@@ -59,6 +59,7 @@ function LandingImage2() {
                                 height: "3.5rem",
                                 fontSize: "1rem",
                             }}
+                            onClick={() => document.getElementById("signupForm").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })}
                         >
                             SignUp
                         </Button>
@@ -66,8 +67,9 @@ function LandingImage2() {
                             <Stack direction={"row"} alignItems={"center"} display={"flex"}
                                    sx={{height: "100%", paddingRight: "1.25rem", paddingLeft: "1.25rem",}} spacing={2}>
                                 <CalendarMonthOutlined sx={{fontSize: "1.5rem", color: "text.disabled"}}/>
-                                <Typography sx={{fontSize: "1rem"}} color={"text.disabled"} noWrap>5th - 6th
-                                    April</Typography>
+                                <Typography sx={{fontSize: "1rem"}} color={"text.disabled"} noWrap>
+                                    5th - 6th April
+                                </Typography>
                             </Stack>
                         </Card>
                     </Stack>

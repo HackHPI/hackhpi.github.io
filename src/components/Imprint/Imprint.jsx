@@ -1,9 +1,7 @@
 import {Box, Container, Link, Stack, Typography} from "@mui/material";
-import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 function Imprint() {
     return (
-        <HackHPIWrapper>
         <Container sx={{pt: 5}}>
             <Stack spacing={5}>
                 <Box>
@@ -22,7 +20,7 @@ function Imprint() {
                         14482 Potsdam
                     </Typography>
                     <Typography variant="body1">
-                        E-Mail: <Link href="mailto:team@hackhpi.org">team@hackhpi.org</Link>
+                        E-Mail: <Link href="mailto:team@hackhpi.org" color={"inherit"}>team@hackhpi.org</Link>
                     </Typography>
                     <Typography variant="body1">Inhaltlich verantwortlich gemäß § 5 TMG, § 55 RStV: Klubsprecher Theo
                         Klinke, Mathilda Heise und Uli Prantz</Typography>
@@ -45,14 +43,13 @@ function Imprint() {
                     </Typography>
                     <Typography variant="body1">
                         HPI School of Design Thinking: Nico Böckhoff
-                        <Typography variant="body1">
-                        </Typography>
+                    </Typography>
+                    <Typography variant="body1">
                         Partner-Logos: Der jeweilige Partner
                     </Typography>
                 </Box>
             </Stack>
         </Container>
-        </HackHPIWrapper>
     )
 }
 

@@ -1,3 +1,4 @@
+'use client'
 import ReactVisibilitySensor from 'react-visibility-sensor';
 import {useState} from "react";
 import {Slide} from "@mui/material";

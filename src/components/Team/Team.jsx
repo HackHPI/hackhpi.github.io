@@ -16,7 +16,6 @@ const teamMembers = [
     {
         name: "Cedric Rische",
         position: "Team Member",
-        mail: "cedric.rische@student.hpi.de",
         linkedIn: "cedric-rische",
         profilePicture: CedricRischeProfile
     },
@@ -24,7 +23,6 @@ const teamMembers = [
         name: "Mathilda Heise",
         position: "Team Member",
         linkedIn: "mathilda-heise-9203a3258",
-        mail: "mathilda.heise@student.hpi.de",
         profilePicture: MathildaHeiseProfile
     },
     {
@@ -56,7 +54,6 @@ const teamMembers = [
         position: "Team Member",
         profilePicture: ViktorKalvodaProfile,
         linkedIn: "viktor-kalvoda-3ab0b62a2",
-        mail: "viktor.kalvoda@student.hpi.de"
     },
     {
         name: "Gerome Quantmeyer",

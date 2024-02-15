@@ -17,9 +17,9 @@ import {
     useTheme
 } from "@mui/material";
 import React from "react";
-import {KeyboardArrowRight} from "@mui/icons-material";
-import {WindowCard} from "../WindowCard/WindowCard.jsx";
-import {Masonry} from "@mui/lab";
+import { KeyboardArrowRight } from "@mui/icons-material";
+import { WindowCard } from "../WindowCard/WindowCard.jsx";
+import { Masonry } from "@mui/lab";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 let faqs = [
@@ -121,17 +121,15 @@ export function Faq() {
     };
     return (
         <HackHPIWrapper>
-            <Container sx={{paddingTop: 10, paddingBottom: 10}}>
-                <Typography variant={"h2"} component={"h1"} sx={{marginBottom: "1rem"}}>Frequently asked
-                    questions</Typography>
-                <Typography variant={"body1"} sx={{marginBottom: "4rem"}}>Can't find the answer you're looking for? You
-                    can
-                    always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your
-                    inquiry!</Typography>
+            <Container sx={{ paddingTop: 10, paddingBottom: 10 }}>
+                <Typography variant={"h2"} component={"h1"} gutterBottom>Frequently asked questions</Typography>
+                <Typography variant={"body1"} sx={{ marginBottom: "4rem"}}>
+                    Can't find the answer you're looking for? You can always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your inquiry!
+                </Typography>
                 <Grid container spacing={7}>
                     <Grid item xs={12} md={4}>
                         <Stack spacing={3}>
-                            <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
+                            <Card sx={{ width: '100%', bgcolor: 'background.paper' }}>
                                 <List component="nav" aria-label="main mailbox folders">
                                     {
                                         faqs.map((faq, idx) => (
@@ -139,13 +137,13 @@ export function Faq() {
                                                 key={faq.name}
                                                 selected={selectedIndex === idx}
                                                 onClick={(event) => handleListItemClick(event, idx)}
-                                                sx={{padding: 1}}
+                                                sx={{ padding: 1 }}
                                             >
-                                                <ListItemIcon sx={{justifyContent: "center"}}>
+                                                <ListItemIcon sx={{ justifyContent: "center" }}>
                                                     <KeyboardArrowRight
                                                     />
                                                 </ListItemIcon>
-                                                <Typography sx={{fontSize: "1rem"}} noWrap>{faq.name}</Typography>
+                                                <Typography sx={{ fontSize: "1rem" }} noWrap>{faq.name}</Typography>
                                             </ListItemButton>
                                         ))
                                     }
@@ -155,7 +153,7 @@ export function Faq() {
                                 <CardContent>
 
                                     <Typography gutterBottom variant={"h6"}
-                                                fontWeight={"bold"}>Still have Questions?</Typography>
+                                        fontWeight={"bold"}>Still have Questions?</Typography>
                                     <Typography>If you didn't find what you are looking for, feel free to
                                         ask!</Typography>
                                 </CardContent>
@@ -169,16 +167,16 @@ export function Faq() {
                         <Masonry spacing={3} columns={matches ? 2 : 1}>
                             {
                                 faqs[selectedIndex].items.map((faq, idx) => (
-                                        <Box key={idx}>
-                                            <WindowCard>
-                                                <Typography gutterBottom variant={"h6"}
-                                                            fontWeight={"bold"}>{faq.title}</Typography>
-                                                <Typography>
-                                                    {faq.text}
-                                                </Typography>
-                                            </WindowCard>
+                                    <Box key={idx}>
+                                        <WindowCard>
+                                            <Typography gutterBottom variant={"h6"}
+                                                fontWeight={"bold"}>{faq.title}</Typography>
+                                            <Typography>
+                                                {faq.text}
+                                            </Typography>
+                                        </WindowCard>
 
-                                            {/*
+                                        {/*
                             <Accordion key={faq.title} >
                                     <AccordionSummary
                                         expandIcon={<ExpandMore fontSize={"large"}/>}
@@ -195,8 +193,8 @@ export function Faq() {
                                     </AccordionDetails>
                                 </Accordion>
                                 */}
-                                        </Box>
-                                    )
+                                    </Box>
+                                )
                                 )
 
                             }

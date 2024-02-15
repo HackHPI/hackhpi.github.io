@@ -290,15 +290,12 @@ function Registration() {
         if (!inputList) {
             return;
         }
-        console.log("######## ", name, "#################")
         const result = inputList.content.reduce((previous, current) => {
             console.log(current.name, values[current.name], previous)
             if (!current.required && (values[current.name] === undefined || values[current.name] === "")) {
-                console.log("Optional Field is empty -- skipping")
                 return previous && true
             }
             if (current.required && ((!values[current.name] && values[current.name] !== 0) || values[current.name] === "")) {
-                console.log("Required field is empty")
                 return previous && false
             }
             const meetsMax = current.max ? values[current.name]?.length <= current.max : true;
@@ -308,7 +305,6 @@ function Registration() {
             return previous && meetsAll
 
         }, true)
-        console.log("Result", result)
         return result
     }
 

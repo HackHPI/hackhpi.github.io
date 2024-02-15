@@ -84,7 +84,7 @@ function Footer() {
                             <Typography>
                                 <Link sx={{textDecoration: "none", color: "inherit"}}
                                       href={"https://hackhpi.org/privacy"}>
-                                    Data Privacy
+                                    Privacy Policy
                                 </Link>
                             </Typography>
                         </Grid>

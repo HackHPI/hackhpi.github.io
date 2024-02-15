@@ -2,12 +2,14 @@
 import {
     Box,
     Button,
+    Checkbox,
     Container,
     FormControl,
     FormControlLabel,
     FormHelperText,
     FormLabel,
     Grid,
+    Link,
     MenuItem,
     Radio,
     RadioGroup,
@@ -135,7 +137,7 @@ const motivation = [
         formLabel: 'Your motivation',
         type: 1,
         input: ['My motivation is ...'],
-        helperText: 'Please write a short text (max. 150 words) or 3 key phrases describing your motivation to be part of HackHPI. If you can\'t think of anything, take the following questions as guidance: Can you share a project, creation, or task that holds a special place as one of your favorites? What motivated you to undertake it, and what aspects make you proud of the outcome?',
+        helperText: 'Please write a short text (max. 1200 characters) or 3 key phrases describing your motivation to be part of HackHPI. If you can\'t think of anything, take the following questions as guidance: Can you share a project, creation, or task that holds a special place as one of your favorites? What motivated you to undertake it, and what aspects make you proud of the outcome?',
         rows: 5,
         name: "motivation",
         max: 1200,
@@ -177,7 +179,7 @@ const skills = [
     {
         formLabel: 'LinkedIn account',
         type: 1,
-        input: ['e. g. Max Mustermann'],
+        input: ['e. g. /in/max-mustermann'],
         name: "linkedin",
         max: 50,
         required: false,
@@ -224,6 +226,13 @@ const teamMembers = [
         formLabel: '',
         type: 0,
     },
+    {
+        formLabel: "Privacy Policy",
+        input: ["I have read and accept the Privacy Policy."],
+        name: "privacyPolicy",
+        type: 5,
+        required: true
+    }
 ]
 
 const steps = [
@@ -256,7 +265,7 @@ const steps = [
             }}>
                 <Stack spacing={3} justifyContent={"center"}>
                     <Mail color={"inherit"} sx={{fontSize: "2rem"}}/>
-                    <Typography>To complete the Registration, please click on the link in the Mail we sent
+                    <Typography>To complete the registration, please click on the link in the email we sent
                         you!</Typography>
                 </Stack>
             </Box>
@@ -281,12 +290,16 @@ function Registration() {
         if (!inputList) {
             return;
         }
+        console.log("######## ", name, "#################")
         const result = inputList.content.reduce((previous, current) => {
+            console.log(current.name, values[current.name], previous)
             if (!current.required && (values[current.name] === undefined || values[current.name] === "")) {
-                return true
+                console.log("Optional Field is empty -- skipping")
+                return previous && true
             }
             if (current.required && ((!values[current.name] && values[current.name] !== 0) || values[current.name] === "")) {
-                return false
+                console.log("Required field is empty")
+                return previous && false
             }
             const meetsMax = current.max ? values[current.name]?.length <= current.max : true;
             const meetsMin = current.min ? values[current.name]?.length >= current.min : true;
@@ -295,6 +308,7 @@ function Registration() {
             return previous && meetsAll
 
         }, true)
+        console.log("Result", result)
         return result
     }
 
@@ -346,6 +360,12 @@ function Registration() {
                         <FormControlLabel value={i} control={<Radio/>} label={item}/>
                     ))}
                 </RadioGroup>
+            case 5:
+                return <FormControlLabel
+                                         control={<Checkbox name={name} checked={values[name] ?? false}
+                                                            onChange={(event, value) => handleChange(name, value)}/>}
+                                         label={input.join("")}/>
+
             default:
                 return null
         }
@@ -387,7 +407,9 @@ function Registration() {
             return (
                 <LoadingButton variant={"contained"} startIcon={<Send/>}
                                loading={isSending}
-                               onClick={submitForm}>
+                               onClick={submitForm}
+                               disabled={!enableNext(steps[index], step.label)}
+                >
                     Send
                 </LoadingButton>
             )
@@ -433,7 +455,7 @@ function Registration() {
                                     {step.children ? step.children : step.content.map((item, i) => (
                                         <Grid item md={gridItemSize({name: item.name})} xs={12}>
                                             <FormControl fullWidth>
-                                                <FormLabel>
+                                                <FormLabel focused={false}>
                                                     {item.formLabel}{item.required ? "*" : ""}
                                                 </FormLabel>
                                                 {contentForm({
@@ -465,6 +487,9 @@ function Registration() {
                         </Step>
                     ))}
                 </Stepper>
+                <Typography color={"text.disabled"} sx={{marginTop: 3}}>Read our <Link href={"/privacy"}
+                                                                                       color={"inherit"}>privacy
+                    policy</Link> for information on how we handle your data and what you rights are.</Typography>
             </Container>
         </HackHPIWrapper>
     )

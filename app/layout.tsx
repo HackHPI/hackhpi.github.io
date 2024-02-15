@@ -15,6 +15,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
             <title>
                 HackHPI 2024 | tomorrow's reality, today's vision. smart cities edition.
             </title>
+            <meta name="theme-color" content="#13101B"/>
             <meta name={"description"}
                   content={"Explore the future of urban living at HPI in Potsdam. Join motivated students for two days of innovation, workshops, and collaboration with top-notch sponsors offering support and expertise. Tackle a challenge and dive into the world of smart cities."}/>
         </head>

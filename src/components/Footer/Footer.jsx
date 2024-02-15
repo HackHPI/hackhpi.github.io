@@ -77,13 +77,13 @@ function Footer() {
                             <Typography variant={"h5"} gutterBottom>Legal</Typography>
                             <Typography>
                                 <Link sx={{textDecoration: "none", color: "inherit"}}
-                                      href={"https://hackhpi.org/imprint"}>
+                                      href={"/imprint"}>
                                     Imprint
                                 </Link>
                             </Typography>
                             <Typography>
                                 <Link sx={{textDecoration: "none", color: "inherit"}}
-                                      href={"https://hackhpi.org/privacy"}>
+                                      href={"/privacy"}>
                                     Privacy Policy
                                 </Link>
                             </Typography>

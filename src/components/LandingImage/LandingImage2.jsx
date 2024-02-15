@@ -58,7 +58,7 @@ function LandingImage2() {
                                 height: "3.5rem",
                                 fontSize: "1rem",
                             }}
-                            onClick={() => document.getElementById("signupForm").scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" })}
+                            onClick={() => document.getElementById("signupForm").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })}
                         >
                             SignUp
                         </Button>

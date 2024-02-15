@@ -291,7 +291,6 @@ function Registration() {
             return;
         }
         const result = inputList.content.reduce((previous, current) => {
-            console.log(current.name, values[current.name], previous)
             if (!current.required && (values[current.name] === undefined || values[current.name] === "")) {
                 return previous && true
             }

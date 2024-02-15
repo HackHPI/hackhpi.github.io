@@ -2,11 +2,11 @@ import {Box, Container, Link, Stack, Typography} from "@mui/material";
 
 function Imprint() {
     return (
-        <Container sx={{pt: 5}}>
-            <Stack spacing={5}>
+        <Container sx={{ pt: 10, pb: 10 }}>
+            <Stack spacing={4}>
                 <Box>
-                    <Typography variant="h1" gutterBottom>Impressum</Typography>
-                    <Typography variant="body1">Diese Webseite wird betrieben vom</Typography>
+                    <Typography variant="h2" gutterBottom>Impressum</Typography>
+                    <Typography variant="body1" sx={{ marginBottom: "1rem" }}>Diese Webseite wird betrieben vom</Typography>
                     <Typography variant="body1">
                         HackHPI Klub
                     </Typography>
@@ -19,14 +19,14 @@ function Imprint() {
                     <Typography variant="body1">
                         14482 Potsdam
                     </Typography>
-                    <Typography variant="body1">
+                    <Typography variant="body1" sx={{ marginBottom: "1rem" }}>
                         E-Mail: <Link href="mailto:team@hackhpi.org" color={"inherit"}>team@hackhpi.org</Link>
                     </Typography>
                     <Typography variant="body1">Inhaltlich verantwortlich gemäß § 5 TMG, § 55 RStV: Klubsprecher Theo
                         Klinke, Mathilda Heise und Uli Prantz</Typography>
                 </Box>
                 <Box>
-                    <Typography variant="h2" gutterBottom>Haftungsausschluss</Typography>
+                    <Typography variant="h3" gutterBottom>Haftungsausschluss</Typography>
                     <Typography variant="body1">
                         Trotz größtmöglicher Sorgfalt kann nicht ausgeschlossen werden, dass
                         einzelne Informationen auf dieser Seite veraltet oder nicht zutreffend
@@ -37,7 +37,7 @@ function Imprint() {
                     </Typography>
                 </Box>
                 <Box>
-                    <Typography variant="h2" gutterBottom>Urheber der verwendeten Bilder</Typography>
+                    <Typography variant="h3" gutterBottom>Urheber der verwendeten Bilder</Typography>
                     <Typography variant="body1">
                         HPI Hauptgebäude: HPI/K. Herschelmann
                     </Typography>

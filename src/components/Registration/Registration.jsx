@@ -23,11 +23,11 @@ import {
     Typography
 } from "@mui/material";
 import * as React from 'react';
-import {useMemo, useState} from 'react';
+import { useMemo, useState } from 'react';
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
-import {LoadingButton} from "@mui/lab";
-import {RegistrationRest} from "../../rest/RegistrationRest.js";
-import {Mail, Send} from "@mui/icons-material";
+import { LoadingButton } from "@mui/lab";
+import { RegistrationRest } from "../../rest/RegistrationRest.js";
+import { Mail, Send } from "@mui/icons-material";
 
 // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
@@ -145,7 +145,6 @@ const motivation = [
         required: true,
     },
 ]
-// TODO: maximal capacity for motivation text: 150 words
 
 const skills = [
     {
@@ -222,17 +221,16 @@ const teamMembers = [
         max: 100,
         required: false,
     },
+]
+
+const submission = [
     {
-        formLabel: '',
-        type: 0,
-    },
-    {
-        formLabel: "Privacy Policy",
-        input: ["I have read and accept the Privacy Policy."],
+        formLabel: "Privacy policy",
+        input: ["I have read and agree to the privacy policy."],
         name: "privacyPolicy",
         type: 5,
         required: true
-    }
+    },
 ]
 
 const steps = [
@@ -253,7 +251,11 @@ const steps = [
         content: teamMembers,
     },
     {
-        label: 'E-Mail Verification',
+        label: 'Submission',
+        content: submission,
+    },
+    {
+        label: 'E-mail verification',
         children: (
             <Box sx={{
                 width: "100%",
@@ -264,9 +266,8 @@ const steps = [
                 paddingTop: "3rem"
             }}>
                 <Stack spacing={3} justifyContent={"center"}>
-                    <Mail color={"inherit"} sx={{fontSize: "2rem"}}/>
-                    <Typography>To complete the registration, please click on the link in the email we sent
-                        you!</Typography>
+                    <Mail color={"inherit"} sx={{ fontSize: "2rem" }} />
+                    <Typography>To complete the registration, please click on the link in the email we sent you!</Typography>
                 </Stack>
             </Box>
         ),
@@ -281,7 +282,7 @@ function Registration() {
     const registrationRest = useMemo(() => new RegistrationRest(), [])
 
     function handleChange(name, inputValue) {
-        const newValue = {...values}
+        const newValue = { ...values }
         newValue[name] = inputValue;
         setValues(newValue);
     }
@@ -330,7 +331,7 @@ function Registration() {
                     type="date"
                     name={name}
                     value={values[name] ?? ""}
-                    style={{color: "inherit"}}
+                    style={{ color: "inherit" }}
                     onChange={(event) => handleChange(event.target.name, event.target.value)}
                 />
             case 3:
@@ -352,14 +353,14 @@ function Registration() {
                     errorCheck
                 >
                     {input.map((item, i) => (
-                        <FormControlLabel value={i} control={<Radio/>} label={item}/>
+                        <FormControlLabel value={i} control={<Radio />} label={item} />
                     ))}
                 </RadioGroup>
             case 5:
                 return <FormControlLabel
-                                         control={<Checkbox name={name} checked={values[name] ?? false}
-                                                            onChange={(event, value) => handleChange(name, value)}/>}
-                                         label={input.join("")}/>
+                    control={<Checkbox name={name} checked={values[name] ?? false}
+                        onChange={(event, value) => handleChange(name, value)} />}
+                    label={input.join("")} />
 
             default:
                 return null
@@ -367,7 +368,7 @@ function Registration() {
     }
 
     function gridItemSize(props) {
-        if (props.name === "motivation") {
+        if (props.name === "motivation" || "privacyPolicy") {
             return 12
         } else {
             return 6
@@ -376,11 +377,11 @@ function Registration() {
 
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    };
+    }
 
     const handleBack = () => {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
-    };
+    }
 
     const submitForm = () => {
         setIsSending(true);
@@ -391,7 +392,6 @@ function Registration() {
             alert("Could not save Registration. Did you already submit? Please check your spam folder for verification mail.")
             setIsSending(false)
         })
-
     }
 
     function renderNextButton(index, step) {
@@ -400,10 +400,10 @@ function Registration() {
         }
         if (index === steps.length - 2) {
             return (
-                <LoadingButton variant={"contained"} startIcon={<Send/>}
-                               loading={isSending}
-                               onClick={submitForm}
-                               disabled={!enableNext(steps[index], step.label)}
+                <LoadingButton variant={"contained"} startIcon={<Send />}
+                    loading={isSending}
+                    onClick={submitForm}
+                    disabled={!enableNext(steps[index], step.label)}
                 >
                     Send
                 </LoadingButton>
@@ -425,30 +425,30 @@ function Registration() {
     return (
 
         <HackHPIWrapper>
-            <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
-                <Typography variant={"h2"} component={"h1"}>Registration</Typography>
-                <Typography variant={"subtitle1"} gutterBottom>Apply now before March 15th!</Typography>
-                <Stepper activeStep={activeStep} orientation="vertical" sx={{mt: 5}}>
+            <Container sx={{ paddingTop: 10, paddingBottom: 10 }} id={"signupForm"}>
+                <Typography variant={"h2"} component={"h1"} gutterBottom>Registration</Typography>
+                <Typography variant={"subtitle1"} gutterBottom>Apply now until March 15th!</Typography>
+                <Stepper activeStep={activeStep} orientation="vertical" sx={{ mt: 5 }}>
                     {steps.map((step, index) => (
                         <Step key={index}>
-                            <StepLabel
-                                optional={
-                                    index === 3 ? (
-                                        <Typography variant="caption">optional</Typography>
-                                    ) : null
-                                }
-                            >
+                            <StepLabel>
                                 <Box direction="row" spacing={1}>
                                     <Typography>
                                         {step.label}
                                     </Typography>
                                 </Box>
-
                             </StepLabel>
                             <StepContent>
                                 <Grid container spacing={3} md={8} xs={12}>
+                                    {
+                                        index === 3 ? (
+                                            <Grid item md={12} xs={12}>
+                                                <Typography variant="caption">If you want to take part as a team, please enter the names of the other team members here. Note that a team consists of a maximum of 6 members.</Typography>
+                                            </Grid>
+                                        ) : null
+                                    }
                                     {step.children ? step.children : step.content.map((item, i) => (
-                                        <Grid item md={gridItemSize({name: item.name})} xs={12}>
+                                        <Grid item md={gridItemSize({ name: item.name })} xs={12}>
                                             <FormControl fullWidth>
                                                 <FormLabel focused={false}>
                                                     {item.formLabel}{item.required ? "*" : ""}
@@ -473,25 +473,18 @@ function Registration() {
                                             </Grid>
                                             }
                                         </Stack>
-
-
                                     </Grid>
-
                                 </Grid>
                             </StepContent>
                         </Step>
                     ))}
                 </Stepper>
-                <Typography color={"text.disabled"} sx={{marginTop: 3}}>Read our <Link href={"/privacy"}
-                                                                                       color={"inherit"}>privacy
-                    policy</Link> for information on how we handle your data and what you rights are.</Typography>
+                <Typography color={"text.disabled"} sx={{ marginTop: 3 }}>
+                    Read our <Link href={"/privacy"} color={"inherit"}>privacy policy</Link> for information on how we handle your data and what your rights are.
+                </Typography>
             </Container>
         </HackHPIWrapper>
     )
 }
 
 export default Registration
-
-//TODO:
-// Ja zur Datenschutzerklärung
-// Please check your mailbox to confirm your registration

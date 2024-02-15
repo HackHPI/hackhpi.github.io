@@ -5,7 +5,7 @@ import {Check} from "@mui/icons-material";
 
 export function VerifiedChecker() {
 
-    const [isVerified, setIsVerified] = useState(true);
+    const [isVerified, setIsVerified] = useState(false);
 
     useEffect(() => {
         const queryParameters = new URLSearchParams(window?.location?.search)

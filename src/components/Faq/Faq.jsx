@@ -160,7 +160,7 @@ export function Faq() {
                                         ask!</Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button size="small" color={"inherit"}>Contact us</Button>
+                                    <Button size="small" color={"inherit"} href={"mailto:team@hackhpi.org"}>Contact us</Button>
                                 </CardActions>
                             </Card>
                         </Stack>

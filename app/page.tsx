@@ -17,10 +17,10 @@ export default function Page() {
             <WhatToExpect />
             <Sponsors />
             <Registration/>
-            <Newsletter />
             <TimeTable />
             <Gallery />
             <Faq />
+            <Newsletter />
             <Team />
         </>
     )

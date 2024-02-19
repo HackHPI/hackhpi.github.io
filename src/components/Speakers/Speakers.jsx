@@ -1,5 +1,5 @@
 import {Avatar, Box, Card, Container, Grid, Paper, Stack, Typography, useTheme} from "@mui/material";
-import CedricRischeProfile from "../../assets/images/team/cedric_rische.jpg"
+import CedricRischeProfile from "../../assets/images/team/cedric_rische.webp"
 
 const speakers = {
     primary: [

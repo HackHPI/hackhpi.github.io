@@ -193,6 +193,7 @@ const teamMembers = [
         input: ['Name 1'],
         max: 100,
         required: false,
+        name: "team1"
     },
     {
         formLabel: 'Team member 2',
@@ -200,6 +201,7 @@ const teamMembers = [
         input: ['Name 2'],
         max: 100,
         required: false,
+        name: "team2"
     },
     {
         formLabel: 'Team member 3',
@@ -207,6 +209,7 @@ const teamMembers = [
         input: ['Name 3'],
         max: 100,
         required: false,
+        name: "team3"
     },
     {
         formLabel: 'Team member 4',
@@ -214,6 +217,7 @@ const teamMembers = [
         input: ['Name 4'],
         max: 100,
         required: false,
+        name: "team4"
     },
     {
         formLabel: 'Team member 5',
@@ -221,6 +225,7 @@ const teamMembers = [
         input: ['Name 5'],
         max: 100,
         required: false,
+        name: "team5"
     },
     {
         formLabel: '',
@@ -318,7 +323,7 @@ function Registration() {
             case 1:
                 return <TextField
                     type="text"
-                    placeholder={input}
+                    placeholder={input[0]}
                     multiline
                     minRows={rows}
                     name={name}
@@ -341,7 +346,7 @@ function Registration() {
                     onChange={(event) => handleChange(event.target.name, event.target.value)}>
                     <MenuItem value=""><em>None</em></MenuItem>
                     {input.map((item, i) => (
-                        <MenuItem value={i}>{item}</MenuItem>
+                        <MenuItem value={i} key={i}>{item}</MenuItem>
                     ))}
                 </Select>
             case 4:
@@ -352,14 +357,14 @@ function Registration() {
                     errorCheck
                 >
                     {input.map((item, i) => (
-                        <FormControlLabel value={i} control={<Radio/>} label={item}/>
+                        <FormControlLabel value={i} control={<Radio/>} key={i} label={item}/>
                     ))}
                 </RadioGroup>
             case 5:
                 return <FormControlLabel
-                                         control={<Checkbox name={name} checked={values[name] ?? false}
-                                                            onChange={(event, value) => handleChange(name, value)}/>}
-                                         label={input.join("")}/>
+                    control={<Checkbox name={name} checked={values[name] ?? false}
+                                       onChange={(event, value) => handleChange(name, value)}/>}
+                    label={input.join("")}/>
 
             default:
                 return null
@@ -446,37 +451,40 @@ function Registration() {
 
                             </StepLabel>
                             <StepContent>
-                                <Grid container spacing={3} md={8} xs={12}>
-                                    {step.children ? step.children : step.content.map((item, i) => (
-                                        <Grid item md={gridItemSize({name: item.name})} xs={12}>
-                                            <FormControl fullWidth>
-                                                <FormLabel focused={false}>
-                                                    {item.formLabel}{item.required ? "*" : ""}
-                                                </FormLabel>
-                                                {contentForm({
-                                                    type: item.type,
-                                                    input: item.input,
-                                                    rows: item.rows,
-                                                    name: item.name
-                                                })}
-                                                <FormHelperText>{item.helperText}</FormHelperText>
-                                            </FormControl>
-                                        </Grid>
-                                    ))}
-                                    <Grid item xs={12}>
-                                        <Stack direction={"row"} spacing={2}>
-                                            {renderNextButton(index, step)}
-                                            {index === steps.length - 1 ? undefined : <Grid item xs={2}>
-                                                <Button disabled={index === 0} onClick={handleBack} color={"inherit"}>
-                                                    Back
-                                                </Button>
+                                <Grid container>
+                                    <Grid item md={8} xs={12}>
+                                        <Grid container spacing={3}>
+                                            {step.children ? step.children : step.content.map((item, i) => (
+                                                <Grid item md={gridItemSize({name: item.name})} xs={12} key={i}>
+                                                    <FormControl fullWidth>
+                                                        <FormLabel focused={false}>
+                                                            {item.formLabel}{item.required ? "*" : ""}
+                                                        </FormLabel>
+                                                        {contentForm({
+                                                            type: item.type,
+                                                            input: item.input,
+                                                            rows: item.rows,
+                                                            name: item.name
+                                                        })}
+                                                        <FormHelperText>{item.helperText}</FormHelperText>
+                                                    </FormControl>
+                                                </Grid>
+                                            ))}
+                                            <Grid item xs={12}>
+                                                <Stack direction={"row"} spacing={2}>
+                                                    {renderNextButton(index, step)}
+                                                    {index === steps.length - 1 ? undefined : <Grid item xs={2}>
+                                                        <Button disabled={index === 0} onClick={handleBack}
+                                                                color={"inherit"}>
+                                                            Back
+                                                        </Button>
+                                                    </Grid>
+                                                    }
+                                                </Stack>
                                             </Grid>
-                                            }
-                                        </Stack>
 
-
+                                        </Grid>
                                     </Grid>
-
                                 </Grid>
                             </StepContent>
                         </Step>

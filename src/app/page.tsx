@@ -1,4 +1,4 @@
-import LandingImage2 from "../components/LandingImage/LandingImage2";
+import LandingImage from "../components/LandingImage/LandingImage";
 import {VerifiedChecker} from "../components/VerifiedChecker/VerifiedChecker";
 import WhatToExpect from "../components/WhatToExpect/WhatToExpect";
 import Sponsors from "../components/Sponsors/Sponsors";
@@ -12,7 +12,7 @@ import Team from "../components/Team/Team";
 export default function Page() {
     return (
         <>
-            <LandingImage2/>
+            <LandingImage/>
             <VerifiedChecker />
             <WhatToExpect />
             <Sponsors />

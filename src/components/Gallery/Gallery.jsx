@@ -197,9 +197,10 @@ export function Gallery() {
                     <Grid item xs={12} md={12}>
                         <Box sx={{maxHeight: "30rem", overflowY: "scroll"}}>
                             <ImageList variant="masonry" cols={3} gap={8}>
-                                {faqs[selectedIndex].items.map((item) => (
-                                    <ImageListItem key={item.img}>
+                                {faqs[selectedIndex].items.map((item, i) => (
+                                    <ImageListItem key={i}>
                                         <img
+                                            key={"img"+i}
                                             srcSet={`${item.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                             src={`${item.src}?w=248&fit=crop&auto=format`}
                                             alt={item.title}

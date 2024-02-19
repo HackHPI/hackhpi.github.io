@@ -7,7 +7,7 @@ function WhatToExpect() {
     return (
         <HackHPIWrapper>
 
-            <Container sx={{paddingTop: 10, paddingBottom: 10}}>
+            <Container sx={{paddingTop: 10, paddingBottom: 7}}>
                 <Grid container spacing={6} alignItems={"center"}>
                     <Grid item xs={12} md={8}>
                         <Typography variant={"h2"} component={"h1"} gutterBottom>

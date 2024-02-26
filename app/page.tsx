@@ -8,6 +8,7 @@ import {TimeTable} from "../src/components/TimeTable/TimeTable";
 import {Gallery} from "../src/components/Gallery/Gallery";
 import {Faq} from "../src/components/Faq/Faq";
 import Team from "../src/components/Team/Team";
+import Speakers from "../src/components/Speakers/Speakers";
 
 export default function Page() {
     return (
@@ -17,6 +18,7 @@ export default function Page() {
             <WhatToExpect />
             <Sponsors />
             <Registration/>
+            <Speakers/>
             <Newsletter />
             <TimeTable />
             <Gallery />

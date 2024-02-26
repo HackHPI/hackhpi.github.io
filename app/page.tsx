@@ -9,6 +9,7 @@ import {Gallery} from "../src/components/Gallery/Gallery";
 import {Faq} from "../src/components/Faq/Faq";
 import Team from "../src/components/Team/Team";
 import Speakers from "../src/components/Speakers/Speakers";
+import {Features} from "../src/components/Features/Features";
 
 export default function Page() {
     return (
@@ -16,13 +17,14 @@ export default function Page() {
             <LandingImage2/>
             <VerifiedChecker />
             <WhatToExpect />
+            <Features/>
             <Sponsors />
             <Registration/>
             <Speakers/>
-            <Newsletter />
             <TimeTable />
             <Gallery />
             <Faq />
+            <Newsletter />
             <Team />
         </>
     )

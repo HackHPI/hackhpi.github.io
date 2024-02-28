@@ -1,5 +1,4 @@
 import {Avatar, Box, Card, Container, Divider, Grid, Stack, Typography} from "@mui/material";
-import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 export function TimeTable() {
 
@@ -21,7 +20,12 @@ export function TimeTable() {
                 <Container>
                     <Grid container alignItems={"center"} spacing={3}>
                         <Grid item xs={2} sx={{display: "flex", justifyContent: "center"}}>
-                            <Avatar sx={{width: "70%", height: "auto", aspectRatio: "1/1", backgroundColor: "background.default"}}>SO</Avatar>
+                            <Avatar sx={{
+                                width: "70%",
+                                height: "auto",
+                                aspectRatio: "1/1",
+                                backgroundColor: "background.default"
+                            }}>SO</Avatar>
                         </Grid>
                         <Grid item xs={8}>
                             <Typography color={"text.disabled"}>
@@ -42,7 +46,12 @@ export function TimeTable() {
                 <Container>
                     <Grid container alignItems={"center"} spacing={3}>
                         <Grid item xs={2} sx={{display: "flex", justifyContent: "center"}}>
-                            <Avatar sx={{width: "70%", height: "auto", aspectRatio: "1/1", backgroundColor: "background.default"}}>SO</Avatar>
+                            <Avatar sx={{
+                                width: "70%",
+                                height: "auto",
+                                aspectRatio: "1/1",
+                                backgroundColor: "background.default"
+                            }}>SO</Avatar>
                         </Grid>
                         <Grid item xs={8}>
                             <Typography color={"text.disabled"}>
@@ -62,33 +71,31 @@ export function TimeTable() {
     )
 
     return (
-        <HackHPIWrapper>
-            <Container sx={{paddingBottom: 10}}>
-                <Typography variant={"h2"} component={"h1"} gutterBottom>Time Table</Typography>
-                <Box sx={{position: "relative"}}>
-                    <Box sx={{
-                        position: "absolute",
-                        transform: "translate(-50%,-50%)",
-                        left: "50%",
-                        top: "50%",
-                        zIndex: 1000,
-                    }}>
-                        <Typography variant={"h5"} fontWeight={"bold"} >
-                            Will be announced soon
-                        </Typography>
-                    </Box>
-                    <Box sx={{filter: "blur(10px)"}}>
-                        <Grid container spacing={5}>
-                            <Grid item md={6} xs={12}>
-                                {timetable}
-                            </Grid>
-                            <Grid item md={6} xs={12}>
-                                {timetable}
-                            </Grid>
-                        </Grid>
-                    </Box>
+        <Container sx={{paddingBottom: 10, paddingTop: 10}}>
+            <Typography variant={"h2"} component={"h1"} gutterBottom>Time Table</Typography>
+            <Box sx={{position: "relative"}}>
+                <Box sx={{
+                    position: "absolute",
+                    transform: "translate(-50%,-50%)",
+                    left: "50%",
+                    top: "50%",
+                    zIndex: 1000,
+                }}>
+                    <Typography variant={"h5"} fontWeight={"bold"}>
+                        Will be announced soon
+                    </Typography>
                 </Box>
-            </Container>
-        </HackHPIWrapper>
+                <Box sx={{filter: "blur(10px)"}}>
+                    <Grid container spacing={5}>
+                        <Grid item md={6} xs={12}>
+                            {timetable}
+                        </Grid>
+                        <Grid item md={6} xs={12}>
+                            {timetable}
+                        </Grid>
+                    </Grid>
+                </Box>
+            </Box>
+        </Container>
     )
 }

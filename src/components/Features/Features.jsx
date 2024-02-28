@@ -44,10 +44,10 @@ export function Features() {
     ]
 
     return (
-        <Container sx={{paddingBottom: 10}}>
+        <Container sx={{paddingBottom: 10, paddingTop: 5}}>
             <Grid container spacing={7}>
-                {features.map(feature => (
-                    <Grid item md={6}>
+                {features.map((feature, i) => (
+                    <Grid item md={6} key={i}>
                         <Grid container>
                             <Grid item xs={2}>
                                 <IconContainer icon={feature.icon}/>

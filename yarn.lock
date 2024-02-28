@@ -50,37 +50,12 @@
     unist-util-visit "^4.1.2"
     vfile "^5.3.7"
 
-"@astrojs/node@^6.1.0":
-  version "6.1.0"
-  resolved "https://registry.npmjs.org/@astrojs/node/-/node-6.1.0.tgz"
-  integrity sha512-rqhZuVDUHVynkBaI/a8Y/WjVeFvKaH4qyrTkC8ZFwYUVff2DPQHS5/wLlTtS3s1GglApYsvPB9DdTL7sqUe9Kg==
-  dependencies:
-    send "^0.18.0"
-    server-destroy "^1.0.1"
-
 "@astrojs/prism@^3.0.0":
   version "3.0.0"
   resolved "https://registry.npmjs.org/@astrojs/prism/-/prism-3.0.0.tgz"
   integrity sha512-g61lZupWq1bYbcBnYZqdjndShr/J3l/oFobBKPA3+qMat146zce3nz2kdO4giGbhYDt4gYdhmoBz0vZJ4sIurQ==
   dependencies:
     prismjs "^1.29.0"
-
-"@astrojs/react@^3.0.9":
-  version "3.0.9"
-  resolved "https://registry.npmjs.org/@astrojs/react/-/react-3.0.9.tgz"
-  integrity sha512-31J5yF5p9yBFV1axBooLA9PB4B2+MYm7swWhtlezSsJiUNXRFo5Is9qI3teJ7cKgmaCv+ZA593Smskko0NGaDQ==
-  dependencies:
-    "@vitejs/plugin-react" "^4.2.0"
-    ultrahtml "^1.3.0"
-
-"@astrojs/tailwind@^5.0.0":
-  version "5.0.2"
-  resolved "https://registry.npmjs.org/@astrojs/tailwind/-/tailwind-5.0.2.tgz"
-  integrity sha512-oXqeqmBlkQmsltrsU9nEWeXOtrZIAHW8dcmX7BCdrjzPnU6dPwWzAwhddNQ9ihKiWwsLnlbwQZIo2CDigcZlIA==
-  dependencies:
-    autoprefixer "^10.4.15"
-    postcss "^8.4.28"
-    postcss-load-config "^4.0.1"
 
 "@astrojs/telemetry@3.0.4":
   version "3.0.4"
@@ -469,45 +444,10 @@
   resolved "https://registry.npmjs.org/@floating-ui/utils/-/utils-0.2.1.tgz"
   integrity sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==
 
-"@fontsource-variable/exo-2@^5.0.17":
-  version "5.0.17"
-  resolved "https://registry.npmjs.org/@fontsource-variable/exo-2/-/exo-2-5.0.17.tgz"
-  integrity sha512-yZC/+mAWxNbmKGppvUXTS24l8lZGYVikyHZlARDL7xjdjfQX/SIbBs8Jt4/nb3ghuG2an9GAC6p5f5doZloVEA==
-
 "@fontsource-variable/open-sans@^5.0.23":
   version "5.0.23"
   resolved "https://registry.npmjs.org/@fontsource-variable/open-sans/-/open-sans-5.0.23.tgz"
   integrity sha512-fIvxjvdqyl53Nw2ostM94pNAXtqpJPKWUlNqZo2NGzOERz/TK4HL+Lgxy5XCNVw2yPdeGt01xb0Qr5aa9fZ9gA==
-
-"@fontsource-variable/rubik@^5.0.20":
-  version "5.0.20"
-  resolved "https://registry.npmjs.org/@fontsource-variable/rubik/-/rubik-5.0.20.tgz"
-  integrity sha512-sOyawsVyWVLRLpjTAHnV51FuvR/Gzuzg12TcxhRQ/t1fm1+gPj9o6MpRmbtseq23f0Wm9mLygvx+4InJwG/KdQ==
-
-"@fontsource-variable/source-code-pro@^5.0.17":
-  version "5.0.17"
-  resolved "https://registry.npmjs.org/@fontsource-variable/source-code-pro/-/source-code-pro-5.0.17.tgz"
-  integrity sha512-O1Hn0QamTJDfFauR68ALijno0xTOy/sJAE/cORyP2s5unEiJOZj0EBQIhHymHdS7XI+xccAfSEdaZNmz9rhttA==
-
-"@fontsource/anton@^5.0.18":
-  version "5.0.18"
-  resolved "https://registry.npmjs.org/@fontsource/anton/-/anton-5.0.18.tgz"
-  integrity sha512-VUb4DqLP1wgbKIpkJPkdP7Iry41nW1EofpkL9SVzP6oQ4h5l+PC70i5N3Ptq07NBhEGfx6PsUq7akV0/tKN7IQ==
-
-"@fontsource/poppins@^5.0.8":
-  version "5.0.8"
-  resolved "https://registry.npmjs.org/@fontsource/poppins/-/poppins-5.0.8.tgz"
-  integrity sha512-P8owfYWluoUY5Nyzk4gT/L6LmLmseP6ezFWhj6VBUa5pRIdnCvNJpoQ6i/vhekjtJOfqX6nKlB+LCttoUl2GQQ==
-
-"@fontsource/roboto-mono@^5.0.16":
-  version "5.0.16"
-  resolved "https://registry.npmjs.org/@fontsource/roboto-mono/-/roboto-mono-5.0.16.tgz"
-  integrity sha512-unZYfjXts55DQyODz0I9DzbSrS5DRKPNq9crJpNJe/Vy818bLnijprcJv3fvqwdDqTT0dRm2Fhk09QEIdtAc+Q==
-
-"@fontsource/urbanist@^5.0.18":
-  version "5.0.18"
-  resolved "https://registry.npmjs.org/@fontsource/urbanist/-/urbanist-5.0.18.tgz"
-  integrity sha512-jljGSpFGWyl2WAgDK5l+rpQ7RxTQ1rTLmIk/pQ/PdZSqGe4E027qSz5qwrqjpH/te0TvIZLXbfhUV7I2wwnzBQ==
 
 "@jridgewell/gen-mapping@^0.3.0", "@jridgewell/gen-mapping@^0.3.2":
   version "0.3.3"
@@ -749,34 +689,12 @@
   dependencies:
     "@supabase/node-fetch" "^2.6.14"
 
-"@supabase/supabase-js@^2.39.3":
-  version "2.39.3"
-  resolved "https://registry.npmjs.org/@supabase/supabase-js/-/supabase-js-2.39.3.tgz"
-  integrity sha512-NoltJSaJNKDJNutO5sJPAAi5RIWrn1z2XH+ig1+cHDojT6BTN7TvZPNa3Kq3gFQWfO5H1N9El/bCTZJ3iFW2kQ==
-  dependencies:
-    "@supabase/functions-js" "^2.1.5"
-    "@supabase/gotrue-js" "^2.60.0"
-    "@supabase/node-fetch" "^2.6.14"
-    "@supabase/postgrest-js" "^1.9.0"
-    "@supabase/realtime-js" "^2.9.3"
-    "@supabase/storage-js" "^2.5.4"
-
 "@swc/helpers@0.5.2":
   version "0.5.2"
   resolved "https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.2.tgz"
   integrity sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==
   dependencies:
     tslib "^2.4.0"
-
-"@tailwindcss/typography@^0.5.10":
-  version "0.5.10"
-  resolved "https://registry.npmjs.org/@tailwindcss/typography/-/typography-0.5.10.tgz"
-  integrity sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==
-  dependencies:
-    lodash.castarray "^4.4.0"
-    lodash.isplainobject "^4.0.6"
-    lodash.merge "^4.6.2"
-    postcss-selector-parser "6.0.10"
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
@@ -1025,16 +943,7 @@ array-iterate@^2.0.0:
   resolved "https://registry.npmjs.org/array-iterate/-/array-iterate-2.0.1.tgz"
   integrity sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==
 
-astro-icon@^0.8.1:
-  version "0.8.1"
-  resolved "https://registry.npmjs.org/astro-icon/-/astro-icon-0.8.1.tgz"
-  integrity sha512-APk+fbFnoyGdIVSPFrdrOW9YBK96/1fYuVe7ULTGW92+z00RKB8GfLJiUvzNVXUAX2rZJCFmruGVF4rrhcTYsg==
-  dependencies:
-    node-fetch "^3.1.0"
-    resolve-pkg "^2.0.0"
-    svgo "^2.8.0"
-
-astro@^3.0.0, astro@^3.1.1, astro@^3.2.4:
+astro@^3.0.0, astro@^3.2.4:
   version "3.5.0"
   resolved "https://registry.npmjs.org/astro/-/astro-3.5.0.tgz"
   integrity sha512-Wwu9gXIlxqCUEY6Bj9e08TeBm7I/CupyzHrWTNSPL+iwrTo/3/pL+itCeYz2u84jRygBgd2oPEN0FbK/sjj+uQ==
@@ -4251,7 +4160,7 @@ svgo@^2.8.0:
     picocolors "^1.0.0"
     stable "^0.1.8"
 
-tailwindcss@^3.0.24, tailwindcss@^3.3.3, "tailwindcss@>=3.0.0 || insiders":
+tailwindcss@^3.0.24, "tailwindcss@>=3.0.0 || insiders":
   version "3.3.5"
   resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-3.3.5.tgz"
   integrity sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==

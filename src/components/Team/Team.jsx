@@ -1,13 +1,13 @@
 'use client'
-import CedricRischeProfile from "../../assets/images/team_new/cedric_rische.webp"
-import MathildaHeiseProfile from "../../assets/images/team_new/mathilda_heise.webp"
-import MattiSchmidtProfile from "../../assets/images/team_new/matti_schmidt.webp"
-import NikolasRiegerProfile from "../../assets/images/team_new/nikolas_rieger.webp"
-import TanjaLehmannProfile from "../../assets/images/team_new/tanja_lehmann.webp"
-import TheoKlinkeProfile from "../../assets/images/team_new/theo_klinke.webp"
-import ViktorKalvodaProfile from "../../assets/images/team_new/viktor_kalvoda.webp"
-import GeromeQuantmeyerProfile from "../../assets/images/team_new/gerome_quantmeyer.webp"
-import UliPrantzProfile from "../../assets/images/team_new/uli_prantz.webp"
+import CedricRischeProfile from "../../assets/images/team/cedric_rische.webp"
+import MathildaHeiseProfile from "../../assets/images/team/mathilda_heise.webp"
+import MattiSchmidtProfile from "../../assets/images/team/matti_schmidt.webp"
+import NikolasRiegerProfile from "../../assets/images/team/nikolas_rieger.webp"
+import TanjaLehmannProfile from "../../assets/images/team/tanja_lehmann.webp"
+import TheoKlinkeProfile from "../../assets/images/team/theo_klinke.webp"
+import ViktorKalvodaProfile from "../../assets/images/team/viktor_kalvoda.webp"
+import GeromeQuantmeyerProfile from "../../assets/images/team/gerome_quantmeyer.webp"
+import UliPrantzProfile from "../../assets/images/team/uli_prantz.webp"
 import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useMediaQuery, useTheme} from "@mui/material";
 import {LinkedIn, Mail} from "@mui/icons-material";
 import {useEffect, useState} from "react";

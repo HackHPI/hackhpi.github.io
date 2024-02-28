@@ -17,7 +17,6 @@ const speakers = {
 
 function Speakers() {
     const theme = useTheme();
-    console.log(theme.components.MuiCard.styleOverrides.root)
     return (
         <Container sx={{paddingBottom: 10, paddingTop: 10}}>
             <Typography variant={"h2"} gutterBottom>Speakers</Typography>

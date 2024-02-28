@@ -14,6 +14,7 @@ import {
     Radio,
     RadioGroup,
     Select,
+    Slider,
     Stack,
     Step,
     StepContent,
@@ -23,13 +24,13 @@ import {
     Typography
 } from "@mui/material";
 import * as React from 'react';
-import {useMemo, useState} from 'react';
+import { useMemo, useState } from 'react';
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
-import {LoadingButton} from "@mui/lab";
-import {RegistrationRest} from "../../rest/RegistrationRest.js";
-import {Mail, Send} from "@mui/icons-material";
+import { LoadingButton } from "@mui/lab";
+import { RegistrationRest } from "../../rest/RegistrationRest.js";
+import { Mail, Send } from "@mui/icons-material";
 
-// types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
+// types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio, 5 = checkbox, 6 = slider
 
 const personalData = [
     {
@@ -145,9 +146,24 @@ const motivation = [
         required: true,
     },
 ]
-// TODO: maximal capacity for motivation text: 150 words
 
 const skills = [
+    {
+        formLabel: 'Where do you see yourself?',
+        type: 6,
+        input: [
+            {
+                value: 0,
+                label: 'technical knowledge',
+            },
+            {
+                value: 5,
+                label: 'entrepreneurial knowledge',
+            }
+        ],
+        name: "knowledgeSpectrum",
+        required: true,
+    },
     {
         formLabel: 'Tech stack',
         type: 1,
@@ -269,7 +285,7 @@ const steps = [
                 paddingTop: "3rem"
             }}>
                 <Stack spacing={3} justifyContent={"center"}>
-                    <Mail color={"inherit"} sx={{fontSize: "2rem"}}/>
+                    <Mail color={"inherit"} sx={{ fontSize: "2rem" }} />
                     <Typography>To complete the registration, please click on the link in the email we sent
                         you!</Typography>
                 </Stack>
@@ -286,7 +302,7 @@ function Registration() {
     const registrationRest = useMemo(() => new RegistrationRest(), [])
 
     function handleChange(name, inputValue) {
-        const newValue = {...values}
+        const newValue = { ...values }
         newValue[name] = inputValue;
         setValues(newValue);
     }
@@ -312,7 +328,6 @@ function Registration() {
         return result
     }
 
-
     function contentForm(props) {
         const type = props.type;
         const input = props.input;
@@ -335,7 +350,7 @@ function Registration() {
                     type="date"
                     name={name}
                     value={values[name] ?? ""}
-                    style={{color: "inherit"}}
+                    style={{ color: "inherit" }}
                     onChange={(event) => handleChange(event.target.name, event.target.value)}
                 />
             case 3:
@@ -357,22 +372,31 @@ function Registration() {
                     errorCheck
                 >
                     {input.map((item, i) => (
-                        <FormControlLabel value={i} control={<Radio/>} key={i} label={item}/>
+                        <FormControlLabel value={i} control={<Radio />} key={i} label={item} />
                     ))}
                 </RadioGroup>
             case 5:
                 return <FormControlLabel
                     control={<Checkbox name={name} checked={values[name] ?? false}
-                                       onChange={(event, value) => handleChange(name, value)}/>}
-                    label={input.join("")}/>
-
+                        onChange={(event, value) => handleChange(name, value)} />}
+                    label={input.join("")} />
+            case 6:
+                return <Slider
+                    defaultValue={3}
+                    valueLabelDisplay="auto"
+                    // shiftStep={10}
+                    step={1}
+                    marks={input}
+                    min={1}
+                    max={5}
+                />
             default:
                 return null
         }
     }
 
     function gridItemSize(props) {
-        if (props.name === "motivation") {
+        if (props.name === "motivation" || props.name === "knowledgeSpectrum") {
             return 12
         } else {
             return 6
@@ -405,10 +429,10 @@ function Registration() {
         }
         if (index === steps.length - 2) {
             return (
-                <LoadingButton variant={"contained"} startIcon={<Send/>}
-                               loading={isSending}
-                               onClick={submitForm}
-                               disabled={!enableNext(steps[index], step.label)}
+                <LoadingButton variant={"contained"} startIcon={<Send />}
+                    loading={isSending}
+                    onClick={submitForm}
+                    disabled={!enableNext(steps[index], step.label)}
                 >
                     Send
                 </LoadingButton>
@@ -430,10 +454,10 @@ function Registration() {
     return (
 
         <HackHPIWrapper>
-            <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
+            <Container sx={{ paddingTop: 10, paddingBottom: 10 }} id={"signupForm"}>
                 <Typography variant={"h2"} component={"h1"}>Registration</Typography>
                 <Typography variant={"subtitle1"} gutterBottom>Apply now before March 15th!</Typography>
-                <Stepper activeStep={activeStep} orientation="vertical" sx={{mt: 5}}>
+                <Stepper activeStep={activeStep} orientation="vertical" sx={{ mt: 5 }}>
                     {steps.map((step, index) => (
                         <Step key={index}>
                             <StepLabel
@@ -455,7 +479,7 @@ function Registration() {
                                     <Grid item md={8} xs={12}>
                                         <Grid container spacing={3}>
                                             {step.children ? step.children : step.content.map((item, i) => (
-                                                <Grid item md={gridItemSize({name: item.name})} xs={12} key={i}>
+                                                <Grid item md={gridItemSize({ name: item.name })} xs={12} key={i}>
                                                     <FormControl fullWidth>
                                                         <FormLabel focused={false}>
                                                             {item.formLabel}{item.required ? "*" : ""}
@@ -475,7 +499,7 @@ function Registration() {
                                                     {renderNextButton(index, step)}
                                                     {index === steps.length - 1 ? undefined : <Grid item xs={2}>
                                                         <Button disabled={index === 0} onClick={handleBack}
-                                                                color={"inherit"}>
+                                                            color={"inherit"}>
                                                             Back
                                                         </Button>
                                                     </Grid>
@@ -490,8 +514,8 @@ function Registration() {
                         </Step>
                     ))}
                 </Stepper>
-                <Typography color={"text.disabled"} sx={{marginTop: 3}}>Read our <Link href={"/privacy"}
-                                                                                       color={"inherit"}>privacy
+                <Typography color={"text.disabled"} sx={{ marginTop: 3 }}>Read our <Link href={"/privacy"}
+                    color={"inherit"}>privacy
                     policy</Link> for information on how we handle your data and what you rights are.</Typography>
             </Container>
         </HackHPIWrapper>

@@ -1,20 +1,20 @@
-import LandingImage2 from "../src/components/LandingImage/LandingImage2";
-import {VerifiedChecker} from "../src/components/VerifiedChecker/VerifiedChecker";
-import WhatToExpect from "../src/components/WhatToExpect/WhatToExpect";
-import Sponsors from "../src/components/Sponsors/Sponsors";
-import Registration from "../src/components/Registration/Registration";
-import Newsletter from "../src/components/Newsletter/Newsletter";
-import {TimeTable} from "../src/components/TimeTable/TimeTable";
-import {Gallery} from "../src/components/Gallery/Gallery";
-import {Faq} from "../src/components/Faq/Faq";
-import Team from "../src/components/Team/Team";
-import Speakers from "../src/components/Speakers/Speakers";
-import {Features} from "../src/components/Features/Features";
+import LandingImage from "../components/LandingImage/LandingImage";
+import {VerifiedChecker} from "../components/VerifiedChecker/VerifiedChecker";
+import WhatToExpect from "../components/WhatToExpect/WhatToExpect";
+import Sponsors from "../components/Sponsors/Sponsors";
+import Registration from "../components/Registration/Registration";
+import Newsletter from "../components/Newsletter/Newsletter";
+import {TimeTable} from "../components/TimeTable/TimeTable";
+import {Gallery} from "../components/Gallery/Gallery";
+import {Faq} from "../components/Faq/Faq";
+import Team from "../components/Team/Team";
+import Speakers from "../components/Speakers/Speakers";
+import {Features} from "../components/Features/Features";
 
 export default function Page() {
     return (
         <>
-            <LandingImage2/>
+            <LandingImage/>
             <VerifiedChecker />
             <WhatToExpect />
             <Features/>

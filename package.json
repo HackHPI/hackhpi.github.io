@@ -17,6 +17,7 @@
     "@mui/lab": "^5.0.0-alpha.163",
     "@mui/material": "^5.15.5",
     "@mui/material-nextjs": "^5.15.9",
+    "@types/node": "^20.11.24",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "axios": "^1.6.7",
@@ -24,7 +25,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-type-animation": "^3.2.0",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "sharp": "^0.33.2"
   },
   "devDependencies": {
     "prettier": "^3.0.3",

@@ -11,7 +11,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
         <head>
             <meta charSet="UTF-8"/>
             <meta name="viewport" content="width=device-width"/>
-            <link rel="icon" type="image/svg" href="/HackHPI24_white.png"/>
+            <link rel="icon" type="image/png" href="/favicon.png"/>
             <title>
                 HackHPI 2024 | tomorrow's reality, today's vision. smart cities edition.
             </title>

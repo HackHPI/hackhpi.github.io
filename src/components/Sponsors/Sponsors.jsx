@@ -3,6 +3,7 @@ import ESchool from "../../assets/images/sponsors/trpnt_e-school-standalone-whit
 import React from "react";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 import ClimateTechHub from "../../assets/images/sponsors/CTH-logo-vertical_white.svg";
+import HolySquad from "../../assets/images/sponsors/holySquad.png";
 
 function Sponsors() {
 
@@ -16,6 +17,9 @@ function Sponsors() {
                         </Grid>
                         <Grid item>
                             <img src={ESchool.src} alt={"Logo of E-Scool"} style={{height: "5rem"}}/>
+                        </Grid>
+                        <Grid item>
+                            <img src={HolySquad.src} alt={"Logo of HolySquad"} style={{height: "5rem"}}/>
                         </Grid>
                     </Grid>
 

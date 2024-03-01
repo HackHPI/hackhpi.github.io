@@ -1,8 +1,69 @@
 import {Avatar, Box, Card, Container, Divider, Grid, Stack, Typography} from "@mui/material";
 
-export function TimeTable() {
+const dayOne = [
+    {
+        time: "08:00 - 09:00",
+        icon: "",
+        title: "Check-In",
+        person: "",
+    },
+    {
+        time: "09:00 - 10:00",
+        icon: "",
+        title: "Breakfast",
+        person: "",
+    },
+    {
+        time: "10:00 - 11:00",
+        icon: "",
+        title: "Introduction",
+        person: "",
+    },
+    {
+        time: "12:00 - 13:00",
+        icon: "",
+        title: "Lunch",
+        person: "",
+    },
+    {
+        time: "13:00 - 23:59",
+        icon: "",
+        title: "Hacking Time",
+        person: "",
+    }
+]
 
-    const timetable = (
+const dayTwo = [
+    {
+        time: "00:00 - 12:00",
+        icon: "",
+        title: "Hacking Time",
+        person: "",
+    },{
+        time: "08:00 - 09:00",
+        icon: "",
+        title: "Breakfast",
+        person: "",
+    },{
+        time: "14:00 - 16:00",
+        icon: "",
+        title: "Challenge Presentations",
+        person: "",
+    },{
+        time: "17:00 - 18:00",
+        icon: "",
+        title: "Feedback & Awards",
+        person: "",
+    },{
+        time: "18:00 - *",
+        icon: "",
+        title: "After Party",
+        person: "",
+    }
+]
+
+export function Table(props) {
+    return (
         <Card>
             <Box sx={{
                 height: "5rem",
@@ -12,90 +73,65 @@ export function TimeTable() {
                 pl: 3
             }}>
                 <Stack alignItems={"center"} spacing={2} direction={"row"}>
-                    <Typography sx={{fontSize: "1.5rem", fontWeight: 600}}>Day 1</Typography>
-                    <Typography sx={{fontSize: "1.25rem", fontWeight: 300}}>06.04.2024</Typography>
+                    <Typography sx={{fontSize: "1.5rem", fontWeight: 600}}>{props.title}</Typography>
+                    <Typography sx={{fontSize: "1.25rem", fontWeight: 300}}>{props.subtitle}</Typography>
                 </Stack>
             </Box>
-            <Box sx={{pt: 3, pb: 3}}>
-                <Container>
-                    <Grid container alignItems={"center"} spacing={3}>
-                        <Grid item xs={2} sx={{display: "flex", justifyContent: "center"}}>
-                            <Avatar sx={{
-                                width: "70%",
-                                height: "auto",
-                                aspectRatio: "1/1",
-                                backgroundColor: "background.default"
-                            }}>SO</Avatar>
-                        </Grid>
-                        <Grid item xs={8}>
-                            <Typography color={"text.disabled"}>
-                                08:00-09:00
-                            </Typography>
-                            <Typography sx={{fontWeight: 600}}>
-                                Hey There!
-                            </Typography>
-                            <Typography color={"text.disabled"}>
-                                a Person
-                            </Typography>
-                        </Grid>
-                    </Grid>
-                </Container>
-            </Box>
-            <Divider/>
-            <Box sx={{pt: 3, pb: 3}}>
-                <Container>
-                    <Grid container alignItems={"center"} spacing={3}>
-                        <Grid item xs={2} sx={{display: "flex", justifyContent: "center"}}>
-                            <Avatar sx={{
-                                width: "70%",
-                                height: "auto",
-                                aspectRatio: "1/1",
-                                backgroundColor: "background.default"
-                            }}>SO</Avatar>
-                        </Grid>
-                        <Grid item xs={8}>
-                            <Typography color={"text.disabled"}>
-                                08:00-09:00
-                            </Typography>
-                            <Typography sx={{fontWeight: 600}}>
-                                Nothing to see here yet
-                            </Typography>
-                            <Typography color={"text.disabled"}>
-                                But soon, something will be here
-                            </Typography>
-                        </Grid>
-                    </Grid>
-                </Container>
-            </Box>
+
+            {
+                props.data.map((item, index) => (
+                    <>
+                        <Box sx={{pt: 3, pb: 3}}>
+                            <Container>
+                                <Grid container alignItems={"center"} spacing={3}>
+                                    <Grid item xs={2} sx={{display: "flex", justifyContent: "center"}}>
+                                        <Avatar sx={{
+                                            width: "70%",
+                                            height: "auto",
+                                            aspectRatio: "1/1",
+                                            backgroundColor: "background.default",
+                                            color: "inherit"
+                                        }}>
+                                            {item.icon}
+                                        </Avatar>
+                                    </Grid>
+                                    <Grid item xs={8}>
+                                        <Typography color={"text.disabled"}>
+                                            {item.time}
+                                        </Typography>
+                                        <Typography sx={{fontWeight: 600}}>
+                                            {item.title}
+                                        </Typography>
+                                        <Typography color={"text.disabled"}>
+                                            {item.person}
+                                        </Typography>
+                                    </Grid>
+                                    <Grid item xs={2}/>
+                                </Grid>
+                            </Container>
+                        </Box>
+                        {index !== dayOne.length - 1 ? <Divider/> : undefined}
+                    </>
+                ))
+            }
         </Card>
     )
+}
+
+export function TimeTable() {
 
     return (
         <Container sx={{paddingBottom: 10, paddingTop: 10}}>
             <Typography variant={"h2"} component={"h1"} gutterBottom>Time Table</Typography>
-            <Box sx={{position: "relative"}}>
-                <Box sx={{
-                    position: "absolute",
-                    transform: "translate(-50%,-50%)",
-                    left: "50%",
-                    top: "50%",
-                    zIndex: 1000,
-                }}>
-                    <Typography variant={"h5"} fontWeight={"bold"}>
-                        Will be announced soon
-                    </Typography>
-                </Box>
-                <Box sx={{filter: "blur(10px)"}}>
-                    <Grid container spacing={5}>
-                        <Grid item md={6} xs={12}>
-                            {timetable}
-                        </Grid>
-                        <Grid item md={6} xs={12}>
-                            {timetable}
-                        </Grid>
-                    </Grid>
-                </Box>
-            </Box>
+
+            <Grid container spacing={5}>
+                <Grid item md={6} xs={12}>
+                    <Table data={dayOne} title={"Day 1"} subtitle={"05.04"}/>
+                </Grid>
+                <Grid item md={6} xs={12}>
+                    <Table data={dayTwo} title={"Day 2"} subtitle={"06.04"}/>
+                </Grid>
+            </Grid>
         </Container>
     )
 }

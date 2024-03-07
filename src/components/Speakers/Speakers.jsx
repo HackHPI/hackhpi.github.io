@@ -6,7 +6,7 @@ import {WindowCard} from "../WindowCard/WindowCard";
 const speakers = {
     primary: [
         {
-            name: "Felix Lennard Hake",
+            name: "Felix Lennart Hake",
             position: "Mobility policy officer at Bitkom, Germany's digital association",
             profilePicture: FelixLennardHake.src,
             description: "Felix is responsible for Bitkom's political and regulatory work on smart mobility. Together with manufacturers, tech companies, mobility service providers and transport companies, Felix is committed to a connected, intelligent and sustainable mobility ecosystem - in rural areas as well as in cities and metropolitan regions. He is also responsible for the Digital Aviation working group. Prior to joining Bitkom, Felix worked for a political strategy and communications consultancy for several years and completed a Blue Book traineeship in the EU Commission's DG CONNECT. He studied sociology, politics and economics as well as European studies and political science in Friedrichshafen, Paris and Berlin.",

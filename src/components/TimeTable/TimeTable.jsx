@@ -2,15 +2,14 @@ import {Box, Card, Container, Divider, Grid, Stack, Typography} from "@mui/mater
 import {
     Campaign,
     Celebration,
-    Computer,
     ConfirmationNumber,
-    EmojiEvents, EmojiObjects,
+    EmojiEvents,
+    EmojiObjects,
     PlayArrow,
     Restaurant,
     Stop
 } from "@mui/icons-material";
 import {IconContainer} from "../Features/Features";
-import {Play} from "next/dist/compiled/@next/font/dist/google";
 
 const dayOne = [
     {
@@ -115,21 +114,26 @@ export function Table(props) {
                     <>
                         <Box sx={{pt: 3, pb: 3}}>
                             <Container>
-                                <Grid container  spacing={3}>
-                                    <Grid item xs={2} sx={{display: "flex", justifyContent: "center", alignContent: "center", alignItems: "center"}}>
+                                <Grid container spacing={3}>
+                                    <Grid item xs={2} sx={{
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        alignContent: "center",
+                                        alignItems: "center"
+                                    }}>
                                         <IconContainer icon={item.icon}/>
                                     </Grid>
-                                    <Grid item xs={8}sx={{display: "flex", alignItems: "center"}}>
+                                    <Grid item xs={8} sx={{display: "flex", alignItems: "center"}}>
                                         <Box>
-                                        <Typography color={"text.disabled"}>
-                                            {item.time}
-                                        </Typography>
-                                        <Typography sx={{fontWeight: 600}}>
-                                            {item.title}
-                                        </Typography>
-                                        <Typography color={"text.disabled"}>
-                                            {item.person}
-                                        </Typography>
+                                            <Typography color={"text.disabled"}>
+                                                {item.time}
+                                            </Typography>
+                                            <Typography sx={{fontWeight: 600}}>
+                                                {item.title}
+                                            </Typography>
+                                            <Typography color={"text.disabled"}>
+                                                {item.person}
+                                            </Typography>
                                         </Box>
                                     </Grid>
                                     <Grid item xs={2}/>

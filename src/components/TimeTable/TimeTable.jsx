@@ -1,62 +1,94 @@
-import {Avatar, Box, Card, Container, Divider, Grid, Stack, Typography} from "@mui/material";
+import {Box, Card, Container, Divider, Grid, Stack, Typography} from "@mui/material";
+import {
+    Campaign,
+    Celebration,
+    Computer,
+    ConfirmationNumber,
+    EmojiEvents, EmojiObjects,
+    PlayArrow,
+    Restaurant,
+    Stop
+} from "@mui/icons-material";
+import {IconContainer} from "../Features/Features";
+import {Play} from "next/dist/compiled/@next/font/dist/google";
 
 const dayOne = [
     {
         time: "08:00 - 09:00",
-        icon: "",
+        icon: <ConfirmationNumber/>,
         title: "Check-In",
         person: "",
     },
     {
         time: "09:00 - 10:00",
-        icon: "",
+        icon: <Restaurant/>,
         title: "Breakfast",
         person: "",
     },
     {
         time: "10:00 - 11:00",
-        icon: "",
-        title: "Introduction",
+        icon: <Campaign/>,
+        title: "Introduction & Speakers",
+        person: "",
+    },
+    {
+        time: "11:00 - 12:00",
+        icon: <EmojiObjects/>,
+        title: "Challenge Input Sessions",
         person: "",
     },
     {
         time: "12:00 - 13:00",
-        icon: "",
+        icon: <Restaurant/>,
         title: "Lunch",
         person: "",
     },
     {
-        time: "13:00 - 23:59",
-        icon: "",
-        title: "Hacking Time",
+        time: "13:00",
+        icon: <PlayArrow/>,
+        title: "Start Hacking Time",
+        person: "",
+    },
+    {
+        time: "18:00 - 19:00",
+        icon: <Restaurant/>,
+        title: "Dinner",
         person: "",
     }
 ]
 
 const dayTwo = [
     {
-        time: "00:00 - 12:00",
-        icon: "",
-        title: "Hacking Time",
-        person: "",
-    },{
         time: "08:00 - 09:00",
-        icon: "",
+        icon: <Restaurant/>,
         title: "Breakfast",
         person: "",
-    },{
+    },
+    {
+        time: "12:00",
+        icon: <Stop/>,
+        title: "End Hacking Time",
+        person: "",
+    },
+    {
+        time: "13:00 - 14:00",
+        icon: <Restaurant/>,
+        title: "Lunch",
+        person: "",
+    },
+    {
         time: "14:00 - 16:00",
-        icon: "",
+        icon: <Campaign/>,
         title: "Challenge Presentations",
         person: "",
-    },{
+    }, {
         time: "17:00 - 18:00",
-        icon: "",
+        icon: <EmojiEvents/>,
         title: "Feedback & Awards",
         person: "",
-    },{
-        time: "18:00 - *",
-        icon: "",
+    }, {
+        time: "18:00",
+        icon: <Celebration/>,
         title: "After Party",
         person: "",
     }
@@ -83,19 +115,12 @@ export function Table(props) {
                     <>
                         <Box sx={{pt: 3, pb: 3}}>
                             <Container>
-                                <Grid container alignItems={"center"} spacing={3}>
-                                    <Grid item xs={2} sx={{display: "flex", justifyContent: "center"}}>
-                                        <Avatar sx={{
-                                            width: "70%",
-                                            height: "auto",
-                                            aspectRatio: "1/1",
-                                            backgroundColor: "background.default",
-                                            color: "inherit"
-                                        }}>
-                                            {item.icon}
-                                        </Avatar>
+                                <Grid container  spacing={3}>
+                                    <Grid item xs={2} sx={{display: "flex", justifyContent: "center", alignContent: "center", alignItems: "center"}}>
+                                        <IconContainer icon={item.icon}/>
                                     </Grid>
-                                    <Grid item xs={8}>
+                                    <Grid item xs={8}sx={{display: "flex", alignItems: "center"}}>
+                                        <Box>
                                         <Typography color={"text.disabled"}>
                                             {item.time}
                                         </Typography>
@@ -105,12 +130,13 @@ export function Table(props) {
                                         <Typography color={"text.disabled"}>
                                             {item.person}
                                         </Typography>
+                                        </Box>
                                     </Grid>
                                     <Grid item xs={2}/>
                                 </Grid>
                             </Container>
                         </Box>
-                        {index !== dayOne.length - 1 ? <Divider/> : undefined}
+                        {index !== props.data.length - 1 ? <Divider/> : undefined}
                     </>
                 ))
             }

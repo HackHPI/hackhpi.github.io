@@ -10,7 +10,7 @@ function Sponsors() {
 
     return (
         <HackHPIWrapper>
-            <Box sx={{ paddingBottom: 10}}>
+            <Box sx={{paddingBottom: 10}}>
                 <Container maxWidth={"xl"}>
                     <Grid container sx={{paddingTop: "5rem"}} justifyContent={"center"} spacing={10}>
                         <Grid item>

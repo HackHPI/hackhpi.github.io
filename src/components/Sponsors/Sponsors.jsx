@@ -3,12 +3,14 @@ import ESchool from "../../assets/images/sponsors/trpnt_e-school-standalone-whit
 import React from "react";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 import ClimateTechHub from "../../assets/images/sponsors/CTH-logo-vertical_white.svg";
+import HolySquad from "../../assets/images/sponsors/holySquad.png";
+import DB from "../../assets/images/sponsors/db.svg";
 
 function Sponsors() {
 
     return (
         <HackHPIWrapper>
-            <Box sx={{ paddingBottom: 10}}>
+            <Box sx={{paddingBottom: 10}}>
                 <Container maxWidth={"xl"}>
                     <Grid container sx={{paddingTop: "5rem"}} justifyContent={"center"} spacing={10}>
                         <Grid item>
@@ -16,6 +18,12 @@ function Sponsors() {
                         </Grid>
                         <Grid item>
                             <img src={ESchool.src} alt={"Logo of E-Scool"} style={{height: "5rem"}}/>
+                        </Grid>
+                        <Grid item>
+                            <img src={HolySquad.src} alt={"Logo of HolySquad"} style={{height: "5rem"}}/>
+                        </Grid>
+                        <Grid item>
+                            <img src={DB.src} alt={"Logo of DB"} style={{height: "5rem"}}/>
                         </Grid>
                     </Grid>
 

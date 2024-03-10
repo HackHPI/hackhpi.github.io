@@ -43,7 +43,13 @@ const dayOne = [
         person: "",
     },
     {
-        time: "13:00",
+        time: "13:00 - 18:00",
+        icon: <EmojiObjects/>,
+        title: "Idea-Workshop",
+        person: "optional",
+    },
+    {
+        time: "13:00 - 13:00 next day (Continuously)",
         icon: <PlayArrow/>,
         title: "Start Hacking Time",
         person: "",
@@ -64,7 +70,13 @@ const dayTwo = [
         person: "",
     },
     {
-        time: "12:00",
+        time: "09:00 - 10:00",
+        icon: <EmojiObjects/>,
+        title: "Pitch-Workshop",
+        person: "optional",
+    },
+    {
+        time: "13:00",
         icon: <Stop/>,
         title: "End Hacking Time",
         person: "",

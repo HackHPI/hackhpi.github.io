@@ -8,6 +8,7 @@ import {useState} from "react";
 function WhatToExpect() {
 
     const [playVideo, setPlayVideo] = useState(false)
+    const vimeoVideoId = "867922224"
 
     return (
         <HackHPIWrapper>
@@ -35,7 +36,7 @@ function WhatToExpect() {
                             <WindowCard>
                                 {playVideo ? (
                                     <iframe
-                                        src="https://player.vimeo.com/video/867922224?h=30cf0b8b55&title=0&byline=0&portrait=0&autoplay=1&muted=1"
+                                        src={`https://player.vimeo.com/video/${vimeoVideoId}?h=30cf0b8b55&title=0&byline=0&portrait=0&autoplay=1&muted=1`}
                                         style={{aspectRatio: "16 / 9", borderRadius: "5px", width: "100%", border: 0}}
                                         allow="autoPlay; fullscreen; picture-in-picture"
                                         allowFullScreen
@@ -47,7 +48,7 @@ function WhatToExpect() {
                                             aspectRatio: "16 / 9",
                                             borderRadius: "5px",
                                             width: "100%",
-                                            background: `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(https://vumbnail.com/867922224.jpg)`,
+                                            background: `linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(https://vumbnail.com/${vimeoVideoId}.jpg)`,
                                             backgroundRepeat: "no-repeat",
                                             backgroundSize: "cover",
                                             display: "flex",

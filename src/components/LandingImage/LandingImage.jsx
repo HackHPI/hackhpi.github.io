@@ -25,13 +25,15 @@ function LandingImage() {
                     minHeight: "60vh",
                 }}>
 
-                    <img src={"/HackHPI24_white.png"} width={"150rem"} alt={"HackHPI Logo"}/>
+                    <img src={"/HackHPI24_white.svg"} width={"150rem"} alt={"HackHPI Logo"}/>
                     <div>
                         <Countdown/>
                         <Typography variant={"h4"} component={"h2"}>
                             <TypeAnimation
                                 preRenderFirstString={true}
                                 sequence={[
+                                    500,
+                                    'Until we build Better Cities',
                                     500,
                                     'Until we build Better Transport', // initially rendered starting point
                                     1000,

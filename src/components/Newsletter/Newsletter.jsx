@@ -14,6 +14,7 @@ function Newsletter() {
                                 height="350"
                                 src="https://0270cddf.sibforms.com/serve/MUIFAODxMCBfEOxAaU41kdXNneuAYA9UFi6EdbUH-mezqAUhIK5cEXk8oEIPnRLFxdhcbYk-LxaUNXsHG-wKikEJ-7PxUY0h8Fyfba1LtUBOhpVSwUWzjyx4QY0n2N5vM52i5u1HwqcZrC-rJaAxAIndH_nvEadZlRyjy3Ky_NncN66lIPLtXLFN5JWjZNGqaNxCAV0bz1CE_EbY"
                                 frameBorder="0" scrolling="auto" allowFullScreen
+                                aria-label={"Newsletter Signup"}
                             ></iframe>
                         </Grid>
                         <Grid item xs={12} md={6} order={{ xs: 1, sm: 1, md: 2 }}>

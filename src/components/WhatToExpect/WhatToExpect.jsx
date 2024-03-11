@@ -56,7 +56,7 @@ function WhatToExpect() {
                                             justifyContent: "center",
                                         }}
                                     >
-                                        <IconButton onClick={() => setPlayVideo(true)}>
+                                        <IconButton onClick={() => setPlayVideo(true)} aria-label={"Play video of HackHPI23"}>
                                             <PlayArrow sx={{fontSize: "3rem"}}/>
                                         </IconButton>
                                     </Box>

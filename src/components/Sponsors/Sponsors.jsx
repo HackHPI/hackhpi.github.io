@@ -3,7 +3,7 @@ import ESchool from "../../assets/images/sponsors/trpnt_e-school-standalone-whit
 import React from "react";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 import ClimateTechHub from "../../assets/images/sponsors/CTH-logo-vertical_white.svg";
-import HolySquad from "../../assets/images/sponsors/holySquad.png";
+import HolySquad from "../../assets/images/sponsors/holySquad.webp";
 import DB from "../../assets/images/sponsors/db.svg";
 
 function Sponsors() {

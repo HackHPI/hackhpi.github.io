@@ -2,7 +2,6 @@ import React from "react";
 import {AppRouterCacheProvider} from "@mui/material-nextjs/v13-appRouter";
 import HackHPIWrapper from "../components/Theme/HackHPIWrapper";
 import Footer from "../components/Footer/Footer";
-import './layout.css'
 
 
 export default function RootLayout({children,}: { children: React.ReactNode }) {
@@ -18,6 +17,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
             <meta name="theme-color" content="#13101B"/>
             <meta name={"description"}
                   content={"Explore the future of urban living at HPI in Potsdam. Join motivated students for two days of innovation, workshops, and collaboration with top-notch sponsors offering support and expertise. Tackle a challenge and dive into the world of smart cities."}/>
+            <link rel="preload" href="./styles/fonts.css" type="text/css"/>
         </head>
         <body>
         <AppRouterCacheProvider>

@@ -61,26 +61,30 @@ function Footer() {
                         </Grid>
                         <Grid item xs>
                             <Typography variant={"h5"} gutterBottom>HPI</Typography>
-                            <Typography>
-                                <Link sx={{textDecoration: "none", color: "inherit"}} href={"https://hpi.de/"}>
-                                    Website
-                                </Link>
-                            </Typography>
-                            <Typography>
+                            <Stack spacing={1}>
+                                <Typography>
+                                    <Link sx={{textDecoration: "none", color: "inherit"}} href={"https://hpi.de/"}>
+                                        Website
+                                    </Link>
+                                </Typography>
                                 <Link sx={{textDecoration: "none", color: "inherit"}}
                                       href={"https://hpi.de/en/media/overview.html"}>
-                                    Public Relations
+                                    <Typography>
+                                        Public Relations
+                                    </Typography>
+
                                 </Link>
-                            </Typography>
+                            </Stack>
                         </Grid>
                         <Grid item xs>
                             <Typography variant={"h5"} gutterBottom>Legal</Typography>
-                            <Typography>
-                                <Link sx={{textDecoration: "none", color: "inherit"}}
-                                      href={"/imprint"}>
+                            <Link sx={{textDecoration: "none", color: "inherit"}}
+                                  href={"/imprint"}>
+                                <Typography>
                                     Imprint
-                                </Link>
-                            </Typography>
+                                </Typography>
+                            </Link>
+
                             <Typography>
                                 <Link sx={{textDecoration: "none", color: "inherit"}}
                                       href={"/privacy"}>
@@ -90,7 +94,6 @@ function Footer() {
                         </Grid>
                         <Grid item xs>
                             <Typography variant={"h5"} gutterBottom>More</Typography>
-
                             <Typography>
                                 <Link sx={{textDecoration: "none", color: "inherit"}}
                                       href={"https://static.mlh.io/docs/mlh-code-of-conduct.pdf"}>

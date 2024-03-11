@@ -1,6 +1,6 @@
 "use client"
 import {Box, Container, Grid, Paper, Stack, Typography, useTheme} from "@mui/material";
-import FelixLennardHake from "../../assets/images/speakers/FelixLennardHake.jpg"
+import FelixLennardHake from "../../assets/images/speakers/FelixLennardHake.webp"
 import {WindowCard} from "../WindowCard/WindowCard";
 
 const speakers = {

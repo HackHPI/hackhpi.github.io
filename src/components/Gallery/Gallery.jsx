@@ -195,17 +195,22 @@ export function Gallery() {
                 <Grid item xs={12} md={12}>
                     <Box sx={{maxHeight: "30rem", overflowY: "scroll"}}>
                         <ImageList variant="masonry" cols={3} gap={8}>
-                            {faqs[selectedIndex].items.map((item, i) => (
-                                <ImageListItem key={i}>
-                                    <img
-                                        key={"img" + i}
-                                        srcSet={`${item.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                        src={`${item.src}?w=248&fit=crop&auto=format`}
-                                        alt={item.title}
-                                        loading="lazy"
-                                    />
-                                </ImageListItem>
-                            ))}
+                            {faqs[selectedIndex].items.map((item, i) => {
+                                //TODO Please redo this with a correct alt!
+                                const imageName = item.src.split("/")
+                                const name = imageName[imageName.length -1 ];
+                                return (
+                                    <ImageListItem key={i}>
+                                        <img
+                                            key={"img" + i}
+                                            srcSet={`${item.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                            src={`${item.src}?w=248&fit=crop&auto=format`}
+                                            alt={"Imagefile " + name}
+                                            loading="lazy"
+                                        />
+                                    </ImageListItem>
+                                )
+                            })}
                         </ImageList>
                     </Box>
                 </Grid>

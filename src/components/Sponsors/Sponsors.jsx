@@ -1,5 +1,5 @@
 import {Box, Container, Grid, Link} from "@mui/material";
-import ESchool from "../../assets/images/sponsors/trpnt_e-school-standalone-white_high.png"
+import ESchool from "../../assets/images/sponsors/e-school.svg"
 import React from "react";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 import ClimateTechHub from "../../assets/images/sponsors/CTH-logo-vertical_white.svg";

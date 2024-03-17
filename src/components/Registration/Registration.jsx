@@ -408,7 +408,7 @@ function Registration() {
                 <LoadingButton variant={"contained"} startIcon={<Send/>}
                                loading={isSending}
                                onClick={submitForm}
-                               disabled={!enableNext(steps[index], step.label)}
+                               disabled={true || !enableNext(steps[index], step.label)}
                 >
                     Send
                 </LoadingButton>
@@ -419,7 +419,7 @@ function Registration() {
             <Button
                 variant="contained"
                 onClick={handleNext}
-                disabled={!enableNext(steps[index], step.label)}
+                disabled={true || !enableNext(steps[index], step.label)}
             >
                 Next
             </Button>
@@ -433,7 +433,22 @@ function Registration() {
             <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
                 <Typography variant={"h2"} component={"h1"}>Registration</Typography>
                 <Typography variant={"subtitle1"} gutterBottom>Apply now before March 15th!</Typography>
-                <Stepper activeStep={activeStep} orientation="vertical" sx={{mt: 5}}>
+                <Box sx={{position: "relative"}}>
+                    <Box sx={{
+                        position: "absolute",
+                        transform: "translate(-50%,-50%)",
+                        left: "50%",
+                        top: "50%",
+                        zIndex: 1000,
+                    }}>
+                        <Typography variant={"h5"} fontWeight={"bold"} gutterBottom>
+                            Registration is closed!
+                        </Typography>
+                        <Typography variant={"h5"} fontWeight={"bold"}>
+                            We are currently reviewing all applications and will reach out to you soon.
+                        </Typography>
+                    </Box>
+                <Stepper activeStep={activeStep} orientation="vertical" sx={{mt: 5, filter: "blur(10px)"}}>
                     {steps.map((step, index) => (
                         <Step key={index}>
                             <StepLabel
@@ -474,7 +489,7 @@ function Registration() {
                                                 <Stack direction={"row"} spacing={2}>
                                                     {renderNextButton(index, step)}
                                                     {index === steps.length - 1 ? undefined : <Grid item xs={2}>
-                                                        <Button disabled={index === 0} onClick={handleBack}
+                                                        <Button disabled={true || index === 0} onClick={handleBack}
                                                                 color={"inherit"}>
                                                             Back
                                                         </Button>
@@ -490,9 +505,10 @@ function Registration() {
                         </Step>
                     ))}
                 </Stepper>
-                <Typography color={"text.disabled"} sx={{marginTop: 3}}>Read our <Link href={"/privacy"}
+                <Typography color={"text.disabled"} sx={{marginTop: 3, filter: "blur(10px)"}}>Read our <Link href={"/privacy"}
                                                                                        color={"inherit"}>privacy
                     policy</Link> for information on how we handle your data and what you rights are.</Typography>
+                </Box>
             </Container>
         </HackHPIWrapper>
     )

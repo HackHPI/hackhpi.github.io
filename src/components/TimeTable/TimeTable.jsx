@@ -21,7 +21,7 @@ const dayOne = [
     {
         time: "09:00 - 10:00",
         icon: <Restaurant/>,
-        title: "Breakfast",
+        title: "Breakfast & Get to know each other",
         person: "",
     },
     {
@@ -100,7 +100,7 @@ const dayTwo = [
     }, {
         time: "18:00",
         icon: <Celebration/>,
-        title: "After Party",
+        title: "Drinks & Networking",
         person: "",
     }
 ]
@@ -137,13 +137,13 @@ export function Table(props) {
                                     </Grid>
                                     <Grid item xs={8} sx={{display: "flex", alignItems: "center"}}>
                                         <Box>
-                                            <Typography color={"text.disabled"}>
+                                            <Typography color={"text.disabled"} noWrap>
                                                 {item.time}
                                             </Typography>
-                                            <Typography sx={{fontWeight: 600}}>
+                                            <Typography sx={{fontWeight: 600}} noWrap>
                                                 {item.title}
                                             </Typography>
-                                            <Typography color={"text.disabled"}>
+                                            <Typography color={"text.disabled"} noWrap>
                                                 {item.person}
                                             </Typography>
                                         </Box>
@@ -168,10 +168,10 @@ export function TimeTable() {
 
             <Grid container spacing={5}>
                 <Grid item md={6} xs={12}>
-                    <Table data={dayOne} title={"Day 1"} subtitle={"05.04"}/>
+                    <Table data={dayOne} title={"Day 1"} subtitle={"Friday 05.04"}/>
                 </Grid>
                 <Grid item md={6} xs={12}>
-                    <Table data={dayTwo} title={"Day 2"} subtitle={"06.04"}/>
+                    <Table data={dayTwo} title={"Day 2"} subtitle={"Saturday 06.04"}/>
                 </Grid>
             </Grid>
         </Container>

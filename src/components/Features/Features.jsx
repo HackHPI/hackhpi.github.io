@@ -1,5 +1,5 @@
 import {Box, Card, Container, Grid, Typography} from "@mui/material";
-import {Campaign, Check, ConfirmationNumber, EmojiEvents, MoneyOff} from "@mui/icons-material";
+import {Campaign, ConfirmationNumber, EmojiEvents, MoneyOff} from "@mui/icons-material";
 import React from "react";
 
 export function IconContainer(props) {
@@ -11,7 +11,6 @@ export function IconContainer(props) {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            marginBottom: "1rem"
         }}>
             {React.cloneElement(props.icon, {sx: {color: "white"}, style: {width: "65%", height: "auto"}})}
         </Card>

@@ -51,16 +51,17 @@ function LandingImage() {
                         <Button
                             variant={"contained"}
                             sx={{
-                                background: "linear-gradient(90deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
-                                backgroundColor: "secondary.main",
+                                //background: "linear-gradient(90deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
+                                //backgroundColor: "secondary.main",
                                 borderWidth: "1rem",
                                 width: "13rem",
                                 height: "3.5rem",
                                 fontSize: "1rem",
                             }}
-                            onClick={() => document.getElementById("signupForm").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })}
+                            disabled
+                            //onClick={() => document.getElementById("signupForm").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })}
                         >
-                            SignUp
+                            Sign Up closed
                         </Button>
                         <Card sx={{height: "3.5rem", width: "13rem", justifyContent: "center", display:"flex"}}>
                             <Stack direction={"row"} alignItems={"center"} display={"flex"}

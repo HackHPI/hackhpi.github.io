@@ -1,52 +1,35 @@
-import {Box, Button, Container, Paper, Stack, Typography} from "@mui/material";
-import '@fontsource/urbanist'
+'use client'
+import {Box, Button, Card, Container, Stack, Typography} from "@mui/material";
 import {TypeAnimation} from "react-type-animation";
-import Video from "../../assets/videos/1860079.mp4"
 import Countdown from "./Countdown.jsx";
+import {CalendarMonthOutlined} from "@mui/icons-material";
 
 function LandingImage() {
+
     return (
         <Box sx={{
-            height: "75vh",
             width: "100%",
-            position: "relative",
-            //borderRadius: "0 0 30px 30px",
+            backgroundImage: `url(/mazeBackground.svg), linear-gradient(180deg, rgba(19,16,27,1) 0%, rgba(19,16,27,1) 100%)`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            padding: 2
         }}
-               //elevation={20}
         >
-            <video autoPlay muted loop style={{
-                width: "100%",
-                height: "100%",
-                position: "absolute",
-                objectFit: "cover",
-                zIndex: 0,
-                //borderRadius: "0 0 30px 30px"
-            }}>
-                <source src={Video}
-                        type="video/mp4"/>
-            </video>
-            <div style={{
-                zIndex: 1,
-                position: "relative",
-                padding: "10px",
-                background: "rgba(0,0,0,.7)",
-                height: "100%",
-                //borderRadius: "0 0 30px 30px"
-            }}>
-                <Container sx={{height: "100%", width: "100%"}} maxWidth={false}>
-                    <Box sx={{
-                        height: "100%",
-                        width: "100%",
-                        display: "flex",
-                        justifyContent: "space-around",
-                        flexDirection: "column"
-                    }}>
+            <Container sx={{height: "100%", width: "100%", display: "flex", alignItems: "center"}}>
+                <Box sx={{
+                    height: "80%",
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "space-around",
+                    flexDirection: "column",
+                    minHeight: "60vh",
+                }}>
 
-                        <img src={"/HackHPI24_white.png"} width={"200rem"}/>
-                        <div>
-                            <Countdown/>
+                    <img src={"/HackHPI24_white.png"} width={"150rem"} alt={"HackHPI Logo"}/>
+                    <div>
+                        <Countdown/>
+                        <Typography variant={"h4"} component={"h2"}>
                             <TypeAnimation
-                                client:load
                                 preRenderFirstString={true}
                                 sequence={[
                                     500,
@@ -60,26 +43,38 @@ function LandingImage() {
                                     10000,
                                 ]}
                                 speed={50}
-                                style={{fontSize: '3em', color: "white"}}
                                 repeat={Infinity}
                             />
-                        </div>
-                        <Stack direction={"row"}>
-                            <Button
-                                variant={"contained"}
-                                    sx={{
-                                //background: "linear-gradient(145deg, rgba(76,201,240,1) 0%, rgba(247,37,133,1) 100%);",
-                                backgroundColor: "primary.main",
+                        </Typography>
+                    </div>
+                    <Stack direction={"row"} spacing={3} useFlexGap flexWrap="wrap">
+                        <Button
+                            variant={"contained"}
+                            sx={{
+                                //background: "linear-gradient(90deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
+                                //backgroundColor: "secondary.main",
                                 borderWidth: "1rem",
+                                width: "13rem",
+                                height: "3.5rem",
+                                fontSize: "1rem",
                             }}
-                                size={"large"}
-                            >
-                                SignUp
-                            </Button>
-                        </Stack>
-                    </Box>
-                </Container>
-            </div>
+                            disabled
+                            //onClick={() => document.getElementById("signupForm").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })}
+                        >
+                            Sign Up closed
+                        </Button>
+                        <Card sx={{height: "3.5rem", width: "13rem", justifyContent: "center", display:"flex"}}>
+                            <Stack direction={"row"} alignItems={"center"} display={"flex"}
+                                   sx={{height: "100%", paddingRight: "1.25rem", paddingLeft: "1.25rem",}} spacing={2}>
+                                <CalendarMonthOutlined sx={{fontSize: "1.5rem", color: "text.disabled"}}/>
+                                <Typography sx={{fontSize: "1rem"}} color={"text.disabled"} noWrap>
+                                    5th - 6th April
+                                </Typography>
+                            </Stack>
+                        </Card>
+                    </Stack>
+                </Box>
+            </Container>
         </Box>
     )
 }

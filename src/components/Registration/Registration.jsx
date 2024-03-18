@@ -192,6 +192,7 @@ const teamMembers = [
         input: ['Name 1'],
         max: 100,
         required: false,
+        name: "team1"
     },
     {
         formLabel: 'Team member 2',
@@ -199,6 +200,7 @@ const teamMembers = [
         input: ['Name 2'],
         max: 100,
         required: false,
+        name: "team2"
     },
     {
         formLabel: 'Team member 3',
@@ -206,6 +208,7 @@ const teamMembers = [
         input: ['Name 3'],
         max: 100,
         required: false,
+        name: "team3"
     },
     {
         formLabel: 'Team member 4',
@@ -213,6 +216,7 @@ const teamMembers = [
         input: ['Name 4'],
         max: 100,
         required: false,
+        name: "team4"
     },
     {
         formLabel: 'Team member 5',
@@ -220,6 +224,7 @@ const teamMembers = [
         input: ['Name 5'],
         max: 100,
         required: false,
+        name: "team5"
     },
 ]
 
@@ -319,7 +324,7 @@ function Registration() {
             case 1:
                 return <TextField
                     type="text"
-                    placeholder={input}
+                    placeholder={input[0]}
                     multiline
                     minRows={rows}
                     name={name}
@@ -342,7 +347,7 @@ function Registration() {
                     onChange={(event) => handleChange(event.target.name, event.target.value)}>
                     <MenuItem value=""><em>None</em></MenuItem>
                     {input.map((item, i) => (
-                        <MenuItem value={i}>{item}</MenuItem>
+                        <MenuItem value={i} key={i}>{item}</MenuItem>
                     ))}
                 </Select>
             case 4:
@@ -353,14 +358,14 @@ function Registration() {
                     errorCheck
                 >
                     {input.map((item, i) => (
-                        <FormControlLabel value={i} control={<Radio />} label={item} />
+                        <FormControlLabel value={i} control={<Radio/>} key={i} label={item}/>
                     ))}
                 </RadioGroup>
             case 5:
                 return <FormControlLabel
                     control={<Checkbox name={name} checked={values[name] ?? false}
-                        onChange={(event, value) => handleChange(name, value)} />}
-                    label={input.join("")} />
+                                       onChange={(event, value) => handleChange(name, value)}/>}
+                    label={input.join("")}/>
 
             default:
                 return null
@@ -400,10 +405,10 @@ function Registration() {
         }
         if (index === steps.length - 2) {
             return (
-                <LoadingButton variant={"contained"} startIcon={<Send />}
-                    loading={isSending}
-                    onClick={submitForm}
-                    disabled={!enableNext(steps[index], step.label)}
+                <LoadingButton variant={"contained"} startIcon={<Send/>}
+                               loading={isSending}
+                               onClick={submitForm}
+                               disabled={true || !enableNext(steps[index], step.label)}
                 >
                     Send
                 </LoadingButton>
@@ -414,7 +419,7 @@ function Registration() {
             <Button
                 variant="contained"
                 onClick={handleNext}
-                disabled={!enableNext(steps[index], step.label)}
+                disabled={true || !enableNext(steps[index], step.label)}
             >
                 Next
             </Button>
@@ -425,10 +430,25 @@ function Registration() {
     return (
 
         <HackHPIWrapper>
-            <Container sx={{ paddingTop: 10, paddingBottom: 10 }} id={"signupForm"}>
-                <Typography variant={"h2"} component={"h1"} gutterBottom>Registration</Typography>
-                <Typography variant={"subtitle1"} gutterBottom>Apply now until March 15th!</Typography>
-                <Stepper activeStep={activeStep} orientation="vertical" sx={{ mt: 5 }}>
+            <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
+                <Typography variant={"h2"} component={"h1"}>Registration</Typography>
+                <Typography variant={"subtitle1"} gutterBottom>Apply now before March 15th!</Typography>
+                <Box sx={{position: "relative"}}>
+                    <Box sx={{
+                        position: "absolute",
+                        transform: "translate(-50%,-50%)",
+                        left: "50%",
+                        top: "50%",
+                        zIndex: 1000,
+                    }}>
+                        <Typography variant={"h5"} fontWeight={"bold"} gutterBottom>
+                            Registration is closed!
+                        </Typography>
+                        <Typography variant={"h5"} fontWeight={"bold"}>
+                            We are currently reviewing all applications and will reach out to you soon.
+                        </Typography>
+                    </Box>
+                <Stepper activeStep={activeStep} orientation="vertical" sx={{mt: 5, filter: "blur(10px)"}}>
                     {steps.map((step, index) => (
                         <Step key={index}>
                             <StepLabel>
@@ -439,49 +459,49 @@ function Registration() {
                                 </Box>
                             </StepLabel>
                             <StepContent>
-                                <Grid container spacing={3} md={8} xs={12}>
-                                    {
-                                        index === 3 ? (
-                                            <Grid item md={12} xs={12}>
-                                                <Typography variant="caption">If you want to take part as a team, please enter the names of the other team members here. Note that a team consists of a maximum of 6 members.</Typography>
+                                <Grid container>
+                                    <Grid item md={8} xs={12}>
+                                        <Grid container spacing={3}>
+                                            {step.children ? step.children : step.content.map((item, i) => (
+                                                <Grid item md={gridItemSize({name: item.name})} xs={12} key={i}>
+                                                    <FormControl fullWidth>
+                                                        <FormLabel focused={false}>
+                                                            {item.formLabel}{item.required ? "*" : ""}
+                                                        </FormLabel>
+                                                        {contentForm({
+                                                            type: item.type,
+                                                            input: item.input,
+                                                            rows: item.rows,
+                                                            name: item.name
+                                                        })}
+                                                        <FormHelperText>{item.helperText}</FormHelperText>
+                                                    </FormControl>
+                                                </Grid>
+                                            ))}
+                                            <Grid item xs={12}>
+                                                <Stack direction={"row"} spacing={2}>
+                                                    {renderNextButton(index, step)}
+                                                    {index === steps.length - 1 ? undefined : <Grid item xs={2}>
+                                                        <Button disabled={true || index === 0} onClick={handleBack}
+                                                                color={"inherit"}>
+                                                            Back
+                                                        </Button>
+                                                    </Grid>
+                                                    }
+                                                </Stack>
                                             </Grid>
-                                        ) : null
-                                    }
-                                    {step.children ? step.children : step.content.map((item, i) => (
-                                        <Grid item md={gridItemSize({ name: item.name })} xs={12}>
-                                            <FormControl fullWidth>
-                                                <FormLabel focused={false}>
-                                                    {item.formLabel}{item.required ? "*" : ""}
-                                                </FormLabel>
-                                                {contentForm({
-                                                    type: item.type,
-                                                    input: item.input,
-                                                    rows: item.rows,
-                                                    name: item.name
-                                                })}
-                                                <FormHelperText>{item.helperText}</FormHelperText>
-                                            </FormControl>
+
                                         </Grid>
-                                    ))}
-                                    <Grid item xs={12}>
-                                        <Stack direction={"row"} spacing={2}>
-                                            {renderNextButton(index, step)}
-                                            {index === steps.length - 1 ? undefined : <Grid item xs={2}>
-                                                <Button disabled={index === 0} onClick={handleBack} color={"inherit"}>
-                                                    Back
-                                                </Button>
-                                            </Grid>
-                                            }
-                                        </Stack>
                                     </Grid>
                                 </Grid>
                             </StepContent>
                         </Step>
                     ))}
                 </Stepper>
-                <Typography color={"text.disabled"} sx={{ marginTop: 3 }}>
-                    Read our <Link href={"/privacy"} color={"inherit"}>privacy policy</Link> for information on how we handle your data and what your rights are.
-                </Typography>
+                <Typography color={"text.disabled"} sx={{marginTop: 3, filter: "blur(10px)"}}>Read our <Link href={"/privacy"}
+                                                                                       color={"inherit"}>privacy
+                    policy</Link> for information on how we handle your data and what you rights are.</Typography>
+                </Box>
             </Container>
         </HackHPIWrapper>
     )

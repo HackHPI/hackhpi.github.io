@@ -7,6 +7,7 @@ import HolySquad from "../../assets/images/sponsors/holySquad.png";
 import DB from "../../assets/images/sponsors/db.svg";
 import Potsdam from "../../assets/images/sponsors/potsdam.webp";
 import AxelSpringer from "../../assets/images/sponsors/axelspringer.webp";
+import BertaRudi from "../../assets/images/sponsors/berta-rudi_logo_negativ_sw.svg";
 
 function Sponsors() {
 
@@ -35,6 +36,10 @@ function Sponsors() {
             logo: AxelSpringer.src,
             alt: "Logo of Axel Springer",
             link: "https://www.axelspringer.com/"
+        },{
+            logo: BertaRudi.src,
+            alt: "Logo of Berta Rudi",
+            link: "https://berta-rudi.com/?utm_source=crossmedial&utm_medium=hpihack&utm_campaign=hackathon"
         },
     ]
 

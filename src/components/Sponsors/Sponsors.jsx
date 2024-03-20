@@ -8,6 +8,7 @@ import DB from "../../assets/images/sponsors/db.svg";
 import Potsdam from "../../assets/images/sponsors/potsdam.webp";
 import AxelSpringer from "../../assets/images/sponsors/axelspringer.webp";
 import BertaRudi from "../../assets/images/sponsors/berta-rudi_logo_negativ_sw.svg";
+import Starwit from "../../assets/images/sponsors/cropped-logo-starwit-white.png";
 
 function Sponsors() {
 
@@ -40,6 +41,10 @@ function Sponsors() {
             logo: BertaRudi.src,
             alt: "Logo of Berta Rudi",
             link: "https://berta-rudi.com/?utm_source=crossmedial&utm_medium=hpihack&utm_campaign=hackathon"
+        },{
+            logo: Starwit.src,
+            alt: "Logo of Starwit",
+            link: "https://starwit-technologies.de/"
         },
     ]
 

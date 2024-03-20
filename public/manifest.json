@@ -1,0 +1,9 @@
+{
+  "name": "HackHPI 24",
+  "short_name": "HackHPI 2024",
+  "description": "Explore the future of urban living at HPI in Potsdam. Join motivated students for two days of innovation, workshops, and collaboration with top-notch sponsors offering support and expertise. Tackle a challenge and dive into the world of smart cities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#13101B",
+  "theme_color": "#13101B"
+}

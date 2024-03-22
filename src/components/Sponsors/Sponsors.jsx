@@ -19,24 +19,28 @@ function Sponsors() {
             logo: BertaRudi.src,
             alt: "Logo of Berta Rudi",
             link: "https://berta-rudi.com/?utm_source=crossmedial&utm_medium=hpihack&utm_campaign=hackathon"
-        }
-        , {
+        },
+        {
             logo: AxelSpringer.src,
             alt: "Logo of Axel Springer",
             link: "https://www.axelspringer.com/"
-        }, {
+        },
+        {
             logo: ESchool.src,
             alt: "Logo of HPI E-School",
             link: "https://hpi.de/entrepreneurship/home.html"
-        }, {
+        },
+        {
             logo: Potsdam.src,
             alt: "Logo of the City of Potsdam",
             link: "https://www.potsdam.de/de"
-        }, {
+        },
+        {
             logo: DreesSommer.src,
             alt: "Logo of Drees & Sommer",
             link: "https://www.dreso.com/"
-        }, {
+        },
+        {
             logo: Starwit.src,
             alt: "Logo of Starwit",
             link: "https://starwit-technologies.de/"
@@ -45,11 +49,13 @@ function Sponsors() {
             logo: ClimateTechHub.src,
             alt: "Logo of Climate Tech Hub",
             link: "https://www.climate-tech-hub.com/"
-        }, {
+        },
+        {
             logo: HolySquad.src,
             alt: "Logo of HolySquad",
             link: "https://de.weareholy.com/"
-        }, {
+        },
+        {
             logo: DB.src,
             alt: "Logo of Deutsche Bahn",
             link: "https://www.deutschebahn.com/"

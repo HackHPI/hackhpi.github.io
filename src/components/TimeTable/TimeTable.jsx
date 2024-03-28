@@ -13,7 +13,7 @@ import {IconContainer} from "../Features/Features";
 
 const dayOne = [
     {
-        time: "08:00 - 09:30",
+        time: "09:10 - 11:00",
         icon: <ConfirmationNumber/>,
         title: "Check-In",
         person: "",
@@ -37,7 +37,7 @@ const dayOne = [
         person: "",
     },
     {
-        time: "12:00 - 14:00",
+        time: "13:00 - 14:00",
         icon: <Restaurant/>,
         title: "Lunch",
         person: "",

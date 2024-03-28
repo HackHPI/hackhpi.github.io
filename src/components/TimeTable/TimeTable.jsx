@@ -13,43 +13,43 @@ import {IconContainer} from "../Features/Features";
 
 const dayOne = [
     {
-        time: "08:00 - 09:00",
+        time: "08:00 - 09:30",
         icon: <ConfirmationNumber/>,
         title: "Check-In",
         person: "",
     },
     {
-        time: "09:00 - 10:00",
+        time: "09:30 - 11:00",
         icon: <Restaurant/>,
         title: "Breakfast & Get to know each other",
         person: "",
     },
     {
-        time: "10:00 - 11:00",
+        time: "11:00 - 12:00",
         icon: <Campaign/>,
         title: "Introduction & Speakers",
         person: "",
     },
     {
-        time: "11:00 - 12:00",
+        time: "12:00 - 13:00",
         icon: <EmojiObjects/>,
         title: "Challenge Input Sessions",
         person: "",
     },
     {
-        time: "12:00 - 13:00",
+        time: "12:00 - 14:00",
         icon: <Restaurant/>,
         title: "Lunch",
         person: "",
     },
     {
-        time: "13:00 - 18:00",
+        time: "14:00 - 18:00",
         icon: <EmojiObjects/>,
         title: "Idea-Workshop",
         person: "optional",
     },
     {
-        time: "13:00 - 13:00 next day (Continuously)",
+        time: "14:00 - 13:00 next day (Continuously)",
         icon: <PlayArrow/>,
         title: "Start Hacking Time",
         person: "",

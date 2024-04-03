@@ -16,15 +16,15 @@ import {Location} from "../components/Location/Location";
 export default function Page() {
     return (
         <>
-            <LandingImage/>
+            <LandingImage />
             <VerifiedChecker />
             <WhatToExpect />
-            <Features/>
+            <Features />
             <Sponsors />
-            <Registration/>
-            <Location/>
-            <Speakers/>
-            <Jury/>
+            <Registration />
+            <Location />
+            <Speakers />
+            <Jury />
             <TimeTable />
             <Gallery />
             <Faq />

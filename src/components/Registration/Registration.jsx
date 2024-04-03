@@ -31,6 +31,7 @@ import { Mail, Send } from "@mui/icons-material";
 
 // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
+const registrationClosed = true;
 const personalData = [
     {
         formLabel: 'First name',
@@ -427,27 +428,22 @@ function Registration() {
 
     }
 
-    return (
+    function renderRegistration() {
+        if (registrationClosed) {
+            return (
+                <Box sx={{paddingTop: 10, }}>
+                    <Typography variant={"h5"} fontWeight={"bold"} gutterBottom>
+                        Registration is closed!
+                    </Typography>
+                    <Typography variant={"h5"} fontWeight={"bold"} color={"text.disabled"}>
+                        We are currently reviewing all applications and will reach out to you soon.
+                    </Typography>
+                </Box>
+            )
+        }
 
-        <HackHPIWrapper>
-            <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
-                <Typography variant={"h2"} component={"h1"}>Registration</Typography>
-                <Typography variant={"subtitle1"} gutterBottom>Apply now before March 15th!</Typography>
-                <Box sx={{position: "relative"}}>
-                    <Box sx={{
-                        position: "absolute",
-                        transform: "translate(-50%,-50%)",
-                        left: "50%",
-                        top: "50%",
-                        zIndex: 1000,
-                    }}>
-                        <Typography variant={"h5"} fontWeight={"bold"} gutterBottom>
-                            Registration is closed!
-                        </Typography>
-                        <Typography variant={"h5"} fontWeight={"bold"}>
-                            We are currently reviewing all applications and will reach out to you soon.
-                        </Typography>
-                    </Box>
+        return(
+            <>
                 <Stepper activeStep={activeStep} orientation="vertical" sx={{mt: 5, filter: "blur(10px)"}}>
                     {steps.map((step, index) => (
                         <Step key={index}>
@@ -498,10 +494,21 @@ function Registration() {
                         </Step>
                     ))}
                 </Stepper>
-                <Typography color={"text.disabled"} sx={{marginTop: 3, filter: "blur(10px)"}}>Read our <Link href={"/privacy"}
-                                                                                       color={"inherit"}>privacy
+                <Typography color={"text.disabled"} sx={{marginTop: 3, filter: "blur(10px)"}}>Read our <Link
+                    href={"/privacy"}
+                    color={"inherit"}>privacy
                     policy</Link> for information on how we handle your data and what you rights are.</Typography>
-                </Box>
+            </>
+        )
+    }
+
+    return (
+
+        <HackHPIWrapper>
+            <Container sx={{paddingTop: 10, paddingBottom: 10}} id={"signupForm"}>
+                <Typography variant={"h2"} component={"h1"}>Registration</Typography>
+                {!registrationClosed ? <Typography variant={"subtitle1"} gutterBottom>Apply now before March 15th!</Typography> : undefined}
+                {renderRegistration()}
             </Container>
         </HackHPIWrapper>
     )

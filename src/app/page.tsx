@@ -10,6 +10,7 @@ import Team from "../components/Team/Team";
 import Speakers from "../components/Speakers/Speakers";
 import {Features} from "../components/Features/Features";
 import LandingImage from "../components/LandingImage/LandingImage";
+import {Location} from "../components/Location/Location";
 
 export default function Page() {
     return (
@@ -20,6 +21,7 @@ export default function Page() {
             <Features/>
             <Sponsors />
             <Registration/>
+            <Location/>
             <Speakers/>
             <TimeTable />
             <Gallery />

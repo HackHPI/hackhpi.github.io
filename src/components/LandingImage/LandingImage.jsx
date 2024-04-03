@@ -2,7 +2,7 @@
 import {Box, Button, Card, Container, Stack, Typography} from "@mui/material";
 import {TypeAnimation} from "react-type-animation";
 import Countdown from "./Countdown.jsx";
-import {CalendarMonthOutlined} from "@mui/icons-material";
+import {CalendarMonthOutlined, LocationOn} from "@mui/icons-material";
 
 function LandingImage() {
 
@@ -51,17 +51,17 @@ function LandingImage() {
                         <Button
                             variant={"contained"}
                             sx={{
-                                //background: "linear-gradient(90deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
-                                //backgroundColor: "secondary.main",
+                                background: "linear-gradient(90deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
+                                backgroundColor: "secondary.main",
                                 borderWidth: "1rem",
                                 width: "13rem",
                                 height: "3.5rem",
                                 fontSize: "1rem",
                             }}
-                            disabled
-                            //onClick={() => document.getElementById("signupForm").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })}
+                            startIcon={<LocationOn/>}
+                            onClick={() => document.getElementById("location").scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" })}
                         >
-                            Sign Up closed
+                            Directions
                         </Button>
                         <Card sx={{height: "3.5rem", width: "13rem", justifyContent: "center", display:"flex"}}>
                             <Stack direction={"row"} alignItems={"center"} display={"flex"}

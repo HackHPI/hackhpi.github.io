@@ -55,147 +55,77 @@ import DSC03006 from '../../assets/images/event/DSC03006_1920.webp'
 import DSC03022 from '../../assets/images/event/DSC03022_1920.webp'
 import DSC03032 from '../../assets/images/event/DSC03032_1920.webp'
 
+let images = {
+    name: "2023",
+    subtitle: "about://building-trust-in-digital-state",
+    items: [
+        DSC02572,
+        DSC02594,
+        DSC02601,
+        DSC02604,
+        DSC02609,
+        DSC02617,
+        DSC02619,
+        DSC02630,
+        DSC02632,
+        DSC02635,
+        DSC02638,
+        DSC02639,
+        DSC02643,
+        DSC02645,
+        DSC02646,
+        DSC02659,
+        DSC02677,
+        DSC02680,
+        DSC02762,
+        DSC02810,
+        DSC02820,
+        DSC02823,
+        DSC02824,
+        DSC02830,
+        DSC02868,
+        DSC02870,
+        DSC02872,
+        DSC02876,
+        DSC02879,
+        DSC02886,
+        DSC02889,
+        DSC02903,
+        DSC02908,
+        DSC02914,
+        DSC02919,
+        DSC02920,
+        DSC02923,
+        DSC02926,
+        DSC02928,
+        DSC02931,
+        DSC02941,
+        DSC02946,
+        DSC02949,
+        DSC02957,
+        DSC02962,
+        DSC02969,
+        DSC02974,
+        DSC02983,
+        DSC02992,
+        DSC02998,
+        DSC03006,
+        DSC03022,
+        DSC03032,
 
-/*
-const images={}
-await Astro.glob("/src/assets/images/*.jpg").then((files) => {
-    files.forEach((file) => {
-        const name = file.default.src.split(".")[0].split("/").pop()
-        images[name]=file.default
-    });
-});
-k
-places.forEach((place)=>{
-    const image = images[place.name]
-    if(image)
-        place.image=image
-    else
-        place.image = fallbackImage
-})
-console.log(images)
-*/
-let faqs = [
-    {
-        name: "2023",
-        subtitle: "about://building-trust-in-digital-state",
-        items: [
-            DSC02572,
-            DSC02594,
-            DSC02601,
-            DSC02604,
-            DSC02609,
-            DSC02617,
-            DSC02619,
-            DSC02630,
-            DSC02632,
-            DSC02635,
-            DSC02638,
-            DSC02639,
-            DSC02643,
-            DSC02645,
-            DSC02646,
-            DSC02659,
-            DSC02677,
-            DSC02680,
-            DSC02762,
-            DSC02810,
-            DSC02820,
-            DSC02823,
-            DSC02824,
-            DSC02830,
-            DSC02868,
-            DSC02870,
-            DSC02872,
-            DSC02876,
-            DSC02879,
-            DSC02886,
-            DSC02889,
-            DSC02903,
-            DSC02908,
-            DSC02914,
-            DSC02919,
-            DSC02920,
-            DSC02923,
-            DSC02926,
-            DSC02928,
-            DSC02931,
-            DSC02941,
-            DSC02946,
-            DSC02949,
-            DSC02957,
-            DSC02962,
-            DSC02969,
-            DSC02974,
-            DSC02983,
-            DSC02992,
-            DSC02998,
-            DSC03006,
-            DSC03022,
-            DSC03032,
-
-        ]
-    },
-    {
-        name: "2022",
-        items: [
-            {
-                title: "Lorem 2",
-                text: "Some Text"
-            }
-        ]
-    },
-    {
-        name: "2021",
-        items: [
-            {
-                title: "Lorem 2",
-                text: "Some Text"
-            }
-        ]
-    }
-]
+    ]
+}
 
 
 export function Gallery() {
-    const [selectedIndex, setSelectedIndex] = React.useState(0);
-
-    const handleListItemClick = (
-        event,
-        index,
-    ) => {
-        setSelectedIndex(index);
-    };
     return (
         <Container sx={{paddingTop: 10, paddingBottom: 10}}>
             <Typography variant={"h2"} component={"h1"} gutterBottom>Gallery</Typography>
             <Grid container spacing={7} alignItems="center">
-                {/*<Grid item xs={12} md={4}>
-                    <Card sx={{width: '100%', bgcolor: 'background.paper'}}>
-                        <List component="nav" aria-label="main mailbox folders">
-                            {
-                                faqs.map((faq, idx) => (
-                                    <ListItemButton
-                                        key={faq.name}
-                                        selected={selectedIndex === idx}
-                                        onClick={(event) => handleListItemClick(event, idx)}
-                                        sx={{padding: 2}}
-                                    >
-                                        <ListItemIcon>
-                                            <KeyboardArrowRight
-                                                fontSize={"large"}
-                                                color={selectedIndex === idx ? "secondary" : undefined}/>
-                                        </ListItemIcon>
-                                        <Typography sx={{fontSize: "1.5rem"}} noWrap>{faq.name}</Typography>
-                                    </ListItemButton>
-                                ))
-                            }
-                        </List>
-                    </Card>
-                </Grid> */}
                 <Grid item xs={12} md={12}>
                     <Box sx={{maxHeight: "30rem", overflowY: "scroll"}}>
                         <ImageList variant="masonry" cols={3} gap={8}>
-                            {faqs[selectedIndex].items.map((item, i) => (
+                            {images.items.map((item, i) => (
                                 <ImageListItem key={i}>
                                     <img
                                         key={"img" + i}

@@ -43,13 +43,13 @@ function Jury() {
             <Grid container spacing={10}>
                 <Grid item xs={12} md={12}>
                     <Stack spacing={3}>
-                        {jury.primary.map(jury_part => (
-                            <WindowCard elevation={5} key={jury_part.name}>
+                        {jury.primary.map(judge => (
+                            <WindowCard elevation={5} key={judge.name}>
                                 <Grid container spacing={5}>
                                     <Grid item xs={12} md={3}>
                                         <Paper sx={{
                                             borderRadius: theme.components.MuiCard.styleOverrides.root.borderRadius,
-                                            background: `url(${jury_part.profilePicture})`,
+                                            background: `url(${judge.profilePicture})`,
                                             backgroundPosition: "center",
                                             backgroundSize: "cover",
                                             backgroundColor: "#e0e0e0",
@@ -62,9 +62,9 @@ function Jury() {
                                     <Grid item xs={12} md={9}>
                                         <Stack spacing={3}>
                                             <Box>
-                                                <Typography variant={"h4"}>{jury_part.name}</Typography>
+                                                <Typography variant={"h4"}>{judge.name}</Typography>
                                                 <Typography variant={"subtitle"} color={"text.disabled"}>
-                                                    {jury_part.position}
+                                                    {judge.position}
                                                 </Typography>
                                             </Box>
                                             <Typography
@@ -75,7 +75,7 @@ function Jury() {
                                                     //overflow: "hidden",
                                                     //textOverflow: "ellipsis"
                                                 }}>
-                                                {jury_part.description}
+                                                {judge.description}
                                             </Typography>
                                         </Stack>
                                     </Grid>

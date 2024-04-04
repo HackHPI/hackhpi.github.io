@@ -8,6 +8,7 @@ import {Gallery} from "../components/Gallery/Gallery";
 import {Faq} from "../components/Faq/Faq";
 import Team from "../components/Team/Team";
 import Speakers from "../components/Speakers/Speakers";
+import Jury from "../components/Jury/Jury";
 import {Features} from "../components/Features/Features";
 import LandingImage from "../components/LandingImage/LandingImage";
 import {Location} from "../components/Location/Location";
@@ -15,14 +16,15 @@ import {Location} from "../components/Location/Location";
 export default function Page() {
     return (
         <>
-            <LandingImage/>
+            <LandingImage />
             <VerifiedChecker />
             <WhatToExpect />
-            <Features/>
+            <Features />
             <Sponsors />
-            <Registration/>
-            <Location/>
-            <Speakers/>
+            <Registration />
+            <Location />
+            <Speakers />
+            <Jury />
             <TimeTable />
             <Gallery />
             <Faq />

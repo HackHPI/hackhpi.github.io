@@ -3,7 +3,7 @@ import {Box, Container, Grid, Paper, Stack, Typography, useTheme} from "@mui/mat
 import SebastianUlm from "../../assets/images/jury/SebastianUlm.jpg"
 import HolgerRhinow from "../../assets/images/jury/HolgerRhinow.png"
 import FlorianBreipohl from "../../assets/images/jury/FlorianBreipohl.jpeg"
-import MonaGhazi from "../../assets/images/jury/MonaGhazi.JPG"
+import MonaGhazi from "../../assets/images/jury/MonaGhazi.png"
 import {WindowCard} from "../WindowCard/WindowCard";
 
 const jury = {

@@ -13,7 +13,7 @@ import {IconContainer} from "../Features/Features";
 
 const dayOne = [
     {
-        time: "09:10 - 11:00",
+        time: "09:00 - 11:00",
         icon: <ConfirmationNumber/>,
         title: "Check-In",
         person: "",
@@ -43,16 +43,28 @@ const dayOne = [
         person: "",
     },
     {
-        time: "14:00 - 18:00",
-        icon: <EmojiObjects/>,
-        title: "Idea-Workshop",
-        person: "optional",
-    },
-    {
         time: "14:00 - 13:00 next day (Continuously)",
         icon: <PlayArrow/>,
         title: "Start Hacking Time",
         person: "",
+    },
+    {
+        time: "14:00 - 14:30",
+        icon: <EmojiObjects/>,
+        title: "Starwit Challenge Workshop",
+        person: "optional",
+    },
+    {
+        time: "16:00 - 16:30",
+        icon: <EmojiObjects/>,
+        title: "AI Workshop by Axel Springer",
+        person: "optional",
+    },
+    {
+        time: "18:30 - 19:00",
+        icon: <EmojiObjects/>,
+        title: "Pitch Workshop by Axel Springer",
+        person: "optional",
     },
     {
         time: "18:00 - 19:00",
@@ -70,12 +82,6 @@ const dayTwo = [
         person: "",
     },
     {
-        time: "09:00 - 10:00",
-        icon: <EmojiObjects/>,
-        title: "Pitch-Workshop",
-        person: "optional",
-    },
-    {
         time: "13:00",
         icon: <Stop/>,
         title: "End Hacking Time",
@@ -88,17 +94,17 @@ const dayTwo = [
         person: "",
     },
     {
-        time: "14:00 - 16:00",
+        time: "14:00 - 17:00",
         icon: <Campaign/>,
         title: "Challenge Presentations",
         person: "",
     }, {
-        time: "17:00 - 18:00",
+        time: "17:00 - 17:15",
         icon: <EmojiEvents/>,
         title: "Feedback & Awards",
         person: "",
     }, {
-        time: "18:00",
+        time: "17:15",
         icon: <Celebration/>,
         title: "Drinks & Networking",
         person: "",

@@ -94,17 +94,17 @@ const dayTwo = [
         person: "",
     },
     {
-        time: "14:00 - 16:00",
+        time: "14:00 - 17:00",
         icon: <Campaign/>,
         title: "Challenge Presentations",
         person: "",
     }, {
-        time: "17:00 - 18:00",
+        time: "17:00 - 17:15",
         icon: <EmojiEvents/>,
         title: "Feedback & Awards",
         person: "",
     }, {
-        time: "18:00",
+        time: "17:15",
         icon: <Celebration/>,
         title: "Drinks & Networking",
         person: "",

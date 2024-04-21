@@ -19,7 +19,7 @@ function Speakers() {
     const theme = useTheme();
     return (
         <Container sx={{paddingBottom: 10, paddingTop: 10}}>
-            <Typography variant={"h2"} gutterBottom>Speakers</Typography>
+            <Typography variant={"h2"} gutterBottom>Speaker</Typography>
             <Grid container spacing={10}>
                 <Grid item xs={12} md={12}>
                     <Stack spacing={3}>

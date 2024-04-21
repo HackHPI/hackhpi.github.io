@@ -1,6 +1,6 @@
 'use client'
-import {Box, Container, Grid, ImageList, ImageListItem, Typography} from "@mui/material";
-import React from "react";
+import {Box, Container, Grid, ImageList, ImageListItem, Tab, Tabs, Typography} from "@mui/material";
+import React, {useState} from "react";
 import DSC02572 from '../../assets/images/event/DSC02572_1920.webp'
 import DSC02594 from '../../assets/images/event/DSC02594_1920.webp'
 import DSC02601 from '../../assets/images/event/DSC02601_1920.webp'
@@ -54,6 +54,30 @@ import DSC02998 from '../../assets/images/event/DSC02998_1920.webp'
 import DSC03006 from '../../assets/images/event/DSC03006_1920.webp'
 import DSC03022 from '../../assets/images/event/DSC03022_1920.webp'
 import DSC03032 from '../../assets/images/event/DSC03032_1920.webp'
+
+function CustomTabPanel(props) {
+    const { children, value, index, ...other } = props;
+
+    return (
+        <div
+            role="tabpanel"
+            hidden={value !== index}
+            id={`simple-tabpanel-${index}`}
+            aria-labelledby={`simple-tab-${index}`}
+            {...other}
+        >
+            {value === index && children}
+        </div>
+    );
+}
+
+function a11yProps(index) {
+    return {
+        id: `simple-tab-${index}`,
+        'aria-controls': `simple-tabpanel-${index}`,
+    };
+}
+
 
 let images = {
     name: "2023",
@@ -118,13 +142,36 @@ let images = {
 
 
 export function Gallery() {
+
+    const [galleryTab, setGalleryTab] = useState(0)
+
     return (
         <Container sx={{paddingTop: 10, paddingBottom: 10}}>
             <Typography variant={"h2"} component={"h1"} gutterBottom>Gallery</Typography>
             <Grid container spacing={7} alignItems="center">
                 <Grid item xs={12} md={12}>
+                    <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                        <Tabs value={galleryTab} textColor={"#e0e0e0"} onChange={(event, value) => setGalleryTab(value)}  TabIndicatorProps={{style: {background: "linear-gradient(90deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)", color: "yellow"}}} aria-label="basic tabs example">
+                            <Tab label="2024" color={"yellow"}  {...a11yProps(0)} />
+                            <Tab label="2023" color={"secondary"} {...a11yProps(1)} />
+                        </Tabs>
+                    </Box>
                     <Box sx={{maxHeight: "30rem", overflowY: "scroll"}}>
                         <ImageList variant="masonry" cols={3} gap={8}>
+                            <CustomTabPanel value={galleryTab} index={0}>
+                                {images.items.map((item, i) => (
+                                    <ImageListItem key={i}>
+                                        <img
+                                            key={"img" + i}
+                                            srcSet={`${item.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                            src={`${item.src}?w=248&fit=crop&auto=format`}
+                                            alt={item.title}
+                                            loading="lazy"
+                                        />
+                                    </ImageListItem>
+                                ))}
+                            </CustomTabPanel>
+                            <CustomTabPanel value={galleryTab} index={1}>
                             {images.items.map((item, i) => (
                                 <ImageListItem key={i}>
                                     <img
@@ -136,6 +183,7 @@ export function Gallery() {
                                     />
                                 </ImageListItem>
                             ))}
+                            </CustomTabPanel>
                         </ImageList>
                     </Box>
                 </Grid>

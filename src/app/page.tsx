@@ -9,7 +9,7 @@ import Speakers from "../components/Speakers/Speakers";
 import Jury from "../components/Jury/Jury";
 import {Features} from "../components/Features/Features";
 import LandingImage from "../components/LandingImage/LandingImage";
-import {Gallery2} from "../components/Gallery2/Gallery2";
+import {Gallery} from "../components/Gallery/Gallery";
 
 export default function Page() {
     return (
@@ -19,7 +19,7 @@ export default function Page() {
             <WhatToExpect/>
             <Features/>
             <Sponsors/>
-            <Gallery2/>
+            <Gallery/>
             <Newsletter/>
             {/*<Registration />
                 <Location />*/}

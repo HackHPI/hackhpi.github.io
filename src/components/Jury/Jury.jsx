@@ -1,5 +1,5 @@
 "use client"
-import {Box, Container, Grid, Paper, Stack, Typography, useTheme} from "@mui/material";
+import {Box, Chip, Container, Grid, Paper, Stack, Typography, useTheme} from "@mui/material";
 import SebastianUlm from "../../assets/images/jury/SebastianUlm.jpg"
 import HolgerRhinow from "../../assets/images/jury/HolgerRhinow.png"
 import FlorianBreipohl from "../../assets/images/jury/FlorianBreipohl.jpeg"
@@ -39,7 +39,10 @@ function Jury() {
     const theme = useTheme();
     return (
         <Container sx={{paddingBottom: 10, paddingTop: 10}}>
+            <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
             <Typography variant={"h2"} gutterBottom>Jury</Typography>
+            <Chip label={"2024"}/>
+        </Box>
             <Grid container spacing={10}>
                 <Grid item xs={12} md={12}>
                     <Stack spacing={3}>

@@ -2,16 +2,19 @@ import {
     AppBar,
     Box,
     CardActionArea,
-    Container, Dialog,
+    Container,
+    Dialog,
     Grid,
     IconButton,
-    Paper, Slide,
+    Paper,
+    Slide,
     Stack,
     Toolbar,
-    Typography, useMediaQuery
+    Typography,
+    useMediaQuery
 } from "@mui/material";
 import {Close, KeyboardArrowLeft, KeyboardArrowRight} from "@mui/icons-material";
-import React, {useState} from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import images from "../../../assets/images/event/Images";
 
 const Transition = React.forwardRef(function Transition(
@@ -28,28 +31,62 @@ export function GalleryDialog(props) {
     const [selectedImage, setSelectedImage] = useState(0)
     const isMobile = useMediaQuery((theme) => theme.breakpoints.down('md'));
 
+
+    const handleKeyboardInput = useCallback((event) => {
+        if (event?.key === "ArrowRight") {
+            nextImage()
+        }
+        if (event?.key === "ArrowLeft") {
+            previousImage()
+        }
+    }, [])
+
+    const nextImage = () => {
+        setNewImage(selectedImage => {
+            return ((selectedImage + 1) % images[galleryTab].items.length)
+        })
+    };
+    const previousImage = () => {
+        setNewImage(selectedImage => {
+            return ((((selectedImage - 1) % images[galleryTab].items.length) + images[galleryTab].items.length) % images[galleryTab].items.length)
+        })
+    };
+
+
+    useEffect(() => {
+        document.addEventListener("keydown", handleKeyboardInput, false);
+
+        return () => {
+            document.removeEventListener("keydown", handleKeyboardInput, false);
+        };
+    }, [handleKeyboardInput()]);
+
     function setNewImage(index) {
-        scrollImageIntoView(index)
         setSelectedImage(index)
     }
+
+    useEffect(() => {
+        scrollImageIntoView(selectedImage)
+    }, [selectedImage]);
+
     function scrollImageIntoView(index) {
         const element = document.getElementById("img-" + index);
         if (!element) {
-            console.error("could not find element", "img-" + index, element)
+            console.warn("could not find element", "img-" + index, element)
             return
         }
         element.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'})
-
     }
 
-    return(
+    return (
         <Dialog
             fullScreen
             open={props.isOpen}
             onClose={props.onClose}
             TransitionComponent={Transition}
         >
-            <Box sx={{flexDirection: "column", height: "100vh !important", width: "100vw"}}>
+            <Box sx={{flexDirection: "column", height: "100vh !important", width: "100vw"}}
+                 onKeyDown={(e) => console.log("KEYDOWN", e)}>
                 <AppBar sx={{position: 'absolute'}}>
                     <Toolbar>
                         <Typography sx={{ml: 2, flex: 1}} variant="h6" component="div">
@@ -155,7 +192,7 @@ export function GalleryDialog(props) {
                                                 sx={{
                                                     background: "rgba(19,16,27,0.4)",
                                                 }}
-                                                onClick={() => setNewImage((((selectedImage - 1) % images[galleryTab].items.length) + images[galleryTab].items.length) % images[galleryTab].items.length)}
+                                                onClick={previousImage}
                                             >
                                                 <KeyboardArrowLeft fontSize={"large"} sx={{color: "#fff"}}/>
                                             </IconButton>
@@ -163,7 +200,7 @@ export function GalleryDialog(props) {
                                                 sx={{
                                                     background: "rgba(19,16,27,0.4)",
                                                 }}
-                                                onClick={() => setNewImage((selectedImage + 1) % images[galleryTab].items.length)}
+                                                onClick={nextImage}
                                             >
                                                 <KeyboardArrowRight fontSize={"large"} sx={{color: "#fff"}}/>
                                             </IconButton>

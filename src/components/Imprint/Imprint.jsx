@@ -45,6 +45,9 @@ function Imprint() {
                         HPI School of Design Thinking: Nico Böckhoff
                     </Typography>
                     <Typography variant="body1">
+                        Some of the images of the 2024 HackHPI Event: HPI/Roza
+                    </Typography>
+                    <Typography variant="body1">
                         Partner-Logos: Der jeweilige Partner
                     </Typography>
                 </Box>

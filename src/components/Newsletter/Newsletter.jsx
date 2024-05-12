@@ -22,7 +22,7 @@ function Newsletter() {
                                 component={"h1"}
                                 gutterBottom
                             >
-                                Want to stay in the loop?
+                                Ready for our next Event?
                             </Typography>
                             <Typography
                             >

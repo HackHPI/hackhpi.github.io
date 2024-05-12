@@ -1,4 +1,4 @@
-import {Box, Card, Container, Divider, Grid, Stack, Typography} from "@mui/material";
+import {Box, Card, Chip, Container, Divider, Grid, Stack, Typography} from "@mui/material";
 import {
     Campaign,
     Celebration,
@@ -170,8 +170,10 @@ export function TimeTable() {
 
     return (
         <Container sx={{paddingBottom: 10, paddingTop: 10}}>
-            <Typography variant={"h2"} component={"h1"} gutterBottom>Time Table</Typography>
-
+            <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+            <Typography variant={"h2"} gutterBottom>Time Table</Typography>
+            <Chip label={"2024"}/>
+        </Box>
             <Grid container spacing={5}>
                 <Grid item md={6} xs={12}>
                     <Table data={dayOne} title={"Day 1"} subtitle={"Friday 05.04"}/>

@@ -1,5 +1,5 @@
 "use client"
-import {Box, Container, Grid, Paper, Stack, Typography, useTheme} from "@mui/material";
+import {Box, Chip, Container, Grid, Paper, Stack, Typography, useTheme} from "@mui/material";
 import FelixLennardHake from "../../assets/images/speakers/FelixLennardHake.jpg"
 import {WindowCard} from "../WindowCard/WindowCard";
 
@@ -19,7 +19,10 @@ function Speakers() {
     const theme = useTheme();
     return (
         <Container sx={{paddingBottom: 10, paddingTop: 10}}>
-            <Typography variant={"h2"} gutterBottom>Speakers</Typography>
+            <Box sx={{display: "flex", justifyContent: "space-between", alignItems: "center"}}>
+                <Typography variant={"h2"} gutterBottom>Speaker</Typography>
+                <Chip label={"2024"}/>
+            </Box>
             <Grid container spacing={10}>
                 <Grid item xs={12} md={12}>
                     <Stack spacing={3}>

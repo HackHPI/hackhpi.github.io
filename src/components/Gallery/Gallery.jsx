@@ -29,21 +29,28 @@ export function Gallery() {
                 margin: "0.5em",
                 display: "flex"
             }}>
-                {imageList.map(image => <Box sx={{
-                    margin: "0.5em",
-                    aspectRatio: "16/10",
-                    background: `url(${image.src})`,
-                    backgroundSize: "cover",
+                {imageList.map(image => <Box
+                    sx={{
+                        margin: "0.5em",
+                        aspectRatio: "16/10",
+                        background: `url(${image.src})`,
+                        backgroundSize: "cover",
+                        height: "100%"
+                    }}
+                    key={image.src}
+                />)}
+                {imageList.map(image => <Box
+                        sx={{
+                            margin: "0.5em",
+                            aspectRatio: "16/10",
+                            background: `url(${image.src})`,
+                            backgroundSize: "cover",
+                            height: "100%"
+                        }}
+                        key={image.src}
 
-                    height: "100%"
-                }}/>)}
-                {imageList.map(image => <Box sx={{
-                    margin: "0.5em",
-                    aspectRatio: "16/10",
-                    background: `url(${image.src})`,
-                    backgroundSize: "cover",
-                    height: "100%"
-                }}/>)}
+                    />
+                )}
             </Box>
         </Box>
     }

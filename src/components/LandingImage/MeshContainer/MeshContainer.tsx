@@ -12,6 +12,7 @@ export function MeshContainer(props) {
         const gradient = new Gradient()
 
         // Call `initGradient` with the selector to your canvas
+        // @ts-ignore
         gradient.initGradient('#gradient-canvas')
 
     }, [])
@@ -21,19 +22,21 @@ export function MeshContainer(props) {
         <Box sx={{
             position: "relative",
             width: "100%",
+            height: "100%",
             backgroundPosition: "center",
             backgroundSize: "cover",
-            minHeight: "60vh",
-            background: "linear-gradient(90deg, rgba(19,16,27,1) 0%, rgba(19,16,27,0) 100%)",
-
         }}>
             <Box sx={{
-                position: "absolute", width: "100%", height: "100%",
-                background: "linear-gradient(90deg, rgba(19,16,27,1) 0%, rgba(19,16,27,0) 100%)",
+                width: "100%",
+                height: "100%",
+                position: "relative",
+                zIndex: 2,
             }}>
                 {props.children}
             </Box>
-            <canvas id="gradient-canvas" data-transition-in/>
+            <Box sx={{position: "absolute", zIndex:-100, height: "100%", width: "100%", top: 0, left: 0}}>
+                <canvas id="gradient-canvas" data-transition-in style={{height: "100%"}} />
+            </Box>
         </Box>
     )
 }

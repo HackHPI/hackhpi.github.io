@@ -10,13 +10,13 @@ const hackHpiTheme = responsiveFontSizes(createTheme(theme, {
         mode: "dark",
         primary: theme.palette.augmentColor({
             color: {
-                main: "#3A0CA3",
+                main: "#f5f5f5",
             },
             name: "primary"
         }),
         secondary: theme.palette.augmentColor({
             color: {
-                main: "#B1063A",
+                main: "#3A0CA3",
             },
             name: "primary"
         }),

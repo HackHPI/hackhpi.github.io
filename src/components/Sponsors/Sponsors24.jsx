@@ -12,7 +12,7 @@ import Starwit from "../../assets/images/sponsors/cropped-logo-starwit-white.png
 import DreesSommer from "../../assets/images/sponsors/DreesSommer.webp";
 
 
-function Sponsors() {
+function Sponsors24() {
 
     const sponsors = [
         {
@@ -90,4 +90,4 @@ function Sponsors() {
 
 }
 
-export default Sponsors;
+export default Sponsors24;

@@ -1,8 +1,7 @@
 import {VerifiedChecker} from "../components/VerifiedChecker/VerifiedChecker";
 import WhatToExpect from "../components/WhatToExpect/WhatToExpect";
-import Sponsors from "../components/Sponsors/Sponsors";
+import Sponsors25 from "../components/Sponsors/Sponsors25";
 import Newsletter from "../components/Newsletter/Newsletter";
-import {TimeTable} from "../components/TimeTable/TimeTable";
 import {Faq} from "../components/Faq/Faq";
 import Team from "../components/Team/Team";
 import Speakers from "../components/Speakers/Speakers";
@@ -18,14 +17,16 @@ export default function Page() {
             <VerifiedChecker/>
             <WhatToExpect/>
             <Features/>
-            <Sponsors/>
+            <Sponsors25/>
             <Gallery/>
             <Newsletter/>
             {/*<Registration />
                 <Location />*/}
             <Speakers/>
             <Jury/>
-            <TimeTable/>
+            {/*
+                <TimeTable/>
+                */}
             <Faq/>
             <Team/>
         </>

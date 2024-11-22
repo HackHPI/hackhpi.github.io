@@ -20,14 +20,14 @@ function WhatToExpect() {
                             What to expect
                         </Typography>
                         <Typography fontWeight={"light"} gutterBottom>
-                            Explore the future of urban living at HPI in Potsdam.
+                            Explore the future of health at HPI in Potsdam.
                         </Typography>
                         <Typography gutterBottom display={"block"}
                                     fontWeight={"light"}>
                             Join motivated students for two days of
                             innovation, workshops, and collaboration with top-notch sponsors offering support and
                             expertise.
-                            Tackle a challenge and dive into the world of smart cities.
+                            Tackle a challenge and dive into the world of health.
                         </Typography>
 
                     </Grid>

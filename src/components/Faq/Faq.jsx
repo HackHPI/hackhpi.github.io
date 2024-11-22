@@ -47,7 +47,7 @@ let faqs = [
                 text: "Take S7 from Berlin Central Station (\"Hauptbahnhof\") towards Potsdam and exit at Griebnitzsee."
             }, {
                 title: "How should I prepare?",
-                text: "Bring your laptop and a charger, comfortable clothes, and, above all, motivation to hack! You can dive into the topic of Smart Cities in advance, but there will be introductory sessions as well."
+                text: "Bring your laptop and a charger, comfortable clothes, and, above all, motivation to hack! You can dive into the topic of health in advance, but there will be introductory sessions as well."
             }
         ]
     },
@@ -82,7 +82,7 @@ let faqs = [
         items: [
             {
                 title: "What are the challenges?",
-                text: "All challenges are connected to the subject of Smart Cities, but we cannot tell you what awaits you. And honestly, who wants to miss the thrill of a surprise challenge? Anyway, the exact challenges will be announced at the event, so stay tuned!"
+                text: "All challenges are connected to the subject of health, but we cannot tell you what awaits you. And honestly, who wants to miss the thrill of a surprise challenge? Anyway, the exact challenges will be announced at the event, so stay tuned!"
             },
             {
                 title: "What are the prizes?",

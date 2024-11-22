@@ -28,7 +28,7 @@ export function Features() {
         {
             icon: <EmojiEvents/>,
             title: "Cash prizes",
-            subtitle: "Up for grabs are cash prizes for the best result, and among other things, prices for the best meme of the event."
+            subtitle: "Up for grabs are cash prizes for the best solution, and among other things, prices for the best meme of the event."
         },
         /*
         {

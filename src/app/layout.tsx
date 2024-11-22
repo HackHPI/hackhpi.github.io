@@ -13,11 +13,11 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
             <meta name="viewport" content="width=device-width"/>
             <link rel="icon" type="image/png" href="/favicon.png"/>
             <title>
-                HackHPI 2024 | tomorrow's reality, today's vision. smart cities edition.
+                HackHPI 2025 | health edition.
             </title>
             <meta name="theme-color" content="#13101B"/>
             <meta name={"description"}
-                  content={"Explore the future of urban living at HPI in Potsdam. Join motivated students for two days of innovation, workshops, and collaboration with top-notch sponsors offering support and expertise. Tackle a challenge and dive into the world of smart cities."}/>
+                  content={"Explore the future of health at HPI in Potsdam. Join motivated students for two days of innovation, workshops, and collaboration with top-notch sponsors offering support and expertise. Tackle a challenge and dive into the world of health."}/>
         </head>
         <body>
         <AppRouterCacheProvider>

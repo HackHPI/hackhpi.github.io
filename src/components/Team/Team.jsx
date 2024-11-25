@@ -109,7 +109,7 @@ const teamMembers25 = [
         profilePicture: ViktorKalvodaProfile,
         linkedIn: "viktor-kalvoda-3ab0b62a2",
     },    {
-        name: "Max Pieper",
+        name: "Max Piper",
         position: "Team Member",
         linkedIn: "maximilian-piper-101088229",
         profilePicture: ""

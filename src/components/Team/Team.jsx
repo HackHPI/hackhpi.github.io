@@ -13,7 +13,7 @@ import {LinkedIn, Mail} from "@mui/icons-material";
 import {useEffect, useState} from "react";
 
 
-const teamMembers = [
+const teamMembers24 = [
     {
         name: "Cedric Rische",
         position: "Team Member",
@@ -68,8 +68,69 @@ const teamMembers = [
         profilePicture: UliPrantzProfile,
         linkedIn: "uli-prantz-100234227"
     },
-
-
+]
+const teamMembers25 = [
+    {
+        name: "Cedric Rische",
+        position: "Team Member",
+        linkedIn: "cedric-rische",
+        profilePicture: CedricRischeProfile
+    },
+    {
+        name: "Mathilda Heise",
+        position: "Team Member",
+        linkedIn: "mathilda-heise-9203a3258",
+        profilePicture: MathildaHeiseProfile
+    },
+    {
+        name: "Grit Manssen",
+        linkedIn: "grit-manssen-0270b023a",
+        profilePicture: ""
+    },    {
+        name: "Lennard Schulze",
+        linkedIn: "lennard-s-8a8389255",
+        profilePicture: ""
+    },
+    {
+        name: "Nikolas Rieger",
+        position: "Team Member",
+        profilePicture: NikolasRiegerProfile,
+        linkedIn: "nikolas-rieger"
+    },
+    {
+        name: "Tanja Lehmann",
+        position: "Team Member",
+        linkedIn: "tanja-lehmann-36713a265",
+        profilePicture: TanjaLehmannProfile
+    },
+    {
+        name: "Viktor Kalvoda",
+        position: "Team Member",
+        profilePicture: ViktorKalvodaProfile,
+        linkedIn: "viktor-kalvoda-3ab0b62a2",
+    },    {
+        name: "Max Piper",
+        position: "Team Member",
+        linkedIn: "maximilian-piper-101088229",
+        profilePicture: ""
+    },
+    {
+        name: "Daniel Kiss",
+        position: "Team Member",
+        profilePicture: "",
+        linkedIn: "kdaniel21",
+    },
+    {
+        name: "Gerome Quantmeyer",
+        position: "Team Member",
+        profilePicture: GeromeQuantmeyerProfile,
+        linkedIn: "gerome-quantmeyer-44a90322b"
+    },    {
+        name: "Jeanne Aue",
+        position: "Team Member",
+        profilePicture: "",
+        linkedIn: "jeanne-aue"
+    },
 ]
 
 
@@ -96,7 +157,7 @@ function stringToColor(string) {
 function stringAvatar(name) {
     return {
         sx: {
-            bgcolor: stringToColor(name),
+            fontSize: "2rem",
         },
         children: `${name.split(' ')[0][0]}${name.split(' ')[1][0]}`,
     };
@@ -115,7 +176,7 @@ function Team() {
         <Container sx={{paddingTop: 10, paddingBottom: 10}}>
             <Typography variant={"h2"} component={"h1"} gutterBottom>Meet the team</Typography>
             <Grid container spacing={3}>
-                {teamMembers.sort((a, b) => {
+                {teamMembers25.sort((a, b) => {
                     const nameA = a.name.toUpperCase(); // ignore upper and lowercase
                     const nameB = b.name.toUpperCase(); // ignore upper and lowercase
                     if (nameA < nameB) {
@@ -153,7 +214,6 @@ function Team() {
                                         }}
                                                 alt={"Image of " + teamMember.name}
                                         >
-                                            {avatarPrep.children}
                                         </Avatar>
                                     </Box>
 

@@ -27,9 +27,10 @@ export function Features() {
         },
         {
             icon: <EmojiEvents/>,
-            title: "Cash prizes totaling up to €3500",
-            subtitle: "Up for grabs are cash prizes totaling up to €3500, and among other things, €100 for the best meme of the event."
+            title: "Cash prizes",
+            subtitle: "Up for grabs are cash prizes for the best solution, and among other things, prices for the best meme of the event."
         },
+        /*
         {
             icon: <ConfirmationNumber/>,
             title: "Free tickets for the Urban Innovation Forum in Berlin",
@@ -40,6 +41,8 @@ export function Features() {
             title: "Pitch your idea at the Greentech Festival in Berlin",
             subtitle: "Two of this year’s HackHPI winning team, will have the opportunity to pitch the results at the startup stage of the Greentech Festival in Berlin on May 18th."
         }
+
+         */
     ]
 
     return (

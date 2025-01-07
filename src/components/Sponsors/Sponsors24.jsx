@@ -1,18 +1,18 @@
 import {Box, Container, Grid, Link} from "@mui/material";
-import ESchool from "../../assets/images/sponsors/e-school.svg"
+import ESchool from "../../assets/images/sponsors/2024/e-school.svg"
 import React from "react";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
-import ClimateTechHub from "../../assets/images/sponsors/CTH-logo-vertical_white.svg";
-import HolySquad from "../../assets/images/sponsors/holySquad.png";
-import DB from "../../assets/images/sponsors/db.svg";
-import Potsdam from "../../assets/images/sponsors/potsdam.webp";
-import AxelSpringer from "../../assets/images/sponsors/axelspringer.webp";
-import BertaRudi from "../../assets/images/sponsors/berta-rudi_logo_negativ_sw.svg";
-import Starwit from "../../assets/images/sponsors/cropped-logo-starwit-white.png";
-import DreesSommer from "../../assets/images/sponsors/DreesSommer.webp";
+import ClimateTechHub from "../../assets/images/sponsors/2024/CTH-logo-vertical_white.svg";
+import HolySquad from "../../assets/images/sponsors/2024/holySquad.png";
+import DB from "../../assets/images/sponsors/2024/db.svg";
+import Potsdam from "../../assets/images/sponsors/2024/potsdam.webp";
+import AxelSpringer from "../../assets/images/sponsors/2024/axelspringer.webp";
+import BertaRudi from "../../assets/images/sponsors/2024/berta-rudi_logo_negativ_sw.svg";
+import Starwit from "../../assets/images/sponsors/2024/cropped-logo-starwit-white.png";
+import DreesSommer from "../../assets/images/sponsors/2024/DreesSommer.webp";
 
 
-function Sponsors() {
+function Sponsors24() {
 
     const sponsors = [
         {
@@ -90,4 +90,4 @@ function Sponsors() {
 
 }
 
-export default Sponsors;
+export default Sponsors24;

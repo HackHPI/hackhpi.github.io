@@ -199,51 +199,7 @@ const skills = [
   },
 ];
 
-const teamMembers = [
-  {
-    formLabel: "Team member 1",
-    type: 1,
-    input: ["Name 1"],
-    max: 100,
-    required: false,
-    name: "team1",
-  },
-  {
-    formLabel: "Team member 2",
-    type: 1,
-    input: ["Name 2"],
-    max: 100,
-    required: false,
-    name: "team2",
-  },
-  {
-    formLabel: "Team member 3",
-    type: 1,
-    input: ["Name 3"],
-    max: 100,
-    required: false,
-    name: "team3",
-  },
-  {
-    formLabel: "Team member 4",
-    type: 1,
-    input: ["Name 4"],
-    max: 100,
-    required: false,
-    name: "team4",
-  },
-  {
-    formLabel: "Team member 5",
-    type: 1,
-    input: ["Name 5"],
-    max: 100,
-    required: false,
-    name: "team5",
-  },
-  {
-    formLabel: "",
-    type: 0,
-  },
+const legal = [
   {
     formLabel: "Privacy Policy",
     input: ["I have read and accept the Privacy Policy."],
@@ -269,6 +225,10 @@ const steps = [
   {
     label: "Team members",
     children: <GroupManager />,
+  },
+  {
+    label: "Confirmation",
+    content: legal,
   },
   {
     label: "E-Mail Verification",

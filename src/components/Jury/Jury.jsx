@@ -47,7 +47,7 @@ function Jury() {
                 <Grid item xs={12} md={12}>
                     <Stack spacing={3}>
                         {jury.primary.map(judge => (
-                            <WindowCard elevation={5} key={judge.name}>
+                            <WindowCard elevation={5} key={judge.name} is2024>
                                 <Grid container spacing={5}>
                                     <Grid item xs={12} md={3}>
                                         <Paper sx={{

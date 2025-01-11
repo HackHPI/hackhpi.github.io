@@ -7,7 +7,8 @@ export function WindowCard(props) {
             <Box sx={{
                 //backgroundColor: "primary.main",
                 //rgba(247,37,133,1)
-                background: "linear-gradient(90deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
+                //rgba()
+                background: "linear-gradient(90deg, rgba(58,12,163,1) 0%, rgba(76,201,240,1) 100%)",
                 display: "flex",
                 justifyContent: "right",
                 alignItems: "center",

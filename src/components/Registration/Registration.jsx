@@ -224,7 +224,7 @@ const steps = [
   },
   {
     label: "Team members",
-    children: <GroupManager />,
+    children: <GroupManager eventId={"02fc811b-1e67-402e-ac62-3f376cf33b6b"} />,
   },
   {
     label: "Confirmation",

@@ -7,7 +7,7 @@ export class GroupRest extends AbstractRest {
   }
 
   getGroup(eventId, groupName) {
-    return axios.post(
+    return axios.get(
       this.baseUrl + "/group/event/" + eventId + "/phrase/" + groupName,
     );
   }

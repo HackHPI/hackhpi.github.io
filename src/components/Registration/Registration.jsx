@@ -24,13 +24,13 @@ import {
   Typography,
 } from "@mui/material";
 import * as React from "react";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 import { LoadingButton } from "@mui/lab";
 import { RegistrationRest } from "../../rest/RegistrationRest.js";
 import { Mail, Send } from "@mui/icons-material";
 import universities from "./universitiesDE.json";
-import { GroupManager } from "./GroupManager/GroupManager";
+import { GroupManager } from "./GroupManager/GroupManager"; // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
 // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
@@ -154,6 +154,7 @@ const motivation = [
     max: 1200,
     min: 10,
     required: true,
+    fullWidth: true,
   },
 ];
 // TODO: maximal capacity for motivation text: 150 words
@@ -206,6 +207,24 @@ const legal = [
     name: "privacyPolicy",
     type: 5,
     required: true,
+    fullWidth: true,
+  },
+  {
+    formLabel: "Recruiting",
+    input: ["I agree that my contact and job-related data may be passed on to participating recruiters (sponsors)"],
+    name: "recruiters",
+    type: 5,
+    required: false,
+    fullWidth: true,
+  },
+  {
+    input: [
+      "Film and sound recordings as well as photos will be made at the event, and you agree to their subsequent use by attending the event.",
+    ],
+    type: 7,
+    name: "photos",
+    required: false,
+    fullWidth: true,
   },
 ];
 
@@ -256,13 +275,12 @@ const steps = [
 ];
 
 function Registration() {
-  const [activeStep, setActiveStep] = React.useState(3);
+  const [activeStep, setActiveStep] = React.useState(0);
   const [values, setValues] = useState({});
   const [isSending, setIsSending] = useState(false);
   const registrationRest = useMemo(() => new RegistrationRest(), []);
 
   function handleChange(name, inputValue) {
-    console.log(name, inputValue);
     const newValue = { ...values };
     newValue[name] = inputValue;
     setValues(newValue);
@@ -273,10 +291,9 @@ function Registration() {
       console.log("No input list");
       return;
     }
-    if (inputList.children){
-      return true
+    if (inputList.children) {
+      return true;
     }
-    console.log(inputList);
     const result = inputList.content.reduce((previous, current) => {
       console.log(values[current.name]);
       if (
@@ -408,6 +425,8 @@ function Registration() {
             )}
           />
         );
+      case 7:
+        return <Typography>{input}</Typography>;
 
       default:
         return null;
@@ -415,7 +434,7 @@ function Registration() {
   }
 
   function gridItemSize(props) {
-    if (props.name === "motivation") {
+    if (props.name === "motivation" || props.fullWidth) {
       return 12;
     } else {
       return 6;
@@ -439,8 +458,8 @@ function Registration() {
         email: values.email,
         fieldData: JSON.stringify(values),
         signUpForm: {
-          //id: "283db119-046c-4418-939d-ab9bee06c996",
-          id: "2f1c60f2-f30b-4432-8129-9131c6e398dd",
+          id: "283db119-046c-4418-939d-ab9bee06c996",
+          //id: "2f1c60f2-f30b-4432-8129-9131c6e398dd",
         },
         group: values.group,
       })
@@ -527,12 +546,7 @@ function Registration() {
                       {step.children
                         ? step.children
                         : step.content.map((item, i) => (
-                            <Grid
-                              item
-                              md={gridItemSize({ name: item.name })}
-                              xs={12}
-                              key={i}
-                            >
+                            <Grid item md={gridItemSize(item)} xs={12} key={i}>
                               <FormControl fullWidth>
                                 <FormLabel focused={false}>
                                   {item.formLabel}
@@ -575,7 +589,7 @@ function Registration() {
         </Stepper>
         <Typography
           color={"text.disabled"}
-          sx={{ marginTop: 3, filter: "blur(10px)" }}
+          sx={{ marginTop: 3 }}
         >
           Read our{" "}
           <Link href={"/privacy"} color={"inherit"}>
@@ -595,7 +609,7 @@ function Registration() {
         </Typography>
         {!registrationClosed ? (
           <Typography variant={"subtitle1"} gutterBottom>
-            Apply now before March 15th!
+            Apply now before February 28th!
           </Typography>
         ) : undefined}
         {renderRegistration()}

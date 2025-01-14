@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
-import { useMemo, useState } from "react";
+import {useEffect, useMemo, useState} from "react";
 import { GroupRest } from "../../../rest/GroupRest";
 
 export function GroupManager(props) {
@@ -18,6 +18,7 @@ export function GroupManager(props) {
   const [groupInput, setGroupInput] = useState("");
   const [groupInputError, setGroupInputError] = useState(false);
   const groupRest = useMemo(() => new GroupRest(), []);
+
 
   function createNewGroup() {
     setLoadingNewTeam(true);
@@ -43,6 +44,10 @@ export function GroupManager(props) {
         setGroupInputError(true);
       });
   }
+
+    useEffect(() => {
+        props.onGroupChange(group)
+    }, [group]);
 
   function renderGroupSelection() {
     return (

@@ -460,7 +460,7 @@ function Registration() {
           id: "283db119-046c-4418-939d-ab9bee06c996",
           //id: "2f1c60f2-f30b-4432-8129-9131c6e398dd",
         },
-        group: values.group,
+        group: values.group ? values.group : undefined,
       })
       .then(() => {
         setIsSending(false);

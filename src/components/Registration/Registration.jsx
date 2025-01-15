@@ -298,12 +298,10 @@ function Registration() {
       return true;
     }
     const result = inputList.content.reduce((previous, current) => {
-      console.log(values[current.name]);
       if (
         !current.required &&
         (values[current.name] === undefined || values[current.name] === "")
       ) {
-        console.log("true", current.name, values[current.name]);
         return previous && true;
       }
       if (
@@ -311,8 +309,6 @@ function Registration() {
         ((!values[current.name] && values[current.name] !== 0) ||
           values[current.name] === "")
       ) {
-        console.log("false", current.name, values[current.name]);
-
         return previous && false;
       }
       const meetsMax = current.max

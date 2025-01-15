@@ -9,6 +9,7 @@ import Jury from "../components/Jury/Jury";
 import {Features} from "../components/Features/Features";
 import LandingImage from "../components/LandingImage/LandingImage";
 import {Gallery} from "../components/Gallery/Gallery";
+import Registration from "../components/Registration/Registration";
 
 export default function Page() {
     return (
@@ -20,8 +21,8 @@ export default function Page() {
             <Sponsors25/>
             <Gallery/>
             <Newsletter/>
-            {/*<Registration />
-                <Location />*/}
+            <Registration />
+            {/*    <Location />*/}
             <Speakers/>
             <Jury/>
             {/*

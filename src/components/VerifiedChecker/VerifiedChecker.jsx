@@ -17,7 +17,7 @@ export function VerifiedChecker() {
         return (
             <Container sx={{pt: 5, pb: 0}}>
                 <Alert icon={<Check fontSize="inherit"/>} severity="success">
-                    Thank you for verifying your participation!
+                    <b>All done!</b> Thank you for verifying.
                 </Alert>
             </Container>
         )

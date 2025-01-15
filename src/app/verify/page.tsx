@@ -3,6 +3,7 @@ import {useEffect} from "react";
 import {RegistrationRest} from "../../rest/RegistrationRest";
 import {Box, CircularProgress, Typography} from "@mui/material";
 import {useRouter} from "next/navigation";
+import {ParticipantRest} from "../../rest/ParticipantRest";
 
 export default function Page() {
 
@@ -11,9 +12,10 @@ export default function Page() {
     useEffect(() => {
         if (typeof window !== 'undefined') {
             const queryParameters = new URLSearchParams(window?.location?.search)
-            const type = queryParameters.get("token")
-            const registrationRest = new RegistrationRest()
-            registrationRest.verifyToken(type).then(() => router.push("/?isVerified=true"))
+            const token = queryParameters.get("t")
+            const participant = queryParameters.get("p")
+            const participantRest = new ParticipantRest()
+            participantRest.verifyToken(participant, token).then(() => router.push("/?isVerified=true"))
         }
 
     }, []);

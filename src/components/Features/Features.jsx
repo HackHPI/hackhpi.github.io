@@ -5,7 +5,7 @@ import React from "react";
 export function IconContainer(props) {
     return (
         <Card sx={{
-            background: "linear-gradient(45deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
+            background: "linear-gradient(45deg, rgba(58,12,163,1) 0%, rgba(76,201,240,1) 100%)",
             width: "80%",
             aspectRatio: "1 / 1",
             display: "flex",

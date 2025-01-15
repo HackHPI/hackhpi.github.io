@@ -211,7 +211,9 @@ const legal = [
   },
   {
     formLabel: "Recruiting",
-    input: ["I agree that my contact and job-related data may be passed on to participating recruiters (sponsors)"],
+    input: [
+      "I agree that my contact and job-related data may be passed on to participating recruiters (sponsors)",
+    ],
     name: "recruiters",
     type: 5,
     required: false,
@@ -228,14 +230,11 @@ const legal = [
   },
 ];
 
-
 function Registration() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [values, setValues] = useState({});
   const [isSending, setIsSending] = useState(false);
   const registrationRest = useMemo(() => new RegistrationRest(), []);
-
-
 
   const steps = [
     {
@@ -252,7 +251,12 @@ function Registration() {
     },
     {
       label: "Team members",
-      children: <GroupManager eventId={"02fc811b-1e67-402e-ac62-3f376cf33b6b"} onGroupChange={(change) => handleChange("group", change)} />,
+      children: (
+        <GroupManager
+          eventId={"02fc811b-1e67-402e-ac62-3f376cf33b6b"}
+          onGroupChange={(change) => handleChange("group", change)}
+        />
+      ),
     },
     {
       label: "Confirmation",
@@ -261,24 +265,24 @@ function Registration() {
     {
       label: "E-Mail Verification",
       children: (
-          <Box
-              sx={{
-                width: "100%",
-                height: "20vh",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                paddingTop: "3rem",
-              }}
-          >
-            <Stack spacing={3} justifyContent={"center"}>
-              <Mail color={"inherit"} sx={{ fontSize: "2rem" }} />
-              <Typography>
-                To complete the registration, please click on the link in the email
-                we sent you!
-              </Typography>
-            </Stack>
-          </Box>
+        <Box
+          sx={{
+            width: "100%",
+            height: "20vh",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingTop: "3rem",
+          }}
+        >
+          <Stack spacing={3} justifyContent={"center"}>
+            <Mail color={"inherit"} sx={{ fontSize: "2rem" }} />
+            <Typography>
+              To complete the registration, please click on the link in the
+              email we sent you!
+            </Typography>
+          </Stack>
+        </Box>
       ),
     },
   ];
@@ -466,9 +470,10 @@ function Registration() {
         setIsSending(false);
         handleNext();
       })
-      .catch(() => {
+      .catch((error) => {
         alert(
-          "Could not save Registration. Did you already submit? Please check your spam folder for verification mail.",
+          "Could not save Registration. Please try again. If problem persists, please contact team@hackhpi.org. Error: " +
+            JSON.stringify(error.data),
         );
         setIsSending(false);
       });
@@ -586,10 +591,7 @@ function Registration() {
             </Step>
           ))}
         </Stepper>
-        <Typography
-          color={"text.disabled"}
-          sx={{ marginTop: 3 }}
-        >
+        <Typography color={"text.disabled"} sx={{ marginTop: 3 }}>
           Read our{" "}
           <Link href={"/privacy"} color={"inherit"}>
             privacy policy

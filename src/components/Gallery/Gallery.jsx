@@ -61,7 +61,7 @@ export function Gallery() {
             {renderImages(secondImages, -150)}
             {renderImages(thirdImages, -200)}
             <Container sx={{display: "flex", justifyContent: "flex-end"}}>
-                <Button color={"inherit"} sx={{mt: 3}} onClick={() => setIsGalleryOpen(true)}>View full Gallery</Button>
+                <Button variant="contained" color={"primary"} sx={{mt: 3}} onClick={() => setIsGalleryOpen(true)}>View full Gallery</Button>
             </Container>
             <GalleryDialog isOpen={isGalleryOpen} onClose={() => setIsGalleryOpen(false)}/>
         </Box>

@@ -16,8 +16,9 @@ import {
     useMediaQuery,
     useTheme
 } from "@mui/material";
+import MailIcon from "@mui/icons-material/mail";
 import React from "react";
-import {KeyboardArrowRight} from "@mui/icons-material";
+import {KeyboardArrowRight, MailOutline} from "@mui/icons-material";
 import {WindowCard} from "../WindowCard/WindowCard.jsx";
 import {Masonry} from "@mui/lab";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
@@ -160,7 +161,7 @@ export function Faq() {
                                         ask!</Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button size="small" color={"inherit"} href={"mailto:team@hackhpi.org"}>Contact us</Button>
+                                    <Button sx={{ ml: 1, mb: 1 }} variant="contained" size="small" color="primary" href={"mailto:team@hackhpi.org"} startIcon={<MailOutline />}>Contact us</Button>
                                 </CardActions>
                             </Card>
                         </Stack>

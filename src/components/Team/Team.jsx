@@ -11,15 +11,16 @@ import GeromeQuantmeyerProfile2024 from "../../assets/images/team/2024/gerome_qu
 import UliPrantzProfile2024 from "../../assets/images/team/2024/uli_prantz.webp"
 
 import CedricRischeProfile2025 from "../../assets/images/team/2025/cedric_rische.jpg"
+import ConstantinSachseProfile2025 from "../../assets/images/team/2025/constantin_sachse.jpg"
 import DanielKissProfile2025 from "../../assets/images/team/2025/daniel_kiss.jpg"
+import GeromeQuantmeyerProfile2025 from "../../assets/images/team/2025/gerome_quantmeyer.jpg"
+import GritManssenProfile2025 from "../../assets/images/team/2025/grit_manssen.jpg"
 import JeanneAueProfile2025 from "../../assets/images/team/2025/jeanne_aue.jpg"
 import MathildaHeiseProfile2025 from "../../assets/images/team/2025/mathilda_heise.jpg"
 import MaximilianPiperProfile2025 from "../../assets/images/team/2025/maximilian_piper.jpg"
 import NikolasRiegerProfile2025 from "../../assets/images/team/2025/nikolas_rieger.jpg"
 import TanjaLehmannProfile2025 from "../../assets/images/team/2025/tanja_lehmann.jpg"
 import ViktorKalvodaProfile2025 from "../../assets/images/team/2025/viktor_kalvoda.jpg"
-// import GeromeQuantmeyerProfile2025 from "../../assets/images/team/2025/gerome_quantmeyer.jpg"
-// import GritManssenProfile2025 from "../../assets/images/team/2025/grit_manssen.jpg"
 import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useMediaQuery, useTheme} from "@mui/material";
 import {LinkedIn} from "@mui/icons-material";
 import {useEffect, useState} from "react";
@@ -98,7 +99,7 @@ const teamMembers25 = [
         name: "Grit Manssen",
         position: "Team Member",
         linkedIn: "grit-manssen-0270b023a",
-        profilePicture: ""
+        profilePicture: GritManssenProfile2025
     },
     {
         name: "Nikolas Rieger",
@@ -134,7 +135,7 @@ const teamMembers25 = [
         name: "Gerome Quantmeyer",
         position: "Team Member",
         linkedIn: "gerome-quantmeyer-44a90322b",
-        profilePicture: ""
+        profilePicture: GeromeQuantmeyerProfile2025
     },
     {
         name: "Jeanne Aue",
@@ -146,7 +147,7 @@ const teamMembers25 = [
         name: "Constantin Sachse",
         position: "Team Member",
         linkedIn: "",
-        profilePicture: ""
+        profilePicture: ConstantinSachseProfile2025
     },
 ]
 

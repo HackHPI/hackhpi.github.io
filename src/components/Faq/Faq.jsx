@@ -34,8 +34,8 @@ let faqs = [
                 title: "What's so special about HackHPI?",
                 text: "There are very few hackathons focusing on social issues; we want to fix that and give you the chance to change the world for the better by building applications that truly matter! You will also have the opportunity to get in touch with our awesome partners, slip into their shoes and solve real-world challenges using their APIs and expertise."
             }, {
-                title: "Will HackHPI 2024 take place onsite?",
-                text: "Yes, and that's quite a sure thing. We believe that Hackathons need the human contact that only in-person events can provide, and we're glad to announce that the HackHPI 2024 will be an in-presence only event!"
+                title: "Will HackHPI 2025 take place onsite?",
+                text: "Yes, and that's quite a sure thing. We believe that Hackathons need the human contact that only in-person events can provide, and we're glad to announce that the HackHPI 2025 will be an in-presence only event!"
             }, {
                 title: "Are there any costs for me?",
                 text: "Nope! HackHPI is completely free, and we provide you with food, drinks (and a lot of caffeine! :D) during the whole Hackathon. Unfortunately, we are not able to provide travel reimbursements. However, as an attendee, your confirmation email will include a link to our DB Event Ticket to receive a discount when booking via DB."

@@ -1,15 +1,28 @@
 'use client'
-import CedricRischeProfile from "../../assets/images/team/cedric_rische.webp"
-import MathildaHeiseProfile from "../../assets/images/team/mathilda_heise.webp"
-import MattiSchmidtProfile from "../../assets/images/team/matti_schmidt.webp"
-import NikolasRiegerProfile from "../../assets/images/team/nikolas_rieger.webp"
-import TanjaLehmannProfile from "../../assets/images/team/tanja_lehmann.webp"
-import TheoKlinkeProfile from "../../assets/images/team/theo_klinke.webp"
-import ViktorKalvodaProfile from "../../assets/images/team/viktor_kalvoda.webp"
-import GeromeQuantmeyerProfile from "../../assets/images/team/gerome_quantmeyer.webp"
-import UliPrantzProfile from "../../assets/images/team/uli_prantz.webp"
+
+import CedricRischeProfile2024 from "../../assets/images/team/2024/cedric_rische.webp"
+import MathildaHeiseProfile2024 from "../../assets/images/team/2024/mathilda_heise.webp"
+import MattiSchmidtProfile2024 from "../../assets/images/team/2024/matti_schmidt.webp"
+import NikolasRiegerProfile2024 from "../../assets/images/team/2024/nikolas_rieger.webp"
+import TanjaLehmannProfile2024 from "../../assets/images/team/2024/tanja_lehmann.webp"
+import TheoKlinkeProfile2024 from "../../assets/images/team/2024/theo_klinke.webp"
+import ViktorKalvodaProfile2024 from "../../assets/images/team/2024/viktor_kalvoda.webp"
+import GeromeQuantmeyerProfile2024 from "../../assets/images/team/2024/gerome_quantmeyer.webp"
+import UliPrantzProfile2024 from "../../assets/images/team/2024/uli_prantz.webp"
+
+import CedricRischeProfile2025 from "../../assets/images/team/2025/cedric_rische.jpg"
+import ConstantinSachseProfile2025 from "../../assets/images/team/2025/constantin_sachse.jpg"
+import DanielKissProfile2025 from "../../assets/images/team/2025/daniel_kiss.jpg"
+import GeromeQuantmeyerProfile2025 from "../../assets/images/team/2025/gerome_quantmeyer.jpg"
+import GritManssenProfile2025 from "../../assets/images/team/2025/grit_manssen.jpg"
+import JeanneAueProfile2025 from "../../assets/images/team/2025/jeanne_aue.jpg"
+import MathildaHeiseProfile2025 from "../../assets/images/team/2025/mathilda_heise.jpg"
+import MaximilianPiperProfile2025 from "../../assets/images/team/2025/maximilian_piper.jpg"
+import NikolasRiegerProfile2025 from "../../assets/images/team/2025/nikolas_rieger.jpg"
+import TanjaLehmannProfile2025 from "../../assets/images/team/2025/tanja_lehmann.jpg"
+import ViktorKalvodaProfile2025 from "../../assets/images/team/2025/viktor_kalvoda.jpg"
 import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useMediaQuery, useTheme} from "@mui/material";
-import {LinkedIn, Mail} from "@mui/icons-material";
+import {LinkedIn} from "@mui/icons-material";
 import {useEffect, useState} from "react";
 
 
@@ -18,55 +31,55 @@ const teamMembers24 = [
         name: "Cedric Rische",
         position: "Team Member",
         linkedIn: "cedric-rische",
-        profilePicture: CedricRischeProfile
+        profilePicture: CedricRischeProfile2024
     },
     {
         name: "Mathilda Heise",
         position: "Team Member",
         linkedIn: "mathilda-heise-9203a3258",
-        profilePicture: MathildaHeiseProfile
+        profilePicture: MathildaHeiseProfile2024
     },
     {
         name: "Matti Schmidt",
         position: "Professioneller Gitarrenspieler",
         linkedIn: "matti-schmidt-ac",
-        profilePicture: MattiSchmidtProfile
+        profilePicture: MattiSchmidtProfile2024
     },
     {
         name: "Nikolas Rieger",
         position: "Team Member",
-        profilePicture: NikolasRiegerProfile,
-        linkedIn: "nikolas-rieger"
+        linkedIn: "nikolas-rieger",
+        profilePicture: NikolasRiegerProfile2024
     },
     {
         name: "Tanja Lehmann",
         position: "Team Member",
         linkedIn: "tanja-lehmann-36713a265",
-        profilePicture: TanjaLehmannProfile
+        profilePicture: TanjaLehmannProfile2024
     },
     {
         name: "Theo Klinke",
         position: "Team Member",
         linkedIn: "theo-klinke",
-        profilePicture: TheoKlinkeProfile
+        profilePicture: TheoKlinkeProfile2024
     },
     {
         name: "Viktor Kalvoda",
         position: "Team Member",
-        profilePicture: ViktorKalvodaProfile,
         linkedIn: "viktor-kalvoda-3ab0b62a2",
+        profilePicture: ViktorKalvodaProfile2024
     },
     {
         name: "Gerome Quantmeyer",
         position: "Team Member",
-        profilePicture: GeromeQuantmeyerProfile,
-        linkedIn: "gerome-quantmeyer-44a90322b"
+        linkedIn: "gerome-quantmeyer-44a90322b",
+        profilePicture: GeromeQuantmeyerProfile2024
     },
     {
         name: "Uli Prantz",
         position: "Team Member",
-        profilePicture: UliPrantzProfile,
-        linkedIn: "uli-prantz-100234227"
+        linkedIn: "uli-prantz-100234227",
+        profilePicture: UliPrantzProfile2024
     },
 ]
 const teamMembers25 = [
@@ -74,62 +87,67 @@ const teamMembers25 = [
         name: "Cedric Rische",
         position: "Team Member",
         linkedIn: "cedric-rische",
-        profilePicture: CedricRischeProfile
+        profilePicture: CedricRischeProfile2025
     },
     {
         name: "Mathilda Heise",
         position: "Team Member",
         linkedIn: "mathilda-heise-9203a3258",
-        profilePicture: MathildaHeiseProfile
+        profilePicture: MathildaHeiseProfile2025
     },
     {
         name: "Grit Manssen",
+        position: "Team Member",
         linkedIn: "grit-manssen-0270b023a",
-        profilePicture: ""
-    },    {
-        name: "Lennard Schulze",
-        linkedIn: "lennard-s-8a8389255",
-        profilePicture: ""
+        profilePicture: GritManssenProfile2025
     },
     {
         name: "Nikolas Rieger",
         position: "Team Member",
-        profilePicture: NikolasRiegerProfile,
-        linkedIn: "nikolas-rieger"
+        linkedIn: "nikolas-rieger",
+        profilePicture: NikolasRiegerProfile2025
     },
     {
         name: "Tanja Lehmann",
         position: "Team Member",
         linkedIn: "tanja-lehmann-36713a265",
-        profilePicture: TanjaLehmannProfile
+        profilePicture: TanjaLehmannProfile2025
     },
     {
         name: "Viktor Kalvoda",
         position: "Team Member",
-        profilePicture: ViktorKalvodaProfile,
         linkedIn: "viktor-kalvoda-3ab0b62a2",
-    },    {
-        name: "Max Piper",
+        profilePicture: ViktorKalvodaProfile2025
+    },
+    {
+        name: "Maximilian Piper",
         position: "Team Member",
         linkedIn: "maximilian-piper-101088229",
-        profilePicture: ""
+        profilePicture: MaximilianPiperProfile2025
     },
     {
         name: "Daniel Kiss",
         position: "Team Member",
-        profilePicture: "",
         linkedIn: "kdaniel21",
+        profilePicture: DanielKissProfile2025
     },
     {
         name: "Gerome Quantmeyer",
         position: "Team Member",
-        profilePicture: GeromeQuantmeyerProfile,
-        linkedIn: "gerome-quantmeyer-44a90322b"
-    },    {
+        linkedIn: "gerome-quantmeyer-44a90322b",
+        profilePicture: GeromeQuantmeyerProfile2025
+    },
+    {
         name: "Jeanne Aue",
         position: "Team Member",
-        profilePicture: "",
-        linkedIn: "jeanne-aue"
+        linkedIn: "jeanne-aue",
+        profilePicture: JeanneAueProfile2025
+    },
+    {
+        name: "Constantin Sachse",
+        position: "Team Member",
+        linkedIn: "",
+        profilePicture: ConstantinSachseProfile2025
     },
 ]
 
@@ -227,7 +245,14 @@ function Team() {
                                     {teamMember.linkedIn ?
                                         <Link href={"https://linkedin.com/in/" + teamMember.linkedIn}
                                               target={"_blank"}
-                                              color={"inherit"}><LinkedIn/></Link> : null}
+                                              color={"inherit"}>
+                                            <LinkedIn/>
+                                        </Link> :
+                                        <Link href={null}
+                                              style={{ color: "gray" }}>
+                                            <LinkedIn/>
+                                        </Link>
+                                    }
                                 </Stack>
                             </Card>
                         </Grid>

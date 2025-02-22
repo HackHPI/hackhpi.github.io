@@ -596,7 +596,7 @@ function Registration() {
           <Link href={"/privacy"} color={"inherit"}>
             privacy policy
           </Link>{" "}
-          for information on how we handle your data and what you rights are.
+          for information on how we handle your data and what your rights are.
         </Typography>
       </>
     );

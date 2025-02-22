@@ -16,7 +16,6 @@ import {
     useMediaQuery,
     useTheme
 } from "@mui/material";
-import MailIcon from "@mui/icons-material/mail";
 import React from "react";
 import {KeyboardArrowRight, MailOutline} from "@mui/icons-material";
 import {WindowCard} from "../WindowCard/WindowCard.jsx";

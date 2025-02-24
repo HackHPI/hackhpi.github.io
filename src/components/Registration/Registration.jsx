@@ -372,7 +372,7 @@ function Registration() {
             }
           >
             <MenuItem value="">
-              <em>None</em>
+              <em>Please select...</em>
             </MenuItem>
             {input.map((item, i) => (
               <MenuItem value={item} key={i}>

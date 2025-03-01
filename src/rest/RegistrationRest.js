@@ -8,4 +8,8 @@ export class RegistrationRest{
         return axios.post(this.baseUrl+"/registration", data)
     }
 
+    acceptWithToken(registrationId, token) {
+        return axios.post(`${this.baseUrl}/registration/id/${registrationId}/accept/token/${token}`);
+    }
+
 }

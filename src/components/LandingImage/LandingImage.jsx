@@ -9,7 +9,7 @@ function LandingImage() {
   const [timeLeft, setTimeLeft] = useState(calculateTimeDiff());
 
   function calculateTimeDiff() {
-    return new Date(new Date(2025, 2, 21) - new Date());
+    return new Date(new Date(2025, 2, 22) - new Date());
   }
 
   useEffect(() => {

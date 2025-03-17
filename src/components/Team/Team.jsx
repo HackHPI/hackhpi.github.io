@@ -122,13 +122,13 @@ const teamMembers25 = [
     },
     {
         name: "Maximilian Piper",
-        position: "Sponsoring & Technology",
+        position: "Partnerships & Technology",
         linkedIn: "maximilian-piper-101088229",
         profilePicture: MaximilianPiperProfile2025
     },
     {
         name: "Daniel Kiss",
-        position: "Sponsoring",
+        position: "Partnerships",
         linkedIn: "kdaniel21",
         profilePicture: DanielKissProfile2025
     },
@@ -238,8 +238,8 @@ function Team() {
 
                                 </Box>
 
-                                <Typography pt={"calc( " + imageSize + " / 2)"}>{teamMember.name}</Typography>
-                                <Typography color={"text.disabled"}>{teamMember.position}</Typography>
+                                <Typography pt={"calc( " + imageSize + " / 2)"} noWrap>{teamMember.name}</Typography>
+                                <Typography color={"text.disabled"} noWrap>{teamMember.position}</Typography>
                                 <Stack direction={"row"} spacing={1} pt={2}>
                                     {/* {teamMember.mail ? <Link href={"mailto:" + teamMember.mail}
                                                              color={"inherit"}><Mail/></Link> : null} */}

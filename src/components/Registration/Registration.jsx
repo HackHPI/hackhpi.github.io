@@ -34,7 +34,7 @@ import { GroupManager } from "./GroupManager/GroupManager"; // types: 0 = empty,
 
 // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
-const registrationClosed = false;
+const registrationClosed = true;
 const personalData = [
   {
     formLabel: "First name",

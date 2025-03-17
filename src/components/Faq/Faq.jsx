@@ -44,7 +44,7 @@ let faqs = [
                 text: "This is an all-night Hackathon, meaning that we won't stop until the last one standing. We will provide rooms in which you can sleep or just rest, but you're required to bring your own sleeping bag and air mattress. We're also planning on organizing a couch surfing option from Thursday to Friday for everybody coming early. If you wish to participate in this, whether you want to stay or offer a bed, please note that down when filling in the application form."
             }, {
                 title: "How can I get to the location?",
-                text: "Take S7 from Berlin Central Station (\"Hauptbahnhof\") towards Potsdam and exit at Griebnitzsee."
+                text: "Take the S7 or RB 23 from Berlin Central Station (\"Berlin Hauptbahnhof\") towards Potsdam and exit at Potsdam Griebnitzsee."
             }, {
                 title: "How should I prepare?",
                 text: "Bring your laptop and a charger, comfortable clothes, and, above all, motivation to hack! You can dive into the topic of health in advance, but there will be introductory sessions as well."

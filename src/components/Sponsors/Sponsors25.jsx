@@ -9,11 +9,7 @@ import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 
 function Sponsors() {
   const sponsors = [
-    {
-      logo: Aws.src,
-      alt: "Logo of HPI Engine",
-      link: "https://aws.amazon.com",
-    },
+
     {
       logo: Ottobock.src,
       alt: "Logo of HPI Engine",
@@ -23,6 +19,11 @@ function Sponsors() {
       logo: Quantco.src,
       alt: "Logo of HPI Engine",
       link: "https://www.quantco.com",
+    },
+    {
+      logo: Aws.src,
+      alt: "Logo of HPI Engine",
+      link: "https://aws.amazon.com",
     },
     {
       logo: Tk.src,

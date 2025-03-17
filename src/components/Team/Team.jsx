@@ -85,25 +85,26 @@ const teamMembers24 = [
 const teamMembers25 = [
     {
         name: "Cedric Rische",
-        position: "Team Member",
+
+        position: "General Manager",
         linkedIn: "cedric-rische",
         profilePicture: CedricRischeProfile2025
     },
     {
         name: "Mathilda Heise",
-        position: "Team Member",
+        position: "General Manager",
         linkedIn: "mathilda-heise-9203a3258",
         profilePicture: MathildaHeiseProfile2025
     },
     {
         name: "Grit Manssen",
-        position: "Team Member",
+        position: "Branding",
         linkedIn: "grit-manssen-0270b023a",
         profilePicture: GritManssenProfile2025
     },
     {
         name: "Nikolas Rieger",
-        position: "Team Member",
+        position: "Marketing",
         linkedIn: "nikolas-rieger",
         profilePicture: NikolasRiegerProfile2025
     },
@@ -115,37 +116,37 @@ const teamMembers25 = [
     },
     {
         name: "Viktor Kalvoda",
-        position: "Team Member",
+        position: "Event Planning",
         linkedIn: "viktor-kalvoda-3ab0b62a2",
         profilePicture: ViktorKalvodaProfile2025
     },
     {
         name: "Maximilian Piper",
-        position: "Team Member",
+        position: "Sponsoring & Technology",
         linkedIn: "maximilian-piper-101088229",
         profilePicture: MaximilianPiperProfile2025
     },
     {
         name: "Daniel Kiss",
-        position: "Team Member",
+        position: "Sponsoring",
         linkedIn: "kdaniel21",
         profilePicture: DanielKissProfile2025
     },
     {
         name: "Gerome Quantmeyer",
-        position: "Team Member",
+        position: "Event Planning & Technology",
         linkedIn: "gerome-quantmeyer-44a90322b",
         profilePicture: GeromeQuantmeyerProfile2025
     },
     {
         name: "Jeanne Aue",
-        position: "Team Member",
+        position: "General Manager",
         linkedIn: "jeanne-aue",
         profilePicture: JeanneAueProfile2025
     },
     {
         name: "Constantin Sachse",
-        position: "Team Member",
+        position: "Event Planning & Technology",
         linkedIn: "",
         profilePicture: ConstantinSachseProfile2025
     },
@@ -238,7 +239,7 @@ function Team() {
                                 </Box>
 
                                 <Typography pt={"calc( " + imageSize + " / 2)"}>{teamMember.name}</Typography>
-                                {/*<Typography color={"text.disabled"}>{teamMember.position}</Typography>*/}
+                                <Typography color={"text.disabled"}>{teamMember.position}</Typography>
                                 <Stack direction={"row"} spacing={1} pt={2}>
                                     {/* {teamMember.mail ? <Link href={"mailto:" + teamMember.mail}
                                                              color={"inherit"}><Mail/></Link> : null} */}

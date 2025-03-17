@@ -72,9 +72,10 @@ function Jury() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          pb: 2
         }}
       >
-        <Typography variant={"h2"} gutterBottom>
+        <Typography variant={"h2"}>
           Jury
         </Typography>
         <Stack direction={"row"} spacing={1} alignItems={"center"}>

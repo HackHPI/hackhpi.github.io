@@ -49,9 +49,10 @@ function Speakers() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          pb: 2
         }}
       >
-        <Typography variant={"h2"} gutterBottom>
+        <Typography variant={"h2"}>
           Speaker
         </Typography>
         <Stack direction={"row"} spacing={1} alignItems={"center"}>

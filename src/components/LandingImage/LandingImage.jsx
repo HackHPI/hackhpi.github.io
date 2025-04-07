@@ -49,7 +49,8 @@ function LandingImage() {
                 1000,
                 "For better treatments", // initially rendered starting point
                 1000,
-                `See you in ${Math.round(timeLeft / (24 * 60 * 60 * 1000))} Days!`,
+                //`See you in ${Math.round(timeLeft / (24 * 60 * 60 * 1000))} Days!`,
+                `Thank you for joining us!`,
                 10000,
               ]}
               speed={50}
@@ -58,7 +59,7 @@ function LandingImage() {
           </Typography>
         </div>
         <Stack direction={"row"} spacing={3} useFlexGap flexWrap="wrap">
-          <Button
+          {/* <Button
             variant={"contained"}
             sx={{
               borderWidth: "1rem",
@@ -77,7 +78,7 @@ function LandingImage() {
             }
           >
             Registration
-          </Button>
+          </Button> */}
           <Card
             sx={{ height: "3.5rem", justifyContent: "center", display: "flex" }}
           >

@@ -41,7 +41,7 @@ let faqs = [
                 text: "Nope! HackHPI is completely free, and we provide you with food, drinks (and a lot of caffeine! :D) during the whole Hackathon. Unfortunately, we are not able to provide travel reimbursements. However, as an attendee, your confirmation email will include a link to our DB Event Ticket to receive a discount when booking via DB."
             }, {
                 title: "Where can I stay during the Hackathon?",
-                text: "This is an all-night Hackathon, meaning that we won't stop until the last one standing. We will provide rooms in which you can sleep or just rest, but you're required to bring your own sleeping bag and air mattress. We're also planning on organizing a couch surfing option from Thursday to Friday for everybody coming early. If you wish to participate in this, whether you want to stay or offer a bed, please note that down when filling in the application form."
+                text: "This is an all-night Hackathon, meaning that we won't stop until the last one standing. We will provide rooms in which you can sleep or just rest, but you're required to bring your own sleeping bag and air mattress."
             }, {
                 title: "How can I get to the location?",
                 text: "Take the S7 or RB 23 from Berlin Central Station (\"Berlin Hauptbahnhof\") towards Potsdam and exit at Potsdam Griebnitzsee."

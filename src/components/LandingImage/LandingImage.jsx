@@ -1,7 +1,7 @@
 "use client";
 import { Button, Card, Container, Stack, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
-import { Article, CalendarMonthOutlined } from "@mui/icons-material";
+import {Article, CalendarMonthOutlined, CameraAlt} from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { MeshContainer } from "./MeshContainer/MeshContainer";
 
@@ -68,7 +68,7 @@ function LandingImage() {
               fontSize: "1rem",
             }}
             color={"primary"}
-            startIcon={<Article />}
+            startIcon={<CameraAlt />}
             onClick={() =>
               // document.getElementById("signupForm").scrollIntoView({
               document.getElementById("images").scrollIntoView({

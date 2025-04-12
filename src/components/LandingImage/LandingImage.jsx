@@ -59,7 +59,7 @@ function LandingImage() {
           </Typography>
         </div>
         <Stack direction={"row"} spacing={3} useFlexGap flexWrap="wrap">
-          {/* <Button
+          <Button
             variant={"contained"}
             sx={{
               borderWidth: "1rem",
@@ -70,15 +70,17 @@ function LandingImage() {
             color={"primary"}
             startIcon={<Article />}
             onClick={() =>
-              document.getElementById("signupForm").scrollIntoView({
+              // document.getElementById("signupForm").scrollIntoView({
+              document.getElementById("images").scrollIntoView({
                 behavior: "smooth",
                 block: "start",
                 inline: "nearest",
               })
             }
           >
-            Registration
-          </Button> */}
+            {/* Registration */}
+            Photo Gallery
+          </Button>
           <Card
             sx={{ height: "3.5rem", justifyContent: "center", display: "flex" }}
           >

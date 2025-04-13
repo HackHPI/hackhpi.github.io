@@ -1,7 +1,7 @@
 "use client";
 import { Button, Card, Container, Stack, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
-import { Article, CalendarMonthOutlined } from "@mui/icons-material";
+import {Article, CalendarMonthOutlined, CameraAlt} from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { MeshContainer } from "./MeshContainer/MeshContainer";
 
@@ -49,7 +49,8 @@ function LandingImage() {
                 1000,
                 "For better treatments", // initially rendered starting point
                 1000,
-                `See you in ${Math.round(timeLeft / (24 * 60 * 60 * 1000))} Days!`,
+                //`See you in ${Math.round(timeLeft / (24 * 60 * 60 * 1000))} Days!`,
+                `Thank you for joining us!`,
                 10000,
               ]}
               speed={50}
@@ -67,16 +68,18 @@ function LandingImage() {
               fontSize: "1rem",
             }}
             color={"primary"}
-            startIcon={<Article />}
+            startIcon={<CameraAlt />}
             onClick={() =>
-              document.getElementById("signupForm").scrollIntoView({
+              // document.getElementById("signupForm").scrollIntoView({
+              document.getElementById("images").scrollIntoView({
                 behavior: "smooth",
                 block: "start",
                 inline: "nearest",
               })
             }
           >
-            Registration
+            {/* Registration */}
+            Photo Gallery
           </Button>
           <Card
             sx={{ height: "3.5rem", justifyContent: "center", display: "flex" }}

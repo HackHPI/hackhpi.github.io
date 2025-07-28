@@ -32,32 +32,33 @@ function LandingImage() {
         }}
       >
         <img src={"/HackHPI_white.svg"} width={"150rem"} alt={"HackHPI Logo"} />
-        <div>
-          <Typography sx={{ color: "white" }} variant={"h2"} component={"h1"}>
-            Medical Edition
-          </Typography>
-          <Typography variant={"h4"} component={"h2"}>
-            <TypeAnimation
-              preRenderFirstString={true}
-              sequence={[
-                500,
-                "For better",
-                500,
-                "For better health", // initially rendered starting point
-                1000,
-                "For better diagnosis", // initially rendered starting point,
-                1000,
-                "For better treatments", // initially rendered starting point
-                1000,
-                //`See you in ${Math.round(timeLeft / (24 * 60 * 60 * 1000))} Days!`,
-                `Thank you for joining us!`,
-                10000,
-              ]}
-              speed={50}
-              repeat={Infinity}
-            />
-          </Typography>
-        </div>
+        {/* TODO: Add topic of 2026 */}
+        {/*<div>*/}
+        {/*  <Typography sx={{ color: "white" }} variant={"h2"} component={"h1"}>*/}
+        {/*    Medical Edition*/}
+        {/*  </Typography>*/}
+        {/*  <Typography variant={"h4"} component={"h2"}>*/}
+        {/*    <TypeAnimation*/}
+        {/*      preRenderFirstString={true}*/}
+        {/*      sequence={[*/}
+        {/*        500,*/}
+        {/*        "For better",*/}
+        {/*        500,*/}
+        {/*        "For better health", // initially rendered starting point*/}
+        {/*        1000,*/}
+        {/*        "For better diagnosis", // initially rendered starting point,*/}
+        {/*        1000,*/}
+        {/*        "For better treatments", // initially rendered starting point*/}
+        {/*        1000,*/}
+        {/*        //`See you in ${Math.round(timeLeft / (24 * 60 * 60 * 1000))} Days!`,*/}
+        {/*        `Thank you for joining us!`,*/}
+        {/*        10000,*/}
+        {/*      ]}*/}
+        {/*      speed={50}*/}
+        {/*      repeat={Infinity}*/}
+        {/*    />*/}
+        {/*  </Typography>*/}
+        {/*</div>*/}
         <Stack direction={"row"} spacing={3} useFlexGap flexWrap="wrap">
           <Button
             variant={"contained"}

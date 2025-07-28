@@ -13,13 +13,26 @@ import {
 import FelixLennardHake from "../../assets/images/speakers/FelixLennardHake.jpg";
 import { WindowCard } from "../WindowCard/WindowCard";
 import { useState } from "react";
-import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
+import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import * as React from "react";
 
 const speakerYears = [
   {
-    year: 2025,
+    year: 2026,
     speaker: [],
+  },
+  {
+    year: 2025,
+    speaker: [
+      {
+        name: "Paul Brachmann",
+        position:
+          "Chief Technology Officer at Floy",
+        profilePicture: "TODO",
+        description:
+          "",
+      },
+    ],
   },
   {
     year: 2024,
@@ -131,7 +144,7 @@ function Speakers() {
             ))}
             {speakerYears[currentIndex].speaker.length === 0 && (
                 <Typography variant={"h5"} fontWeight={"bold"} gutterBottom sx={{pt: 5}}>
-                  Speakers will be announced soon!
+                  <Campaign></Campaign> To be announced
                 </Typography>
             )}
           </Stack>

@@ -17,6 +17,11 @@ import {useState} from "react";
 import {IconContainer} from "../Features/Features";
 
 const dayOneYears = [
+  {
+    year: 2026,
+    subtitle: "TBA",
+    dayOne: [],
+  },
     {
         year: 2025,
         subtitle: "Friday 21.03",
@@ -158,6 +163,11 @@ const dayOneYears = [
 ]
 
 const dayTwoYears = [
+  {
+    year: 2026,
+    subtitle: "TBA",
+    dayTwo: [],
+  },
     {
         year: 2025,
         subtitle: "Saturday 22.03",
@@ -325,16 +335,23 @@ export function TimeTable() {
                     </IconButton>
                 </Stack>
             </Box>
-            <Grid container spacing={5}>
-                <Grid item md={6} xs={12}>
-                    <Table data={dayOneYears[currentIndex].dayOne} title={"Day 1"}
-                           subtitle={dayOneYears[currentIndex].subtitle}/>
-                </Grid>
-                <Grid item md={6} xs={12}>
-                    <Table data={dayTwoYears[currentIndex].dayTwo} title={"Day 2"}
-                           subtitle={dayTwoYears[currentIndex].subtitle}/>
-                </Grid>
-            </Grid>
+            {dayOneYears[currentIndex].dayOne.length === 0 && dayTwoYears[currentIndex].dayTwo.length === 0 && (
+                <Typography variant={"h5"} fontWeight={"bold"} gutterBottom sx={{pt: 5}}>
+                  <Campaign></Campaign> To be announced
+                </Typography>
+            )}
+            {dayOneYears[currentIndex].dayOne.length > 0 && dayTwoYears[currentIndex].dayTwo.length > 0 && (
+              <Grid container spacing={5}>
+                  <Grid item md={6} xs={12}>
+                      <Table data={dayOneYears[currentIndex].dayOne} title={"Day 1"}
+                             subtitle={dayOneYears[currentIndex].subtitle}/>
+                  </Grid>
+                  <Grid item md={6} xs={12}>
+                      <Table data={dayTwoYears[currentIndex].dayTwo} title={"Day 2"}
+                             subtitle={dayTwoYears[currentIndex].subtitle}/>
+                  </Grid>
+              </Grid>
+            )}
         </Container>
     )
 }

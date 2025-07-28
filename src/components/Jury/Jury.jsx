@@ -14,16 +14,61 @@ import SebastianUlm from "../../assets/images/jury/SebastianUlm.jpg";
 import HolgerRhinow from "../../assets/images/jury/HolgerRhinow.png";
 import FlorianBreipohl from "../../assets/images/jury/FlorianBreipohl.jpeg";
 import MonaGhazi from "../../assets/images/jury/MonaGhazi.png";
-import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
+import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import { useState } from "react";
 import { WindowCard } from "../WindowCard/WindowCard";
 import * as React from "react";
 
 const juryYears = [
   {
+    year: 2026,
+    jury: [],
+  },
+  {
     year: 2025,
     jury: [
-
+      {
+        name: "Prof. Dr. Lothar Wieler",
+        position: "Digital Global Public Health Chair at HPI",
+        profilePicture: "TODO",
+        description:
+          "",
+      },
+      {
+        name: "Bartosz Fabianowski",
+        position: "Software Engineering Manager at Google",
+        profilePicture: "TODO",
+        description:
+          "",
+      },
+      {
+        name: "Dr. Larisa Wewetzer",
+        position: "Head of Digital Health Solutions & Platforms Ottobock",
+        profilePicture: "TODO",
+        description:
+          "Jury member for the challenge by Ottobock",
+      },
+      {
+        name: "Johannes Vedder",
+        position: "Cybersecurity student & StudyU Developer at Digital Health Cluster",
+        profilePicture: "TODO",
+        description:
+          "Jury member for the challenge by the Chair Digital Health & Machine Learning",
+      },
+      {
+        name: "Guido Schwartze",
+        position: "Innovation Manager at UKSH",
+        profilePicture: "TODO",
+        description:
+          "Jury member for the open challenge",
+      },
+      {
+        name: "Florijan Reetz",
+        position: "ML Developer at Tiplu",
+        profilePicture: "TODO",
+        description:
+          "Jury member for the open challenge",
+      },
     ],
   },
   {
@@ -158,7 +203,7 @@ function Jury() {
             ))}
             {juryYears[currentIndex].jury.length === 0 && (
                 <Typography variant={"h5"} fontWeight={"bold"} gutterBottom sx={{pt: 5}}>
-                  Jury will be announced soon!
+                  <Campaign></Campaign> To be announced
                 </Typography>
             )}
           </Stack>

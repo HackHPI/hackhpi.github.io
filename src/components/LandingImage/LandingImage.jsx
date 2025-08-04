@@ -104,7 +104,7 @@ function LandingImage() {
                 color={"text.disabled"}
                 noWrap
               >
-                21th - 22th March 2025
+                Spring 2026
               </Typography>
             </Stack>
           </Card>

@@ -14,6 +14,12 @@ import SebastianUlm from "../../assets/images/jury/2024/SebastianUlm.jpg";
 import HolgerRhinow from "../../assets/images/jury/2024/HolgerRhinow.png";
 import FlorianBreipohl from "../../assets/images/jury/2024/FlorianBreipohl.jpeg";
 import MonaGhazi from "../../assets/images/jury/2024/MonaGhazi.png";
+import LotharWieler from "../../assets/images/jury/2025/lothar_wieler.webp";
+import BartoszFabianowski from "../../assets/images/jury/2025/bartosz_fabianowski.webp";
+import LarisaWewetzer from "../../assets/images/jury/2025/larisa_wewetzer.webp";
+import JohannesVedder from "../../assets/images/jury/2025/johannes_vedder.webp";
+import GuidoSchwartze from "../../assets/images/jury/2025/guido_schwartze.webp";
+import FlorijanReetz from "../../assets/images/jury/2025/florijan_reetz.webp";
 import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import { useState } from "react";
 import { WindowCard } from "../WindowCard/WindowCard";
@@ -30,42 +36,42 @@ const juryYears = [
       {
         name: "Prof. Dr. Lothar Wieler",
         position: "Digital Global Public Health Chair at HPI",
-        profilePicture: "TODO",
+        profilePicture: LotharWieler.src,
         description:
           "",
       },
       {
         name: "Bartosz Fabianowski",
         position: "Software Engineering Manager at Google",
-        profilePicture: "TODO",
+        profilePicture: BartoszFabianowski.src,
         description:
           "",
       },
       {
         name: "Dr. Larisa Wewetzer",
         position: "Head of Digital Health Solutions & Platforms Ottobock",
-        profilePicture: "TODO",
+        profilePicture: LarisaWewetzer.src,
         description:
           "Jury member for the challenge by Ottobock",
       },
       {
         name: "Johannes Vedder",
         position: "Cybersecurity student & StudyU Developer at Digital Health Cluster",
-        profilePicture: "TODO",
+        profilePicture: JohannesVedder.src,
         description:
           "Jury member for the challenge by the Chair Digital Health & Machine Learning",
       },
       {
         name: "Guido Schwartze",
         position: "Innovation Manager at UKSH",
-        profilePicture: "TODO",
+        profilePicture: GuidoSchwartze.src,
         description:
           "Jury member for the open challenge",
       },
       {
         name: "Florijan Reetz",
         position: "ML Developer at Tiplu",
-        profilePicture: "TODO",
+        profilePicture: FlorijanReetz.src,
         description:
           "Jury member for the open challenge",
       },

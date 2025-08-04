@@ -11,6 +11,7 @@ import {
   useTheme,
 } from "@mui/material";
 import FelixLennardHake from "../../assets/images/speakers/2024/FelixLennardHake.jpg";
+import PaulBrachmann from "../../assets/images/speakers/2025/paul_brachmann.webp";
 import { WindowCard } from "../WindowCard/WindowCard";
 import { useState } from "react";
 import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
@@ -28,7 +29,7 @@ const speakerYears = [
         name: "Paul Brachmann",
         position:
           "Chief Technology Officer at Floy",
-        profilePicture: "TODO",
+        profilePicture: PaulBrachmann.src,
         description:
           "",
       },

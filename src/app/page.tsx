@@ -1,6 +1,6 @@
 import {VerifiedChecker} from "../components/VerifiedChecker/VerifiedChecker";
 import WhatToExpect from "../components/WhatToExpect/WhatToExpect";
-import Sponsors25 from "../components/Sponsors/Sponsors25";
+import Sponsors26 from "../components/Sponsors/Sponsors26";
 import Newsletter from "../components/Newsletter/Newsletter";
 import {Faq} from "../components/Faq/Faq";
 import Team from "../components/Team/Team";
@@ -19,7 +19,7 @@ export default function Page() {
             <VerifiedChecker/>
             <WhatToExpect/>
             <Features/>
-            <Sponsors25/>
+            <Sponsors26/>
             <Gallery/>
             <Newsletter/>
             {/* <Registration /> */}

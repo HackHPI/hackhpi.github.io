@@ -10,10 +10,10 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import SebastianUlm from "../../assets/images/jury/SebastianUlm.jpg";
-import HolgerRhinow from "../../assets/images/jury/HolgerRhinow.png";
-import FlorianBreipohl from "../../assets/images/jury/FlorianBreipohl.jpeg";
-import MonaGhazi from "../../assets/images/jury/MonaGhazi.png";
+import SebastianUlm from "../../assets/images/jury/2024/SebastianUlm.jpg";
+import HolgerRhinow from "../../assets/images/jury/2024/HolgerRhinow.png";
+import FlorianBreipohl from "../../assets/images/jury/2024/FlorianBreipohl.jpeg";
+import MonaGhazi from "../../assets/images/jury/2024/MonaGhazi.png";
 import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import { useState } from "react";
 import { WindowCard } from "../WindowCard/WindowCard";

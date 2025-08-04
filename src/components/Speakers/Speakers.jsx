@@ -10,7 +10,7 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import FelixLennardHake from "../../assets/images/speakers/FelixLennardHake.jpg";
+import FelixLennardHake from "../../assets/images/speakers/2024/FelixLennardHake.jpg";
 import { WindowCard } from "../WindowCard/WindowCard";
 import { useState } from "react";
 import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";

@@ -10,6 +10,7 @@ import {Features} from "../components/Features/Features";
 import LandingImage from "../components/LandingImage/LandingImage";
 import {Gallery} from "../components/Gallery/Gallery";
 import Registration from "../components/Registration/Registration";
+import {Location} from "../components/Location/Location";
 import {TimeTable} from "../components/TimeTable/TimeTable";
 
 export default function Page() {
@@ -23,7 +24,7 @@ export default function Page() {
             <Gallery/>
             <Newsletter/>
             {/* <Registration /> */}
-            {/*    <Location />*/}
+            <Location />
             <Speakers/>
             <Jury/>
             <TimeTable/>

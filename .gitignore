@@ -22,3 +22,8 @@ pnpm-debug.log*
 
 # PyCharm-specific files
 .idea/
+
+src/assets/images/convert/input/*
+!src/assets/images/convert/input/.gitkeep
+src/assets/images/convert/output/*
+!src/assets/images/convert/output/.gitkeep

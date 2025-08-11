@@ -6,7 +6,8 @@
     "dev": "next dev",
     "start": "next dev",
     "build": "next build",
-    "lint": "next lint"
+    "lint": "next lint",
+    "image-convert": "node scripts/imageConverter.js -i ./src/assets/images/convert/input -o ./src/assets/images/convert/output -j ./src/assets/images/convert/output/images.js -p './'"
   },
   "dependencies": {
     "@emotion/cache": "^11.11.0",

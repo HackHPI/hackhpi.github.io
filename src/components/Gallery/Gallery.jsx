@@ -9,8 +9,6 @@ export function Gallery() {
     const [galleryTab, setGalleryTab] = useState(0)
     const [isGalleryOpen, setIsGalleryOpen] = useState(false)
 
-  console.log(images[galleryTab].items.length)
-
     const oneThird = Math.floor(images[galleryTab].items.length / 3);
     const firstImages = images[galleryTab].items.slice(0, oneThird)
     const secondImages = images[galleryTab].items.slice(oneThird, oneThird * 2)

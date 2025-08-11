@@ -48,10 +48,10 @@ function LandingImage() {
                 "Revolutionize crop management", // initially rendered starting point,
                 1000,
                 "Revolutionize farming tech", // initially rendered starting point
-                //1000,
+                1000,
                 //`See you in ${Math.round(timeLeft / (24 * 60 * 60 * 1000))} Days!`,
                 //`Thank you for joining us!`,
-                10000,
+                // 10000,
               ]}
               speed={50}
               repeat={Infinity}

@@ -11,10 +11,6 @@ export function IconContainer(props) {
         //background: "linear-gradient(45deg, rgba(58,12,163,1) 0%, rgba(63,253,106,1) 100%)",
         backgroundPosition: "center",
         backgroundSize: "contain",
-        //backgroundColor: "#10061E",
-        //#46B875
-        //#53258B
-        //#10061E
         width: "80%",
         aspectRatio: "1 / 1",
       }}

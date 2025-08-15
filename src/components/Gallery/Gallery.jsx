@@ -14,9 +14,6 @@ export function Gallery() {
     const secondImages = images[galleryTab].items.slice(oneThird, oneThird * 2)
     const thirdImages = images[galleryTab].items.slice(oneThird * 2, images[galleryTab].items.length)
 
-  console.log(oneThird, firstImages, secondImages, thirdImages)
-
-
     const baseSeconds = 10
 
     function renderImages(imageList, offset) {

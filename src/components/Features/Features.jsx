@@ -1,13 +1,15 @@
 import { Box, Card, Container, Grid, Typography } from "@mui/material";
 import { EmojiEvents, MoneyOff } from "@mui/icons-material";
 import React from "react";
+import colorYears from "../Theme/HackHpiColors";
 
 export function IconContainer(props) {
+  const colors = colorYears[props.year] ?? colorYears.default;
   return (
     <Card
       sx={{
         background:
-          "radial-gradient(ellipse 160% 110% at 0% 110%,  rgba(58,12,163,1) 30%, rgba(63,253,106,1) 100%), #110320",
+          `radial-gradient(ellipse 160% 110% at 0% 110%, ${colors.primary} 30%, ${colors.secondary} 100%), #110320`,
         //background: "linear-gradient(45deg, rgba(58,12,163,1) 0%, rgba(63,253,106,1) 100%)",
         backgroundPosition: "center",
         backgroundSize: "contain",

@@ -96,7 +96,7 @@ function Speakers() {
         <Grid item xs={12} md={12}>
           <Stack spacing={3}>
             {speakerYears[currentIndex].speaker.map((speaker) => (
-              <WindowCard elevation={5} key={speaker.name} is2024>
+              <WindowCard elevation={5} key={speaker.name} is2024 year={speakerYears[currentIndex].year}>
                 <Grid container spacing={5}>
                   <Grid item xs={12} md={3}>
                     <Paper

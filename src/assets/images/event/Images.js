@@ -4,17 +4,17 @@ import Images2023 from "./2023/Images2023";
 
 let Images = [
     {
-        name: "2025",
+        year: 2025,
         subtitle: "Medical Edition",
         items: Object.values(images)
     },
     {
-        name: "2024",
+        year: 2024,
         subtitle: "tomorrow's reality, today's vision. smart cities edition.",
         items: Images2024
     },
     {
-        name: "2023",
+        year: 2023,
         subtitle: "about://building-trust-in-digital-state",
         items: Images2023
     }

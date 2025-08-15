@@ -160,6 +160,7 @@ function Jury() {
                 elevation={5}
                 key={judge.name}
                 is2024={currentIndex !== 0}
+                year={juryYears[currentIndex].year}
               >
                 <Grid container spacing={5}>
                   <Grid item xs={12} md={3}>

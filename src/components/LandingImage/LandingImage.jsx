@@ -103,7 +103,7 @@ function LandingImage() {
                 color={"text.disabled"}
                 noWrap
               >
-                10th-11th April 2026
+                10th - 11th April 2026
               </Typography>
             </Stack>
           </Card>

@@ -4,7 +4,7 @@ import Images2023 from "./2023/Images2023";
 
 let Images = [
     {
-        year: 2025,
+        year: 2026,
         subtitle: "Medical Edition",
         items: Object.values(images)
     },

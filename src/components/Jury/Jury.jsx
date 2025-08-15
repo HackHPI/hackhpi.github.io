@@ -210,7 +210,7 @@ function Jury() {
             ))}
             {juryYears[currentIndex].jury.length === 0 && (
                 <Typography variant={"h5"} fontWeight={"bold"} gutterBottom sx={{pt: 5}}>
-                  <Campaign></Campaign> To be announced
+                  <Campaign/> To be announced
                 </Typography>
             )}
           </Stack>

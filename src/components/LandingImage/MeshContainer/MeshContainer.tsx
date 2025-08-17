@@ -31,6 +31,7 @@ export function MeshContainer(props) {
                 height: "100%",
                 position: "relative",
                 zIndex: 2,
+                background: "rgba(0,0,0,0.1)",
             }}>
                 {props.children}
             </Box>

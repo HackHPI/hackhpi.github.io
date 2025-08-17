@@ -15,8 +15,14 @@ import {
 import * as React from "react";
 import {useState} from "react";
 import {IconContainer} from "../Features/Features";
+import colorYears from "../Theme/HackHpiColors";
 
 const dayOneYears = [
+  {
+    year: 2026,
+    subtitle: "TBA",
+    dayOne: [],
+  },
     {
         year: 2025,
         subtitle: "Friday 21.03",
@@ -158,6 +164,11 @@ const dayOneYears = [
 ]
 
 const dayTwoYears = [
+  {
+    year: 2026,
+    subtitle: "TBA",
+    dayTwo: [],
+  },
     {
         year: 2025,
         subtitle: "Saturday 22.03",
@@ -241,11 +252,12 @@ const dayTwoYears = [
 ]
 
 export function Table(props) {
+    const colors = colorYears[props.year] ?? colorYears.default;
     return (
         <Card>
             <Box sx={{
                 height: "5rem",
-                background: "linear-gradient(150deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
+                background: `linear-gradient(150deg, ${colors.primary} 0%, ${colors.secondary} 100%)`,
                 display: "flex",
                 alignItems: "center",
                 pl: 3
@@ -268,7 +280,7 @@ export function Table(props) {
                                         alignContent: "center",
                                         alignItems: "center"
                                     }}>
-                                        <IconContainer icon={item.icon}/>
+                                        <IconContainer icon={item.icon} year={props.year}/>
                                     </Grid>
                                     <Grid item xs={8} sx={{display: "flex", alignItems: "center"}}>
                                         <Box>
@@ -325,16 +337,25 @@ export function TimeTable() {
                     </IconButton>
                 </Stack>
             </Box>
-            <Grid container spacing={5}>
-                <Grid item md={6} xs={12}>
-                    <Table data={dayOneYears[currentIndex].dayOne} title={"Day 1"}
-                           subtitle={dayOneYears[currentIndex].subtitle}/>
-                </Grid>
-                <Grid item md={6} xs={12}>
-                    <Table data={dayTwoYears[currentIndex].dayTwo} title={"Day 2"}
-                           subtitle={dayTwoYears[currentIndex].subtitle}/>
-                </Grid>
-            </Grid>
+            {dayOneYears[currentIndex].dayOne.length === 0 && dayTwoYears[currentIndex].dayTwo.length === 0 && (
+                <Typography variant={"h5"} fontWeight={"bold"} gutterBottom sx={{pt: 5}}>
+                  <Campaign></Campaign> To be announced
+                </Typography>
+            )}
+            {dayOneYears[currentIndex].dayOne.length > 0 && dayTwoYears[currentIndex].dayTwo.length > 0 && (
+              <Grid container spacing={5}>
+                  <Grid item md={6} xs={12}>
+                      <Table data={dayOneYears[currentIndex].dayOne} title={"Day 1"}
+                             subtitle={dayOneYears[currentIndex].subtitle}
+                             year={dayOneYears[currentIndex].year}/>
+                  </Grid>
+                  <Grid item md={6} xs={12}>
+                      <Table data={dayTwoYears[currentIndex].dayTwo} title={"Day 2"}
+                             subtitle={dayTwoYears[currentIndex].subtitle}
+                             year={dayTwoYears[currentIndex].year}/>
+                  </Grid>
+              </Grid>
+            )}
         </Container>
     )
 }

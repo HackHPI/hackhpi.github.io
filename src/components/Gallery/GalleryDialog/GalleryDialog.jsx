@@ -16,6 +16,7 @@ import {
 import {Close, KeyboardArrowLeft, KeyboardArrowRight} from "@mui/icons-material";
 import React, {useCallback, useEffect, useState} from "react";
 import images from "../../../assets/images/event/Images";
+import colorYears from "../../Theme/HackHpiColors";
 
 const Transition = React.forwardRef(function Transition(
     props,
@@ -77,6 +78,8 @@ export function GalleryDialog(props) {
         }
         element.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'center'})
     }
+
+    const colors = colorYears[props.year] ?? colorYears.default;
 
     return (
         <Dialog
@@ -152,7 +155,7 @@ export function GalleryDialog(props) {
                                                 (selectedImage === index) ? (
                                                     <Box sx={{
                                                         height: ".4rem",
-                                                        background: "linear-gradient(90deg, rgba(58,12,163,1) 0%, rgba(114,9,183,1) 100%)",
+                                                        background: `linear-gradient(90deg, ${colors.primary} 0%, ${colors.primary} 100%)`,
                                                         width: "100%"
                                                     }}/>
                                                 ) : undefined

@@ -10,20 +10,71 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import SebastianUlm from "../../assets/images/jury/SebastianUlm.jpg";
-import HolgerRhinow from "../../assets/images/jury/HolgerRhinow.png";
-import FlorianBreipohl from "../../assets/images/jury/FlorianBreipohl.jpeg";
-import MonaGhazi from "../../assets/images/jury/MonaGhazi.png";
-import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
+import SebastianUlm from "../../assets/images/jury/2024/SebastianUlm.jpg";
+import HolgerRhinow from "../../assets/images/jury/2024/HolgerRhinow.png";
+import FlorianBreipohl from "../../assets/images/jury/2024/FlorianBreipohl.jpeg";
+import MonaGhazi from "../../assets/images/jury/2024/MonaGhazi.png";
+import LotharWieler from "../../assets/images/jury/2025/lothar_wieler.webp";
+import BartoszFabianowski from "../../assets/images/jury/2025/bartosz_fabianowski.webp";
+import LarisaWewetzer from "../../assets/images/jury/2025/larisa_wewetzer.webp";
+import JohannesVedder from "../../assets/images/jury/2025/johannes_vedder.webp";
+import GuidoSchwartze from "../../assets/images/jury/2025/guido_schwartze.webp";
+import FlorijanReetz from "../../assets/images/jury/2025/florijan_reetz.webp";
+import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import { useState } from "react";
 import { WindowCard } from "../WindowCard/WindowCard";
 import * as React from "react";
 
 const juryYears = [
   {
+    year: 2026,
+    jury: [],
+  },
+  {
     year: 2025,
     jury: [
-
+      {
+        name: "Prof. Dr. Lothar Wieler",
+        position: "Digital Global Public Health Chair at HPI",
+        profilePicture: LotharWieler.src,
+        description:
+          "",
+      },
+      {
+        name: "Bartosz Fabianowski",
+        position: "Software Engineering Manager at Google",
+        profilePicture: BartoszFabianowski.src,
+        description:
+          "",
+      },
+      {
+        name: "Dr. Larisa Wewetzer",
+        position: "Head of Digital Health Solutions & Platforms Ottobock",
+        profilePicture: LarisaWewetzer.src,
+        description:
+          "Jury member for the challenge by Ottobock",
+      },
+      {
+        name: "Johannes Vedder",
+        position: "Cybersecurity student & StudyU Developer at Digital Health Cluster",
+        profilePicture: JohannesVedder.src,
+        description:
+          "Jury member for the challenge by the Chair Digital Health & Machine Learning",
+      },
+      {
+        name: "Guido Schwartze",
+        position: "Innovation Manager at UKSH",
+        profilePicture: GuidoSchwartze.src,
+        description:
+          "Jury member for the open challenge",
+      },
+      {
+        name: "Florijan Reetz",
+        position: "ML Developer at Tiplu",
+        profilePicture: FlorijanReetz.src,
+        description:
+          "Jury member for the open challenge",
+      },
     ],
   },
   {
@@ -109,6 +160,7 @@ function Jury() {
                 elevation={5}
                 key={judge.name}
                 is2024={currentIndex !== 0}
+                year={juryYears[currentIndex].year}
               >
                 <Grid container spacing={5}>
                   <Grid item xs={12} md={3}>
@@ -158,7 +210,7 @@ function Jury() {
             ))}
             {juryYears[currentIndex].jury.length === 0 && (
                 <Typography variant={"h5"} fontWeight={"bold"} gutterBottom sx={{pt: 5}}>
-                  Jury will be announced soon!
+                  <Campaign/> To be announced
                 </Typography>
             )}
           </Stack>

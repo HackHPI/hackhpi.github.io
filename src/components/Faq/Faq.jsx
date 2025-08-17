@@ -38,7 +38,8 @@ let faqs = [
                 text: "Yes, and that's quite a sure thing. We believe that Hackathons need the human contact that only in-person events can provide, and we're glad to announce that the HackHPI 2025 will be an in-presence only event!"
             }, {
                 title: "Are there any costs for me?",
-                text: "Nope! HackHPI is completely free, and we provide you with food, drinks (and a lot of caffeine! :D) during the whole Hackathon. Unfortunately, we are not able to provide travel reimbursements. However, as an attendee, your confirmation email will include a link to our DB Event Ticket to receive a discount when booking via DB."
+                text: "Nope! HackHPI is completely free, and we provide you with food, drinks (and a lot of caffeine! :D) during the whole Hackathon. Unfortunately, we are not able to provide travel reimbursements."
+                // TODO: Add 'However, as an attendee, your confirmation email will include a link to our DB Event Ticket to receive a discount when booking via DB.' when confirmed
             }, {
                 title: "Where can I stay during the Hackathon?",
                 text: "This is an all-night Hackathon, meaning that we won't stop until the last one standing. We will provide rooms in which you can sleep or just rest, but you're required to bring your own sleeping bag and air mattress."

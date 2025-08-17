@@ -1,0 +1,2439 @@
+{
+  "mappings": [
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-100_b2.jpg",
+      "uuidFilename": "63d9f282-77db-4353-a8ad-6d3f09c4e4d4.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025100B2",
+      "dimensions": "1620x1080",
+      "fileSize": "201 KB",
+      "compressionRatio": "95.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-101_b2.jpg",
+      "uuidFilename": "5741a779-131e-4376-a4a5-1fe04189421e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025101B2",
+      "dimensions": "1620x1080",
+      "fileSize": "110.5 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-102_b2.jpg",
+      "uuidFilename": "1ff925ad-3fd8-4372-b278-49f574e6b3f0.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025102B2",
+      "dimensions": "1620x1080",
+      "fileSize": "121 KB",
+      "compressionRatio": "96.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-103_b2.jpg",
+      "uuidFilename": "1f809e74-ac45-44f0-b787-ea2921d332d0.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025103B2",
+      "dimensions": "1620x1080",
+      "fileSize": "114.2 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-104_b2.jpg",
+      "uuidFilename": "ba766586-44a2-486d-b49e-d5e70e77d6e2.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025104B2",
+      "dimensions": "1620x1080",
+      "fileSize": "138.7 KB",
+      "compressionRatio": "96.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-105_b2.jpg",
+      "uuidFilename": "b27ff0f5-7d9c-4d98-b31c-c7261334ab7e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025105B2",
+      "dimensions": "1620x1080",
+      "fileSize": "134.5 KB",
+      "compressionRatio": "96.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-106_b2.jpg",
+      "uuidFilename": "bc8ff968-0078-4581-8f66-245009b9d35f.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025106B2",
+      "dimensions": "1620x1080",
+      "fileSize": "77.7 KB",
+      "compressionRatio": "97.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-107_b2.jpg",
+      "uuidFilename": "5ef23e96-5098-40a5-a357-750f6918daec.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025107B2",
+      "dimensions": "1620x1080",
+      "fileSize": "109.9 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-108_b2.jpg",
+      "uuidFilename": "fc04f1d1-acac-4972-a3c8-724c6e795216.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025108B2",
+      "dimensions": "1620x1080",
+      "fileSize": "125.8 KB",
+      "compressionRatio": "97.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-109_b2.jpg",
+      "uuidFilename": "2812a9f1-a7b5-4199-b5ba-e6206fdfeb9c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025109B2",
+      "dimensions": "1620x1080",
+      "fileSize": "104.7 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-10_b2.jpg",
+      "uuidFilename": "f55adf38-19ff-48b3-92c1-798562a15168.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202510B2",
+      "dimensions": "1620x1080",
+      "fileSize": "71.4 KB",
+      "compressionRatio": "98.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-110_b2.jpg",
+      "uuidFilename": "837d8e86-9e1f-435c-b7ab-b6bb77eaf882.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025110B2",
+      "dimensions": "1620x1080",
+      "fileSize": "108.5 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-111_b2.jpg",
+      "uuidFilename": "a15dd4c2-20eb-42ce-bd9c-e0eaeaf63ac6.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025111B2",
+      "dimensions": "1620x1080",
+      "fileSize": "105 KB",
+      "compressionRatio": "97.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-112_b2.jpg",
+      "uuidFilename": "b61d6e20-30d5-4d1b-9580-1def3fb7a499.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025112B2",
+      "dimensions": "1620x1080",
+      "fileSize": "42.8 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-113_b2.jpg",
+      "uuidFilename": "0678d366-9a38-460a-9387-ef74844ae99a.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025113B2",
+      "dimensions": "1620x1080",
+      "fileSize": "107.6 KB",
+      "compressionRatio": "97.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-114_b2.jpg",
+      "uuidFilename": "f8f91f29-75d6-46e1-bbe9-23a446d6a539.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025114B2",
+      "dimensions": "1620x1080",
+      "fileSize": "124 KB",
+      "compressionRatio": "97.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-115_b2.jpg",
+      "uuidFilename": "9e528535-50ed-4bb4-8041-769be36eabf6.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025115B2",
+      "dimensions": "1620x1080",
+      "fileSize": "106.2 KB",
+      "compressionRatio": "97.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-116_b2.jpg",
+      "uuidFilename": "5658043a-840e-43ef-9c30-fa940de76baa.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025116B2",
+      "dimensions": "1620x1080",
+      "fileSize": "105.3 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-117_b2.jpg",
+      "uuidFilename": "bfc12196-5902-4b61-9cdc-75379b815d52.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025117B2",
+      "dimensions": "1620x1080",
+      "fileSize": "88 KB",
+      "compressionRatio": "97.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-118_b2.jpg",
+      "uuidFilename": "cf2918bc-68f1-42f3-8c33-6c1a24ad6863.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025118B2",
+      "dimensions": "1620x1080",
+      "fileSize": "56.9 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-119_b2.jpg",
+      "uuidFilename": "acca90bb-3dd3-4bee-ac4c-70769b8b9405.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025119B2",
+      "dimensions": "1620x1080",
+      "fileSize": "51.6 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-11_b2.jpg",
+      "uuidFilename": "9394a075-5161-4934-85cb-7e54911df772.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202511B2",
+      "dimensions": "1620x1080",
+      "fileSize": "116.3 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-120_b2.jpg",
+      "uuidFilename": "2cbc9443-775d-4147-aa85-e66032139462.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025120B2",
+      "dimensions": "1620x1080",
+      "fileSize": "170.7 KB",
+      "compressionRatio": "95.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-121_b2.jpg",
+      "uuidFilename": "adb63440-2579-4bd2-9334-3915f1c4d570.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025121B2",
+      "dimensions": "1620x1080",
+      "fileSize": "97.7 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-122_b2.jpg",
+      "uuidFilename": "6c2d5c3a-9a7c-438d-8761-4e3e0efaa6e7.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025122B2",
+      "dimensions": "1620x1080",
+      "fileSize": "97.4 KB",
+      "compressionRatio": "97.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-123_b2.jpg",
+      "uuidFilename": "8398f75b-7c93-4c4d-8648-be34fb3e5eb7.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025123B2",
+      "dimensions": "1620x1080",
+      "fileSize": "81.3 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-124_b2.jpg",
+      "uuidFilename": "1f0cdb2f-9faa-40cc-8fe8-a9b55abb9808.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025124B2",
+      "dimensions": "1620x1080",
+      "fileSize": "64.8 KB",
+      "compressionRatio": "98.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-125_b2.jpg",
+      "uuidFilename": "fb69cd9e-9ecd-4290-9826-6cb89b23880e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025125B2",
+      "dimensions": "1620x1080",
+      "fileSize": "69.9 KB",
+      "compressionRatio": "98.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-126_b2.jpg",
+      "uuidFilename": "b245b198-4dcf-4026-9d31-5d6b7d900875.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025126B2",
+      "dimensions": "1620x1080",
+      "fileSize": "52.8 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-127_b2.jpg",
+      "uuidFilename": "f663e68d-8b76-4ed3-a9e7-cdd8ec6cf9c0.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025127B2",
+      "dimensions": "1620x1080",
+      "fileSize": "120.9 KB",
+      "compressionRatio": "96.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-128_b2.jpg",
+      "uuidFilename": "ca6a01bf-7dfa-4ec1-9d1c-03609e6321fe.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025128B2",
+      "dimensions": "1620x1080",
+      "fileSize": "89.8 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-129_b2.jpg",
+      "uuidFilename": "e56e8844-3148-4852-b8dc-3dec81c1ec26.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025129B2",
+      "dimensions": "1620x1080",
+      "fileSize": "93.6 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-12_b2.jpg",
+      "uuidFilename": "13fc1293-a614-40e5-8123-63848468a2f5.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202512B2",
+      "dimensions": "1620x1080",
+      "fileSize": "169.8 KB",
+      "compressionRatio": "96.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-130_b2.jpg",
+      "uuidFilename": "948d1690-956d-4684-ba6a-4cacaf49612e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025130B2",
+      "dimensions": "1620x1080",
+      "fileSize": "88.8 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-131_b2.jpg",
+      "uuidFilename": "6865266e-73b0-497d-be50-7226f5e28f0a.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025131B2",
+      "dimensions": "1620x1080",
+      "fileSize": "135.6 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-132_b2.jpg",
+      "uuidFilename": "6451ad96-aae1-4697-a214-4abc79ffc8c5.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025132B2",
+      "dimensions": "1620x1080",
+      "fileSize": "160.8 KB",
+      "compressionRatio": "96%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-133_b2.jpg",
+      "uuidFilename": "cc06b90f-8f9f-48d4-9654-5303ace03507.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025133B2",
+      "dimensions": "1620x1080",
+      "fileSize": "159.4 KB",
+      "compressionRatio": "95.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-134_b2.jpg",
+      "uuidFilename": "77457b62-45f8-47c7-882d-3949198fdb9e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025134B2",
+      "dimensions": "1620x1080",
+      "fileSize": "125.6 KB",
+      "compressionRatio": "96.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-135_b2.jpg",
+      "uuidFilename": "258ecd27-348c-4f64-93ae-f8e0a0bbb9f9.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025135B2",
+      "dimensions": "1620x1080",
+      "fileSize": "125.3 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-136_b2.jpg",
+      "uuidFilename": "c4f99bed-a1f7-4f50-8383-b1c2c6d47b22.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025136B2",
+      "dimensions": "1620x1080",
+      "fileSize": "109.2 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-137_b2.jpg",
+      "uuidFilename": "ef16c843-9bb5-4d5a-a8f9-4a2310728de0.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025137B2",
+      "dimensions": "1620x1080",
+      "fileSize": "110.6 KB",
+      "compressionRatio": "97.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-138_b2.jpg",
+      "uuidFilename": "eb7bbf8f-8ef8-45eb-8fa1-873bd602dcff.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025138B2",
+      "dimensions": "1620x1080",
+      "fileSize": "154.1 KB",
+      "compressionRatio": "95.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-139_b2.jpg",
+      "uuidFilename": "4150db81-9527-4f7a-87ad-412962e14bd2.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025139B2",
+      "dimensions": "1620x1080",
+      "fileSize": "136.1 KB",
+      "compressionRatio": "96.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-13_b2.jpg",
+      "uuidFilename": "df161b6c-e84f-461c-8b2f-e4b0ea76047b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202513B2",
+      "dimensions": "1620x1080",
+      "fileSize": "138.2 KB",
+      "compressionRatio": "96.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-140_b2.jpg",
+      "uuidFilename": "e0700491-1c3f-444e-ac32-3bf0703ebd50.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025140B2",
+      "dimensions": "1620x1080",
+      "fileSize": "73.9 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-141_b2.jpg",
+      "uuidFilename": "180b7b8c-f222-404b-97bc-4ddea454ccd5.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025141B2",
+      "dimensions": "1620x1080",
+      "fileSize": "73.7 KB",
+      "compressionRatio": "98.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-142_b2.jpg",
+      "uuidFilename": "7234b22f-b752-4735-ad83-19c051c245c7.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025142B2",
+      "dimensions": "1620x1080",
+      "fileSize": "114.8 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-143_b2.jpg",
+      "uuidFilename": "e7e12c43-fa23-41ff-8950-e66db00b7dae.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025143B2",
+      "dimensions": "1620x1080",
+      "fileSize": "79.8 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-144_b2.jpg",
+      "uuidFilename": "00506a93-c516-446b-bed6-8ef12fd9e4da.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025144B2",
+      "dimensions": "1620x1080",
+      "fileSize": "109 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-145_b2.jpg",
+      "uuidFilename": "baf49c32-33e4-423f-af28-ca026ca29e40.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025145B2",
+      "dimensions": "1620x1080",
+      "fileSize": "152.1 KB",
+      "compressionRatio": "96%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-146_b2.jpg",
+      "uuidFilename": "4cc4ed54-6f99-47da-9188-d5f6a1e9ab91.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025146B2",
+      "dimensions": "1620x1080",
+      "fileSize": "155.3 KB",
+      "compressionRatio": "96.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-147_b2.jpg",
+      "uuidFilename": "44698004-07a8-484c-bf5f-ebe65678a9d2.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025147B2",
+      "dimensions": "1620x1080",
+      "fileSize": "117.4 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-148_b2.jpg",
+      "uuidFilename": "1c53e42e-f2a1-4d35-a7be-79b630243be0.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025148B2",
+      "dimensions": "1620x1080",
+      "fileSize": "151.4 KB",
+      "compressionRatio": "96.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-149_b2.jpg",
+      "uuidFilename": "d7ea8b87-cdd2-46ca-929d-0b0c27bac8c6.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025149B2",
+      "dimensions": "1620x1080",
+      "fileSize": "51.3 KB",
+      "compressionRatio": "98.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-14_b2.jpg",
+      "uuidFilename": "347fa3f8-23b6-4ec8-9c10-ef3715e87dea.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202514B2",
+      "dimensions": "1620x1080",
+      "fileSize": "77.3 KB",
+      "compressionRatio": "97.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-150_b2.jpg",
+      "uuidFilename": "edc0677d-e4f2-4947-9ac5-972bee8070b1.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025150B2",
+      "dimensions": "1620x1080",
+      "fileSize": "87.9 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-151_b2.jpg",
+      "uuidFilename": "09f6d818-21a3-4f1d-8f61-646fd94a894b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025151B2",
+      "dimensions": "1620x1080",
+      "fileSize": "115.8 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-152_b2.jpg",
+      "uuidFilename": "385c3712-4e07-4c27-8d46-75e9daeca271.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025152B2",
+      "dimensions": "1620x1080",
+      "fileSize": "186 KB",
+      "compressionRatio": "95.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-153_b2.jpg",
+      "uuidFilename": "24124ac5-ce33-440a-b70f-2cf7c827ffe6.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025153B2",
+      "dimensions": "1620x1080",
+      "fileSize": "81.3 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-154_b2.jpg",
+      "uuidFilename": "d0d4f03c-e1d8-43d2-b062-b603a006b8d2.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025154B2",
+      "dimensions": "1620x1080",
+      "fileSize": "88.2 KB",
+      "compressionRatio": "98.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-155_b2.jpg",
+      "uuidFilename": "481ed999-196b-4fb8-b666-2108f1460b9b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025155B2",
+      "dimensions": "1620x1080",
+      "fileSize": "99.9 KB",
+      "compressionRatio": "97.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-156_b2.jpg",
+      "uuidFilename": "a6bd6e52-ccc8-44b3-96e9-4bb0e478eb1b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025156B2",
+      "dimensions": "1620x1080",
+      "fileSize": "91.6 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-157_b2.jpg",
+      "uuidFilename": "8e3c614b-685c-4dad-9cad-4e61af76de99.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025157B2",
+      "dimensions": "1620x1080",
+      "fileSize": "74.1 KB",
+      "compressionRatio": "97.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-158_b2.jpg",
+      "uuidFilename": "1684239f-81e5-4a91-902c-1149fedca3fd.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025158B2",
+      "dimensions": "1620x1080",
+      "fileSize": "92.8 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-159_b2.jpg",
+      "uuidFilename": "584de476-0816-4425-ad96-3808f519aef7.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025159B2",
+      "dimensions": "1620x1080",
+      "fileSize": "65.6 KB",
+      "compressionRatio": "98.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-15_b2.jpg",
+      "uuidFilename": "2fe1e2e2-5a11-41ab-a141-8d8504bf93d3.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202515B2",
+      "dimensions": "1620x1080",
+      "fileSize": "72.6 KB",
+      "compressionRatio": "98.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-160_b2.jpg",
+      "uuidFilename": "f444c94b-ba40-45d5-afe0-1522494a6361.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025160B2",
+      "dimensions": "1620x1080",
+      "fileSize": "81.4 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-161_b2.jpg",
+      "uuidFilename": "def0ae84-4404-4ca8-9541-a75b30306eed.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025161B2",
+      "dimensions": "1620x1080",
+      "fileSize": "104 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-162_b2.jpg",
+      "uuidFilename": "9d86dacd-319a-476e-85f3-b87450b30650.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025162B2",
+      "dimensions": "1620x1080",
+      "fileSize": "132 KB",
+      "compressionRatio": "96.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-163_b2.jpg",
+      "uuidFilename": "7dfdf3b7-a04e-449b-b1d6-e8d873b1249c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025163B2",
+      "dimensions": "1620x1080",
+      "fileSize": "119.9 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-164_b2.jpg",
+      "uuidFilename": "8e23cfad-3164-4db4-a1c6-750530f98c94.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025164B2",
+      "dimensions": "1620x1080",
+      "fileSize": "101.6 KB",
+      "compressionRatio": "97.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-165_b2.jpg",
+      "uuidFilename": "4909e5be-ec2a-4767-b697-15d9e07de8a8.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025165B2",
+      "dimensions": "1620x1080",
+      "fileSize": "128.9 KB",
+      "compressionRatio": "96.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-166_b2.jpg",
+      "uuidFilename": "123ae782-3877-4b6b-9827-736b24934fe9.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025166B2",
+      "dimensions": "1620x1080",
+      "fileSize": "128.9 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-167_b2.jpg",
+      "uuidFilename": "33fbcb29-d832-4ddc-90e3-8fa1367445c0.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025167B2",
+      "dimensions": "1620x1080",
+      "fileSize": "67.2 KB",
+      "compressionRatio": "98.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-168_b2.jpg",
+      "uuidFilename": "2d41c5c0-7048-4761-bbc7-41eec1a422c8.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025168B2",
+      "dimensions": "1620x1080",
+      "fileSize": "64.3 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-16_b2.jpg",
+      "uuidFilename": "bbd47c7a-a2b8-4e60-be4f-0bfce4dd5de4.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202516B2",
+      "dimensions": "1620x1080",
+      "fileSize": "73.9 KB",
+      "compressionRatio": "98.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-171_b2.jpg",
+      "uuidFilename": "04f50354-18b1-46ca-afd5-4db918cc47a3.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025171B2",
+      "dimensions": "1620x1080",
+      "fileSize": "161.9 KB",
+      "compressionRatio": "96%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-172_b2.jpg",
+      "uuidFilename": "ec675e11-ecbd-4ab6-83bf-ebac1fcd8373.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025172B2",
+      "dimensions": "1620x1080",
+      "fileSize": "125.8 KB",
+      "compressionRatio": "97.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-173_b2.jpg",
+      "uuidFilename": "0c8048c9-df92-41c8-9a2f-023b47cb9846.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025173B2",
+      "dimensions": "1620x1080",
+      "fileSize": "107.3 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-174_b2.jpg",
+      "uuidFilename": "c5c4ad3c-c977-48fb-99da-3e15abc67917.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025174B2",
+      "dimensions": "1620x1080",
+      "fileSize": "139.5 KB",
+      "compressionRatio": "96.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-175_b2.jpg",
+      "uuidFilename": "5a5a68ff-e95c-48a3-b584-237274034770.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025175B2",
+      "dimensions": "1620x1080",
+      "fileSize": "124.2 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-176_b2.jpg",
+      "uuidFilename": "3ff64769-16cf-4285-82fd-6595eaaa93a6.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025176B2",
+      "dimensions": "1620x1080",
+      "fileSize": "64.1 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-177_b2.jpg",
+      "uuidFilename": "64fcd2ed-0126-482a-9943-125b07a0be23.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025177B2",
+      "dimensions": "1620x1080",
+      "fileSize": "106.7 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-178_b2.jpg",
+      "uuidFilename": "ff54396c-564d-4bce-a01c-6c01b0c5e47d.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025178B2",
+      "dimensions": "1620x1080",
+      "fileSize": "56 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-179_b2.jpg",
+      "uuidFilename": "4661ac7b-0960-4b86-8f76-1dad6f5d159e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025179B2",
+      "dimensions": "1620x1080",
+      "fileSize": "152.4 KB",
+      "compressionRatio": "96.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-17_b2.jpg",
+      "uuidFilename": "2f27acfd-d09a-4d0a-a56c-6563c451fe6b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202517B2",
+      "dimensions": "1620x1080",
+      "fileSize": "62.6 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-180_b2.jpg",
+      "uuidFilename": "ab92f825-0aaa-4848-a312-fb08341e80e8.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025180B2",
+      "dimensions": "1620x1080",
+      "fileSize": "162.4 KB",
+      "compressionRatio": "96.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-181_b2.jpg",
+      "uuidFilename": "f15e74ae-d9aa-4341-a1ff-b61b15fce4fd.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025181B2",
+      "dimensions": "1620x1080",
+      "fileSize": "134.7 KB",
+      "compressionRatio": "96.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-182_b2.jpg",
+      "uuidFilename": "5bf2f285-e733-4ece-b028-ae0f1f85a0ca.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025182B2",
+      "dimensions": "1620x1080",
+      "fileSize": "81.8 KB",
+      "compressionRatio": "97.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-183_b2.jpg",
+      "uuidFilename": "b38cdf02-6aee-4853-9954-9bcb22517993.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025183B2",
+      "dimensions": "1620x1080",
+      "fileSize": "92.6 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-184_b2.jpg",
+      "uuidFilename": "955456cc-33ca-4e25-bcba-895173af9406.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025184B2",
+      "dimensions": "1620x1080",
+      "fileSize": "117.9 KB",
+      "compressionRatio": "97.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-185_b2.jpg",
+      "uuidFilename": "83c2133f-2451-488c-976c-e5c203263133.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025185B2",
+      "dimensions": "1620x1080",
+      "fileSize": "106.9 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-186_b2.jpg",
+      "uuidFilename": "a33f9cd5-d1c8-4a81-b8ab-450b22edf8de.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025186B2",
+      "dimensions": "1620x1080",
+      "fileSize": "59.7 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-187_b2.jpg",
+      "uuidFilename": "d4db2525-8c47-4603-a576-8b206fc2453c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025187B2",
+      "dimensions": "1620x1080",
+      "fileSize": "142 KB",
+      "compressionRatio": "97.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-188_b2.jpg",
+      "uuidFilename": "348676ea-cc78-4bb8-be4a-c8f8a6ce87cc.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025188B2",
+      "dimensions": "1620x1080",
+      "fileSize": "133.5 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-189_b2.jpg",
+      "uuidFilename": "fb132c2b-f851-4f79-a6f8-b081db7640d7.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025189B2",
+      "dimensions": "1620x1080",
+      "fileSize": "65.1 KB",
+      "compressionRatio": "98.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-18_b2.jpg",
+      "uuidFilename": "8fbdab24-9ec3-4b11-8281-55ef55fce8c7.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202518B2",
+      "dimensions": "1620x1080",
+      "fileSize": "126.5 KB",
+      "compressionRatio": "97.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-190_b2.jpg",
+      "uuidFilename": "f8781eda-4685-4d03-bf13-eb81dd21265e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025190B2",
+      "dimensions": "1620x1080",
+      "fileSize": "156.2 KB",
+      "compressionRatio": "96.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-191_b2.jpg",
+      "uuidFilename": "b531ba93-aa1a-42bb-84a5-636fb903a50c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025191B2",
+      "dimensions": "1620x1080",
+      "fileSize": "61.2 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-192_b2.jpg",
+      "uuidFilename": "206719ff-09fa-4a51-b203-b5110d851759.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025192B2",
+      "dimensions": "1620x1080",
+      "fileSize": "78.4 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-193_b2.jpg",
+      "uuidFilename": "bd739ea5-eb52-4031-a248-72d75b341bd4.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025193B2",
+      "dimensions": "1620x1080",
+      "fileSize": "51.8 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-194_b2.jpg",
+      "uuidFilename": "403be376-c992-4bbb-b453-a698503090a3.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025194B2",
+      "dimensions": "1620x1080",
+      "fileSize": "129.4 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-195_b2.jpg",
+      "uuidFilename": "dff26884-4dd9-4b3e-9178-7c7e97528750.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025195B2",
+      "dimensions": "1620x1080",
+      "fileSize": "142.6 KB",
+      "compressionRatio": "96.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-196_b2.jpg",
+      "uuidFilename": "68fbc46a-db2a-4ee9-bd55-bb670d7196a1.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025196B2",
+      "dimensions": "1620x1080",
+      "fileSize": "143.7 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-197_b2.jpg",
+      "uuidFilename": "b0aed6eb-0cb9-4606-ba68-ef09aee798c2.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025197B2",
+      "dimensions": "1620x1080",
+      "fileSize": "141.3 KB",
+      "compressionRatio": "96.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-198_b2.jpg",
+      "uuidFilename": "74962c6a-9c1a-4970-9d90-a53fc92a4b78.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025198B2",
+      "dimensions": "1620x1080",
+      "fileSize": "86.3 KB",
+      "compressionRatio": "97.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-199_b2.jpg",
+      "uuidFilename": "209c6d16-3fa7-47cf-876b-ec617bc17499.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025199B2",
+      "dimensions": "1620x1080",
+      "fileSize": "107.9 KB",
+      "compressionRatio": "97.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-19_b2.jpg",
+      "uuidFilename": "ee185bf1-59c4-43e3-9f43-4b596554c1a2.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202519B2",
+      "dimensions": "1620x1080",
+      "fileSize": "92 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-1_b2.jpg",
+      "uuidFilename": "db9d4db1-4dec-44e3-a987-8b8c020d971e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI20251B2",
+      "dimensions": "720x1080",
+      "fileSize": "44.2 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-200_b2.jpg",
+      "uuidFilename": "4537f928-7114-48ee-bf89-bdd1aa87a1fa.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025200B2",
+      "dimensions": "1620x1080",
+      "fileSize": "108.6 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-201_b2.jpg",
+      "uuidFilename": "46f5a2d5-8cd3-40fa-ade8-ab964fa75665.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025201B2",
+      "dimensions": "1620x1080",
+      "fileSize": "85.2 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-202_b2.jpg",
+      "uuidFilename": "61c58b83-087d-4a74-b861-ecbba7b3e715.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025202B2",
+      "dimensions": "1620x1080",
+      "fileSize": "95.2 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-203_b2.jpg",
+      "uuidFilename": "180e46c6-8c2b-4a9c-9ed0-892036654b78.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025203B2",
+      "dimensions": "1620x1080",
+      "fileSize": "105.2 KB",
+      "compressionRatio": "97.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-204_b2.jpg",
+      "uuidFilename": "693f7f03-3cc6-45e8-9f32-bc3f5017cc6e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025204B2",
+      "dimensions": "1620x1080",
+      "fileSize": "78.4 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-205_b2.jpg",
+      "uuidFilename": "2113ad7d-5ac6-4e6a-9b07-0f888d18cdba.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025205B2",
+      "dimensions": "1620x1080",
+      "fileSize": "97.6 KB",
+      "compressionRatio": "97.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-206_b2.jpg",
+      "uuidFilename": "33b59bb3-b2c4-4a95-957d-be43663ff629.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025206B2",
+      "dimensions": "1620x1080",
+      "fileSize": "95.8 KB",
+      "compressionRatio": "97.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-207_b2.jpg",
+      "uuidFilename": "35ca5f54-5fd4-46fa-9ab1-0563f40b1a78.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025207B2",
+      "dimensions": "1620x1080",
+      "fileSize": "95.9 KB",
+      "compressionRatio": "97.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-208_b2.jpg",
+      "uuidFilename": "5613f262-1040-422a-b8c1-387c815d286b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025208B2",
+      "dimensions": "1620x1080",
+      "fileSize": "131.5 KB",
+      "compressionRatio": "96.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-209_b2.jpg",
+      "uuidFilename": "03e3013a-30c1-4c2d-9921-d96f36ec2bdf.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025209B2",
+      "dimensions": "1620x1080",
+      "fileSize": "91.6 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-20_b2.jpg",
+      "uuidFilename": "fa4c57b3-66d7-4b4e-966e-56ba49621c99.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202520B2",
+      "dimensions": "1620x1080",
+      "fileSize": "154.7 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-210_b2.jpg",
+      "uuidFilename": "430c6081-d35a-4470-8058-ee1476c72462.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025210B2",
+      "dimensions": "1620x1080",
+      "fileSize": "80.4 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-211_b2.jpg",
+      "uuidFilename": "fec82fb8-7600-4e9f-a3a0-697c4190d841.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025211B2",
+      "dimensions": "1620x1080",
+      "fileSize": "70.2 KB",
+      "compressionRatio": "98.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-212_b2.jpg",
+      "uuidFilename": "064cb360-1d0d-43b6-9de0-5055782a2979.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025212B2",
+      "dimensions": "1620x1080",
+      "fileSize": "103.8 KB",
+      "compressionRatio": "97.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-213_b2.jpg",
+      "uuidFilename": "c4a16bfb-11f8-4015-82ac-a3f233e26942.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI2025213B2",
+      "dimensions": "1620x1080",
+      "fileSize": "104.1 KB",
+      "compressionRatio": "97.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-21_b2.jpg",
+      "uuidFilename": "d7cee2f0-da87-40a6-8353-634d1434b9d8.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202521B2",
+      "dimensions": "1620x1080",
+      "fileSize": "91.8 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-22_b2.jpg",
+      "uuidFilename": "2fea5ee8-0b4f-444b-ba97-9de381baf60b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202522B2",
+      "dimensions": "1620x1080",
+      "fileSize": "99.2 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-23_b2.jpg",
+      "uuidFilename": "2221b78a-fc55-4528-8c48-5a3dd51061d9.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202523B2",
+      "dimensions": "1620x1080",
+      "fileSize": "51 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-24_b2.jpg",
+      "uuidFilename": "9c752641-457f-40e9-b6f6-7b7f46d24b9e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202524B2",
+      "dimensions": "1620x1080",
+      "fileSize": "36.5 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-25_b2.jpg",
+      "uuidFilename": "f6ba303f-adba-42e6-8d12-1339d91c8bc9.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202525B2",
+      "dimensions": "1620x1080",
+      "fileSize": "81.9 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-26_b2.jpg",
+      "uuidFilename": "0beb46e2-84c4-473c-80fe-a8be162d81e2.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202526B2",
+      "dimensions": "1620x1080",
+      "fileSize": "73.5 KB",
+      "compressionRatio": "98.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-27_b2.jpg",
+      "uuidFilename": "bbff3a93-5d0f-4367-8f28-d0711116cd74.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202527B2",
+      "dimensions": "1620x1080",
+      "fileSize": "46.5 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-28_b2.jpg",
+      "uuidFilename": "a5f5009d-e963-4c5a-9eae-e0a9dac05212.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202528B2",
+      "dimensions": "1620x1080",
+      "fileSize": "94.3 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-29_b2.jpg",
+      "uuidFilename": "56b0a5f7-1cfa-4894-8765-fe8ae283c48b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202529B2",
+      "dimensions": "1620x1080",
+      "fileSize": "126 KB",
+      "compressionRatio": "96.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-2_b2.jpg",
+      "uuidFilename": "085124bf-a42e-45ef-8397-4cba6032d0d3.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI20252B2",
+      "dimensions": "1620x1080",
+      "fileSize": "128.5 KB",
+      "compressionRatio": "96.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-30_b2.jpg",
+      "uuidFilename": "d011a463-0a26-45a7-8a8d-5a3b784935c7.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202530B2",
+      "dimensions": "1620x1080",
+      "fileSize": "114.7 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-31_b2.jpg",
+      "uuidFilename": "155648dd-f2d7-4423-8c07-d78fd3d36caa.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202531B2",
+      "dimensions": "1620x1080",
+      "fileSize": "46.2 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-32_b2.jpg",
+      "uuidFilename": "2f4a28e2-aec4-4c02-8cb0-9ca07b079ec4.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202532B2",
+      "dimensions": "1620x1080",
+      "fileSize": "96.2 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-33_b2.jpg",
+      "uuidFilename": "e3311d92-519f-4aa5-a609-cc1a1e9fa096.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202533B2",
+      "dimensions": "1620x1080",
+      "fileSize": "74.9 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-34_b2.jpg",
+      "uuidFilename": "e0820bea-c73b-418f-8dc8-dfd62d09e1e6.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202534B2",
+      "dimensions": "1620x1080",
+      "fileSize": "145.4 KB",
+      "compressionRatio": "96.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-35_b2.jpg",
+      "uuidFilename": "dfa7698b-e787-4ff2-a8c0-5f689ff64a59.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202535B2",
+      "dimensions": "1620x1080",
+      "fileSize": "103.9 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-36_b2.jpg",
+      "uuidFilename": "2325f25a-6607-4197-98c3-a93689a5e1c8.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202536B2",
+      "dimensions": "1620x1080",
+      "fileSize": "105.2 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-37_b2.jpg",
+      "uuidFilename": "6c6550ab-d444-41a2-bb41-e9184ca66994.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202537B2",
+      "dimensions": "1620x1080",
+      "fileSize": "60.9 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-38_b2.jpg",
+      "uuidFilename": "23a09a19-84b5-46a0-8cea-e9384062e3ce.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202538B2",
+      "dimensions": "1620x1080",
+      "fileSize": "74.5 KB",
+      "compressionRatio": "97.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-39_b2.jpg",
+      "uuidFilename": "b357a3d5-e0b0-4a18-8346-7e915ee47952.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202539B2",
+      "dimensions": "1620x1080",
+      "fileSize": "61.4 KB",
+      "compressionRatio": "98.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-3_b2.jpg",
+      "uuidFilename": "e1851954-067a-410e-a289-1a6f76dddeb1.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI20253B2",
+      "dimensions": "1620x1080",
+      "fileSize": "120.7 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-40_b2.jpg",
+      "uuidFilename": "763cd386-7118-45f5-ad0d-a90eb9246c60.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202540B2",
+      "dimensions": "1620x1080",
+      "fileSize": "62.9 KB",
+      "compressionRatio": "98.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-41_b2.jpg",
+      "uuidFilename": "1502c0c9-a482-4523-a4f6-cd4e9a72c798.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202541B2",
+      "dimensions": "1620x1080",
+      "fileSize": "60.7 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-42_b2.jpg",
+      "uuidFilename": "f0536ed3-3fe3-4881-86f4-c45dd67a6236.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202542B2",
+      "dimensions": "1620x1080",
+      "fileSize": "64.5 KB",
+      "compressionRatio": "98.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-43_b2.jpg",
+      "uuidFilename": "9bb1ef5a-e1de-44ce-bfdf-2226d7621a4d.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202543B2",
+      "dimensions": "1620x1080",
+      "fileSize": "84.5 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-44_b2.jpg",
+      "uuidFilename": "bce62397-357b-46e0-a40f-f3a1e9559973.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202544B2",
+      "dimensions": "1620x1080",
+      "fileSize": "201.2 KB",
+      "compressionRatio": "95.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-45_b2.jpg",
+      "uuidFilename": "f73d2454-a0ea-456b-8279-9a97b461d1be.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202545B2",
+      "dimensions": "1620x1080",
+      "fileSize": "74.6 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-49_b2.jpg",
+      "uuidFilename": "055877e7-74b3-4b0c-876c-8890bf151f1c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202549B2",
+      "dimensions": "1620x1080",
+      "fileSize": "145.1 KB",
+      "compressionRatio": "96.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-4_b2.jpg",
+      "uuidFilename": "a6f4787a-40eb-4dbf-9192-0da49e603a0c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI20254B2",
+      "dimensions": "1620x1080",
+      "fileSize": "114.7 KB",
+      "compressionRatio": "96.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-50_b2.jpg",
+      "uuidFilename": "6ac34403-ab3f-43dc-828d-4bf1812e318c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202550B2",
+      "dimensions": "1620x1080",
+      "fileSize": "82.2 KB",
+      "compressionRatio": "98.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-53_b2.jpg",
+      "uuidFilename": "ab227e55-a094-4d40-b521-314e95416b81.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202553B2",
+      "dimensions": "1620x1080",
+      "fileSize": "84.5 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-54_b2.jpg",
+      "uuidFilename": "ec67fc99-30e5-42a1-a2ce-578c3003f27f.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202554B2",
+      "dimensions": "1620x1080",
+      "fileSize": "57.7 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-55_b2.jpg",
+      "uuidFilename": "26e5d079-39a9-48ff-b0cc-35851855afb3.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202555B2",
+      "dimensions": "1620x1080",
+      "fileSize": "76.3 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-56_b2.jpg",
+      "uuidFilename": "988be6c9-1b8b-421f-8562-d510f761a733.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202556B2",
+      "dimensions": "1620x1080",
+      "fileSize": "160.9 KB",
+      "compressionRatio": "95.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-57_b2.jpg",
+      "uuidFilename": "624a8877-0875-452b-9647-fdaf35bbe6ef.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202557B2",
+      "dimensions": "1620x1080",
+      "fileSize": "155.3 KB",
+      "compressionRatio": "96.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-58_b2.jpg",
+      "uuidFilename": "d34f44a8-27ed-4328-9ef9-77570745f0d1.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202558B2",
+      "dimensions": "1620x1080",
+      "fileSize": "95.6 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-59_b2.jpg",
+      "uuidFilename": "ad6913ec-5c93-4d0b-9099-e1499ce7efeb.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202559B2",
+      "dimensions": "1620x1080",
+      "fileSize": "63.6 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-5_b2.jpg",
+      "uuidFilename": "bb10f105-1957-438d-9c69-cb963aeed91c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI20255B2",
+      "dimensions": "1620x1080",
+      "fileSize": "81.6 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-60_b2.jpg",
+      "uuidFilename": "8dc46bce-4228-4f75-9e97-584d8a2afb76.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202560B2",
+      "dimensions": "1620x1080",
+      "fileSize": "67.6 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-61_b2.jpg",
+      "uuidFilename": "31e83bd4-bb96-45f1-a770-dfbafb4952a6.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202561B2",
+      "dimensions": "1620x1080",
+      "fileSize": "74.5 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-62_b2.jpg",
+      "uuidFilename": "8aa51da5-d612-4d19-b6a4-4c12a7ca148a.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202562B2",
+      "dimensions": "1620x1080",
+      "fileSize": "81.3 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-63_b2.jpg",
+      "uuidFilename": "91af1d97-84fe-4f14-86f7-515f687b1005.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202563B2",
+      "dimensions": "1620x1080",
+      "fileSize": "128.1 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-64_b2.jpg",
+      "uuidFilename": "1be42d6d-8d59-4188-852b-abc395c211b4.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202564B2",
+      "dimensions": "1620x1080",
+      "fileSize": "92.6 KB",
+      "compressionRatio": "97.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-65_b2.jpg",
+      "uuidFilename": "3fec118a-90dd-4482-b074-fb55c845e5c5.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202565B2",
+      "dimensions": "1620x1080",
+      "fileSize": "106.2 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-66_b2.jpg",
+      "uuidFilename": "192410bc-c1eb-4909-b8ad-f7559733866c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202566B2",
+      "dimensions": "1620x1080",
+      "fileSize": "110.1 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-67_b2.jpg",
+      "uuidFilename": "0fad239a-314f-4780-ac1d-323e3e64588e.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202567B2",
+      "dimensions": "1620x1080",
+      "fileSize": "87.5 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-68_b2.jpg",
+      "uuidFilename": "462df361-be54-4e76-beb5-0e10b8ac3b73.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202568B2",
+      "dimensions": "1620x1080",
+      "fileSize": "107.5 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-69_b2.jpg",
+      "uuidFilename": "ee25dc28-563a-47fa-8699-50bae03f8ae2.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202569B2",
+      "dimensions": "1620x1080",
+      "fileSize": "88.7 KB",
+      "compressionRatio": "98.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-6_b2.jpg",
+      "uuidFilename": "53c895ca-9da0-45c4-b910-708de1f4e0a5.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI20256B2",
+      "dimensions": "1620x1080",
+      "fileSize": "84.9 KB",
+      "compressionRatio": "97.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-70_b2.jpg",
+      "uuidFilename": "701943b7-5c70-4fee-aa54-cbf3629614e9.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202570B2",
+      "dimensions": "1620x1080",
+      "fileSize": "134.7 KB",
+      "compressionRatio": "96.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-71_b2.jpg",
+      "uuidFilename": "7e1a30e0-6710-43c6-b256-69b38954773d.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202571B2",
+      "dimensions": "1620x1080",
+      "fileSize": "86.2 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-72_b2.jpg",
+      "uuidFilename": "2597486e-0278-41b9-909d-3db4552b2d3c.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202572B2",
+      "dimensions": "1620x1080",
+      "fileSize": "124.3 KB",
+      "compressionRatio": "97.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-73_b2.jpg",
+      "uuidFilename": "1686aa3a-a39a-4f88-ab40-db0b32c5beb0.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202573B2",
+      "dimensions": "1620x1080",
+      "fileSize": "49.3 KB",
+      "compressionRatio": "98.6%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-74_b2.jpg",
+      "uuidFilename": "6dbbb3f3-9b21-4c00-8e83-272502b71679.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202574B2",
+      "dimensions": "1620x1080",
+      "fileSize": "116.2 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-75_b2.jpg",
+      "uuidFilename": "7cb8b4ef-4159-4126-9edd-c60a3d9b39e1.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202575B2",
+      "dimensions": "1620x1080",
+      "fileSize": "89.4 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-76_b2.jpg",
+      "uuidFilename": "c43c5781-ef3a-4e0b-9160-c5291c9a423a.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202576B2",
+      "dimensions": "1620x1080",
+      "fileSize": "107.9 KB",
+      "compressionRatio": "97.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-77_b2.jpg",
+      "uuidFilename": "edd8d86f-76b9-4f8a-b05f-f8a59413cac7.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202577B2",
+      "dimensions": "1620x1080",
+      "fileSize": "77.4 KB",
+      "compressionRatio": "98.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-78_b2.jpg",
+      "uuidFilename": "4e215467-e25a-46ef-92cb-2f841b3758b0.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202578B2",
+      "dimensions": "1620x1080",
+      "fileSize": "55.6 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-79_b2.jpg",
+      "uuidFilename": "dbf1f95e-848a-4e5a-8a53-68a1a497cf9d.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202579B2",
+      "dimensions": "1620x1080",
+      "fileSize": "72.1 KB",
+      "compressionRatio": "98%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-7_b2.jpg",
+      "uuidFilename": "284be5e6-d458-476d-8d20-dcb80f653257.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI20257B2",
+      "dimensions": "1620x1080",
+      "fileSize": "91.7 KB",
+      "compressionRatio": "97.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-80_b2.jpg",
+      "uuidFilename": "f6dfe931-206d-4ef2-9d7e-df772cf55ec4.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202580B2",
+      "dimensions": "1620x1080",
+      "fileSize": "131.3 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-81_b2.jpg",
+      "uuidFilename": "e2111cb9-adf7-4f6d-9c00-c04b201470c8.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202581B2",
+      "dimensions": "1620x1080",
+      "fileSize": "71.1 KB",
+      "compressionRatio": "98.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-82_b2.jpg",
+      "uuidFilename": "82f64592-873b-42b2-92b5-8c58f388aeef.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202582B2",
+      "dimensions": "1620x1080",
+      "fileSize": "123.9 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-83_b2.jpg",
+      "uuidFilename": "b15fc72e-2a25-4976-88ac-0bf3ab85d94d.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202583B2",
+      "dimensions": "1620x1080",
+      "fileSize": "130.6 KB",
+      "compressionRatio": "96.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-84_b2.jpg",
+      "uuidFilename": "477f381c-bcea-4709-9b31-37b17538d442.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202584B2",
+      "dimensions": "1620x1080",
+      "fileSize": "134.8 KB",
+      "compressionRatio": "96.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-85_b2.jpg",
+      "uuidFilename": "af1d27cc-5df4-4d63-bcfd-5045a6d5b10d.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202585B2",
+      "dimensions": "1620x1080",
+      "fileSize": "153.5 KB",
+      "compressionRatio": "96.3%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-86_b2.jpg",
+      "uuidFilename": "03fee7ad-2e4c-4867-862b-60e0973e426d.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202586B2",
+      "dimensions": "1620x1080",
+      "fileSize": "115.7 KB",
+      "compressionRatio": "97.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-87_b2.jpg",
+      "uuidFilename": "266f5594-2f20-4a9d-993f-82b309db958b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202587B2",
+      "dimensions": "1620x1080",
+      "fileSize": "90 KB",
+      "compressionRatio": "97.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-88_b2.jpg",
+      "uuidFilename": "81810543-731e-4a6b-82f9-bf1f4b188f6a.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202588B2",
+      "dimensions": "1620x1080",
+      "fileSize": "128.4 KB",
+      "compressionRatio": "96.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-89_b2.jpg",
+      "uuidFilename": "174155fc-2037-4319-8c35-200c4c64a409.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202589B2",
+      "dimensions": "1620x1080",
+      "fileSize": "158.5 KB",
+      "compressionRatio": "96%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-8_b2.jpg",
+      "uuidFilename": "bf505242-dc96-481d-b897-af760cbfd18b.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI20258B2",
+      "dimensions": "1620x1080",
+      "fileSize": "144.1 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-90_b2.jpg",
+      "uuidFilename": "650b3325-c9d9-43bb-9196-d7d271cee1aa.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202590B2",
+      "dimensions": "1620x1080",
+      "fileSize": "82 KB",
+      "compressionRatio": "97.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-91_b2.jpg",
+      "uuidFilename": "e980dac8-c6a9-412e-aeb5-18fd853640cc.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202591B2",
+      "dimensions": "1620x1080",
+      "fileSize": "144.3 KB",
+      "compressionRatio": "96.7%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-92_b2.jpg",
+      "uuidFilename": "3a439462-ffad-4668-9f8d-d7c8e5013206.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202592B2",
+      "dimensions": "1620x1080",
+      "fileSize": "164.3 KB",
+      "compressionRatio": "96.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-93_b2.jpg",
+      "uuidFilename": "d9464cc3-e43e-4111-954d-095fb35f74c4.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202593B2",
+      "dimensions": "1620x1080",
+      "fileSize": "92.1 KB",
+      "compressionRatio": "97.5%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-94_b2.jpg",
+      "uuidFilename": "7a4fe581-9f3b-47fe-bd80-da5d36124b85.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202594B2",
+      "dimensions": "1620x1080",
+      "fileSize": "150.5 KB",
+      "compressionRatio": "96.4%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-95_b2.jpg",
+      "uuidFilename": "cc25f36b-a8a5-415e-9c6b-48b41556f83f.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202595B2",
+      "dimensions": "1620x1080",
+      "fileSize": "168.9 KB",
+      "compressionRatio": "95.9%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-96_b2.jpg",
+      "uuidFilename": "a05c1f52-a249-424c-bb40-aa1dc4a97fc8.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202596B2",
+      "dimensions": "1620x1080",
+      "fileSize": "161.2 KB",
+      "compressionRatio": "96.1%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-97_b2.jpg",
+      "uuidFilename": "1ab8e537-7a34-47f2-b1f4-69b24d43d3ab.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202597B2",
+      "dimensions": "1620x1080",
+      "fileSize": "182.7 KB",
+      "compressionRatio": "95.8%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-98_b2.jpg",
+      "uuidFilename": "90fa1e1a-c5d8-4a7e-a0a1-ddf4a972fed6.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202598B2",
+      "dimensions": "1620x1080",
+      "fileSize": "133.5 KB",
+      "compressionRatio": "97.2%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-99_b2.jpg",
+      "uuidFilename": "7e25fcf4-4899-46da-a685-63cc24d40fb0.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI202599B2",
+      "dimensions": "1620x1080",
+      "fileSize": "168.9 KB",
+      "compressionRatio": "96%"
+    },
+    {
+      "originalName": "2025-03-21_HPI Engine Hack HPI 2025-9_b2.jpg",
+      "uuidFilename": "29e0c8e8-b2ed-48dc-b4be-9642569326f4.webp",
+      "jsVariableName": "img20250321HPIEngineHackHPI20259B2",
+      "dimensions": "1620x1080",
+      "fileSize": "95.1 KB",
+      "compressionRatio": "97.6%"
+    },
+    {
+      "originalName": "20250322_174655.jpg",
+      "uuidFilename": "48cf14f3-8e68-4b5a-986f-dbd3f6d8e8d3.webp",
+      "jsVariableName": "img20250322174655",
+      "dimensions": "608x1080",
+      "fileSize": "36.8 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_6043.JPG",
+      "uuidFilename": "c1d3fdbb-9441-4074-96aa-b6e026a3ee32.webp",
+      "jsVariableName": "iMG6043",
+      "dimensions": "1620x1080",
+      "fileSize": "89.8 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "IMG_6046.JPG",
+      "uuidFilename": "0d1a1023-4f45-4d9e-ae81-ded152768702.webp",
+      "jsVariableName": "iMG6046",
+      "dimensions": "1620x1080",
+      "fileSize": "72.4 KB",
+      "compressionRatio": "99.1%"
+    },
+    {
+      "originalName": "IMG_6140.JPG",
+      "uuidFilename": "319b9dd9-77c5-4cad-8111-8ad970f7d07f.webp",
+      "jsVariableName": "iMG6140",
+      "dimensions": "1620x1080",
+      "fileSize": "100.9 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "IMG_6224.JPG",
+      "uuidFilename": "12abde50-12f7-4319-ab0a-8d82bb09fc91.webp",
+      "jsVariableName": "iMG6224",
+      "dimensions": "1620x1080",
+      "fileSize": "152.7 KB",
+      "compressionRatio": "98.1%"
+    },
+    {
+      "originalName": "IMG_6244.JPG",
+      "uuidFilename": "9f9e04f1-9e3a-409a-a017-db7b53848ab7.webp",
+      "jsVariableName": "iMG6244",
+      "dimensions": "1620x1080",
+      "fileSize": "127 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "IMG_6333.JPG",
+      "uuidFilename": "21cd844c-afc5-4512-b3b0-aaacd09f3cc8.webp",
+      "jsVariableName": "iMG6333",
+      "dimensions": "1620x1080",
+      "fileSize": "62.4 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_6394.JPG",
+      "uuidFilename": "7a25a19b-ed6f-45ce-94ef-94f0da7fea64.webp",
+      "jsVariableName": "iMG6394",
+      "dimensions": "1620x1080",
+      "fileSize": "61 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "IMG_6526.JPG",
+      "uuidFilename": "ae2e5c9e-307e-4e15-aa42-98fc3dd75e42.webp",
+      "jsVariableName": "iMG6526",
+      "dimensions": "1620x1080",
+      "fileSize": "91.1 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "IMG_6531.JPG",
+      "uuidFilename": "4bfdb575-ed41-468b-b025-b6979d115800.webp",
+      "jsVariableName": "iMG6531",
+      "dimensions": "1620x1080",
+      "fileSize": "92.6 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_6533.JPG",
+      "uuidFilename": "32b63a03-aa24-4487-bf42-eaa52e55bba7.webp",
+      "jsVariableName": "iMG6533",
+      "dimensions": "1620x1080",
+      "fileSize": "100.6 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "IMG_6542.JPG",
+      "uuidFilename": "683455eb-13c2-463f-a295-f6836283f493.webp",
+      "jsVariableName": "iMG6542",
+      "dimensions": "1620x1080",
+      "fileSize": "96.8 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "IMG_6544.JPG",
+      "uuidFilename": "bfabe3b7-0295-49c6-a0c7-8a00b0792e06.webp",
+      "jsVariableName": "iMG6544",
+      "dimensions": "1620x1080",
+      "fileSize": "85.9 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "IMG_6560.JPG",
+      "uuidFilename": "20fcc23d-cdcc-46d3-aec3-6a9bd51d8a2b.webp",
+      "jsVariableName": "iMG6560",
+      "dimensions": "1620x1080",
+      "fileSize": "68.9 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "IMG_6568.JPG",
+      "uuidFilename": "7f04e1d6-793f-4a2d-86c3-c55220dfd2dc.webp",
+      "jsVariableName": "iMG6568",
+      "dimensions": "1620x1080",
+      "fileSize": "85.9 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_6587.JPG",
+      "uuidFilename": "3f02e8b6-94a2-4c77-9bcd-8492eafe7e52.webp",
+      "jsVariableName": "iMG6587",
+      "dimensions": "1620x1080",
+      "fileSize": "121.8 KB",
+      "compressionRatio": "98.4%"
+    },
+    {
+      "originalName": "IMG_6609.JPG",
+      "uuidFilename": "0bcd4396-f184-4c4b-9369-2fdb21fba938.webp",
+      "jsVariableName": "iMG6609",
+      "dimensions": "1620x1080",
+      "fileSize": "67 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_6618.JPG",
+      "uuidFilename": "62aa11bd-9a1e-4daa-92c1-ce6a6a126283.webp",
+      "jsVariableName": "iMG6618",
+      "dimensions": "1620x1080",
+      "fileSize": "138.7 KB",
+      "compressionRatio": "98.2%"
+    },
+    {
+      "originalName": "IMG_6635.JPG",
+      "uuidFilename": "bc3f5ecf-e8b7-47e8-a6ef-b3a919b6a55c.webp",
+      "jsVariableName": "iMG6635",
+      "dimensions": "1620x1080",
+      "fileSize": "80 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "IMG_6651.JPG",
+      "uuidFilename": "253123a5-4ae3-4ace-af29-31c8891d6a7d.webp",
+      "jsVariableName": "iMG6651",
+      "dimensions": "1620x1080",
+      "fileSize": "96.3 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "IMG_6671.JPG",
+      "uuidFilename": "9bdb086d-2203-45bc-81ff-7a3063ff74a4.webp",
+      "jsVariableName": "iMG6671",
+      "dimensions": "1620x1080",
+      "fileSize": "101.7 KB",
+      "compressionRatio": "98.5%"
+    },
+    {
+      "originalName": "IMG_6686.JPG",
+      "uuidFilename": "622a9c00-7675-412d-bd1d-adb121ef9727.webp",
+      "jsVariableName": "iMG6686",
+      "dimensions": "720x1080",
+      "fileSize": "34.2 KB",
+      "compressionRatio": "99.5%"
+    },
+    {
+      "originalName": "IMG_6695.JPG",
+      "uuidFilename": "e515000b-a16b-43d0-97f2-e73375fd24a6.webp",
+      "jsVariableName": "iMG6695",
+      "dimensions": "1620x1080",
+      "fileSize": "105 KB",
+      "compressionRatio": "98.4%"
+    },
+    {
+      "originalName": "IMG_6733.JPG",
+      "uuidFilename": "e75b96fd-af75-40f5-86dd-c633faa33885.webp",
+      "jsVariableName": "iMG6733",
+      "dimensions": "720x1080",
+      "fileSize": "41.3 KB",
+      "compressionRatio": "99.4%"
+    },
+    {
+      "originalName": "IMG_6762.JPG",
+      "uuidFilename": "597b783e-0736-402d-864e-07792fe79f74.webp",
+      "jsVariableName": "iMG6762",
+      "dimensions": "1620x1080",
+      "fileSize": "89.2 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "IMG_6792.JPG",
+      "uuidFilename": "aaa952f8-9464-4557-986b-899ea3271d7b.webp",
+      "jsVariableName": "iMG6792",
+      "dimensions": "1620x1080",
+      "fileSize": "73.3 KB",
+      "compressionRatio": "99.1%"
+    },
+    {
+      "originalName": "IMG_6813.JPG",
+      "uuidFilename": "48380b5b-3883-4363-b293-8fe5058e6c8c.webp",
+      "jsVariableName": "iMG6813",
+      "dimensions": "1620x1080",
+      "fileSize": "83.5 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_6816.JPG",
+      "uuidFilename": "f2e458fd-8396-44f2-9c09-b7dad3bdbc44.webp",
+      "jsVariableName": "iMG6816",
+      "dimensions": "1620x1080",
+      "fileSize": "69.6 KB",
+      "compressionRatio": "99.1%"
+    },
+    {
+      "originalName": "IMG_6818.JPG",
+      "uuidFilename": "a5bb0589-1fa8-44e3-965b-12522b6df8a7.webp",
+      "jsVariableName": "iMG6818",
+      "dimensions": "1620x1080",
+      "fileSize": "65.7 KB",
+      "compressionRatio": "99.1%"
+    },
+    {
+      "originalName": "IMG_6825.JPG",
+      "uuidFilename": "6548692e-570a-4de8-a34a-6caa728d9fa7.webp",
+      "jsVariableName": "iMG6825",
+      "dimensions": "720x1080",
+      "fileSize": "42.1 KB",
+      "compressionRatio": "99.5%"
+    },
+    {
+      "originalName": "IMG_6855.JPG",
+      "uuidFilename": "eb5e0205-745a-4128-8292-240364a9d0bc.webp",
+      "jsVariableName": "iMG6855",
+      "dimensions": "1620x1080",
+      "fileSize": "139.8 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "IMG_6924.JPG",
+      "uuidFilename": "0f664e03-30a4-4be4-b8dd-054d3035c727.webp",
+      "jsVariableName": "iMG6924",
+      "dimensions": "1620x1080",
+      "fileSize": "102 KB",
+      "compressionRatio": "98.5%"
+    },
+    {
+      "originalName": "IMG_6928.JPG",
+      "uuidFilename": "71cf05c4-3fd8-42db-b1f3-0740343a31b3.webp",
+      "jsVariableName": "iMG6928",
+      "dimensions": "1620x1080",
+      "fileSize": "99.6 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "IMG_6931.JPG",
+      "uuidFilename": "9790cace-6796-4178-96cb-e8a907b1a82e.webp",
+      "jsVariableName": "iMG6931",
+      "dimensions": "1620x1080",
+      "fileSize": "131.1 KB",
+      "compressionRatio": "98.2%"
+    },
+    {
+      "originalName": "IMG_7034.JPG",
+      "uuidFilename": "f1ccd77d-025d-4f6f-a6d6-40917a3eb0dd.webp",
+      "jsVariableName": "iMG7034",
+      "dimensions": "720x1080",
+      "fileSize": "39.8 KB",
+      "compressionRatio": "99.5%"
+    },
+    {
+      "originalName": "IMG_7087.JPG",
+      "uuidFilename": "35e95eac-4f2d-462a-aef4-20050fc22001.webp",
+      "jsVariableName": "iMG7087",
+      "dimensions": "1620x1080",
+      "fileSize": "88.6 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_7115.JPG",
+      "uuidFilename": "97f02c57-a107-4e4f-83c0-17c0d8378729.webp",
+      "jsVariableName": "iMG7115",
+      "dimensions": "1620x1080",
+      "fileSize": "99.3 KB",
+      "compressionRatio": "98.4%"
+    },
+    {
+      "originalName": "IMG_7144.JPG",
+      "uuidFilename": "42c8d1e4-7a34-4047-b7f1-bf365251798e.webp",
+      "jsVariableName": "iMG7144",
+      "dimensions": "1620x1080",
+      "fileSize": "103.3 KB",
+      "compressionRatio": "98.5%"
+    },
+    {
+      "originalName": "IMG_7159.JPG",
+      "uuidFilename": "c4d693c5-26e0-4d25-b96c-1d5d1cebcf47.webp",
+      "jsVariableName": "iMG7159",
+      "dimensions": "1620x1080",
+      "fileSize": "96.1 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "IMG_7169.JPG",
+      "uuidFilename": "00862816-85ad-42b6-af2e-a635f0a1e148.webp",
+      "jsVariableName": "iMG7169",
+      "dimensions": "1620x1080",
+      "fileSize": "74.9 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "IMG_7187.JPG",
+      "uuidFilename": "c8c8c720-d787-460c-8e7c-6395b0c841aa.webp",
+      "jsVariableName": "iMG7187",
+      "dimensions": "1620x1080",
+      "fileSize": "28.2 KB",
+      "compressionRatio": "99.5%"
+    },
+    {
+      "originalName": "IMG_7200.JPG",
+      "uuidFilename": "f8ef0657-b5c3-433e-9446-b1286e45e862.webp",
+      "jsVariableName": "iMG7200",
+      "dimensions": "1620x1080",
+      "fileSize": "68.2 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_7207.JPG",
+      "uuidFilename": "41670238-a9e1-400d-a2d9-d380274eaa33.webp",
+      "jsVariableName": "iMG7207",
+      "dimensions": "1620x1080",
+      "fileSize": "109.8 KB",
+      "compressionRatio": "98.4%"
+    },
+    {
+      "originalName": "IMG_7211.JPG",
+      "uuidFilename": "aef2eb17-b17a-4675-a355-8687f96c0fa5.webp",
+      "jsVariableName": "iMG7211",
+      "dimensions": "1620x1080",
+      "fileSize": "94.7 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "IMG_7227.JPG",
+      "uuidFilename": "bae77337-0e59-420b-956c-f2f00d4b1838.webp",
+      "jsVariableName": "iMG7227",
+      "dimensions": "1620x1080",
+      "fileSize": "52.8 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_7296.JPG",
+      "uuidFilename": "a24b8ac8-20e3-478b-9532-5f9a41d99573.webp",
+      "jsVariableName": "iMG7296",
+      "dimensions": "1620x1080",
+      "fileSize": "78.6 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_7302.JPG",
+      "uuidFilename": "e05c4278-20c0-4dc1-8fee-6574c7a9f4a5.webp",
+      "jsVariableName": "iMG7302",
+      "dimensions": "1620x1080",
+      "fileSize": "81.5 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "IMG_7333.JPG",
+      "uuidFilename": "6c60b9c2-efbe-4dbb-8bb4-b91b55670c81.webp",
+      "jsVariableName": "iMG7333",
+      "dimensions": "1620x1080",
+      "fileSize": "112.6 KB",
+      "compressionRatio": "98.2%"
+    },
+    {
+      "originalName": "IMG_7406.JPG",
+      "uuidFilename": "4a51225f-fe62-4c96-b32e-18c18302b7d1.webp",
+      "jsVariableName": "iMG7406",
+      "dimensions": "1620x1080",
+      "fileSize": "70.6 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_7418.JPG",
+      "uuidFilename": "5cbee039-c145-42ad-9cfe-b74403e33c3f.webp",
+      "jsVariableName": "iMG7418",
+      "dimensions": "1620x1080",
+      "fileSize": "84.8 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "IMG_7447.JPG",
+      "uuidFilename": "3594a903-abaa-463a-aaf3-d264ebd00ace.webp",
+      "jsVariableName": "iMG7447",
+      "dimensions": "720x1080",
+      "fileSize": "47.1 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_7463.JPG",
+      "uuidFilename": "b4e80fef-2574-432b-bbbe-75648d6e01f9.webp",
+      "jsVariableName": "iMG7463",
+      "dimensions": "1620x1080",
+      "fileSize": "235.8 KB",
+      "compressionRatio": "97.4%"
+    },
+    {
+      "originalName": "IMG_7466.JPG",
+      "uuidFilename": "95eb96d7-c465-435b-b33f-fafafe22d332.webp",
+      "jsVariableName": "iMG7466",
+      "dimensions": "1620x1080",
+      "fileSize": "273 KB",
+      "compressionRatio": "97.3%"
+    },
+    {
+      "originalName": "IMG_7468.JPG",
+      "uuidFilename": "df1f0c42-e424-454a-b23c-ce3feb8e3b75.webp",
+      "jsVariableName": "iMG7468",
+      "dimensions": "1620x1080",
+      "fileSize": "428.8 KB",
+      "compressionRatio": "97%"
+    },
+    {
+      "originalName": "IMG_7473.JPG",
+      "uuidFilename": "6d12765e-d16a-46eb-be45-1ba19607d32b.webp",
+      "jsVariableName": "iMG7473",
+      "dimensions": "720x1080",
+      "fileSize": "194.2 KB",
+      "compressionRatio": "98.3%"
+    },
+    {
+      "originalName": "IMG_7477.JPG",
+      "uuidFilename": "61f422d2-b75a-4d68-95b6-7ef6c3484b6a.webp",
+      "jsVariableName": "iMG7477",
+      "dimensions": "1620x1080",
+      "fileSize": "465 KB",
+      "compressionRatio": "96.6%"
+    },
+    {
+      "originalName": "IMG_7481.JPG",
+      "uuidFilename": "bc173961-43bb-46d0-a7f5-f2763bd5c325.webp",
+      "jsVariableName": "iMG7481",
+      "dimensions": "1620x1080",
+      "fileSize": "64.2 KB",
+      "compressionRatio": "99.1%"
+    },
+    {
+      "originalName": "IMG_7492.JPG",
+      "uuidFilename": "92dc03f4-9e7a-4ce3-9c29-7ca09f179715.webp",
+      "jsVariableName": "iMG7492",
+      "dimensions": "1620x1080",
+      "fileSize": "65.3 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "IMG_7497.JPG",
+      "uuidFilename": "acf209b9-a848-4237-9231-ea328aa72a30.webp",
+      "jsVariableName": "iMG7497",
+      "dimensions": "1620x1080",
+      "fileSize": "85.2 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "IMG_7503.JPG",
+      "uuidFilename": "907992e9-7e32-4a23-9b55-7322aed10d3d.webp",
+      "jsVariableName": "iMG7503",
+      "dimensions": "1620x1080",
+      "fileSize": "90.4 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_7507.JPG",
+      "uuidFilename": "abd9ab4f-9b7e-4228-8763-883c50e04fe1.webp",
+      "jsVariableName": "iMG7507",
+      "dimensions": "1620x1080",
+      "fileSize": "70.2 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_7544.JPG",
+      "uuidFilename": "01b7726d-9457-466e-b5ef-5c50b7dbff50.webp",
+      "jsVariableName": "iMG7544",
+      "dimensions": "1620x1080",
+      "fileSize": "53.2 KB",
+      "compressionRatio": "99.3%"
+    },
+    {
+      "originalName": "IMG_7550.JPG",
+      "uuidFilename": "21c88077-461a-4388-8d02-c00ec1da829a.webp",
+      "jsVariableName": "iMG7550",
+      "dimensions": "1620x1080",
+      "fileSize": "67.4 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_7557.JPG",
+      "uuidFilename": "0761fc7a-ef35-4797-a9ff-23bfe7638822.webp",
+      "jsVariableName": "iMG7557",
+      "dimensions": "720x1080",
+      "fileSize": "55.6 KB",
+      "compressionRatio": "99.3%"
+    },
+    {
+      "originalName": "IMG_7558.JPG",
+      "uuidFilename": "f2b578dc-fd3a-4963-8677-018bfbfab384.webp",
+      "jsVariableName": "iMG7558",
+      "dimensions": "1620x1080",
+      "fileSize": "43.9 KB",
+      "compressionRatio": "99.4%"
+    },
+    {
+      "originalName": "IMG_7562.JPG",
+      "uuidFilename": "b3b96ae8-436a-4cd0-b7dc-4b0b1d52c926.webp",
+      "jsVariableName": "iMG7562",
+      "dimensions": "1620x1080",
+      "fileSize": "68.4 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_7597.JPG",
+      "uuidFilename": "4f611962-1480-471e-a709-a171bfd92775.webp",
+      "jsVariableName": "iMG7597",
+      "dimensions": "1620x1080",
+      "fileSize": "84.5 KB",
+      "compressionRatio": "99.1%"
+    },
+    {
+      "originalName": "IMG_7598.JPG",
+      "uuidFilename": "77b0082c-0184-4700-8996-89799abc943e.webp",
+      "jsVariableName": "iMG7598",
+      "dimensions": "1620x1080",
+      "fileSize": "80.5 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "IMG_7600.JPG",
+      "uuidFilename": "9b996b87-44b7-49b2-afe1-6ea63e8bc10d.webp",
+      "jsVariableName": "iMG7600",
+      "dimensions": "1620x1080",
+      "fileSize": "55.3 KB",
+      "compressionRatio": "99.4%"
+    },
+    {
+      "originalName": "IMG_7611.JPG",
+      "uuidFilename": "fa6dc5d1-17ad-48c8-a188-8c850337a7be.webp",
+      "jsVariableName": "iMG7611",
+      "dimensions": "1620x1080",
+      "fileSize": "56.4 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_7619.JPG",
+      "uuidFilename": "d8611d26-a44d-49f1-90c5-afb04163d53d.webp",
+      "jsVariableName": "iMG7619",
+      "dimensions": "1620x1080",
+      "fileSize": "69.3 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_7620.JPG",
+      "uuidFilename": "714e50d9-4a12-41ba-ad16-ae698e71195c.webp",
+      "jsVariableName": "iMG7620",
+      "dimensions": "1620x1080",
+      "fileSize": "41 KB",
+      "compressionRatio": "99.4%"
+    },
+    {
+      "originalName": "IMG_7628.JPG",
+      "uuidFilename": "6e007a12-d19e-4b97-8260-9490edadd986.webp",
+      "jsVariableName": "iMG7628",
+      "dimensions": "1620x1080",
+      "fileSize": "76.4 KB",
+      "compressionRatio": "99.1%"
+    },
+    {
+      "originalName": "IMG_7635.JPG",
+      "uuidFilename": "08a22aa4-2ca9-4f4f-8729-91dd62fe97e0.webp",
+      "jsVariableName": "iMG7635",
+      "dimensions": "1620x1080",
+      "fileSize": "52.8 KB",
+      "compressionRatio": "99.3%"
+    },
+    {
+      "originalName": "IMG_7638.JPG",
+      "uuidFilename": "39cc5040-94d2-412b-829a-a3b48e66cb05.webp",
+      "jsVariableName": "iMG7638",
+      "dimensions": "1620x1080",
+      "fileSize": "45.1 KB",
+      "compressionRatio": "99.3%"
+    },
+    {
+      "originalName": "IMG_7639.JPG",
+      "uuidFilename": "6038cef4-a62a-43cb-8d72-3380c9a72184.webp",
+      "jsVariableName": "iMG7639",
+      "dimensions": "1620x1080",
+      "fileSize": "103.6 KB",
+      "compressionRatio": "98.6%"
+    },
+    {
+      "originalName": "IMG_7640.JPG",
+      "uuidFilename": "84312557-6d11-4da1-abc8-a2a01a0ecbf2.webp",
+      "jsVariableName": "iMG7640",
+      "dimensions": "1620x1080",
+      "fileSize": "107.9 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "IMG_7641.JPG",
+      "uuidFilename": "ae95fff1-02b6-4f72-a654-bd974517f492.webp",
+      "jsVariableName": "iMG7641",
+      "dimensions": "1620x1080",
+      "fileSize": "59.2 KB",
+      "compressionRatio": "99.2%"
+    },
+    {
+      "originalName": "IMG_7642.JPG",
+      "uuidFilename": "ce07df14-74ad-4483-859d-664999c39e85.webp",
+      "jsVariableName": "iMG7642",
+      "dimensions": "1620x1080",
+      "fileSize": "104.1 KB",
+      "compressionRatio": "98.5%"
+    },
+    {
+      "originalName": "IMG_7685.JPG",
+      "uuidFilename": "a309c04a-b4f3-4bec-87b7-f5f11afd1bda.webp",
+      "jsVariableName": "iMG7685",
+      "dimensions": "720x1080",
+      "fileSize": "28.5 KB",
+      "compressionRatio": "99.6%"
+    },
+    {
+      "originalName": "IMG_7749.JPG",
+      "uuidFilename": "b8e2a185-73b6-4f51-98cd-d8164350d924.webp",
+      "jsVariableName": "iMG7749",
+      "dimensions": "720x1080",
+      "fileSize": "39.4 KB",
+      "compressionRatio": "99.4%"
+    },
+    {
+      "originalName": "IMG_8158.JPG",
+      "uuidFilename": "437776c8-b33f-4b67-9eae-642e28dc0e4a.webp",
+      "jsVariableName": "iMG8158",
+      "dimensions": "1620x1080",
+      "fileSize": "103.2 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_8177.JPG",
+      "uuidFilename": "f39db9da-454a-443c-bbd1-9b9e2afe7cfb.webp",
+      "jsVariableName": "iMG8177",
+      "dimensions": "1620x1080",
+      "fileSize": "61.5 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "IMG_8202.JPG",
+      "uuidFilename": "90f3be04-7d96-4e86-a8e7-9c58a5b3ebbe.webp",
+      "jsVariableName": "iMG8202",
+      "dimensions": "1620x1080",
+      "fileSize": "46.7 KB",
+      "compressionRatio": "99.3%"
+    },
+    {
+      "originalName": "IMG_8243.JPG",
+      "uuidFilename": "933bfc4a-ec01-4769-9612-7ad534a6fb39.webp",
+      "jsVariableName": "iMG8243",
+      "dimensions": "1620x1080",
+      "fileSize": "65.1 KB",
+      "compressionRatio": "98.9%"
+    },
+    {
+      "originalName": "IMG_8272.JPG",
+      "uuidFilename": "28b01ac9-cfd5-4187-b82d-e1eac77e0667.webp",
+      "jsVariableName": "iMG8272",
+      "dimensions": "1620x1080",
+      "fileSize": "60.5 KB",
+      "compressionRatio": "99.1%"
+    },
+    {
+      "originalName": "IMG_8297.JPG",
+      "uuidFilename": "bc1d5943-e612-4ade-9d5d-e61be9e6ef33.webp",
+      "jsVariableName": "iMG8297",
+      "dimensions": "1620x1080",
+      "fileSize": "73.6 KB",
+      "compressionRatio": "98.5%"
+    },
+    {
+      "originalName": "IMG_8316.JPG",
+      "uuidFilename": "f7769e18-0792-4901-bf1b-1d36fd592273.webp",
+      "jsVariableName": "iMG8316",
+      "dimensions": "1620x1080",
+      "fileSize": "89.7 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "IMG_8323.JPG",
+      "uuidFilename": "1f52c1e6-43d1-4c13-bd27-15fd6208cb20.webp",
+      "jsVariableName": "iMG8323",
+      "dimensions": "1620x1080",
+      "fileSize": "111.7 KB",
+      "compressionRatio": "98.7%"
+    },
+    {
+      "originalName": "IMG_8331.JPG",
+      "uuidFilename": "79703b19-adae-40a4-aaaf-3c739d70f123.webp",
+      "jsVariableName": "iMG8331",
+      "dimensions": "1620x1080",
+      "fileSize": "74.8 KB",
+      "compressionRatio": "99%"
+    },
+    {
+      "originalName": "IMG_8339.JPG",
+      "uuidFilename": "d1569dfa-ce1a-4124-810f-a1dfcf5bf589.webp",
+      "jsVariableName": "iMG8339",
+      "dimensions": "1620x1080",
+      "fileSize": "106.7 KB",
+      "compressionRatio": "98.4%"
+    },
+    {
+      "originalName": "IMG_8360.JPG",
+      "uuidFilename": "128ae27d-83ae-4b33-9ac6-0f03e6a9d141.webp",
+      "jsVariableName": "iMG8360",
+      "dimensions": "1620x1080",
+      "fileSize": "102.7 KB",
+      "compressionRatio": "98.6%"
+    },
+    {
+      "originalName": "IMG_8377.JPG",
+      "uuidFilename": "6f63f56d-4302-4318-a3b5-ac38844f7122.webp",
+      "jsVariableName": "iMG8377",
+      "dimensions": "1620x1080",
+      "fileSize": "37.6 KB",
+      "compressionRatio": "99.4%"
+    },
+    {
+      "originalName": "IMG_8415.JPG",
+      "uuidFilename": "fcf42b19-e542-46eb-a0ba-64d8ce401849.webp",
+      "jsVariableName": "iMG8415",
+      "dimensions": "1620x1080",
+      "fileSize": "49.9 KB",
+      "compressionRatio": "99.4%"
+    },
+    {
+      "originalName": "IMG_8444.JPG",
+      "uuidFilename": "a1b65291-ce10-4d58-b688-2455007783cd.webp",
+      "jsVariableName": "iMG8444",
+      "dimensions": "1620x1080",
+      "fileSize": "67 KB",
+      "compressionRatio": "99.1%"
+    },
+    {
+      "originalName": "IMG_8450.JPG",
+      "uuidFilename": "714e97a5-5b71-4afb-b2d0-8d6f46a39bb0.webp",
+      "jsVariableName": "iMG8450",
+      "dimensions": "1620x1080",
+      "fileSize": "83.5 KB",
+      "compressionRatio": "98.8%"
+    },
+    {
+      "originalName": "IMG_8500.JPG",
+      "uuidFilename": "a92c93c4-90a4-4b16-ab53-be2fc779d53f.webp",
+      "jsVariableName": "iMG8500",
+      "dimensions": "1620x1080",
+      "fileSize": "117.6 KB",
+      "compressionRatio": "98.6%"
+    }
+  ],
+  "generated": "2025-08-07T11:42:02.940Z",
+  "totalImages": 303,
+  "statistics": {
+    "totalFiles": 303,
+    "convertedFiles": 303,
+    "failedFiles": 0,
+    "skippedFiles": 0,
+    "originalSize": "1.5 GB",
+    "convertedSize": "29.7 MB",
+    "totalSavings": "98.1%"
+  }
+}

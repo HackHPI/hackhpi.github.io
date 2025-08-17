@@ -63,7 +63,7 @@ export function Gallery() {
             <Container sx={{display: "flex", justifyContent: "flex-end"}}>
                 <Button variant="contained" color={"primary"} sx={{mt: 3}} onClick={() => setIsGalleryOpen(true)}>View full Gallery</Button>
             </Container>
-            <GalleryDialog isOpen={isGalleryOpen} onClose={() => setIsGalleryOpen(false)}/>
+            <GalleryDialog isOpen={isGalleryOpen} onClose={() => setIsGalleryOpen(false)} year={images[galleryTab].year}/>
         </Box>
     )
 

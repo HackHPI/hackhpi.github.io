@@ -14,7 +14,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
             <link rel="icon" href="/favicon.png"/>
             <link rel="apple-touch-icon" href="/favicon.png"/>
             <title>
-                HackHPI 2025 | Health Edition.
+                HackHPI 2026 | Agriculture, Food & Tech
             </title>
             <meta name="theme-color" content="#13101B"/>
             <meta name={"description"}

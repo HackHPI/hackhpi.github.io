@@ -415,6 +415,7 @@ function Registration() {
         return (
           <Autocomplete
             freeSolo
+            value={values[name] ?? ""}
             options={input}
             autoSelect
             onChange={(event, value) => handleChange(name, value)}

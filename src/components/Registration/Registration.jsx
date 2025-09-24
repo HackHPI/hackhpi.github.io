@@ -30,15 +30,14 @@ import { LoadingButton } from "@mui/lab";
 import { RegistrationRest } from "../../rest/RegistrationRest.js";
 import { Mail, Send } from "@mui/icons-material";
 import universities from "./universitiesDE.json";
-import { GroupManager } from "./GroupManager/GroupManager"; // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
-
-// types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
+import { GroupManager } from "./GroupManager/GroupManager";
+import { INPUT_TYPES } from "./InputTypes.js";
 
 const registrationClosed = true;
 const personalData = [
   {
     formLabel: "First name",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["First Name"],
     name: "forename",
     max: 50,
@@ -47,7 +46,7 @@ const personalData = [
   },
   {
     formLabel: "Last name",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["Last Name"],
     name: "surname",
     max: 50,
@@ -56,20 +55,20 @@ const personalData = [
   },
   {
     formLabel: "Date of birth",
-    type: 2,
+    type: INPUT_TYPES.DATE,
     name: "age",
     required: true,
   },
   {
     formLabel: "Gender",
-    type: 3,
+    type: INPUT_TYPES.SELECT,
     input: ["male", "female", "diverse"],
     name: "gender",
     required: true,
   },
   {
     formLabel: "E-mail",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["example@example.com"],
     name: "email",
     regex: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
@@ -77,21 +76,21 @@ const personalData = [
   },
   {
     formLabel: "T-shirt size",
-    type: 3,
+    type: INPUT_TYPES.SELECT,
     input: ["XS", "S", "M", "L", "XL", "XXL"],
     name: "shirtSize",
     required: true,
   },
   {
     formLabel: "Diet preferences",
-    type: 3,
+    type: INPUT_TYPES.SELECT,
     input: ["omnivore", "vegetarian", "vegan"],
     name: "dietPreference",
     required: true,
   },
   {
     formLabel: "Allergies",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["e. g. gluten, ..."],
     helperText:
       "Please let us know if you have severe allergies that we must know about.",
@@ -101,7 +100,7 @@ const personalData = [
   },
   {
     formLabel: "University/School/Institute",
-    type: 6,
+    type: INPUT_TYPES.AUTOCOMPLETE,
     input: universities,
     name: "university",
     max: 150,
@@ -110,7 +109,7 @@ const personalData = [
   },
   {
     formLabel: "Course of study",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["e. g. Computer Science"],
     name: "fieldOfStudy",
     max: 150,
@@ -119,7 +118,7 @@ const personalData = [
   },
   {
     formLabel: "Intended degree",
-    type: 3,
+    type: INPUT_TYPES.SELECT,
     input: ["High School Diploma", "Bachelor", "Master", "PhD"],
     name: "intendedDegree",
     required: true,
@@ -129,7 +128,7 @@ const personalData = [
 const motivation = [
   {
     formLabel: "How did you hear from us?",
-    type: 4,
+    type: INPUT_TYPES.RADIO,
     input: [
       "university/school/institute",
       "friends/other students",
@@ -141,11 +140,11 @@ const motivation = [
   },
   {
     formLabel: "",
-    type: 0,
+    type: INPUT_TYPES.EMPTY,
   },
   {
     formLabel: "Your motivation",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["My motivation is ..."],
     helperText:
       "Please write a short text (max. 1200 characters) or 3 key phrases describing your motivation to be part of HackHPI. If you can't think of anything, take the following questions as guidance: Can you share a project, creation, or task that holds a special place as one of your favorites? What motivated you to undertake it, and what aspects make you proud of the outcome?",
@@ -162,7 +161,7 @@ const motivation = [
 const skills = [
   {
     formLabel: "Tech stack",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["e. g. Python, ..."],
     helperText:
       "Please note programming languages, frameworks, etc. you have already worked with.",
@@ -173,7 +172,7 @@ const skills = [
   },
   {
     formLabel: "Previous experiences / studies / projects...",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["e. g. working student at HPI, ..."],
     helperText:
       "Outline the most important steps of your CV like work experiences, studies and projects.",
@@ -184,7 +183,7 @@ const skills = [
   },
   {
     formLabel: "GitHub account",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["e. g. maxm90"],
     name: "github",
     max: 50,
@@ -192,7 +191,7 @@ const skills = [
   },
   {
     formLabel: "LinkedIn account",
-    type: 1,
+    type: INPUT_TYPES.TEXT_FIELD,
     input: ["e. g. /in/max-mustermann"],
     name: "linkedin",
     max: 50,
@@ -205,7 +204,7 @@ const legal = [
     formLabel: "Privacy Policy",
     input: ["I have read and accept the Privacy Policy."],
     name: "privacyPolicy",
-    type: 5,
+    type: INPUT_TYPES.CHECKBOX,
     required: true,
     fullWidth: true,
   },
@@ -215,7 +214,7 @@ const legal = [
       "I agree that my contact and job-related data may be passed on to participating recruiters (sponsors)",
     ],
     name: "recruiters",
-    type: 5,
+    type: INPUT_TYPES.CHECKBOX,
     required: false,
     fullWidth: true,
   },
@@ -223,7 +222,7 @@ const legal = [
     input: [
       "Film and sound recordings as well as photos will be made at the event, and you agree to their subsequent use by attending the event.",
     ],
-    type: 7,
+    type: INPUT_TYPES.TYPOGRAPHY,
     name: "photos",
     required: false,
     fullWidth: true,
@@ -335,7 +334,7 @@ function Registration() {
     const rows = props.rows;
 
     switch (type) {
-      case 1:
+      case INPUT_TYPES.TEXT_FIELD:
         return (
           <TextField
             type="text"
@@ -349,7 +348,7 @@ function Registration() {
             }
           />
         );
-      case 2:
+      case INPUT_TYPES.DATE:
         return (
           <TextField
             type="date"
@@ -361,7 +360,7 @@ function Registration() {
             }
           />
         );
-      case 3:
+      case INPUT_TYPES.SELECT:
         return (
           <Select
             value={values[name] ?? ""}
@@ -381,7 +380,7 @@ function Registration() {
             ))}
           </Select>
         );
-      case 4:
+      case INPUT_TYPES.RADIO:
         return (
           <RadioGroup
             value={values[name] ?? ""}
@@ -399,7 +398,7 @@ function Registration() {
             ))}
           </RadioGroup>
         );
-      case 5:
+      case INPUT_TYPES.CHECKBOX:
         return (
           <FormControlLabel
             control={
@@ -412,7 +411,7 @@ function Registration() {
             label={input.join("")}
           />
         );
-      case 6:
+      case INPUT_TYPES.AUTOCOMPLETE:
         return (
           <Autocomplete
             freeSolo
@@ -428,7 +427,7 @@ function Registration() {
             )}
           />
         );
-      case 7:
+      case INPUT_TYPES.TYPOGRAPHY:
         return <Typography>{input}</Typography>;
 
       default:

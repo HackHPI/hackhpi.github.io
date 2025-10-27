@@ -34,7 +34,7 @@ function LandingImage() {
         <img src={"/HackHPI_white.svg"} width={"150rem"} alt={"HackHPI Logo"} />
         <div>
           <Typography sx={{ color: "white" }} variant={"h2"} component={"h1"}>
-            Agriculture, Food & Tech
+            Agriculture, Climate & Tech
           </Typography>
           <Typography variant={"h4"} component={"h2"}>
             <TypeAnimation

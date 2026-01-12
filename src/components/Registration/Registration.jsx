@@ -34,7 +34,7 @@ import { GroupManager } from "./GroupManager/GroupManager"; // types: 0 = empty,
 
 // types: 0 = empty, 1 = textfield, 2 = date, 3 = select, 4 = radio
 
-const registrationClosed = true;
+const registrationClosed = false;
 const personalData = [
   {
     formLabel: "First name",
@@ -215,6 +215,16 @@ const legal = [
       "I agree that my contact and job-related data may be passed on to participating recruiters (sponsors)",
     ],
     name: "recruiters",
+    type: 5,
+    required: false,
+    fullWidth: true,
+  },
+  {
+    formLabel: "Apply for Travel Stipend",
+    input: [
+      "I agree that my contact and job-related data will be passed to our partner Quantco. Quantco will reach out to you, if you will be selected. Stipend applies worldwide.",
+    ],
+    name: "travelStipend",
     type: 5,
     required: false,
     fullWidth: true,

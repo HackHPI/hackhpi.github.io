@@ -1,0 +1,10 @@
+export const INPUT_TYPES = {
+  EMPTY: 0,
+  TEXT_FIELD: 1,
+  DATE: 2,
+  SELECT: 3,
+  RADIO: 4,
+  CHECKBOX: 5,
+  AUTOCOMPLETE: 6,
+  TYPOGRAPHY: 7,
+};

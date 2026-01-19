@@ -89,7 +89,7 @@ export function Location() {
                             <Typography variant={"h4"} gutterBottom>By Train</Typography>
                             <Typography>Please use the DB Navigator App to get directions to the Station, <b>Potsdam
                                 Griebnitzsee</b>.</Typography>
-                            <Typography>To get a Discount on your Ticket, you can use the DB event ticket, which was sent to you via E-Mail.</Typography>
+                            {/*<Typography>To get a Discount on your Ticket, you can use the DB event ticket, which was sent to you via E-Mail.</Typography>*/}
                         </Stack>
                     </Stack>
 

@@ -10,16 +10,30 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
-import FelixLennardHake from "../../assets/images/speakers/FelixLennardHake.jpg";
+import FelixLennardHake from "../../assets/images/speakers/2024/FelixLennardHake.jpg";
+import PaulBrachmann from "../../assets/images/speakers/2025/paul_brachmann.webp";
 import { WindowCard } from "../WindowCard/WindowCard";
 import { useState } from "react";
-import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
+import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import * as React from "react";
 
 const speakerYears = [
   {
-    year: 2025,
+    year: 2026,
     speaker: [],
+  },
+  {
+    year: 2025,
+    speaker: [
+      {
+        name: "Paul Brachmann",
+        position:
+          "Chief Technology Officer at Floy",
+        profilePicture: PaulBrachmann.src,
+        description:
+          "",
+      },
+    ],
   },
   {
     year: 2024,
@@ -82,7 +96,7 @@ function Speakers() {
         <Grid item xs={12} md={12}>
           <Stack spacing={3}>
             {speakerYears[currentIndex].speaker.map((speaker) => (
-              <WindowCard elevation={5} key={speaker.name} is2024>
+              <WindowCard elevation={5} key={speaker.name} is2024 year={speakerYears[currentIndex].year}>
                 <Grid container spacing={5}>
                   <Grid item xs={12} md={3}>
                     <Paper
@@ -131,7 +145,7 @@ function Speakers() {
             ))}
             {speakerYears[currentIndex].speaker.length === 0 && (
                 <Typography variant={"h5"} fontWeight={"bold"} gutterBottom sx={{pt: 5}}>
-                  Speakers will be announced soon!
+                  <Campaign/> To be announced
                 </Typography>
             )}
           </Stack>

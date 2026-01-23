@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import { LoadingButton } from "@mui/lab";
-import {useEffect, useMemo, useState} from "react";
+import { useEffect, useMemo, useState } from "react";
 import { GroupRest } from "../../../rest/GroupRest";
 
 export function GroupManager(props) {
@@ -17,21 +17,27 @@ export function GroupManager(props) {
   const [group, setGroup] = useState(false);
   const [groupInput, setGroupInput] = useState("");
   const [groupInputError, setGroupInputError] = useState(false);
+  const [groupName, setGroupName] = useState("");
   const groupRest = useMemo(() => new GroupRest(), []);
-
 
   function createNewGroup() {
     setLoadingNewTeam(true);
-    setGroupInputError(false)
-    groupRest.createGroup(props.eventId).then((response) => {
-      setLoadingNewTeam(false);
-      setGroup(response.data);
-    });
+    setGroupInputError(false);
+    groupRest
+      .createGroup(props.eventId)
+      .then((response) => {
+        setLoadingNewTeam(false);
+        setGroup(response.data);
+      })
+      .catch((err) => {
+        console.error(err);
+        setLoadingNewTeam(false);
+      });
   }
 
   function getGroup() {
     setFetchingExistingTeam(true);
-      setGroupInputError(false)
+    setGroupInputError(false);
     groupRest
       .getGroup(props.eventId, groupInput)
       .then((response) => {
@@ -45,9 +51,9 @@ export function GroupManager(props) {
       });
   }
 
-    useEffect(() => {
-        props.onGroupChange(group)
-    }, [group]);
+  useEffect(() => {
+    props.onGroupChange(group);
+  }, [group]);
 
   function renderGroupSelection() {
     return (
@@ -55,7 +61,7 @@ export function GroupManager(props) {
         <Stack direction="row" spacing={2}>
           <TextField
             fullWidth
-            label={"Enter team name (e.g. chalk-increase-vague)"}
+            label={"Enter team identification (e.g. chalk-increase-vague)"}
             value={groupInput}
             onChange={(event) => setGroupInput(event.target.value)}
             error={groupInputError}
@@ -72,18 +78,37 @@ export function GroupManager(props) {
             Join
           </LoadingButton>
         </Stack>
+        <Typography variant={"body2"} color={"text.disabled"} pt={1}>
+          Identifier given by the group creator
+        </Typography>
         <Divider sx={{ pt: 2, pb: 2 }}> or </Divider>
-        <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+        <Stack direction="row" spacing={2}>
+          <TextField
+            fullWidth
+            label={"Enter team name (e.g. Carbon Coders)"}
+            value={groupName}
+            onChange={(event) => setGroupName(event.target.value)}
+            disabled={fetchingExistingTeam}
+          />
           <LoadingButton
+            sx={{ flexWrap: "nowrap" }}
+            width={"100px"}
             variant={"outlined"}
             color={"primary"}
             onClick={createNewGroup}
             loading={loadingNewTeam}
-            disabled={fetchingExistingTeam}
+            disabled={
+              fetchingExistingTeam ||
+              groupName.length < 3 ||
+              groupName.length > 30
+            }
           >
-            Create new Team
+            Create
           </LoadingButton>
-        </Box>
+        </Stack>
+        <Typography variant={"body2"} color={"text.disabled"} pt={1}>
+          This will be your team name at the event
+        </Typography>
       </Box>
     );
   }
@@ -91,7 +116,9 @@ export function GroupManager(props) {
   function renderGroup() {
     return (
       <Box sx={{ pt: 5, pb: 5 }}>
-        <Typography gutterBottom>You are assigned to the group</Typography>
+        <Typography gutterBottom>
+          You are assigned to the group with identifier
+        </Typography>
         <Typography sx={{ fontWeight: 800, pb: 3 }} variant={"h5"}>
           {group.phrase}
         </Typography>
@@ -100,7 +127,7 @@ export function GroupManager(props) {
         </Button>
 
         <Typography sx={{ pt: 4 }}>
-          share this name to your team members
+          share this identifier to your team members
         </Typography>
         <Typography color={"text.secondary"}>
           This is not your actual team name at the event

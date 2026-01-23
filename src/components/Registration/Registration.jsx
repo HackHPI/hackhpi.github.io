@@ -199,6 +199,25 @@ const skills = [
   },
 ];
 
+const travelSponsorship = [
+  {
+    fullWidth: true,
+    input:
+      "Quantco, our partner, is offering travel scholarships to participants worldwide. To apply, simply submit your CV using the checkbox below.",
+    type: INPUT_TYPES.TYPOGRAPHY,
+  },
+  {
+    formLabel: "",
+    input: [
+      "I consent to sharing my contact information and CV with our partner, Quantco, and authorize them to contact me.",
+    ],
+    name: "travelStipend",
+    type: INPUT_TYPES.CHECKBOX,
+    required: false,
+    fullWidth: true,
+  },
+];
+
 const legal = [
   {
     formLabel: "Privacy Policy",
@@ -215,16 +234,6 @@ const legal = [
     ],
     name: "recruiters",
     type: INPUT_TYPES.CHECKBOX,
-    required: false,
-    fullWidth: true,
-  },
-  {
-    formLabel: "Apply for Travel Stipend",
-    input: [
-      "I agree that my contact and job-related data will be passed to our partner Quantco. Quantco will reach out to you, if you will be selected. Stipend applies worldwide.",
-    ],
-    name: "travelStipend",
-    type: 5,
     required: false,
     fullWidth: true,
   },
@@ -262,10 +271,14 @@ function Registration() {
       label: "Team members",
       children: (
         <GroupManager
-          eventId={"02fc811b-1e67-402e-ac62-3f376cf33b6b"}
+          eventId={"c11a427e-f679-49b6-8574-b0d3211ad123"}
           onGroupChange={(change) => handleChange("group", change)}
         />
       ),
+    },
+    {
+      label: "Travel Scholarship",
+      content: travelSponsorship,
     },
     {
       label: "Confirmation",
@@ -439,7 +452,7 @@ function Registration() {
           />
         );
       case INPUT_TYPES.TYPOGRAPHY:
-        return <Typography>{input}</Typography>;
+        return <Typography fullWidth>{input}</Typography>;
 
       default:
         return null;

@@ -24,7 +24,7 @@ export function GroupManager(props) {
     setLoadingNewTeam(true);
     setGroupInputError(false);
     groupRest
-      .createGroup(props.eventId)
+      .createGroup(props.eventId, groupName)
       .then((response) => {
         setLoadingNewTeam(false);
         setGroup(response.data);

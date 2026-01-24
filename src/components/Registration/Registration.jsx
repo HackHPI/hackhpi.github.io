@@ -71,7 +71,8 @@ const personalData = [
     type: INPUT_TYPES.TEXT_FIELD,
     input: ["example@example.com"],
     name: "email",
-    regex: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+    regex:
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     required: true,
   },
   {
@@ -203,7 +204,13 @@ const travelSponsorship = [
   {
     fullWidth: true,
     input:
-      "Quantco, our partner, is offering travel scholarships to participants worldwide. To apply, simply submit your CV using the checkbox below.",
+      "Our partner, Quantco, provides travel scholarships for participants from around the globe. Applying is easy — just submit your CV and select the checkbox below.",
+    type: INPUT_TYPES.TYPOGRAPHY,
+  },
+  {
+    fullWidth: true,
+    input:
+      "Please email your CV in PDF format to travel-scholarship@hackhpi.org.",
     type: INPUT_TYPES.TYPOGRAPHY,
   },
   {
@@ -337,6 +344,11 @@ function Registration() {
       ) {
         return previous && false;
       }
+
+      if (current.regex && !values[current.name].match(current.regex)){
+        return previous && false;
+      }
+
       const meetsMax = current.max
         ? values[current.name]?.length <= current.max
         : true;
@@ -484,7 +496,7 @@ function Registration() {
         email: values.email,
         fieldData: JSON.stringify(values),
         signUpForm: {
-          id: "283db119-046c-4418-939d-ab9bee06c996",
+          id: "e73735ad-c930-44ee-8631-6c5bc3aed029",
           //id: "2f1c60f2-f30b-4432-8129-9131c6e398dd",
         },
         group: values.group ? values.group : undefined,

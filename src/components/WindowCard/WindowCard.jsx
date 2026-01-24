@@ -1,8 +1,9 @@
 import {Box, Card, Stack} from "@mui/material";
+import colorYears from "../Theme/HackHpiColors";
 
 export function WindowCard(props) {
-    let backgroundSecondColor = props.is2024? "rgba(114,9,183,1)":"rgba(76,201,240,1)";
-    const backgroundGradient = `linear-gradient(90deg, rgba(58,12,163,1) 0%, ${backgroundSecondColor} 100%)`;
+    const colors = colorYears[props.year] ?? colorYears.default;
+    const backgroundGradient = `linear-gradient(90deg, ${colors.primary} 0%, ${colors.secondary} 100%)`;
     return (
         <Card elevation={7}>
             <Box sx={{

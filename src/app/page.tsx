@@ -1,6 +1,6 @@
 import {VerifiedChecker} from "../components/VerifiedChecker/VerifiedChecker";
 import WhatToExpect from "../components/WhatToExpect/WhatToExpect";
-import Sponsors25 from "../components/Sponsors/Sponsors25";
+import Sponsors26 from "../components/Sponsors/Sponsors26";
 import Newsletter from "../components/Newsletter/Newsletter";
 import {Faq} from "../components/Faq/Faq";
 import Team from "../components/Team/Team";
@@ -10,6 +10,7 @@ import {Features} from "../components/Features/Features";
 import LandingImage from "../components/LandingImage/LandingImage";
 import {Gallery} from "../components/Gallery/Gallery";
 import Registration from "../components/Registration/Registration";
+import {Location} from "../components/Location/Location";
 import {TimeTable} from "../components/TimeTable/TimeTable";
 
 export default function Page() {
@@ -19,11 +20,11 @@ export default function Page() {
             <VerifiedChecker/>
             <WhatToExpect/>
             <Features/>
-            <Sponsors25/>
+            <Sponsors26/>
             <Gallery/>
             <Newsletter/>
-            {/* <Registration /> */}
-            {/*    <Location />*/}
+            <Registration />
+            <Location />
             <Speakers/>
             <Jury/>
             <TimeTable/>

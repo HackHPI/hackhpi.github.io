@@ -19,9 +19,10 @@ function WhatToExpect() {
                         <Typography variant={"h2"} component={"h1"} gutterBottom>
                             What to expect
                         </Typography>
-                        <Typography fontWeight={"light"} gutterBottom>
-                            Explore the future of health at HPI in Potsdam.
-                        </Typography>
+                        {/* TODO: Add topic of 2026 */}
+                        {/*<Typography fontWeight={"light"} gutterBottom>*/}
+                        {/*    Explore the future of health at HPI in Potsdam.*/}
+                        {/*</Typography>*/}
                         <Typography gutterBottom display={"block"}
                                     fontWeight={"light"}>
                             Join motivated students for two days of

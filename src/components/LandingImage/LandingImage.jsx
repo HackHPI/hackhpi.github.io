@@ -34,24 +34,24 @@ function LandingImage() {
         <img src={"/HackHPI_white.svg"} width={"150rem"} alt={"HackHPI Logo"} />
         <div>
           <Typography sx={{ color: "white" }} variant={"h2"} component={"h1"}>
-            Medical Edition
+            Agriculture, Climate & Tech
           </Typography>
           <Typography variant={"h4"} component={"h2"}>
             <TypeAnimation
               preRenderFirstString={true}
               sequence={[
                 500,
-                "For better",
+                "Revolutionize ",
                 500,
-                "For better health", // initially rendered starting point
+                "Revolutionize food chains", // initially rendered starting point
                 1000,
-                "For better diagnosis", // initially rendered starting point,
+                "Revolutionize crop management", // initially rendered starting point,
                 1000,
-                "For better treatments", // initially rendered starting point
+                "Revolutionize farming tech", // initially rendered starting point
                 1000,
                 //`See you in ${Math.round(timeLeft / (24 * 60 * 60 * 1000))} Days!`,
-                `Thank you for joining us!`,
-                10000,
+                //`Thank you for joining us!`,
+                // 10000,
               ]}
               speed={50}
               repeat={Infinity}
@@ -103,7 +103,7 @@ function LandingImage() {
                 color={"text.disabled"}
                 noWrap
               >
-                21th - 22th March 2025
+                10th - 11th April 2026
               </Typography>
             </Stack>
           </Card>

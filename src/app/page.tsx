@@ -23,7 +23,7 @@ export default function Page() {
             <Sponsors26/>
             <Gallery/>
             <Newsletter/>
-            {/* <Registration /> */}
+            <Registration />
             <Location />
             <Speakers/>
             <Jury/>

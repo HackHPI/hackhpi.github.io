@@ -30,7 +30,7 @@ const socials = [
     },
     {
         icon: <Mail/>,
-        link: "mailto:team@hackhpi.org",
+        link: "mailto:support@hackhpi.org",
     },
 ]
 

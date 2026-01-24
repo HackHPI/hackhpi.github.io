@@ -472,7 +472,7 @@ function Registration() {
       })
       .catch((error) => {
         alert(
-          "Could not save Registration. Please try again. If problem persists, please contact team@hackhpi.org. Error: " +
+          "Could not save Registration. Please try again. If problem persists, please contact support@hackhpi.org. Error: " +
             JSON.stringify(error.data),
         );
         setIsSending(false);

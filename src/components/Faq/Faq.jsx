@@ -126,7 +126,7 @@ export function Faq() {
                     questions</Typography>
                 <Typography variant={"body1"} sx={{marginBottom: "4rem"}}>Can't find the answer you're looking for? You
                     can
-                    always <Link href={"mailto:team@hackhpi.org"} color={"inherit"}>send us an email</Link> with your
+                    always <Link href={"mailto:support@hackhpi.org"} color={"inherit"}>send us an email</Link> with your
                     inquiry!</Typography>
                 <Grid container spacing={7}>
                     <Grid item xs={12} md={4}>
@@ -160,7 +160,7 @@ export function Faq() {
                                         ask!</Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button sx={{ ml: 1, mb: 1 }} variant="contained" size="small" color="primary" href={"mailto:team@hackhpi.org"} startIcon={<MailOutline />}>Contact us</Button>
+                                    <Button sx={{ ml: 1, mb: 1 }} variant="contained" size="small" color="primary" href={"mailto:support@hackhpi.org"} startIcon={<MailOutline />}>Contact us</Button>
                                 </CardActions>
                             </Card>
                         </Stack>

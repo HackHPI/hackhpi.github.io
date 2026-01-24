@@ -1,7 +1,15 @@
 "use client";
 import { Button, Card, Container, Stack, Typography } from "@mui/material";
 import { TypeAnimation } from "react-type-animation";
-import {Article, CalendarMonthOutlined, CameraAlt} from "@mui/icons-material";
+import {
+  AppRegistration,
+  Article,
+  CalendarMonthOutlined,
+  CameraAlt,
+  Description,
+  EditNote,
+  EditNoteOutlined,
+} from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { MeshContainer } from "./MeshContainer/MeshContainer";
 
@@ -68,18 +76,19 @@ function LandingImage() {
               fontSize: "1rem",
             }}
             color={"primary"}
-            startIcon={<CameraAlt />}
+            startIcon={<Description />}
+            //startIcon={<CameraAlt />}
             onClick={() =>
-              // document.getElementById("signupForm").scrollIntoView({
-              document.getElementById("images").scrollIntoView({
+               document.getElementById("signupForm").scrollIntoView({
+              //document.getElementById("images").scrollIntoView({
                 behavior: "smooth",
                 block: "start",
                 inline: "nearest",
               })
             }
           >
-            {/* Registration */}
-            Photo Gallery
+            Registration
+            {/*Photo Gallery */}
           </Button>
           <Card
             sx={{ height: "3.5rem", justifyContent: "center", display: "flex" }}

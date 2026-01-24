@@ -151,6 +151,65 @@ const teamMembers25 = [
     },
 ]
 
+const teamMembers26 = [
+  {
+    name: "Cedric Rische",
+    position: "Team Member",
+    linkedIn: "cedric-rische",
+    profilePicture: CedricRischeProfile2025,
+  },
+  {
+    name: "Grit Manssen",
+    position: "Team Member",
+    linkedIn: "grit-manssen-0270b023a",
+    profilePicture: GritManssenProfile2025,
+  },
+  {
+    name: "Tanja Lehmann",
+    position: "Team Member",
+    linkedIn: "tanja-lehmann-36713a265",
+    profilePicture: TanjaLehmannProfile2025,
+  },
+  {
+    name: "Daniel Kiss",
+    position: "Team Member",
+    linkedIn: "kdaniel21",
+    profilePicture: DanielKissProfile2025,
+  },
+  {
+    name: "Jeanne Aue",
+    position: "Team Member",
+    linkedIn: "jeanne-aue",
+    profilePicture: JeanneAueProfile2025,
+  },
+  {
+    name: "Constantin Sachse",
+    position: "Team Member",
+    linkedIn: "",
+    profilePicture: ConstantinSachseProfile2025,
+  },
+  {
+    name: "Alyssa Hilgendorf",
+    position: "Team Member",
+    linkedIn: "alyssa-hilgendorf-835a45346",
+  },
+  {
+    name: "Henri Becker",
+    position: "Team Member",
+    linkedIn: "henri-aldo-becker-06a265297",
+  },
+  {
+    name: "Jolanda Bolt",
+    position: "Team Member",
+    linkedIn: "jolanda-bolt-6480a5222",
+  },
+  {
+    name: "Klara Prigge",
+    position: "Team Member",
+    linkedIn: "klara-luise-prigge-8b73a830a",
+  },
+];
+
 
 function stringToColor(string) {
     let hash = 0;
@@ -194,7 +253,7 @@ function Team() {
         <Container sx={{paddingTop: 10, paddingBottom: 10}}>
             <Typography variant={"h2"} component={"h1"} gutterBottom>Meet the team</Typography>
             <Grid container spacing={3}>
-                {teamMembers25.sort((a, b) => {
+                {teamMembers26.sort((a, b) => {
                     const nameA = a.name.toUpperCase(); // ignore upper and lowercase
                     const nameB = b.name.toUpperCase(); // ignore upper and lowercase
                     if (nameA < nameB) {
@@ -223,7 +282,7 @@ function Team() {
                                         justifyContent: "center",
                                     }}
                                     >
-                                        <Avatar src={teamMember.profilePicture.src} sx={{
+                                        <Avatar src={teamMember.profilePicture?.src} sx={{
                                             height: imageSize,
                                             width: imageSize,
                                             boxShadow: 7,

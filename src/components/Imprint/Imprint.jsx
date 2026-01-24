@@ -23,7 +23,7 @@ function Imprint() {
                         E-Mail: <Link href="mailto:team@hackhpi.org" color={"inherit"}>team@hackhpi.org</Link>
                     </Typography>
                     <Typography variant="body1">Inhaltlich verantwortlich gemäß § 5 TMG, § 55 RStV: Klubsprecher Jeanne
-                        Aue, Mathilda Heise und Cedric Rische</Typography>
+                        Aue, Daniel Kiss und Cedric Rische</Typography>
                 </Box>
                 <Box>
                     <Typography variant="h2" gutterBottom>Haftungsausschluss</Typography>

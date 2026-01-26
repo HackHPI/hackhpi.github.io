@@ -21,6 +21,12 @@ import MaximilianPiperProfile2025 from "../../assets/images/team/2025/maximilian
 import NikolasRiegerProfile2025 from "../../assets/images/team/2025/nikolas_rieger.jpg"
 import TanjaLehmannProfile2025 from "../../assets/images/team/2025/tanja_lehmann.jpg"
 import ViktorKalvodaProfile2025 from "../../assets/images/team/2025/viktor_kalvoda.jpg"
+
+import AlyssaHilgendorf2026 from "../../assets/images/team/2026/alyssa_hilgendorf.jpg"
+import HenriBecker2026 from "../../assets/images/team/2026/henri_becker.jpg"
+import JolandaBolt2026 from "../../assets/images/team/2026/jolanda_bolt.jpg"
+import KlaraPrigge2026 from "../../assets/images/team/2026/klara_prigge.jpg"
+
 import {Avatar, Box, Card, Container, Grid, Link, Stack, Typography, useMediaQuery, useTheme} from "@mui/material";
 import {LinkedIn} from "@mui/icons-material";
 import {useEffect, useState} from "react";
@@ -192,21 +198,26 @@ const teamMembers26 = [
     name: "Alyssa Hilgendorf",
     position: "Team Member",
     linkedIn: "alyssa-hilgendorf-835a45346",
+    profilePicture: AlyssaHilgendorf2026,
   },
   {
     name: "Henri Becker",
     position: "Team Member",
     linkedIn: "henri-aldo-becker-06a265297",
+    profilePicture: HenriBecker2026,
+    
   },
   {
     name: "Jolanda Bolt",
     position: "Team Member",
     linkedIn: "jolanda-bolt-6480a5222",
+    profilePicture: JolandaBolt2026,
   },
   {
     name: "Klara Prigge",
     position: "Team Member",
     linkedIn: "klara-luise-prigge-8b73a830a",
+    profilePicture: KlaraPrigge2026,
   },
 ];
 

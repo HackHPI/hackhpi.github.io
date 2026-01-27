@@ -39,7 +39,7 @@ function LandingImage() {
           minHeight: "60vh",
         }}
       >
-        <img src={"/HackHPI_white.svg"} width={"150rem"} alt={"HackHPI Logo"} />
+        <img src={"/HackHPI26_white.svg"} width={"130rem"} alt={"HackHPI Logo"} />
         <div>
           <Typography sx={{ color: "white" }} variant={"h2"} component={"h1"}>
             Agriculture, Climate & Tech

@@ -280,6 +280,7 @@ function Registration() {
         <GroupManager
           eventId={"c11a427e-f679-49b6-8574-b0d3211ad123"}
           onGroupChange={(change) => handleChange("group", change)}
+          value={values.group}
         />
       ),
     },
@@ -345,7 +346,7 @@ function Registration() {
         return previous && false;
       }
 
-      if (current.regex && !values[current.name].match(current.regex)){
+      if (current.regex && !values[current.name].match(current.regex)) {
         return previous && false;
       }
 

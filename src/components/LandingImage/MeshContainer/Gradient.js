@@ -25,7 +25,7 @@ class MiniGl {
             debug_output = -1 !== document.location.search.toLowerCase().indexOf("debug=webgl");
         _miniGl.canvas = canvas, _miniGl.gl = _miniGl.canvas.getContext("webgl", {
             antialias: true
-        }), _miniGl.meshes = [];
+        }), _miniGl.gl.getExtension('OES_element_index_uint'), _miniGl.meshes = [];
         const context = _miniGl.gl;
         width && height && this.setSize(width, height), _miniGl.lastDebugMsg, _miniGl.debug = debug && debug_output ? function (e) {
             const t = new Date;
@@ -146,14 +146,14 @@ class MiniGl {
                             index: new _miniGl.Attribute({
                                 target: context.ELEMENT_ARRAY_BUFFER,
                                 size: 3,
-                                type: context.UNSIGNED_SHORT
+                                type: context.UNSIGNED_INT
                             })
                         }, this.setTopology(n, i), this.setSize(width, height, orientation)
                     }
 
                     setTopology(e = 1, t = 1) {
                         const n = this;
-                        n.xSegCount = e, n.ySegCount = t, n.vertexCount = (n.xSegCount + 1) * (n.ySegCount + 1), n.quadCount = n.xSegCount * n.ySegCount * 2, n.attributes.uv.values = new Float32Array(2 * n.vertexCount), n.attributes.uvNorm.values = new Float32Array(2 * n.vertexCount), n.attributes.index.values = new Uint16Array(3 * n.quadCount);
+                        n.xSegCount = e, n.ySegCount = t, n.vertexCount = (n.xSegCount + 1) * (n.ySegCount + 1), n.quadCount = n.xSegCount * n.ySegCount * 2, n.attributes.uv.values = new Float32Array(2 * n.vertexCount), n.attributes.uvNorm.values = new Float32Array(2 * n.vertexCount), n.attributes.index.values = new Uint32Array(3 * n.quadCount);
                         for (let e = 0; e <= n.ySegCount; e++)
                             for (let t = 0; t <= n.xSegCount; t++) {
                                 const i = e * (n.xSegCount + 1) + t;
@@ -217,7 +217,7 @@ class MiniGl {
                                                                                                            }) => e.update(t)), this.attributeInstances.forEach(({
                                                                                                                                                                     attribute: e,
                                                                                                                                                                     location: t
-                                                                                                                                                                }) => e.use(t)), context.drawElements(this.wireframe ? context.LINES : context.TRIANGLES, this.geometry.attributes.index.values.length, context.UNSIGNED_SHORT, 0)
+                                                                                                                                                                }) => e.use(t)), context.drawElements(this.wireframe ? context.LINES : context.TRIANGLES, this.geometry.attributes.index.values.length, context.UNSIGNED_INT, 0)
                     }
 
                     remove() {
@@ -346,7 +346,7 @@ class Gradient {
             this.conf = {
                 presetName: "",
                 wireframe: false,
-                density: [.06, .16],
+                density: [.18, .48],
                 zoom: 1,
                 rotation: 0,
                 playing: true

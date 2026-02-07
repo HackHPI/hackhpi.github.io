@@ -34,11 +34,11 @@ let faqs = [
                 title: "What's so special about HackHPI?",
                 text: "There are very few hackathons focusing on social issues; we want to fix that and give you the chance to change the world for the better by building applications that truly matter! You will also have the opportunity to get in touch with our awesome partners, slip into their shoes and solve real-world challenges using their APIs and expertise."
             }, {
-                title: "Will HackHPI 2025 take place onsite?",
-                text: "Yes, and that's quite a sure thing. We believe that Hackathons need the human contact that only in-person events can provide, and we're glad to announce that the HackHPI 2025 will be an in-presence only event!"
+                title: "Will HackHPI 2026 take place onsite?",
+                text: "Yes, and that's quite a sure thing. We believe that Hackathons need the human contact that only in-person events can provide, and we're glad to announce that the HackHPI 2026 will be an in-presence only event!"
             }, {
                 title: "Are there any costs for me?",
-                text: "Nope! HackHPI is completely free, and we provide you with food, drinks (and a lot of caffeine! :D) during the whole Hackathon. Unfortunately, we are not able to provide travel reimbursements."
+                text: "Nope! HackHPI is completely free, and we provide you with food, drinks (and a lot of caffeine! :D) during the whole Hackathon. Unfortunately, we are not able to provide travel reimbursements, but during the registration process you can apply for a travel scholarship that our partner QuantCo offers."
                 // TODO: Add 'However, as an attendee, your confirmation email will include a link to our DB Event Ticket to receive a discount when booking via DB.' when confirmed
             }, {
                 title: "Where can I stay during the Hackathon?",
@@ -48,7 +48,7 @@ let faqs = [
                 text: "Take the S7 or RB 23 from Berlin Central Station (\"Berlin Hauptbahnhof\") towards Potsdam and exit at Potsdam Griebnitzsee."
             }, {
                 title: "How should I prepare?",
-                text: "Bring your laptop and a charger, comfortable clothes, and, above all, motivation to hack! You can dive into the topic of health in advance, but there will be introductory sessions as well."
+                text: "Bring your laptop and a charger, comfortable clothes, and, above all, motivation to hack! You can dive into the topic of agriculture, climate, and tech in advance, but there will be introductory sessions as well."
             }
         ]
     },
@@ -62,14 +62,14 @@ let faqs = [
             },
             {
                 title: "Who can attend and are there any requirements to attend?",
-                text: "If you’re a university or high-school student, you're good to go! We believe that diverse teams come up with more creative solutions. A hackathon should be a way to experience teamwork and work on your abilities. We therefore encourage every major to apply, and give a warm welcome to young professionals as well. However, due to german law, every participant has to be at least 18 years old. There are no further requirements"
+                text: "If you’re a university or high-school student, you're good to go! We believe that diverse teams come up with more creative solutions. A hackathon should be a way to experience teamwork and work on your abilities. We therefore encourage every major to apply, and give a warm welcome to young professionals as well. However, due to german law, every participant has to be at least 18 years old. There are no further requirements."
             },
             {
                 title: "How can we apply as a team?",
                 text: "Teams will consist of about 5 people. In the registration form, you will be able to fill in with whom you would like to be in a team. However, everyone has to register themselves!"
             },
             {
-                title: "When will applications close??",
+                title: "When will applications close?",
                 text: "Applications will open 16th January - 28th February."
             },
             {
@@ -83,7 +83,7 @@ let faqs = [
         items: [
             {
                 title: "What are the challenges?",
-                text: "All challenges are connected to the subject of health, but we cannot tell you what awaits you. And honestly, who wants to miss the thrill of a surprise challenge? Anyway, the exact challenges will be announced at the event, so stay tuned!"
+                text: "All challenges are connected to the theme of agriculture, climate, and tech, but we cannot tell you what awaits you. And honestly, who wants to miss the thrill of a surprise challenge? Anyway, the exact challenges will be announced at the event, so stay tuned!"
             },
             {
                 title: "What are the prizes?",

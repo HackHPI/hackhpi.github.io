@@ -204,7 +204,7 @@ const travelSponsorship = [
   {
     fullWidth: true,
     input:
-      "Our partner, Quantco, provides travel scholarships for participants from around the globe. Applying is easy — just submit your CV and select the checkbox below.",
+      "Our partner, QuantCo, provides travel scholarships for participants from around the globe. Applying is easy — just submit your CV and select the checkbox below.",
     type: INPUT_TYPES.TYPOGRAPHY,
   },
   {
@@ -216,7 +216,7 @@ const travelSponsorship = [
   {
     formLabel: "",
     input: [
-      "I consent to sharing my contact information and CV with our partner, Quantco, and authorize them to contact me.",
+      "I consent to sharing my contact information and CV with our partner, QuantCo, and authorize them to contact me.",
     ],
     name: "travelStipend",
     type: INPUT_TYPES.CHECKBOX,

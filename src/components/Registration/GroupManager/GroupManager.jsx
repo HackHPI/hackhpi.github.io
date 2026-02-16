@@ -14,7 +14,7 @@ import { GroupRest } from "../../../rest/GroupRest";
 export function GroupManager(props) {
   const [loadingNewTeam, setLoadingNewTeam] = useState(false);
   const [fetchingExistingTeam, setFetchingExistingTeam] = useState(false);
-  const [group, setGroup] = useState(false);
+  const [group, setGroup] = useState(props.value || false);
   const [groupInput, setGroupInput] = useState("");
   const [groupInputError, setGroupInputError] = useState(false);
   const [groupName, setGroupName] = useState("");

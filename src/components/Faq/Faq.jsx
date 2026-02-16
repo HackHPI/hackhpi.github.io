@@ -48,7 +48,7 @@ let faqs = [
                 text: "Take the S7 or RB 23 from Berlin Central Station (\"Berlin Hauptbahnhof\") towards Potsdam and exit at Potsdam Griebnitzsee."
             }, {
                 title: "How should I prepare?",
-                text: "Bring your laptop and a charger, comfortable clothes, and, above all, motivation to hack! You can dive into the topic of health in advance, but there will be introductory sessions as well."
+                text: "Bring your laptop and a charger, comfortable clothes, and, above all, motivation to hack! You can dive into the topic of agriculture and climate in advance, but there will be introductory sessions as well."
             }
         ]
     },
@@ -83,7 +83,7 @@ let faqs = [
         items: [
             {
                 title: "What are the challenges?",
-                text: "All challenges are connected to the subject of health, but we cannot tell you what awaits you. And honestly, who wants to miss the thrill of a surprise challenge? Anyway, the exact challenges will be announced at the event, so stay tuned!"
+                text: "All challenges are connected to the subject of agriculture and climate, but we cannot tell you what awaits you. And honestly, who wants to miss the thrill of a surprise challenge? Anyway, the exact challenges will be announced at the event, so stay tuned!"
             },
             {
                 title: "What are the prizes?",

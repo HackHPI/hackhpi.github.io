@@ -28,7 +28,7 @@ function WhatToExpect() {
                             Join motivated students for two days of
                             innovation, workshops, and collaboration with top-notch sponsors offering support and
                             expertise.
-                            Tackle a challenge and dive into the world of health.
+                            Tackle a challenge and dive into the world of agriculture and climate.
                         </Typography>
 
                     </Grid>

@@ -18,7 +18,7 @@ export default function RootLayout({children,}: { children: React.ReactNode }) {
             </title>
             <meta name="theme-color" content="#13101B"/>
             <meta name={"description"}
-                  content={"Explore the future of health at HPI in Potsdam. Join motivated students for two days of innovation, workshops, and collaboration with top-notch sponsors offering support and expertise. Tackle a challenge and dive into the world of health."}/>
+                  content={"Explore the future of agriculture and climate at HPI in Potsdam. Join motivated students for two days of innovation, workshops, and collaboration with top-notch sponsors offering support and expertise. Tackle a challenge and dive into the world of agriculture and climate."}/>
         </head>
         <body>
         <AppRouterCacheProvider>

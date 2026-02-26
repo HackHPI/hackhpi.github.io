@@ -6,9 +6,10 @@ import Quantco from "../../assets/images/sponsors/2026/quantco_white.svg";
 import AWS from "../../assets/images/sponsors/2026/Amazon_Web_Services_Logo_white.svg";
 import React from "react";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
+import { SponsorObject } from "./sponsor.interface";
 
 function Sponsors() {
-  const primarySponsors = [
+  const primarySponsors: SponsorObject[] = [
     {
       logo: Cula.src,
       alt: "Logo of Cula Technologies",
@@ -16,10 +17,10 @@ function Sponsors() {
     },
   ];
 
-  const sponsors = [
+  const sponsors: SponsorObject[] = [
     {
       logo: AWS.src,
-      alt: "Logo of Quantco",
+      alt: "Logo of AWS",
       link: "https://aws.amazon.com/",
       customHeight: "5rem",
     },

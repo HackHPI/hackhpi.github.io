@@ -20,7 +20,7 @@ function Sponsors() {
     {
       logo: AWS.src,
       alt: "Logo of Quantco",
-      link: "https://www.quantco.com/",
+      link: "https://aws.amazon.com/",
       customHeight: "5rem",
     },
     {

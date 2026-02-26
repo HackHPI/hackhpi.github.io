@@ -1,11 +1,15 @@
 import { Box, Container, Grid, Link } from "@mui/material";
 import Engine from "../../assets/images/sponsors/2026/engine.svg";
 import Cula from "../../assets/images/sponsors/2026/Lockup-White.svg";
+import Claas from "../../assets/images/sponsors/2026/claas_white.svg";
+import Quantco from "../../assets/images/sponsors/2026/quantco_white.svg";
+import AWS from "../../assets/images/sponsors/2026/Amazon_Web_Services_Logo_white.svg";
 import React from "react";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
+import { SponsorObject } from "./sponsor.interface";
 
 function Sponsors() {
-  const primarySponsors = [
+  const primarySponsors: SponsorObject[] = [
     {
       logo: Cula.src,
       alt: "Logo of Cula Technologies",
@@ -13,11 +17,28 @@ function Sponsors() {
     },
   ];
 
-  const sponsors = [
+  const sponsors: SponsorObject[] = [
+    {
+      logo: AWS.src,
+      alt: "Logo of AWS",
+      link: "https://aws.amazon.com/",
+      customHeight: "5rem",
+    },
     {
       logo: Engine.src,
       alt: "Logo of HPI Engine",
       link: "https://engine.hpi.de",
+    },
+    {
+      logo: Claas.src,
+      alt: "Logo of Claas",
+      link: "https://www.claas.com/",
+    },
+    {
+      logo: Quantco.src,
+      alt: "Logo of Quantco",
+      link: "https://www.quantco.com/",
+      customHeight: "7rem",
     },
   ];
 
@@ -27,7 +48,7 @@ function Sponsors() {
         <Container maxWidth={"xl"}>
           <Grid
             container
-            sx={{ paddingTop: "5rem", paddingBottom: "5rem" }}
+            sx={{ paddingTop: "5rem", paddingBottom: "3rem" }}
             justifyContent={"center"}
             spacing={10}
           >
@@ -45,7 +66,7 @@ function Sponsors() {
                       backgroundSize: "contain",
                       backgroundRepeat: "no-repeat",
                       width: "100%",
-                      height: "5.5rem",
+                      height: "6rem",
                     }}
                   />
                 </Link>
@@ -59,11 +80,26 @@ function Sponsors() {
             spacing={10}
           >
             {sponsors.map((sponsor, idx) => (
-              <Grid item xs={12} md={6} lg={3} key={idx}>
+              <Grid
+                item
+                xs={12}
+                md={6}
+                lg={3}
+                key={idx}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
                 <Link
+                  sx={{ width: "80%" }}
                   href={sponsor.link}
                   target={"_blank"}
                   rel="noopener noreferrer"
+                  style={{
+
+                  }}
                 >
                   <Box
                     style={{
@@ -71,8 +107,9 @@ function Sponsors() {
                       backgroundPosition: "center",
                       backgroundSize: "contain",
                       backgroundRepeat: "no-repeat",
-                      width: "100%",
-                      height: "4rem",
+                      height: sponsor.customHeight
+                        ? sponsor.customHeight
+                        : "4rem",
                     }}
                   />
                 </Link>

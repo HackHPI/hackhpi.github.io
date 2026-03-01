@@ -285,10 +285,6 @@ function Registration() {
       ),
     },
     {
-      label: "Travel Scholarship",
-      content: travelSponsorship,
-    },
-    {
       label: "Confirmation",
       content: legal,
     },

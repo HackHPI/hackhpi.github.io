@@ -4,6 +4,7 @@ import Cula from "../../assets/images/sponsors/2026/Lockup-White.svg";
 import Claas from "../../assets/images/sponsors/2026/claas_white.svg";
 import Quantco from "../../assets/images/sponsors/2026/quantco_white.svg";
 import AWS from "../../assets/images/sponsors/2026/Amazon_Web_Services_Logo_white.svg";
+import Optiver from "../../assets/images/sponsors/2026/optiver_white.svg";
 import React from "react";
 import HackHPIWrapper from "../Theme/HackHPIWrapper.jsx";
 import { SponsorObject } from "./sponsor.interface";
@@ -25,20 +26,27 @@ function Sponsors() {
       customHeight: "5rem",
     },
     {
-      logo: Engine.src,
-      alt: "Logo of HPI Engine",
-      link: "https://engine.hpi.de",
-    },
-    {
       logo: Claas.src,
       alt: "Logo of Claas",
       link: "https://www.claas.com/",
+
     },
     {
       logo: Quantco.src,
       alt: "Logo of Quantco",
       link: "https://www.quantco.com/",
       customHeight: "7rem",
+    },
+    {
+      logo: Optiver.src,
+      alt: "Logo of Optiver",
+      link: "https://optiver.com/",
+      customHeight: "7rem",
+    },
+    {
+      logo: Engine.src,
+      alt: "Logo of HPI Engine",
+      link: "https://engine.hpi.de",
     },
   ];
 
@@ -84,7 +92,7 @@ function Sponsors() {
                 item
                 xs={12}
                 md={6}
-                lg={3}
+                lg={4}
                 key={idx}
                 style={{
                   display: "flex",
@@ -93,7 +101,7 @@ function Sponsors() {
                 }}
               >
                 <Link
-                  sx={{ width: "80%" }}
+                  sx={{ width: "70%" }}
                   href={sponsor.link}
                   target={"_blank"}
                   rel="noopener noreferrer"

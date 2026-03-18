@@ -33,7 +33,7 @@ import universities from "./universitiesDE.json";
 import { GroupManager } from "./GroupManager/GroupManager";
 import { INPUT_TYPES } from "./InputTypes.js";
 
-const registrationClosed = false;
+const registrationClosed = true;
 const personalData = [
   {
     formLabel: "First name",

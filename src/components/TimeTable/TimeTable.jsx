@@ -10,19 +10,77 @@ import {
     KeyboardArrowRight,
     PlayArrow,
     Restaurant,
+    Coffee,
+    BakeryDining,
     Stop
 } from "@mui/icons-material";
 import * as React from "react";
 import {useState} from "react";
 import {IconContainer} from "../Features/Features";
 import colorYears from "../Theme/HackHpiColors";
+import { title } from "process";
 
 const dayOneYears = [
-  {
-    year: 2026,
-    subtitle: "TBA",
-    dayOne: [],
-  },
+    {
+        year: 2026,
+        subtitle: "Friday 10.04",
+        dayOne: [
+            {
+                time: "09:00 - 11:00",
+                icon: <ConfirmationNumber/>,
+                title: "Check-In + Breakfast",
+                person: "",
+            },
+            {
+                time: "11:00 - 12:00",
+                icon: <Campaign/>,
+                title: "Speaker",
+                person: "",
+            },
+            {
+                time: "12:00 - 13:00",
+                icon: <Campaign/>,
+                title: "Challenge Presentation",
+                person: "",
+            },
+            {
+                time: "13:00 - 14:00",
+                icon: <Restaurant/>,
+                title: "Lunch",
+                person: "",
+            },
+            {
+                time: "14:00 - 15:00",
+                icon: <EmojiObjects/>,
+                title: "Challenge Input",
+                person: "optional",
+            },
+            {
+                time: "14:00 - 13:00 next day (continuously)",
+                icon: <PlayArrow/>,
+                title: "Begin Hacking Time",
+                person: "",
+            },
+            {
+                time: "16:00 - 17:00",
+                icon: <BakeryDining/>,
+                title: "Waffles",
+                person: "by Cula"
+            },
+            {
+                time: "19:00 - 20:00",
+                icon: <Restaurant/>,
+                title: "Dinner",
+                person: "",
+            },
+            {
+                time: "00:00 - 01:00",
+                icon: <Restaurant/>,
+                title: "Midnight Snack",
+                person: "",
+            }
+        ],
+    },
     {
         year: 2025,
         subtitle: "Friday 21.03",
@@ -164,11 +222,48 @@ const dayOneYears = [
 ]
 
 const dayTwoYears = [
-  {
-    year: 2026,
-    subtitle: "TBA",
-    dayTwo: [],
-  },
+    {
+        year: 2026,
+        subtitle: "Saturday 11.04",
+        dayTwo: [
+            {
+                time: "08:00 - 09:00",
+                icon: <Restaurant/>,
+                title: "Breakfast",
+                person: "",
+            },
+            {
+                time: "09:00 - 11:00",
+                icon: <Coffee/>,
+                title: "Coffee Cart",
+                person: "by Quantco",
+            },
+            {
+                time: "13:00",
+                icon: <Stop/>,
+                title: "End Hacking Time",
+                person: "",
+            },
+            {
+                time: "13:00 - 14:00",
+                icon: <Restaurant/>,
+                title: "Lunch",
+                person: "",
+            },
+            {
+                time: "14:00 - 16:00",
+                icon: <Campaign/>,
+                title: "Presentations",
+                person: "",
+            },
+            {
+                time: "16:00 - 17:00",
+                icon: <EmojiEvents/>,
+                title: "Awards + Final Words",
+                person: "",
+            }
+        ],
+    },
     {
         year: 2025,
         subtitle: "Saturday 22.03",

@@ -152,7 +152,7 @@ const teamMembers25 = [
     {
         name: "Constantin Sachse",
         position: "Team Member",
-        linkedIn: "",
+        linkedIn: "constantinsachse",
         profilePicture: ConstantinSachseProfile2025
     },
 ]
@@ -191,7 +191,7 @@ const teamMembers26 = [
   {
     name: "Constantin Sachse",
     position: "Team Member",
-    linkedIn: "",
+    linkedIn: "constantinsachse",
     profilePicture: ConstantinSachseProfile2025,
   },
   {

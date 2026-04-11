@@ -20,15 +20,47 @@ import LarisaWewetzer from "../../assets/images/jury/2025/larisa_wewetzer.webp";
 import JohannesVedder from "../../assets/images/jury/2025/johannes_vedder.webp";
 import GuidoSchwartze from "../../assets/images/jury/2025/guido_schwartze.webp";
 import FlorijanReetz from "../../assets/images/jury/2025/florijan_reetz.webp";
+import SimonStadlinger from "../../assets/images/jury/2026/simon_stadlinger.jpg";
+import TimoKorthals from "../../assets/images/jury/2026/timo_korthals.jpg"
+import MarcRosenau from "../../assets/images/jury/2026/marc_rosenau.jpg"
+import JannikRedenius from "../../assets/images/jury/2026/jannik_redenius.jpg";
 import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
 import { useState } from "react";
 import { WindowCard } from "../WindowCard/WindowCard";
-import * as React from "react";
 
 const juryYears = [
   {
     year: 2026,
-    jury: [],
+    jury: [
+      {
+        name: "Simon Stadlinger",
+        position: "Co-Founder at Cula",
+        profilePicture: SimonStadlinger.src,
+        description:
+          "",
+      },
+      {
+        name: "Timo Korthals",
+        position: "Research And Development Engineer at CLAAS",
+        profilePicture: TimoKorthals.src,
+        description:
+          "",
+      },
+      {
+        name: "Marc Rosenau",
+        position: "Co-Founder at Cula",
+        profilePicture: MarcRosenau.src,
+        description:
+          "",
+      },
+      {
+        name: "Jannik Redenius",
+        position: "Lead Engineer ADAS & Driving automation at CLAAS",
+        profilePicture: JannikRedenius.src,
+        description:
+          "",
+      },
+    ],
   },
   {
     year: 2025,

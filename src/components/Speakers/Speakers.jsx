@@ -12,15 +12,24 @@ import {
 } from "@mui/material";
 import FelixLennardHake from "../../assets/images/speakers/2024/FelixLennardHake.jpg";
 import PaulBrachmann from "../../assets/images/speakers/2025/paul_brachmann.webp";
+import MarcRosenau from "../../assets/images/speakers/2026/marc_rosenau.jpg";
 import { WindowCard } from "../WindowCard/WindowCard";
 import { useState } from "react";
 import { Campaign, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
-import * as React from "react";
 
 const speakerYears = [
   {
     year: 2026,
-    speaker: [],
+    speaker: [
+      {
+        name: "Marc Rosenau",
+        position:
+          "Co-Founder at Cula",
+        profilePicture: MarcRosenau.src,
+        description:
+          "",
+      },
+    ],
   },
   {
     year: 2025,
